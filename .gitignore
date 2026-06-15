@@ -1,0 +1,21 @@
+.DS_Store
+
+# Local environments and caches
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Hugo build artifacts
+frontend/public/
+frontend/resources/
+frontend/.hugo_build.lock
+
+# Node dependencies if theme tooling is added later
+node_modules/
+
+# Local runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.log

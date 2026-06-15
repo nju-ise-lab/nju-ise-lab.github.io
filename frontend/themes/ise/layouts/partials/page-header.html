@@ -1,0 +1,9 @@
+{{ $page := .page }}
+{{ $title := .title | default $page.Title }}
+{{ $eyebrow := .eyebrow | default "" }}
+{{ $summary := .summary | default $page.Description }}
+<section class="page-header container">
+  {{ with $eyebrow }}<p class="page-header__eyebrow">{{ . }}</p>{{ end }}
+  <h1>{{ $title }}</h1>
+  {{ with $summary }}<p class="page-header__summary">{{ . }}</p>{{ end }}
+</section>

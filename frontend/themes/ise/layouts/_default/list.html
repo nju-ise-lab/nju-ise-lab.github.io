@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  {{ partial "page-header.html" (dict "page" .) }}
+  <div class="page-shell container">
+    <section class="page-main">
+      {{ with .Content }}<div class="article__body">{{ . }}</div>{{ end }}
+      {{ if .Pages }}
+        {{ partial "section-list.html" .Pages }}
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

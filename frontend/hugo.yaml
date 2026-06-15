@@ -1,0 +1,45 @@
+baseURL: "https://ise.nju.edu.cn/"
+locale: "zh-cn"
+title: "南京大学智能软件工程实验室"
+theme: "ise"
+defaultContentLanguage: "zh-cn"
+hasCJKLanguage: true
+summaryLength: 80
+disableKinds:
+  - taxonomy
+  - term
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  labName: "南京大学智能软件工程实验室"
+  labNameEn: "Nanjing University, Laboratory of Intelligent SoftWare Engineering"
+  description: "南京大学智能软件工程实验室官方网站"
+  footerCopyright: "Copyright 2019 - 2025 © 南京大学智能软件工程实验室"
+  icpText: "苏ICP备14002894号-12"
+  icpURL: "http://beian.miit.gov.cn/"
+  viewAPI: "/api/views"
+
+menus:
+  main:
+    - name: "首页"
+      url: "/"
+      weight: 10
+    - name: "新闻资讯"
+      url: "/news/"
+      weight: 20
+    - name: "学术论文"
+      url: "/activities/"
+      weight: 30
+    - name: "成员介绍"
+      url: "/members/"
+      weight: 40
+    - name: "科研项目"
+      url: "/platform/"
+      weight: 50
+    - name: "关于我们"
+      url: "/about/"
+      weight: 60

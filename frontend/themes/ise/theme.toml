@@ -1,0 +1,7 @@
+name = "ISE"
+license = "MIT"
+description = "Hugo theme skeleton for Nanjing University ISE Lab."
+min_version = "0.120.0"
+
+[author]
+  name = "ISE Lab"

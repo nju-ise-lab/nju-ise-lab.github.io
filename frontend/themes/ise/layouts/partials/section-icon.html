@@ -1,0 +1,16 @@
+{{ $name := . }}
+<span class="section-heading__icon" aria-hidden="true">
+  {{ if eq $name "news" }}
+    <svg viewBox="0 0 24 24" focusable="false">
+      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Zm4 1.75v4.5h4.5v-4.5H8Zm7 0v1.5h2.5v-1.5H15Zm0 3v1.5h2.5v-1.5H15ZM8 14.5V16h9.5v-1.5H8Zm0 3V19h7v-1.5H8Z"/>
+    </svg>
+  {{ else if eq $name "activity" }}
+    <svg viewBox="0 0 24 24" focusable="false">
+      <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 22 6.5v12A2.5 2.5 0 0 1 19.5 21h-15A2.5 2.5 0 0 1 2 18.5v-12A2.5 2.5 0 0 1 4.5 4H6V3a1 1 0 0 1 1-1Zm13 8H4v8.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V10Zm-4.25 2.35 1.4 1.4-5.4 5.4-3.4-3.4 1.4-1.4 2 2 4-4Z"/>
+    </svg>
+  {{ else }}
+    <svg viewBox="0 0 24 24" focusable="false">
+      <path d="M4.5 5A2.5 2.5 0 0 1 7 2.5h10A2.5 2.5 0 0 1 19.5 5v14A2.5 2.5 0 0 1 17 21.5H7A2.5 2.5 0 0 1 4.5 19V5ZM7 4.5a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H7Zm2 3h6v2H9v-2Zm0 4h6v2H9v-2Zm0 4h4v2H9v-2Z"/>
+    </svg>
+  {{ end }}
+</span>

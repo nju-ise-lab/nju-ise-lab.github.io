@@ -1,0 +1,13 @@
+<article class="member-card">
+  {{ $avatar := .Params.avatar_url | default .Params.avatar }}
+  {{ with $avatar }}
+    <a class="member-card__avatar" href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </a>
+  {{ end }}
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{ $role := .Params.role_title | default .Params.role }}
+  {{ with $role }}<p class="member-card__role">{{ . }}</p>{{ end }}
+  {{ with .Params.research_direction }}<p class="member-card__direction">{{ . }}</p>{{ end }}
+  {{ with .Summary }}<p class="member-card__summary">{{ . | plainify | truncate 96 }}</p>{{ end }}
+</article>

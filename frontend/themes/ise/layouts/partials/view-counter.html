@@ -1,0 +1,4 @@
+{{ $api := site.Params.viewAPI | default "/api/views" }}
+<p class="view-counter" data-view-path="{{ .RelPermalink }}" data-view-api="{{ $api }}">
+  浏览量：<span data-view-count>--</span>
+</p>

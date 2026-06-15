@@ -1,0 +1,12 @@
+{{ $avatar := .Params.avatar_url | default .Params.avatar }}
+<article class="student-member-card">
+  <a href="{{ .RelPermalink }}" class="student-member-card__photo" aria-label="{{ .Title }}">
+    {{ with $avatar }}
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ else }}
+      <span>{{ substr .Title 0 1 }}</span>
+    {{ end }}
+  </a>
+  <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+  {{ with .Params.student_label }}<p>{{ . }}</p>{{ end }}
+</article>

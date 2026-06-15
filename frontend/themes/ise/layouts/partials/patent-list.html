@@ -1,0 +1,16 @@
+{{ $patents := default (slice) .patents }}
+<ul class="section-list project-list patent-list">
+  {{ range $patents }}
+    <li>
+      <strong>{{ .title | default .english | default .chinese }}</strong>
+      {{ if .authors }}
+        <p class="project-list__authors">{{ partial "author-list.html" .authors }}</p>
+      {{ else }}
+        {{ $rawAuthors := .raw_authors | default .chinese }}
+        {{ with $rawAuthors }}<p class="project-list__authors">{{ . }}</p>{{ end }}
+      {{ end }}
+    </li>
+  {{ else }}
+    <li class="empty-item">暂无关联专利。</li>
+  {{ end }}
+</ul>

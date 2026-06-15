@@ -1,0 +1,30 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="page-shell container">
+    <article class="page-main article">
+      <h1>{{ .Title }}</h1>
+      {{ $role := .Params.role_title | default .Params.role }}
+      {{ with $role }}<p class="article__date">{{ . }}</p>{{ end }}
+      {{ partial "view-counter.html" . }}
+      <div class="article__body">{{ .Content }}</div>
+      {{ $memberURL := .RelPermalink }}
+      {{ $relatedPublications := slice }}
+      {{ range where site.RegularPages "Section" "activities" }}
+        {{ if eq .Params.content_kind "publication" }}
+          {{ $paper := . }}
+          {{ $matched := false }}
+          {{ range .Params.authors }}
+            {{ if eq .member_url $memberURL }}{{ $matched = true }}{{ end }}
+          {{ end }}
+          {{ if $matched }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if gt (len $relatedPublications) 0 }}
+        <section class="related-block" aria-labelledby="member-publications">
+          <h2 id="member-publications">学术论文</h2>
+          {{ partial "publication-list.html" (dict "pages" $relatedPublications) }}
+        </section>
+      {{ end }}
+    </article>
+  </div>
+{{ end }}

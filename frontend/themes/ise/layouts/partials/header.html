@@ -1,0 +1,32 @@
+<header class="site-header">
+  <div class="header-top container">
+    <a class="brand" href="/">
+      <img class="brand__logo" src="/images/legacy/logo/ise_logo.png" alt="南京大学智能软件工程实验室">
+      <span class="brand__text">
+        <strong>{{ site.Params.labName }}</strong>
+        <span>{{ site.Params.labNameEn }}</span>
+      </span>
+    </a>
+  </div>
+
+  <nav class="site-nav" aria-label="主导航">
+    <ul class="site-nav__inner container">
+      {{ range site.Menus.main }}
+        <li class="site-nav__item{{ if .HasChildren }} has-children{{ end }}">
+          {{ if .URL }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ else }}
+            <span>{{ .Name }}</span>
+          {{ end }}
+          {{ if .HasChildren }}
+            <ul class="site-nav__submenu">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

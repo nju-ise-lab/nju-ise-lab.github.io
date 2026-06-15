@@ -1,0 +1,12 @@
+{{ $pages := .pages }}
+<ul class="section-list">
+  {{ range $pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ with .Summary }}<p>{{ . | plainify | truncate 120 }}</p>{{ end }}
+    </li>
+  {{ else }}
+    <li class="empty-item">暂无内容，请在对应的 <code>content/</code> 目录添加 Markdown。</li>
+  {{ end }}
+</ul>

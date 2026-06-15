@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="page-shell container">
+    <article class="page-main article">
+      <h1>{{ .Title }}</h1>
+      <time class="article__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ partial "view-counter.html" . }}
+      <div class="article__body">{{ .Content }}</div>
+      {{ $patentIDs := .Params.patent_ids | default (slice) }}
+      {{ $relatedPatents := slice }}
+      {{ range (default (slice) hugo.Data.projects) }}
+        {{ if in $patentIDs .legacy_id }}{{ $relatedPatents = $relatedPatents | append . }}{{ end }}
+      {{ end }}
+      <section class="related-block" aria-labelledby="platform-patents">
+        <h2 id="platform-patents">关联专利</h2>
+        <div class="related-card-list">
+          {{ partial "patent-list.html" (dict "patents" $relatedPatents) }}
+        </div>
+      </section>
+    </article>
+  </div>
+{{ end }}

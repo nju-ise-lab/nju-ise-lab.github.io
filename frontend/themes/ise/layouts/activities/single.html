@@ -1,0 +1,30 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="page-shell container">
+    <article class="page-main article">
+      <h1>{{ .Title }}</h1>
+      {{ if eq .Params.content_kind "publication" }}
+        <div class="publication-meta">
+          {{ with .Params.authors }}
+            <p class="publication-authors">{{ partial "author-list.html" . }}</p>
+          {{ end }}
+          {{ with .Params.publication_year }}<p>发表年份：{{ . }}</p>{{ end }}
+          {{ with .Params.venue }}<p>发表信息：{{ . }}</p>{{ end }}
+        </div>
+      {{ else }}
+        <time class="article__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ end }}
+      {{ partial "view-counter.html" . }}
+      <div class="article__body">
+        {{ if eq .Params.content_kind "publication" }}
+          {{ with .Params.raw_citation }}
+            <h2>原始引用</h2>
+            <p>{{ . }}</p>
+          {{ end }}
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+    </article>
+  </div>
+{{ end }}

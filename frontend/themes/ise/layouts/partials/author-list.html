@@ -1,0 +1,11 @@
+{{ $authors := default (slice) . }}
+<span class="author-list">
+  {{- range $index, $author := $authors -}}
+    {{- if gt $index 0 }}、{{ end -}}
+    {{- with $author.member_url -}}
+      <a href="{{ . }}">{{ $author.name }}</a>
+    {{- else -}}
+      <span>{{ $author.name }}</span>
+    {{- end -}}
+  {{- end -}}
+</span>
