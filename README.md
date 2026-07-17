@@ -21,6 +21,7 @@ ise-quick/
 - Search, CMS and dynamic backend services are intentionally out of scope.
 - Legacy database access is paused; current migration input comes from exported legacy public API data.
 - GitHub Pages deployment: push `main` and `.github/workflows/pages.yml` builds and publishes the site automatically.
+- Project images are optional; generic legacy `*ise.jpg` unit logos are not used as project covers.
 
 ## Development Rule
 

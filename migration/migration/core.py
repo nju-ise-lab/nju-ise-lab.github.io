@@ -140,7 +140,7 @@ def build_platform_front_matter(record: dict, *, slug: str) -> dict:
         "draft": False,
         "url": content_url("platform", slug),
     }
-    if record.get("cover"):
+    if record.get("cover") and not is_generic_project_image(record["cover"]):
         front_matter["image"] = "cover" + _url_extension(record["cover"], default=".png")
     return front_matter
 
@@ -185,6 +185,12 @@ def classify_media_url(url: str | None, *, context: str = "link") -> MediaRefere
         return MediaReference(url=text, kind="external_link", should_localize=False, context=context)
 
     return MediaReference(url=text, kind="relative", should_localize=False, context=context)
+
+
+def is_generic_project_image(url: str | None) -> bool:
+    """Identify the legacy ISE unit logo used as a project placeholder."""
+    path = urlparse((url or "").strip()).path
+    return path.rsplit("/", 1)[-1].lower().endswith("ise.jpg")
 
 
 def extract_media_references(html: str | None) -> list[MediaReference]:

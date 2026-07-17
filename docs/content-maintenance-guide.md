@@ -104,6 +104,8 @@ draft: false
 frontend/content/platform/
 ```
 
+只有存在真实项目图片时才添加 `image` 字段；没有图片的项目不要使用实验室 Logo 或通用占位图。迁移器会自动忽略旧站的 `*ise.jpg` 通用单位图。
+
 首页精选项目修改：
 
 ```text

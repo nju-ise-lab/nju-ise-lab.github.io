@@ -6,7 +6,6 @@ legacy_id: 29
 views_seed: 1
 draft: false
 url: "/platform/nanjing-nari-corporation-project-mobile-crowdsourcing-test-platform-20170413-2017-2018-20170413-2017-2018/"
-image: "cover.jpg"
 ---
 
 <p style="text-align: left;">Nanjing NARI Corporation project: Mobile crowdsourcing test platform(20170413), 2017-2018<br>南京南瑞集团项目：移动众测平台软件（20170413），2017-2018</p>

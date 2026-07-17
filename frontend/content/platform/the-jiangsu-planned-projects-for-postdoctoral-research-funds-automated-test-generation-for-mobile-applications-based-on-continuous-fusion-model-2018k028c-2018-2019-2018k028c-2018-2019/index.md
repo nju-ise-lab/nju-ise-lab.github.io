@@ -6,7 +6,6 @@ legacy_id: 24
 views_seed: 1
 draft: false
 url: "/platform/the-jiangsu-planned-projects-for-postdoctoral-research-funds-automated-test-generation-for-mobile-applications-based-on-continuous-fusion-model-2018k028c-2018-2019-2018k028c-2018-2019/"
-image: "cover.jpg"
 ---
 
 <p style="text-align: left;">The Jiangsu planned projects for postdoctoral research funds: Automated test generation for mobile applications based on continuous fusion model(2018K028C), 2018-2019<br>江苏省博士后科研资助计划：基于持续融合模型的移动应用测试自动生成（2018K028C），2018-2019</p>

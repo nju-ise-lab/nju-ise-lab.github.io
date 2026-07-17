@@ -148,6 +148,11 @@ def test_media_classification_downloads_image_fields_but_not_external_links():
     assert legacy_api.should_localize is False
 
 
+def test_generic_project_logo_is_not_treated_as_a_project_image():
+    assert core.is_generic_project_image("http://118.178.18.181:9090/test01/abcise.jpg") is True
+    assert core.is_generic_project_image("http://118.178.18.181:9090/test01/product1.png") is False
+
+
 def test_extract_media_references_reads_img_src_only():
     html = """
     <p><a href="https://example.com/jump.png">external jump</a></p>

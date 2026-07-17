@@ -248,7 +248,7 @@ def _front_matter(section: str, record: dict, *, slug: str) -> dict:
         raise ValueError(f"Unsupported article section: {section}")
 
     cover = record.get("cover")
-    if cover and "image" not in front_matter:
+    if cover and not core.is_generic_project_image(cover) and "image" not in front_matter:
         front_matter["image"] = "cover" + _url_extension(cover, default=".png")
     return front_matter
 
@@ -407,6 +407,8 @@ def _media_manifest_for_entry(entry: GeneratedEntry) -> list[dict]:
     manifest: list[dict] = []
     for source_field, output_field in (("cover", "image"), ("avatar", "avatar")):
         url = entry.source.get(source_field)
+        if source_field == "cover" and core.is_generic_project_image(url):
+            continue
         ref = core.classify_media_url(url, context=output_field)
         if ref.should_localize:
             basename = "cover" if output_field == "image" else output_field
