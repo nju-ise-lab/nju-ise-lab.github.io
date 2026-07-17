@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Duo: Differential Fuzzing for Deep Learning Operators”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Duo: Differential Fuzzing for Deep Learning Operators"
 publication_year: "2021"
 venue: "[J]. IEEE Transactions on Reliability, 2021, 70(4): 1671-1685"

@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Deepgini: prioritizing massive tests to enhance the robustness of deep neural networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Deepgini: prioritizing massive tests to enhance the robustness of deep neural networks"
 publication_year: "2020"
 venue: "[C]2020: 177-188"

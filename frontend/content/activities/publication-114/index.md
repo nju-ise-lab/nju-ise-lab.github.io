@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Measuring the diversity of a test set with distance entropy”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Measuring the diversity of a test set with distance entropy"
 publication_year: "2015"
 venue: "[J]. IEEE Transactions on Reliability, 2015, 65(1): 19-27"

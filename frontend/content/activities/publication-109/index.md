@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Revisit of automatic debugging via human focus-tracking analysis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Revisit of automatic debugging via human focus-tracking analysis"
 publication_year: "2016"
 venue: "[C]//Proceedings of the 38th International Conference on Software Engineering. 2016: 808-819"

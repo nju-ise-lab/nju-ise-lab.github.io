@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“How practitioners perceive automated bug report management techniques”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "How practitioners perceive automated bug report management techniques"
 publication_year: "2018"
 venue: "[J]. IEEE Transactions on Software Engineering, 2018, 46(8): 836-862"

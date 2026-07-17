@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“TauMed: Test Augmentation of Deep Learning in Medical Diagnosis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "TauMed: Test Augmentation of Deep Learning in Medical Diagnosis"
 publication_year: "2021"
 venue: "[C]//Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2021: 674-677"

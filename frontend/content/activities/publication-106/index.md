@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Multi-objective test report prioritization using image understanding”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Multi-objective test report prioritization using image understanding"
 publication_year: "2016"
 venue: "[C]2016 31st IEEE/ACM International Conference on Automated Software Engineering (ASE). IEEE, 2016: 202-213.[Chinese Brief]"

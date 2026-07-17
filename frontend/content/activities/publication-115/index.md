@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Test report prioritization to assist crowdsourced testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Test report prioritization to assist crowdsourced testing"
 publication_year: "2015"
 venue: "[C]//Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering. 2015: 225-236.[Chinese Brief]"

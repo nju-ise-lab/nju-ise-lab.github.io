@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“C2S: translating natural language comments to formal program specifications”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "C2S: translating natural language comments to formal program specifications"
 publication_year: "2020"
 venue: "[C]2020: 25-37"

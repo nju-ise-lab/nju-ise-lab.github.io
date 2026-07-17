@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Jones, Zhenyu Chen. Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding"
 publication_year: "2020"
 venue: "[J]. IEEE Transactions on Software Engineering, 2020"

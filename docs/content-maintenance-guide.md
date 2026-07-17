@@ -65,6 +65,7 @@ title: "论文标题"
 publication_year: "2026"
 venue: "会议或期刊"
 image: "paper-preview.png" # 可选；与 index.md 同目录
+abstract: "论文摘要或简要介绍"
 authors:
   - name: "作者姓名"
     member_url: "/members/member-38/"

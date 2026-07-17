@@ -15,10 +15,18 @@
       {{ else }}
         <time class="article__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
       {{ end }}
+      {{ if eq .Params.content_kind "publication" }}
+        {{ with .Params.abstract }}
+          <section class="publication-abstract" aria-labelledby="publication-abstract-title">
+            <h2 id="publication-abstract-title">摘要</h2>
+            <p>{{ . }}</p>
+          </section>
+        {{ end }}
+      {{ end }}
       <div class="article__body">
         {{ if eq .Params.content_kind "publication" }}
           {{ with .Params.raw_citation }}
-            <h2>原始引用</h2>
+            <h2>引用信息</h2>
             <p>{{ . }}</p>
           {{ end }}
         {{ else }}

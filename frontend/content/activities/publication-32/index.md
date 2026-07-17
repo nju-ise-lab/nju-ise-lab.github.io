@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Towards Comprehensive Evaluation for Android Automated Testing Tools (in Chinese) Journal of Software, 2022”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Towards Comprehensive Evaluation for Android Automated Testing Tools (in Chinese) Journal of Software, 2022"
 publication_year: "2022"
 venue: ""

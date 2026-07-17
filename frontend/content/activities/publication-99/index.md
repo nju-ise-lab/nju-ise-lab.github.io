@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“An empirical study on user-topic rating based collaborative filtering methods”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "An empirical study on user-topic rating based collaborative filtering methods"
 publication_year: "2017"
 venue: "[J]. World Wide Web, 2017, 20(4): 815-829"

@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks ICSE 2022"
 publication_year: "2022"
 venue: ""

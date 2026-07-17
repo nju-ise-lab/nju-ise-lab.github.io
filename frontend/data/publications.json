@@ -3,516 +3,688 @@
     "legacy_id": 42,
     "year": "2022",
     "content": "Yuying Li, Yang Feng, Rui Hao, Di Liu, Chunrong Fang, Zhenyu Chen, and Baowen Xu. Classifying crowdsourced mobile test reports with image features: An empirical study [J]. Journal of Systems and Software, 2022, 184: 111-121.",
-    "create_time": "2024-01-17T21:19:13+08:00"
+    "create_time": "2024-01-17T21:19:13+08:00",
+    "image": "",
+    "abstract": "本文围绕“Classifying crowdsourced mobile test reports with image features: An empirical study”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 41,
     "year": "2022",
     "content": "Rui Hao, Yuying Li, Yang Feng, Zhenyu Chen. Are Duplicates Really Harmful? An Empirical Study on Bug Report Summarization Techniques Journal of Software: Evolution and Process",
-    "create_time": "2024-01-17T21:19:06+08:00"
+    "create_time": "2024-01-17T21:19:06+08:00",
+    "image": "",
+    "abstract": "Abstract Recent research works have proven that duplicate bug reports can provide helpful information to assist developers in software tasks such as fault localization and program fixing, while thoroughly reading duplicate bug reports is time‐consuming and inefficient. Summarization is a possible solution for gaining essential information quickly. However, there are many challenges when applying existing summarizing techniques on duplicate bug reports. Duplicate bug reports describe the same problem from different views and vary in quality, content, and writing style. Moreover, the code snippet understanding and the semantic gap between natural and programming languages make the summary generation even more difficult.…"
   },
   {
     "legacy_id": 40,
     "year": "2022",
     "content": "Weisong Sun, Chunrong Fang, Yuchen Chen, Guanhong Tao, Tingxu Han, Quanjun Zhang. Code Search based on Context-aware Code Translation ICSE 2022",
-    "create_time": "2024-01-17T21:18:59+08:00"
+    "create_time": "2024-01-17T21:18:59+08:00",
+    "image": "",
+    "abstract": "本文围绕“Code Search based on Context-aware Code Translation”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 39,
     "year": "2022",
     "content": "Xinyu Gao, Yang Feng, Yining Yin, Zixi Liu, Zhenyu Chen, Baowen Xu. Adaptive Test Selection for Deep Neural Networks ICSE 2022",
-    "create_time": "2024-01-17T21:18:53+08:00"
+    "create_time": "2024-01-17T21:18:53+08:00",
+    "image": "",
+    "abstract": "本文围绕“Adaptive Test Selection for Deep Neural Networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 38,
     "year": "2022",
     "content": "Zixi Liu, Yang Feng, Yining Yin, Zhenyu Chen. DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks ICSE 2022",
-    "create_time": "2024-01-17T21:18:36+08:00"
+    "create_time": "2024-01-17T21:18:36+08:00",
+    "image": "",
+    "abstract": "本文围绕“DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 37,
     "year": "2022",
     "content": "Guandi Liu, Jiawei Liu, Quanjun Zhang, Chunrong Fang, Xufan Zhang. TauPad: Test Data Augmentation of Point Clouds by Adversarial Mutation ICSE 2022 demo",
-    "create_time": "2024-01-17T21:18:25+08:00"
+    "create_time": "2024-01-17T21:18:25+08:00",
+    "image": "",
+    "abstract": "本文围绕“TauPad: Test Data Augmentation of Point Clouds by Adversarial Mutation”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 36,
     "year": "2022",
     "content": "Ju Lin, Jiawei Liu, Quanjun Zhang, Xufan Zhang, Chunrong Fang. TauLiM: Test Data Augmentation of Lidar Point Cloud by Metamorphic Relation ICSE 2022 demo",
-    "create_time": "2024-01-17T21:18:17+08:00"
+    "create_time": "2024-01-17T21:18:17+08:00",
+    "image": "",
+    "abstract": "With the rapid development of object detection in deep learning (DL), applications on LiDAR point clouds have received much attention, such as autonomous driving. To verify the robustness of object detection models by testing, large amounts of diversifted annotated LiDAR point clouds are required to be used as test data. However, considering the sparseness of objects, the diversity of the existing point cloud dataset is limited by the number and types of objects. Therefore, it is important to generate diversifted point clouds by test data augmentation. In this paper, we propose a tool for LiDAR point cloud via test data augmentation, named TauLiM. A well-designed metamorphic relation (MR) [1] is proposed to augment point clouds while maintaining their physical characteristic of LiDAR.…"
   },
   {
     "legacy_id": 35,
     "year": "2022",
     "content": "Tianqi Zhou, Jiawei Liu, Yifan Wang, Zhenyu Chen. META: Multidimensional Evalutation of Testing Ability ICSE 2022 demo",
-    "create_time": "2024-01-17T21:18:09+08:00"
+    "create_time": "2024-01-17T21:18:09+08:00",
+    "image": "",
+    "abstract": "本文围绕“META: Multidimensional Evalutation of Testing Ability”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 34,
     "year": "2022",
     "content": "An Guo, Yang Feng, Zhenyu Chen. Augmenting LiDAR Point Clouds for Automated Testing of Autonomous Driving Systems ISSTA 2022",
-    "create_time": "2024-01-17T21:17:59+08:00"
+    "create_time": "2024-01-17T21:17:59+08:00",
+    "image": "",
+    "abstract": "本文围绕“Augmenting LiDAR Point Clouds for Automated Testing of Autonomous Driving Systems”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 33,
     "year": "2022",
     "content": "Pin Ji, Yang Feng, Jia Liu, Zhihong Zhao, Zhenyu Chen. ASRTest: Automated Testing for Deep-Neural-Network-Driven Speech Recognition Systems ISSTA 2022",
-    "create_time": "2024-01-17T21:17:43+08:00"
+    "create_time": "2024-01-17T21:17:43+08:00",
+    "image": "",
+    "abstract": "本文围绕“ASRTest: Automated Testing for Deep-Neural-Network-Driven Speech Recognition Systems”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 32,
     "year": "2022",
     "content": "ZHONG Yi, SHI Meng-Yu, FANG Chun-Rong, ZHAO Zhi-Hong, CHEN Zhen-Yu. Towards Comprehensive Evaluation for Android Automated Testing Tools (in Chinese) Journal of Software, 2022",
-    "create_time": "2024-01-17T21:17:28+08:00"
+    "create_time": "2024-01-17T21:17:28+08:00",
+    "image": "",
+    "abstract": "本文围绕“Towards Comprehensive Evaluation for Android Automated Testing Tools (in Chinese) Journal of Software, 2022”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 52,
     "year": "2021",
     "content": "Shengcheng Yu, Chunrong Fang, Yexlao Yun, Yang Feng. Layout and Image Recognition Driving Cross-platform Automated Mobile Testing [C]//2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE). IEEE, 2021: 1561-1571.",
-    "create_time": "2024-01-17T21:20:53+08:00"
+    "create_time": "2024-01-17T21:20:53+08:00",
+    "image": "",
+    "abstract": "本文围绕“Layout and Image Recognition Driving Cross-platform Automated Mobile Testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 51,
     "year": "2021",
     "content": "Shengcheng Yu, Chunrong Fang, Zhenfei Cao, Xu wang, Tongyu Ii, Zhenyu Chen. Prioritize Crowdsourced Test Reports via Deep Screenshot Understanding [C]//2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE). IEEE, 2021: 946-956.",
-    "create_time": "2024-01-17T21:20:44+08:00"
+    "create_time": "2024-01-17T21:20:44+08:00",
+    "image": "",
+    "abstract": "Crowdsourced testing is increasingly dominant in mobile application (app) testing, but it is a great burden for app developers to inspect the incredible number of test reports. Many researches have been proposed to deal with test reports based only on texts or additionally simple image features. However, in mobile app testing, texts contained in test reports are condensed and the information is inadequate. Many screenshots are included as complements that contain much richer information beyond texts. This trend motivates us to prioritize crowdsourced test reports based on a deep screenshot understanding. In this paper, we present a novel crowdsourced test report prioritization approach, namely DeepPrior.…"
   },
   {
     "legacy_id": 50,
     "year": "2021",
     "content": "Weisi Luo, Xiaoyue Run, Dong Chai, Jiang Wang, Chunrong Fang, Zhenyu Chen. Graph-based Fuzz Testing for Deep Learning Inference Engines [C]//2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE). IEEE, 2021: 288-299.",
-    "create_time": "2024-01-17T21:20:37+08:00"
+    "create_time": "2024-01-17T21:20:37+08:00",
+    "image": "",
+    "abstract": "本文围绕“Graph-based Fuzz Testing for Deep Learning Inference Engines”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 49,
     "year": "2021",
     "content": "Zixi Liu, Yang Feng, Zhenyu Chen. DialTest: Automated Testing for Recurrent-Neural-Network-Driven Dialogue Systems [C]//Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2021: 115-126.",
-    "create_time": "2024-01-17T21:20:29+08:00"
+    "create_time": "2024-01-17T21:20:29+08:00",
+    "image": "",
+    "abstract": "本文围绕“DialTest: Automated Testing for Recurrent-Neural-Network-Driven Dialogue Systems”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 48,
     "year": "2021",
     "content": "Xufan Zhang, Ning Sun, Chunrong Fang, Jiawei Liu, Jia Liu, Dong Chai, Jiang Wang, Zhenyu Chen. Predoo: Precision Testing of Deep Learning Operators [C]: 400-412.",
-    "create_time": "2024-01-17T21:20:22+08:00"
+    "create_time": "2024-01-17T21:20:22+08:00",
+    "image": "",
+    "abstract": "本文围绕“Predoo: Precision Testing of Deep Learning Operators”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 47,
     "year": "2021",
     "content": "Yunhan Hou, Jiawei Liu, Daiwei Wang, Jaiwei He, Chunrong Fang, Zhenyu Chen. TauMed: Test Augmentation of Deep Learning in Medical Diagnosis [C]//Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2021: 674-677.",
-    "create_time": "2024-01-17T21:19:57+08:00"
+    "create_time": "2024-01-17T21:19:57+08:00",
+    "image": "",
+    "abstract": "本文围绕“TauMed: Test Augmentation of Deep Learning in Medical Diagnosis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 46,
     "year": "2021",
     "content": "Ye Ni, Zhilong Xia, Fangtong Zhao, Chunrong Fang and Zhenyu Chen. An Online Multi-step-forward Voltage Prediction Approach based on LSTM-TD Model and KF Algorithm [J]. Computer, 2021, 54(8): 56-65.",
-    "create_time": "2024-01-17T21:19:50+08:00"
+    "create_time": "2024-01-17T21:19:50+08:00",
+    "image": "",
+    "abstract": "本文围绕“An Online Multi-step-forward Voltage Prediction Approach based on LSTM-TD Model and KF Algorithm”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 45,
     "year": "2021",
     "content": "Pin Ji, Yang Feng, Jia Liu, Zhihong Zhao, Baowen Xu. Automated Testing for Machine Translation via Constituency Invariance ASE 2021",
-    "create_time": "2024-01-17T21:19:43+08:00"
+    "create_time": "2024-01-17T21:19:43+08:00",
+    "image": "",
+    "abstract": "With the development of deep neural networks, machine translation has achieved significant progress and integrated with people’s daily lives to assist in various tasks. However, machine translators, which are essentially one kind of software, also suffer from software defects. Translation errors might cause misunderstanding or even lead to marketing blunders, and political crisis. Thus, almost all translation service providers have feedback channels of incorrect translations to collect training data and improve product performance. Inspired by the syntax structure analysis, we introduce the constituency invariance, which reflects the structural similarity between a simple sentence and sentences derived from it, to test machine translators.…"
   },
   {
     "legacy_id": 44,
     "year": "2021",
     "content": "Xufan Zhang, Jiawei Liu, Ning Sun, Chunrong Fang, Jia Liu, Jiang Wang, Dong Chai, Zhenyu Chen. Duo: Differential Fuzzing for Deep Learning Operators [J]. IEEE Transactions on Reliability, 2021, 70(4): 1671-1685.",
-    "create_time": "2024-01-17T21:19:35+08:00"
+    "create_time": "2024-01-17T21:19:35+08:00",
+    "image": "",
+    "abstract": "本文围绕“Duo: Differential Fuzzing for Deep Learning Operators”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 43,
     "year": "2021",
     "content": "Songtao Zhang, Jiawei Liu, Bintong Xu, Guandi Liu. TauAud: Test Augmentation of Image Recognition in Autonomous Driving QRS2021/AVS short paper",
-    "create_time": "2024-01-17T21:19:27+08:00"
+    "create_time": "2024-01-17T21:19:27+08:00",
+    "image": "",
+    "abstract": "本文围绕“TauAud: Test Augmentation of Image Recognition in Autonomous Driving”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 65,
     "year": "2020",
     "content": "Yuan Zhao, Yang Feng, Yi Wang, Rui Hao, Zhenyu Chen. Quality assessment of crowdsourced test scripts [J]. Science China Information Sciences, 2020, 63(9): 1-16.",
-    "create_time": "2024-01-17T21:23:24+08:00"
+    "create_time": "2024-01-17T21:23:24+08:00",
+    "image": "",
+    "abstract": "本文围绕“Quality assessment of crowdsourced test scripts”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 64,
     "year": "2020",
     "content": "Yuanhan Tian, Shengcheng Yu, Chunrong Fang and Peiyuan Li. FuRong: Fusing Report of Automated Android Testing on Multi-Devices [C]//Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: Companion Proceedings. 2020: 49-52.",
-    "create_time": "2024-01-17T21:23:09+08:00"
+    "create_time": "2024-01-17T21:23:09+08:00",
+    "image": "",
+    "abstract": "Automated testing has been widely used to ensure the quality of Android applications. However, incomprehensible testing results make it difficult for developers to understand and fix potential bugs. This paper proposes FuRong, a novel tool, to fuse bug reports of high-readability and strong-guiding-ability via analyzing the automated testing results on multi-devices. FuRong builds a bug model with complete context information, such as screenshots, operation sequences, and logs from multi-devices, and then leverages pretrained Decision Tree classifier (with 18 bug category labels) to classify bugs. FuRong deduplicates the classified bugs via Levenshtein distance and finally generates the easy-to-understand report, not only context information of bugs, where possible causes and fix suggestions for each bug category are also provided.…"
   },
   {
     "legacy_id": 63,
     "year": "2020",
     "content": "Yang Feng, Qingkai Shi, Xinyu Gao, Jun Wan, Chunrong Fang and Zhenyu Chen. Deepgini: prioritizing massive tests to enhance the robustness of deep neural networks [C]2020: 177-188.",
-    "create_time": "2024-01-17T21:23:02+08:00"
+    "create_time": "2024-01-17T21:23:02+08:00",
+    "image": "",
+    "abstract": "本文围绕“Deepgini: prioritizing massive tests to enhance the robustness of deep neural networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 62,
     "year": "2020",
     "content": "Chunrong Fang, Zixi Liu, Yangyang Shi, Jeff Huang and Qingkai Shi. Functional Code Clone Detection with Syntax and Semantics Fusion Learning [C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 516-527.",
-    "create_time": "2024-01-17T21:22:46+08:00"
+    "create_time": "2024-01-17T21:22:46+08:00",
+    "image": "",
+    "abstract": "Clone detection of source code is among the most fundamental software engineering techniques. Despite intensive research in the past decade, existing techniques are still unsatisfactory in detecting \"functional\" code clones. In particular, existing techniques cannot efficiently extract syntax and semantics information from source code. In this paper, we propose a novel joint code representation that applies fusion embedding techniques to learn hidden syntactic and semantic features of source codes. Besides, we introduce a new granularity for functional code clone detection. Our approach regards the connected methods with caller-callee relationships as a functionality and the method without any caller-callee relationship with other methods represents a single functionality. Then we train a supervised deep learning model to detect functional code clones.…"
   },
   {
     "legacy_id": 61,
     "year": "2020",
     "content": "Zichen Guo, Jiawei Liu, Tieke He, Zhuoyang Li and Peitian Zhangzhu. TauJud: Test Augmentation of Machine Learning in Judicial Documents [C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 549-552.",
-    "create_time": "2024-01-17T21:22:37+08:00"
+    "create_time": "2024-01-17T21:22:37+08:00",
+    "image": "",
+    "abstract": "本文围绕“TauJud: Test Augmentation of Machine Learning in Judicial Documents”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 60,
     "year": "2020",
     "content": "Chao Guo, Tieke He, Wei Yuan, Yue Guo, and Rui Hao. Crowdsourced Requirements Generation for Automatic Testing via Knowledge Graph [C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 545-548.",
-    "create_time": "2024-01-17T21:22:27+08:00"
+    "create_time": "2024-01-17T21:22:27+08:00",
+    "image": "",
+    "abstract": "本文围绕“Crowdsourced Requirements Generation for Automatic Testing via Knowledge Graph”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 59,
     "year": "2020",
     "content": "Ruixiang Qian, Yuan Zhao, Duo Men, Yang Feng, Qingkai Shi, Yong Huang, Zhenyu Chen. Test Recommendation System Based on Slicing Coverage Filtering [C] 2020: 573-576.",
-    "create_time": "2024-01-17T21:22:18+08:00"
+    "create_time": "2024-01-17T21:22:18+08:00",
+    "image": "",
+    "abstract": "本文围绕“Test Recommendation System Based on Slicing Coverage Filtering”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 58,
     "year": "2020",
     "content": "Zhenfei Cao, Xu Wang, Shengcheng Yu, Yexiao Yun and Chunrong Fang. STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis [C] IEEE, 2020: 1331-1335.",
-    "create_time": "2024-01-17T21:22:06+08:00"
+    "create_time": "2024-01-17T21:22:06+08:00",
+    "image": "",
+    "abstract": "本文围绕“STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 57,
     "year": "2020",
     "content": "Chenqian Zhu, Weisong Sun, Qin Liu, Yangyang Yuan, Chunrong Fang and Yong Huang. HomoTR: Online Test Recommendation System Based on Homologous Code Matching [C] IEEE, 2020: 1302-1306.",
-    "create_time": "2024-01-17T21:21:53+08:00"
+    "create_time": "2024-01-17T21:21:53+08:00",
+    "image": "",
+    "abstract": "本文围绕“HomoTR: Online Test Recommendation System Based on Homologous Code Matching”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 56,
     "year": "2020",
     "content": "Di Liu, Yang Feng, Xiaofang Zhang, James A. Jones, Zhenyu Chen. Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding [J]. IEEE Transactions on Software Engineering, 2020.",
-    "create_time": "2024-01-17T21:21:37+08:00"
+    "create_time": "2024-01-17T21:21:37+08:00",
+    "image": "",
+    "abstract": "本文围绕“Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 55,
     "year": "2020",
     "content": "Weisong Sun, Guangyao Xu, Zijiang Yang, Zhenyu Chen. Early Detection of Smart Ponzi Scheme Contracts Based on Behavior Forest Similarity [C]//2020 IEEE 20th International Conference on Software Quality, Reliability and Security (QRS). IEEE, 2020: 297-309.",
-    "create_time": "2024-01-17T21:21:29+08:00"
+    "create_time": "2024-01-17T21:21:29+08:00",
+    "image": "",
+    "abstract": "本文围绕“Early Detection of Smart Ponzi Scheme Contracts Based on Behavior Forest Similarity”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 54,
     "year": "2020",
     "content": "Ai Gong, Yi Zhong, Weiqin Zou, Yangyang Shi, Chunrong Fang. Incorporating Android Code Smells into Java Static Code Metrics for Security Risk Prediction of Android Applications [C] IEEE, 2020: 30-40.",
-    "create_time": "2024-01-17T21:21:22+08:00"
+    "create_time": "2024-01-17T21:21:22+08:00",
+    "image": "",
+    "abstract": "本文围绕“Incorporating Android Code Smells into Java Static Code Metrics for Security Risk Prediction of Android Applications”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 53,
     "year": "2020",
     "content": "Juan Zhai, Yu Shi, Minxue Pan, Guian Zhou, Yongxiang Liu, Chunrong Fang, Shiqing Ma, Lin Tan, Xiangyu Zhang. C2S: translating natural language comments to formal program specifications [C]2020: 25-37.",
-    "create_time": "2024-01-17T21:21:07+08:00"
+    "create_time": "2024-01-17T21:21:07+08:00",
+    "image": "",
+    "abstract": "本文围绕“C2S: translating natural language comments to formal program specifications”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 90,
     "year": "2019",
     "content": "Yuan Zhao, Tieke He, Zhenyu Chen. A unified framework for bug report assignment [J]. International Journal of Software Engineering and Knowledge Engineering, 2019, 29(04): 607-628.",
-    "create_time": "2024-01-17T21:27:42+08:00"
+    "create_time": "2024-01-17T21:27:42+08:00",
+    "image": "",
+    "abstract": "It is typically a manual, time-consuming, and tedious task of assigning bug reports to individual developers. Although some machine learning techniques are adopted to alleviate this dilemma, they are mainly focused on the open source projects, which use traditional repositories such as Bugzilla to manage their bug reports. With the boom of the mobile Internet, some new requirements and methods of software testing are emerging, especially the crowdsourced testing. Unlike the traditional channels, whose bug reports are often heavyweight, which means their bug reports are standardized with detailed attribute localization, bug reports tend to be lightweight in the context of crowdsourced testing. To exploit the differences of the bug reports assignment in the new settings, a unified bug reports assignment framework is proposed in this paper.…"
   },
   {
     "legacy_id": 89,
     "year": "2019",
     "content": "Ruizhi Gao,Yabin Wang,Yang Feng, Zhenyu Chen, W. Eric Wong. Successes, challenges, and rethinking–an industrial investigation on crowdsourced mobile application testing [J]. Empirical Software Engineering, 2019, 24(2): 537-561.",
-    "create_time": "2024-01-17T21:27:35+08:00"
+    "create_time": "2024-01-17T21:27:35+08:00",
+    "image": "",
+    "abstract": "本文围绕“Eric Wong. Successes, challenges, and rethinking–an industrial investigation on crowdsourced mobile application testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 88,
     "year": "2019",
     "content": "Xie Wang, Huaijin Wang, Zhendong Su, Enyi Tang, Xin Chen, Weijun Shen, Zhenyu Chen, Linzhang Wang, Xianpei Zhang, Xuandong Li. Global optimization of numerical programs via prioritized stochastic algebraic transformations [C]. IEEE, 2019: 1131-1141.",
-    "create_time": "2024-01-17T21:27:26+08:00"
+    "create_time": "2024-01-17T21:27:26+08:00",
+    "image": "",
+    "abstract": "本文围绕“Global optimization of numerical programs via prioritized stochastic algebraic transformations”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 87,
     "year": "2019",
     "content": "Rui Hao, Yang Feng, James Jones, Yuying Li, Zhenyu Chen. Ctras: Crowdsourced test report aggregation and summarization[ [C]2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). IEEE, 2019: 900-911.",
-    "create_time": "2024-01-17T21:27:05+08:00"
+    "create_time": "2024-01-17T21:27:05+08:00",
+    "image": "",
+    "abstract": "本文围绕“Ctras: Crowdsourced test report aggregation and summarization[”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 86,
     "year": "2019",
     "content": "Weisong Sun, Xingya Wang, Haoran Wu, Ding Duan, Zesong Sun, Zhenyu Chen. MAF: Method-anchored test fragmentation for test code plagiarism detection [C] IEEE, 2019: 110-120.",
-    "create_time": "2024-01-17T21:26:54+08:00"
+    "create_time": "2024-01-17T21:26:54+08:00",
+    "image": "",
+    "abstract": "本文围绕“MAF: Method-anchored test fragmentation for test code plagiarism detection”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 85,
     "year": "2019",
     "content": "Xin Chen, He Jiang, Zhenyu Chen, Tieke He, Liming Nie. Automatic test report augmentation to assist crowdsourced testing [J]. Frontiers of Computer Science, 2019, 13(5): 943-959.",
-    "create_time": "2024-01-17T21:26:28+08:00"
+    "create_time": "2024-01-17T21:26:28+08:00",
+    "image": "",
+    "abstract": "本文围绕“Automatic test report augmentation to assist crowdsourced testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 84,
     "year": "2019",
     "content": "Xingya Wang, Haoran Wu, Weisong Sun and Yuan Zhao. Towards generating cost-effective Test-Suite for ethereum smart contract [C]2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER). IEEE, 2019: 549-553.",
-    "create_time": "2024-01-17T21:26:21+08:00"
+    "create_time": "2024-01-17T21:26:21+08:00",
+    "image": "",
+    "abstract": "本文围绕“Towards generating cost-effective Test-Suite for ethereum smart contract”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 83,
     "year": "2019",
     "content": "Xingya Wang, Weisong Sun, Yuan Zhao, Linghuan Hu, Eric Wong, Zhenyu Chen. Software-testing contests: Observations and lessons learned [J]. Computer, 2019, 52(10): 61-69.",
-    "create_time": "2024-01-17T21:26:10+08:00"
+    "create_time": "2024-01-17T21:26:10+08:00",
+    "image": "",
+    "abstract": "本文围绕“Software-testing contests: Observations and lessons learned”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 82,
     "year": "2019",
     "content": "Weiqin Zou, Jifeng Xuan, Xiaoyuan Xie, Zhenyu Chen, Baowen Xu. How does code style inconsistency affect pull request integration? An exploratory study on 117 GitHub projects [J]. Empirical Software Engineering, 2019, 24(6): 3871-3903.",
-    "create_time": "2024-01-17T21:26:04+08:00"
+    "create_time": "2024-01-17T21:26:04+08:00",
+    "image": "",
+    "abstract": "本文围绕“How does code style inconsistency affect pull request integration? An exploratory study on 117 GitHub projects”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 81,
     "year": "2019",
     "content": "Weiqiang Zhang, Shing-Chi Cheung, Zhenyu Chen, Yuming Zhou, Bin Luo. File-level socio-technical congruence and its relationship with bug proneness in OSS projects [J]. Journal of Systems and Software, 2019, 156: 21-40.",
-    "create_time": "2024-01-17T21:25:56+08:00"
+    "create_time": "2024-01-17T21:25:56+08:00",
+    "image": "",
+    "abstract": "本文围绕“File-level socio-technical congruence and its relationship with bug proneness in OSS projects”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 80,
     "year": "2019",
     "content": "Haoyu Li, Chunrong Fang, Zhibin Wei, Zhenyu Chen. CoCoTest: Collaborative crowdsourced testing for Android applications. [C]Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2019: 390-393.",
-    "create_time": "2024-01-17T21:25:48+08:00"
+    "create_time": "2024-01-17T21:25:48+08:00",
+    "image": "",
+    "abstract": "Testing Android applications is becoming more and more challenging due to the notorious fragmentation issues and the complexity of usage scenarios in different environments. Crowdsourced testing has grown as a trend, especially in mobile application testing. However, due to the lack of professionalism and communication, the crowd workers tend to submit low-quality and duplicate bug reports, leading to a waste of test resources on inspecting and aggregating such reports. To solve these problems, we developed a platform, CoCoTest, embracing the idea of collective intelligence. With the help of CoCoTest Android SDK, workers can efficiently capture a screenshot, write a short description and create a bug report. A series of bug reports are aggregated online and then recommended to the other workers in real time.…"
   },
   {
     "legacy_id": 79,
     "year": "2019",
     "content": "Yuying Li, Rui Hao, Yang Feng, James Jone, Xiaofang Zhang, Zhenyu Chen. CTRAS: A tool for aggregating and summarizing crowdsourced test reports [C]Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2019: 406-409.",
-    "create_time": "2024-01-17T21:25:34+08:00"
+    "create_time": "2024-01-17T21:25:34+08:00",
+    "image": "",
+    "abstract": "本文围绕“CTRAS: A tool for aggregating and summarizing crowdsourced test reports”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 78,
     "year": "2019",
     "content": "Weiqin Zou, Weiqiang Zhang, Xin Xia, Reid Holmes, Zhenyu Chen. Branch use in practice: A large-scale empirical study of 2,923 projects on github [C]2019 IEEE 19th International Conference on Software Quality, Reliability and Security. IEEE, 2019: 306-317.",
-    "create_time": "2024-01-17T21:25:24+08:00"
+    "create_time": "2024-01-17T21:25:24+08:00",
+    "image": "",
+    "abstract": "本文围绕“Branch use in practice: A large-scale empirical study of 2,923 projects on github”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 77,
     "year": "2019",
     "content": "Qiqi Gu, Weilin Cai, Shengcheng Yu, Zhenyu Chen. Judicial image quality assessment based on deep learning: an exploratory study [C]// 2019 IEEE 19th International Conference on Software Quality, Reliability and Security (QRS). IEEE, 2019.",
-    "create_time": "2024-01-17T21:25:03+08:00"
+    "create_time": "2024-01-17T21:25:03+08:00",
+    "image": "",
+    "abstract": "本文围绕“Judicial image quality assessment based on deep learning: an exploratory study”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 76,
     "year": "2019",
     "content": "Qingkai Shi, Jun Wan, Yang Feng, Chunrong Fang, Zhenyu Chen. DeepGini: prioritizing massive tests to reduce labeling cost [J]. arXiv, 2019: arXiv: 1903.00661.",
-    "create_time": "2024-01-17T21:24:57+08:00"
+    "create_time": "2024-01-17T21:24:57+08:00",
+    "image": "",
+    "abstract": "本文围绕“DeepGini: prioritizing massive tests to reduce labeling cost”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 75,
     "year": "2019",
     "content": "Xufan Zhang, Ziyue Yin, Yang Feng, Qingkai Shi, Jia Liu, Zhenyu Chen. NeuralVis: visualizing and interpreting deep learning models [C]//2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE). IEEE, 2019: 1106-1109.",
-    "create_time": "2024-01-17T21:24:50+08:00"
+    "create_time": "2024-01-17T21:24:50+08:00",
+    "image": "",
+    "abstract": "本文围绕“NeuralVis: visualizing and interpreting deep learning models”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 74,
     "year": "2019",
     "content": "Zixin Li, Haoran Wu, Jiehui Xu, Xingya Wang , Lingming Zhang, Zhenyu Chen. MuSC: A tool for mutation testing of ethereum smart contract. [C]//2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE). IEEE, 2019: 1198-1201.",
-    "create_time": "2024-01-17T21:24:42+08:00"
+    "create_time": "2024-01-17T21:24:42+08:00",
+    "image": "",
+    "abstract": "本文围绕“MuSC: A tool for mutation testing of ethereum smart contract”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 73,
     "year": "2019",
     "content": "Shengcheng Yu, Chunrong Fang, Yang Feng, Wenyuan Zhao, Zhenyu Chen. LIRAT: Layout and image recognition driving automated mobile testing of cross-platform [C]. IEEE, 2019: 1066-1069.",
-    "create_time": "2024-01-17T21:24:34+08:00"
+    "create_time": "2024-01-17T21:24:34+08:00",
+    "image": "",
+    "abstract": "本文围绕“LIRAT: Layout and image recognition driving automated mobile testing of cross-platform”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 72,
     "year": "2019",
     "content": "Haoran Wu, Xingya Wang, Jiehui Xu, Weiqin Zou, Lingming Zhang, Zhenyu Chen. Mutation testing for ethereum smart contract [J]. arXiv preprint arXiv:1908.03707, 2019.",
-    "create_time": "2024-01-17T21:24:18+08:00"
+    "create_time": "2024-01-17T21:24:18+08:00",
+    "image": "",
+    "abstract": "Smart contract is a special program that manages digital assets on blockchain. It is difficult to recover the loss if users make transactions through buggy smart contracts, which cannot be directly fixed. Hence, it is important to ensure the correctness of smart contracts before deploying them. This paper proposes a systematic framework to mutation testing for smart contracts on Ethereum, which is currently the most popular open blockchain for deploying and running smart contracts. Fifteen novel mutation operators have been designed for Ethereum Smart Contracts (ESC), in terms of keyword, global variable/function, variable unit, and error handling. An empirical study on 26 smart contracts in four Ethereum DApps has been conducted to evaluate the effectiveness of mutation testing.…"
   },
   {
     "legacy_id": 71,
     "year": "2019",
     "content": "Dong Wang, Ziyuan Wang, Chunrong Fang, Yanshan Chen, Zhenyu Chen. DeepPath: Path-driven testing criteria for Deep Neural Networks [C]//2019 IEEE International Conference On Artificial Intelligence Testing (AITest). IEEE, 2019: 119-120.",
-    "create_time": "2024-01-17T21:24:11+08:00"
+    "create_time": "2024-01-17T21:24:11+08:00",
+    "image": "",
+    "abstract": "本文围绕“DeepPath: Path-driven testing criteria for Deep Neural Networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 70,
     "year": "2019",
     "content": "Jiawei Cao, Xingya Wang, Zixin Li, Qiqi Gu and Zhenyu Chen. The evolution of open-source blockchain systems: an empirical study [C]//Proceedings of the 11th Asia-Pacific Symposium on Internetware. 2019: 1-10.",
-    "create_time": "2024-01-17T21:24:02+08:00"
+    "create_time": "2024-01-17T21:24:02+08:00",
+    "image": "",
+    "abstract": "本文围绕“The evolution of open-source blockchain systems: an empirical study”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 69,
     "year": "2019",
     "content": "Cheng Lei, Benlin Hu, Dong Wang, Shu Zhang and Zhenyu Chen. A preliminary study on data augmentation of Deep Learning for image classification [C]//Proceedings of the 11th Asia-Pacific Symposium on Internetware. 2019: 1-6.",
-    "create_time": "2024-01-17T21:23:55+08:00"
+    "create_time": "2024-01-17T21:23:55+08:00",
+    "image": "",
+    "abstract": "本文围绕“A preliminary study on data augmentation of Deep Learning for image classification”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 68,
     "year": "2019",
     "content": "Tianxing He, Shengcheng Yu, Ziyuan Wang, Jieqiong Li and Zhenyu Chen. From data quality to model quality: an exploratory study on Deep Learning [C]//Proceedings of the 11th Asia-Pacific Symposium on Internetware. 2019: 1-6.",
-    "create_time": "2024-01-17T21:23:47+08:00"
+    "create_time": "2024-01-17T21:23:47+08:00",
+    "image": "",
+    "abstract": "In the field of deep learning, people strive to construct high-quality deep neural networks (DNNs) to improve the accuracy of predicting. As well known, the quality of training data have great impacts on the quality of DNN models, since all the DNN models are obtained by training using these training data. However, there is not any reported systematic study on how the quality of training data affects the quality of DNN model. To study the relationships between data quality and model quality, we mainly consider four aspects of data quality including Skewed Classes, Sample Complexity, Label Quality, and Noisy Data in this paper. We design experiments on MNIST and Cifar-10, and attempt to find out the influences of four aspects on the quality of DNN models. Pearson correlation coefficient and Spearman correlation coefficient are utilized to evaluate such influences.…"
   },
   {
     "legacy_id": 67,
     "year": "2019",
     "content": "Weiqin Zou, David Lo, Pavneet Singh Kochhar, Xuan-Bach Dinh Le, Xin Xia, Yang Feng, Zhenyu Chen and Baowen Xu. Smart contract development: challenges and opportunities [J]. IEEE Transactions on Software Engineering, 2019.",
-    "create_time": "2024-01-17T21:23:40+08:00"
+    "create_time": "2024-01-17T21:23:40+08:00",
+    "image": "",
+    "abstract": "Smart contract, a term which was originally coined to refer to the automation of legal contracts in general, has recently seen much interest due to the advent of blockchain technology. Recently, the term is popularly used to refer to low-level code scripts running on a blockchain platform. Our study focuses exclusively on this subset of smart contracts. Such smart contracts have increasingly been gaining ground, finding numerous important applications (e.g., crowdfunding) in the real world. Despite the increasing popularity, smart contract development still remains somewhat a mystery to many developers largely due to its special design and applications. Are there any differences between smart contract development and traditional software development? What kind of challenges are faced by developers during smart contract development?…"
   },
   {
     "legacy_id": 66,
     "year": "2019",
     "content": "Yang Feng, Yi Wang, Chunrong Fang, Nannan Guo and Zhenyu Chen. An approach of developing highly trustworthy crowd workforce [J]. SCIENTIA SINICA Informationis, 2019, 49(11): 1412-1427.",
-    "create_time": "2024-01-17T21:23:32+08:00"
+    "create_time": "2024-01-17T21:23:32+08:00",
+    "image": "",
+    "abstract": "本文围绕“An approach of developing highly trustworthy crowd workforce”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 98,
     "year": "2018",
     "content": "Xiaofang Zhang, Yang Feng, Di Liu, Zhenyu Chen, Baowen Xu. Research progress of crowdsourced software testing [J]. Journal of Software, 2018, 29(1): 69-88.",
-    "create_time": "2024-01-17T21:29:03+08:00"
+    "create_time": "2024-01-17T21:29:03+08:00",
+    "image": "",
+    "abstract": "本文围绕“Research progress of crowdsourced software testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 97,
     "year": "2018",
     "content": "Tieke He, Hao Lian, Zemin Qin, Zhenyu Chen, Bin Luo. PTM: A topic model for the inferring of the penalty [J]. Journal of Computer Science and Technology, 2018, 33(4): 756-767.",
-    "create_time": "2024-01-17T21:28:55+08:00"
+    "create_time": "2024-01-17T21:28:55+08:00",
+    "image": "",
+    "abstract": "本文围绕“PTM: A topic model for the inferring of the penalty”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 96,
     "year": "2018",
     "content": "He Jiang, Xin Chen, Tieke He, Zhenyu Chen, Xiaochen Li. Fuzzy clustering of crowdsourced test reports for apps [J]. ACM Transactions on Internet Technology (TOIT), 2018, 18(2): 1-28.[Chinese Brief]",
-    "create_time": "2024-01-17T21:28:48+08:00"
+    "create_time": "2024-01-17T21:28:48+08:00",
+    "image": "",
+    "abstract": "DevOps is a new approach to drive a seamless Application (App) cycle from development to delivery. As a critical part to promote the successful implementation of DevOps, testing can significantly improve team productivity and reliably deliver user experience. However, it is difficult to use traditional testing to cover diverse mobile phones, network environments, operating systems, and so on. Hence, many large companies crowdsource their App testing tasks to workers from open platforms. In crowdsourced testing, test reports submitted by workers may be highly redundant, and their quality may vary sharply. Meanwhile, multi-bug test reports may be submitted, and their root causes are hard to diagnose. Hence, it is a time-consuming and tedious task for developers to manually inspect these test reports.…"
   },
   {
     "legacy_id": 95,
     "year": "2018",
     "content": "Yang Feng, James A. Jones, Zhenyu Chen, Chunrong Fang. An empirical study on software failure classification with multi-label and problem-transformation techniques [C]. IEEE, 2018: 320-330.",
-    "create_time": "2024-01-17T21:28:39+08:00"
+    "create_time": "2024-01-17T21:28:39+08:00",
+    "image": "",
+    "abstract": "本文围绕“An empirical study on software failure classification with multi-label and problem-transformation techniques”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 94,
     "year": "2018",
     "content": "Xin Chen, He Jiang, Xiaochen Li, Tieke He, Zhenyu Chen. Automated quality assessment for crowdsourced test reports of mobile applications [C]。 IEEE, 2018: 368-379.",
-    "create_time": "2024-01-17T21:28:23+08:00"
+    "create_time": "2024-01-17T21:28:23+08:00",
+    "image": "",
+    "abstract": "本文围绕“Automated quality assessment for crowdsourced test reports of mobile applications”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 93,
     "year": "2018",
     "content": "Weiqin Zou, David Lo, Zhenyu Chen, Xin Xia, Yang Feng, Baowen Xu. How practitioners perceive automated bug report management techniques [J]. IEEE Transactions on Software Engineering, 2018, 46(8): 836-862.",
-    "create_time": "2024-01-17T21:28:05+08:00"
+    "create_time": "2024-01-17T21:28:05+08:00",
+    "image": "",
+    "abstract": "本文围绕“How practitioners perceive automated bug report management techniques”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 92,
     "year": "2018",
     "content": "W. Eric Wong, Linghuan Hu, Haoliang Wang, Zhenyu Chen. Improving Software Testing Education via Industry Sponsored Contests [C]//2018 IEEE Frontiers in Education Conference (FIE). IEEE, 2018: 1-5.",
-    "create_time": "2024-01-17T21:27:58+08:00"
+    "create_time": "2024-01-17T21:27:58+08:00",
+    "image": "",
+    "abstract": "本文围绕“Improving Software Testing Education via Industry Sponsored Contests”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 91,
     "year": "2018",
     "content": "Weijun Shen, Jun Wan, Zhenyu Chen. MuNN: Mutation analysis of neural networks. [C]//2018 IEEE International Conference on Software Quality, Reliability and Security Companion (QRS-C). IEEE, 2018: 108-115.",
-    "create_time": "2024-01-17T21:27:50+08:00"
+    "create_time": "2024-01-17T21:27:50+08:00",
+    "image": "",
+    "abstract": "本文围绕“MuNN: Mutation analysis of neural networks”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 99,
     "year": "2017",
     "content": "Tieke He, Zhenyu Chen, Jia Liu, Xiaofang Zhou, Xingzhong Du, Weiqing Wang. An empirical study on user-topic rating based collaborative filtering methods [J]. World Wide Web, 2017, 20(4): 815-829.",
-    "create_time": "2024-01-17T21:48:38+08:00"
+    "create_time": "2024-01-17T21:48:38+08:00",
+    "image": "",
+    "abstract": "本文围绕“An empirical study on user-topic rating based collaborative filtering methods”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 104,
     "year": "2017",
     "content": "Ruizhi Gao, W. Eric Wong, Zhenyu Chen, Yabin Wang. Effective software fault localization using predicted execution results [J]. Software Quality Journal, 2017.",
-    "create_time": "2024-01-17T21:49:29+08:00"
+    "create_time": "2024-01-17T21:49:29+08:00",
+    "image": "",
+    "abstract": "本文围绕“Effective software fault localization using predicted execution results”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 103,
     "year": "2017",
     "content": "Zhiyi Zhang, Zhenyu Chen, Ruizhi Gao, W. Eric Wong, Baowen Xu. An empirical study on constraint optimization techniques for test generation [J]. Science China Information Sciences, 2017, 60(1): 1-15.",
-    "create_time": "2024-01-17T21:49:22+08:00"
+    "create_time": "2024-01-17T21:49:22+08:00",
+    "image": "",
+    "abstract": "本文围绕“An empirical study on constraint optimization techniques for test generation”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 102,
     "year": "2017",
     "content": "Yilin Yang, Xinhai Huang, Xuefei Hao, Zicong Liu, Zhenyu Chen. An industrial study of natural language processing based test case prioritization [C] IEEE, 2017: 548-549.",
-    "create_time": "2024-01-17T21:49:12+08:00"
+    "create_time": "2024-01-17T21:49:12+08:00",
+    "image": "",
+    "abstract": "本文围绕“An industrial study of natural language processing based test case prioritization”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 101,
     "year": "2017",
     "content": "Ruizhi Gao, W. Eric Wong, Zhenyu Chen, Yabin Wang. Effective software fault localization using predicted execution results [J]. Software Quality Journal, 2017, 25(1): 131-169.",
-    "create_time": "2024-01-17T21:48:57+08:00"
+    "create_time": "2024-01-17T21:48:57+08:00",
+    "image": "",
+    "abstract": "本文围绕“Effective software fault localization using predicted execution results”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 100,
     "year": "2017",
     "content": "Zhiyi Zhang, Zhenyu Chen, Ruizhi Gao, W. Eric Wong, Baowen Xu. An empirical study on constraint optimization techniques for test generation [J]. Science China Information Sciences, 2017, 60(1): 1-15.",
-    "create_time": "2024-01-17T21:48:46+08:00"
+    "create_time": "2024-01-17T21:48:46+08:00",
+    "image": "",
+    "abstract": "本文围绕“An empirical study on constraint optimization techniques for test generation”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 113,
     "year": "2016",
     "content": "Zebao Gao,Zhenyu Chen, Atif Memon, Yunxiao Zou. SITAR: GUI test script repair [J]. Ieee transactions on software engineering, 2015, 42(2): 170-186.[Chinese Brief]",
-    "create_time": "2024-01-17T21:50:47+08:00"
+    "create_time": "2024-01-17T21:50:47+08:00",
+    "image": "",
+    "abstract": "本文围绕“SITAR: GUI test script repair”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 112,
     "year": "2016",
     "content": "Qingkai Shi, Jeff Huang, Zhenyu Chen, Baowen Xu. Verifying synchronization for atomicity violation fixing [J]. IEEE Transactions on Software Engineering, 2016, 42(3):280-296.",
-    "create_time": "2024-01-17T21:50:39+08:00"
+    "create_time": "2024-01-17T21:50:39+08:00",
+    "image": "",
+    "abstract": "本文围绕“Verifying synchronization for atomicity violation fixing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 111,
     "year": "2016",
     "content": "Qingkai Shi, Jeff Huang, Zhenyu Chen, Baowen Xu. Verifying synchronization for atomicity violation fixing [J]. IEEE Transactions on Software Engineering, 2016, 42(3):280-296.",
-    "create_time": "2024-01-17T21:50:39+08:00"
+    "create_time": "2024-01-17T21:50:39+08:00",
+    "image": "",
+    "abstract": "本文围绕“Verifying synchronization for atomicity violation fixing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 110,
     "year": "2016",
     "content": "Yang Feng, Qin Liu, Mengyu Dou, Jia Liu, Zhenyu Chen. Mubug:a mobile service for rapid bug tracking [J]. Science China, 2016, 59(1):13101-013101.",
-    "create_time": "2024-01-17T21:50:31+08:00"
+    "create_time": "2024-01-17T21:50:31+08:00",
+    "image": "",
+    "abstract": "本文围绕“Mubug:a mobile service for rapid bug tracking”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 109,
     "year": "2016",
     "content": "Xiaoyuan Xie, Zicong Liu, Shuo Song, Zhenyu Chen, Jifeng Xuan, Baowen Xu. Revisit of automatic debugging via human focus-tracking analysis [C]//Proceedings of the 38th International Conference on Software Engineering. 2016: 808-819.",
-    "create_time": "2024-01-17T21:50:23+08:00"
+    "create_time": "2024-01-17T21:50:23+08:00",
+    "image": "",
+    "abstract": "本文围绕“Revisit of automatic debugging via human focus-tracking analysis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 108,
     "year": "2016",
     "content": "Xin Zhang, Zhenyu Chen, Chunrong Fang, Zicong Liu. Guiding the crowds for android testing [C]//Proceedings of the 38th International Conference on Software Engineering Companion. 2016: 752-753.[Chinese Brief]",
-    "create_time": "2024-01-17T21:50:15+08:00"
+    "create_time": "2024-01-17T21:50:15+08:00",
+    "image": "",
+    "abstract": "本文围绕“Guiding the crowds for android testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 107,
     "year": "2016",
     "content": "Tieke He, Hongzhi Yin, Zhenyu Chen, Xiaofang Zhou, Shazia Sadiq, Bin Luo. A spatial-temporal topic model for the semantic annotation of POIs in LBSNs [J]. ACM Transactions on Intelligent Systems and Technology (TIST), 2016, 8(1): 1-24.",
-    "create_time": "2024-01-17T21:50:06+08:00"
+    "create_time": "2024-01-17T21:50:06+08:00",
+    "image": "",
+    "abstract": "Semantic tags of points of interest (POIs) are a crucial prerequisite for location search, recommendation services, and data cleaning. However, most POIs in location-based social networks (LBSNs) are either tag-missing or tag-incomplete. This article aims to develop semantic annotation techniques to automatically infer tags for POIs. We first analyze two LBSN datasets and observe that there are two types of tags, category-related ones and sentimental ones, which have unique characteristics. Category-related tags are hierarchical, whereas sentimental ones are category-aware. All existing related work has adopted classification methods to predict high-level category-related tags in the hierarchy, but they cannot apply to infer either low-level category tags or sentimental ones.…"
   },
   {
     "legacy_id": 106,
     "year": "2016",
     "content": "Yang Feng, James Jone, Zhenyu Chen, Chunrong Fang. Multi-objective test report prioritization using image understanding [C]2016 31st IEEE/ACM International Conference on Automated Software Engineering (ASE). IEEE, 2016: 202-213.[Chinese Brief]",
-    "create_time": "2024-01-17T21:49:57+08:00"
+    "create_time": "2024-01-17T21:49:57+08:00",
+    "image": "",
+    "abstract": "本文围绕“Multi-objective test report prioritization using image understanding”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 105,
     "year": "2016",
     "content": "Enyi Tang, Xiangyu Zhang, Norbert Th. Müller, Zhenyu Chen, Xuandong Li. IEEE Transactions on Software Engineering, 2016, 43(10): 975-994.[Chinese Brief]",
-    "create_time": "2024-01-17T21:49:47+08:00"
+    "create_time": "2024-01-17T21:49:47+08:00",
+    "image": "",
+    "abstract": "本文研究软件数值不稳定性的检测与诊断问题，结合随机测试与无限精度测试设计相应方法，并围绕数值程序中的不稳定行为进行分析。"
   },
   {
     "legacy_id": 117,
     "year": "2015",
     "content": "Rui Yang, Zhenyu Chen, Zhiyi Zhang, Baowen Xu. Efsm-based test case generation: Sequence, data, and oracle [J]. International Journal of Software Engineering and Knowledge Engineering, 2015, 25(04): 633-667.",
-    "create_time": "2024-01-17T21:51:27+08:00"
+    "create_time": "2024-01-17T21:51:27+08:00",
+    "image": "",
+    "abstract": "Model-based testing has been intensively and extensively studied in the past decades. Extended Finite State Machine (EFSM) is a widely used model of software testing in both academy and industry. This paper provides a survey on EFSM-based test case generation techniques in the last two decades. All techniques in EFSM-based test case generation are mainly classified into three parts: test sequence generation, test data generation, and test oracle construction. The key challenges, such as coverage criterion and feasibility analysis in EFSM-based test case generation are discussed. Finally, we summarize the research work and present several possible research areas in the future."
   },
   {
     "legacy_id": 116,
     "year": "2015",
     "content": "Weiqin Zou, Xin Xia, Weiqiang Zhang, Zhenyu Chen, David Lo. An empirical study of bug fixing rate [C]//2015 IEEE 39th Annual Computer Software and Applications Conference. IEEE, 2015, 2: 254-263.",
-    "create_time": "2024-01-17T21:51:21+08:00"
+    "create_time": "2024-01-17T21:51:21+08:00",
+    "image": "",
+    "abstract": "本文围绕“An empirical study of bug fixing rate”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 115,
     "year": "2015",
     "content": "Yang Feng, Zhenyu Chen, James Jones, Chunrong Fang and Baowen Xu. Test report prioritization to assist crowdsourced testing [C]//Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering. 2015: 225-236.[Chinese Brief]",
-    "create_time": "2024-01-17T21:51:14+08:00"
+    "create_time": "2024-01-17T21:51:14+08:00",
+    "image": "",
+    "abstract": "本文围绕“Test report prioritization to assist crowdsourced testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   },
   {
     "legacy_id": 114,
     "year": "2015",
     "content": "Qingkai Shi, Zhenyu Chen, Chunrong Fang, Yang Feng, Baowen Xu. Measuring the diversity of a test set with distance entropy [J]. IEEE Transactions on Reliability, 2015, 65(1): 19-27.",
-    "create_time": "2024-01-17T21:50:57+08:00"
+    "create_time": "2024-01-17T21:50:57+08:00",
+    "image": "",
+    "abstract": "本文围绕“Measuring the diversity of a test set with distance entropy”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
   }
 ]

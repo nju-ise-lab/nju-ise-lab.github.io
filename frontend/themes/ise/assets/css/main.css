@@ -779,6 +779,26 @@ img {
   margin: 6px 0 0;
 }
 
+.publication-abstract {
+  margin: 24px 0 28px;
+  padding: 20px 22px;
+  border: 1px solid rgba(99, 6, 95, 0.12);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(99, 6, 95, 0.055), rgba(255, 255, 255, 0.96));
+}
+
+.publication-abstract h2 {
+  margin: 0 0 10px;
+  color: var(--ise-purple);
+  font-size: 20px;
+}
+
+.publication-abstract p {
+  margin: 0;
+  color: var(--ise-text);
+  line-height: 1.85;
+}
+
 .author-list {
   color: var(--ise-muted);
   line-height: 1.75;

@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "Semantic tags of points of interest (POIs) are a crucial prerequisite for location search, recommendation services, and data cleaning. However, most POIs in location-based social networks (LBSNs) are either tag-missing or tag-incomplete. This article aims to develop semantic annotation techniques to automatically infer tags for POIs. We first analyze two LBSN datasets and observe that there are two types of tags, category-related ones and sentimental ones, which have unique characteristics. Category-related tags are hierarchical, whereas sentimental ones are category-aware. All existing related work has adopted classification methods to predict high-level category-related tags in the hierarchy, but they cannot apply to infer either low-level category tags or sentimental ones.…"
 title: "A spatial-temporal topic model for the semantic annotation of POIs in LBSNs"
 publication_year: "2016"
 venue: "[J]. ACM Transactions on Intelligent Systems and Technology (TIST), 2016, 8(1): 1-24"

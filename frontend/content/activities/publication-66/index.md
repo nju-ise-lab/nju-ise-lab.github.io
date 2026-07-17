@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“An approach of developing highly trustworthy crowd workforce”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "An approach of developing highly trustworthy crowd workforce"
 publication_year: "2019"
 venue: "[J]. SCIENTIA SINICA Informationis, 2019, 49(11): 1412-1427"

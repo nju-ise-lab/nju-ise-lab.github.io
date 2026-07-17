@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“Automatic test report augmentation to assist crowdsourced testing”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "Automatic test report augmentation to assist crowdsourced testing"
 publication_year: "2019"
 venue: "[J]. Frontiers of Computer Science, 2019, 13(5): 943-959"

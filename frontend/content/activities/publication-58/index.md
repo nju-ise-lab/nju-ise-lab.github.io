@@ -1,5 +1,7 @@
 ---
 content_kind: "publication"
+image: ""
+abstract: "本文围绕“STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis”这一主题展开研究，重点关注相关问题的分析、方法设计或系统实现，为该方向的研究与实践提供参考。"
 title: "STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis"
 publication_year: "2020"
 venue: "[C] IEEE, 2020: 1331-1335"
