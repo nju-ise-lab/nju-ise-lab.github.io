@@ -1,4 +1,4 @@
-baseURL: "https://ise.nju.edu.cn/"
+baseURL: "https://nju-ise-lab.github.io/"
 locale: "zh-cn"
 title: "南京大学智能软件工程实验室"
 theme: "ise"
@@ -8,6 +8,10 @@ summaryLength: 80
 disableKinds:
   - taxonomy
   - term
+
+caches:
+  images:
+    dir: :cacheDir/images
 
 markup:
   goldmark:
@@ -21,7 +25,6 @@ params:
   footerCopyright: "Copyright 2019 - 2025 © 南京大学智能软件工程实验室"
   icpText: "苏ICP备14002894号-12"
   icpURL: "http://beian.miit.gov.cn/"
-  viewAPI: "/api/views"
 
 menus:
   main:

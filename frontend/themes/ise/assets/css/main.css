@@ -736,6 +736,19 @@ img {
   border-radius: 8px;
 }
 
+.article__image {
+  margin: 18px 0 26px;
+  text-align: center;
+}
+
+.article__image img {
+  max-width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(31, 31, 31, 0.08);
+}
+
 .article__body table {
   width: 100%;
   margin: 20px 0;
@@ -752,14 +765,6 @@ img {
 .article__body th {
   color: var(--ise-purple);
   background: var(--ise-purple-soft);
-}
-
-.view-counter {
-  display: block;
-  margin: 0 0 22px;
-  color: var(--ise-muted);
-  font-size: 14px;
-  line-height: 1.6;
 }
 
 .publication-meta {

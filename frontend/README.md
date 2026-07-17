@@ -16,7 +16,10 @@
 - `themes/ise/assets/css/main.css`：旧站视觉骨架样式。
 - `static/images/legacy/`：从旧站复制来的视觉资产。
 - `content/`：新闻、学术活动、成员介绍、科研项目、关于我们、诚聘英才等 Markdown 内容。
-- `data/`：首页轮播、首页精选科研项目、专利/产出、论文、浏览量初始值等 JSON 数据。
+- `data/`：首页轮播、首页精选科研项目、专利/产出、论文等 JSON 数据。
+- 页面封面/代表图使用 front matter 的 `image: "cover.png"`，文件与 `index.md` 同目录。
+- 成员头像使用 `avatar: "avatar.jpg"`，文件与成员的 `index.md` 同目录；论文作者只通过 `member_url` 关联成员页。
+- 首页轮播使用 `data/slides.json` 的本地 `/images/slides/...` 路径，实际文件位于 `static/images/slides/`。
 
 ## 内容维护方式
 
@@ -53,13 +56,12 @@ draft: false
 ```yaml
 role: "professor" # professor / associate_professor / phd / master
 role_title: "教授"
+avatar: "avatar.jpg" # 文件与 index.md 同目录
 research_direction: "智能软件工程" # 博士生、硕士生可选；缺省显示“方向待补充”
 weight: 10
 ```
 
 当前 `content/` 和 `data/` 已经是迁移后的正式内容源。后续不要编辑 `migration/output/`，除非你明确要重新做迁移实验。
-
-详情页包含轻量浏览量 partial：页面输出 `data-view-path`，前端脚本默认 `POST /api/views`，由 `ise-quick/backend` 记录并返回 `total`。如部署时 API 路径不同，可在 `hugo.yaml` 的 `params.viewAPI` 中覆盖。
 
 更完整的日常维护说明见 `../docs/content-maintenance-guide.md`，里面按“页面模块 -> 模板组件 -> 数据文件 -> 更新方式”整理了所有主要页面。
 

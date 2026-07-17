@@ -4,9 +4,9 @@
 
 - New project root: `ise-quick/`.
 - Frontend path: `ise-quick/frontend/`.
-- Backend path: `ise-quick/backend/`.
 - Migration path: `ise-quick/migration/`.
 - Frontend framework: Hugo.
+- Runtime architecture: Hugo static files served by Nginx.
 - Hugo theme: custom-built, preserving the old site's layout and visual language.
 - Main color: `#63065f`.
 - Auxiliary blue: `#2e6590`.
@@ -23,10 +23,10 @@
 - Browser-visible footer copyright and ICP filing should be retained.
 - Image strategy: localize content media, while preserving true external navigation links.
 - Body conversion: convert legacy HTML to Markdown when safe; keep complex tables/images as HTML.
-- View counter: simple API, no complex visitor deduplication.
+- View counter: removed; it is outside the core publishing requirement.
 - Search: not needed for first release.
 - CMS/admin: not needed for first release.
-- Deployment target: self-owned server.
+- Deployment target: self-owned server with Nginx static hosting.
 - Legacy database direct export: paused.
 
 ## Member Display
@@ -50,4 +50,4 @@ The separate legacy role sections `脱产博士后` and `专职科研岗位` are
 ## Still Open
 
 - Whether to add Nginx redirects for legacy detail URLs or only keep a legacy URL map.
-- Final server paths and systemd service names for deployment.
+- Final server path and deployment script details.

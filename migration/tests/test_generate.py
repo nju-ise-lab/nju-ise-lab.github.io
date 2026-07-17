@@ -157,23 +157,10 @@ def test_student_members_include_research_direction_mapping():
     assert phd is not None
     assert 'research_direction: "智能化软件测试与质量保障"' in phd.content
     assert 'student_label: "24级博士生"' in phd.content
-    assert 'avatar_url: "http://118.178.18.181:9090/test01/avatar.jpg"' in phd.content
+    assert 'avatar: "avatar.jpg"' in phd.content
+    assert "avatar_url:" not in phd.content
     assert master is not None
     assert 'research_direction: "软件维护与程序自动化修复"' in master.content
-
-
-def test_views_seed_contains_legacy_seed_and_new_url_path():
-    site = generate.generate_site(legacy_fixture())
-
-    seed = json.loads(site.file("data/views-seed.json").content)
-
-    assert {
-        "section": "news",
-        "legacy_id": 64,
-        "path": "/news/news-64/",
-        "seed": 712,
-        "views_seed": 712,
-    } in seed
 
 
 def test_legacy_map_contains_old_query_url_to_new_url():
@@ -221,8 +208,8 @@ def test_slide_image_url_is_not_used_as_click_target():
 
     slides = json.loads(site.file("data/slides.json").content)
 
-    assert slides[0]["image"] == "http://118.178.18.181:9090/test01/slide.png"
-    assert slides[0]["image_url"] == "http://118.178.18.181:9090/test01/slide.png"
+    assert slides[0]["image"] == "/images/slides/slide-14.png"
+    assert "image_url" not in slides[0]
     assert slides[0]["fit"] == "contain"
     assert slides[0]["url"] == ""
 

@@ -112,7 +112,6 @@ def build_news_front_matter(record: dict, *, slug: str) -> dict:
         "category": record.get("category") or "",
         "creator": record.get("creator") or "",
         "legacy_id": _legacy_id(record),
-        "views_seed": _int_or_zero(record.get("views")),
         "draft": False,
         "url": content_url("news", slug),
     }
@@ -127,7 +126,6 @@ def build_activity_front_matter(record: dict, *, slug: str) -> dict:
         "creator": record.get("creator") or "",
         "location": record.get("location") or "",
         "legacy_id": _legacy_id(record),
-        "views_seed": _int_or_zero(record.get("views")),
         "draft": False,
         "url": content_url("activities", slug),
     }
@@ -139,12 +137,11 @@ def build_platform_front_matter(record: dict, *, slug: str) -> dict:
         "date": normalize_datetime(record.get("createTime")),
         "creator": record.get("creator") or "",
         "legacy_id": _legacy_id(record),
-        "views_seed": _int_or_zero(record.get("views")),
         "draft": False,
         "url": content_url("platform", slug),
     }
     if record.get("cover"):
-        front_matter["cover"] = "cover" + _url_extension(record["cover"], default=".png")
+        front_matter["image"] = "cover" + _url_extension(record["cover"], default=".png")
     return front_matter
 
 
@@ -156,7 +153,6 @@ def build_member_front_matter(record: dict, *, slug: str) -> dict:
         "role": role,
         "email": record.get("email") or "",
         "avatar": "avatar" + _url_extension(record.get("avatar"), default=".jpg") if record.get("avatar") else "",
-        "avatar_url": record.get("avatar") or "",
         "academy": record.get("academy") or "",
         "sort": _int_or_zero(record.get("sort")),
         "legacy_id": _legacy_id(record),

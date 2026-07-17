@@ -96,7 +96,6 @@ def generate_site(legacy: dict) -> GeneratedSite:
             GeneratedFile("data/projects.json", _json(_projects_data(legacy.get("projects") or []))),
             GeneratedFile("data/publications.json", _json(_publications_data(legacy.get("publications") or {}))),
             GeneratedFile("data/slides.json", _json(_slides_data(legacy.get("slides") or []))),
-            GeneratedFile("data/views-seed.json", _json(_views_seed(entries))),
             GeneratedFile("data/legacy-map.json", _json(_legacy_map(entries))),
             GeneratedFile("data/media-manifest.json", _json(media_manifest)),
         ]
@@ -249,8 +248,8 @@ def _front_matter(section: str, record: dict, *, slug: str) -> dict:
         raise ValueError(f"Unsupported article section: {section}")
 
     cover = record.get("cover")
-    if cover and "cover" not in front_matter:
-        front_matter["cover"] = "cover" + _url_extension(cover, default=".png")
+    if cover and "image" not in front_matter:
+        front_matter["image"] = "cover" + _url_extension(cover, default=".png")
     return front_matter
 
 
@@ -285,24 +284,6 @@ def _items(payload: object) -> list[dict]:
     if isinstance(payload, list):
         return payload
     return []
-
-
-def _views_seed(entries: list[GeneratedEntry]) -> list[dict]:
-    seeds: list[dict] = []
-    for entry in entries:
-        views_seed = entry.front_matter.get("views_seed")
-        if views_seed is None:
-            continue
-        seeds.append(
-            {
-                "section": entry.section,
-                "legacy_id": entry.legacy_id,
-                "path": entry.url,
-                "seed": views_seed,
-                "views_seed": views_seed,
-            }
-        )
-    return seeds
 
 
 def _legacy_map(entries: list[GeneratedEntry]) -> list[dict]:
@@ -393,14 +374,21 @@ def _slides_data(records: list[dict]) -> list[dict]:
     return [
         {
             "legacy_id": record.get("id"),
-            "image": record.get("cover") or record.get("url") or LOCAL_SLIDE_IMAGES[index % len(LOCAL_SLIDE_IMAGES)],
+            "image": _local_slide_path(record, index),
             "fit": "contain",
             "url": "" if _is_image_url(record.get("url")) else record.get("url") or "",
-            "image_url": record.get("cover") or record.get("url") or "",
             "create_time": core.normalize_datetime(record.get("createTime")),
         }
         for index, record in enumerate(records)
     ]
+
+
+def _local_slide_path(record: dict, index: int) -> str:
+    source = record.get("cover") or record.get("url")
+    if _is_image_url(source):
+        legacy_id = record.get("id") or index + 1
+        return f"/images/slides/slide-{legacy_id}{_url_extension(source, default='.png')}"
+    return source or LOCAL_SLIDE_IMAGES[index % len(LOCAL_SLIDE_IMAGES)]
 
 
 def _is_image_url(url: str | None) -> bool:
@@ -417,11 +405,12 @@ def _compact_project_title(title: str) -> str:
 
 def _media_manifest_for_entry(entry: GeneratedEntry) -> list[dict]:
     manifest: list[dict] = []
-    for field in ("cover", "avatar"):
-        url = entry.source.get(field)
-        ref = core.classify_media_url(url, context=field)
+    for source_field, output_field in (("cover", "image"), ("avatar", "avatar")):
+        url = entry.source.get(source_field)
+        ref = core.classify_media_url(url, context=output_field)
         if ref.should_localize:
-            manifest.append(_media_manifest_item(entry, ref.url, field, field))
+            basename = "cover" if output_field == "image" else output_field
+            manifest.append(_media_manifest_item(entry, ref.url, output_field, basename))
 
     for index, ref in enumerate(core.extract_media_references(entry.body), start=1):
         if ref.should_localize:
@@ -442,9 +431,9 @@ def _slide_media_manifest(records: list[dict]) -> list[dict]:
                 {
                     "section": "slides",
                     "legacy_id": legacy_id,
-                    "field": field,
+                    "field": "image",
                     "source_url": ref.url,
-                    "suggested_path": f"media/slides/slide-{legacy_id}{_url_extension(ref.url, default='.png')}",
+                    "suggested_path": f"static/images/slides/slide-{legacy_id}{_url_extension(ref.url, default='.png')}",
                 }
             )
     return manifest

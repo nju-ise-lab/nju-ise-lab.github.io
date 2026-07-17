@@ -9,5 +9,3 @@ Files:
 - `publications.json`: migrated publication data for future use.
 - `slides.json`: homepage carousel.
 - `legacy-map.json`: legacy ID/URL mapping for migration traceability.
-- `media-manifest.json`: media references discovered during migration.
-- `views-seed.json`: initial view-count seed for the backend.

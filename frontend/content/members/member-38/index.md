@@ -3,7 +3,6 @@ title: "房春荣"
 role: "副教授"
 email: "fangchunrong@nju.edu.cn"
 avatar: "avatar.jpeg"
-avatar_url: "http://118.178.18.181:9090/test01/4376a08a-abb8-487e-a7fb-d11aad5f3460fcr.jpeg"
 academy: "软件学院"
 sort: 2
 legacy_id: 38

@@ -5,7 +5,6 @@
       <h1>{{ .Title }}</h1>
       {{ $role := .Params.role_title | default .Params.role }}
       {{ with $role }}<p class="article__date">{{ . }}</p>{{ end }}
-      {{ partial "view-counter.html" . }}
       <div class="article__body">{{ .Content }}</div>
       {{ $memberURL := .RelPermalink }}
       {{ $relatedPublications := slice }}

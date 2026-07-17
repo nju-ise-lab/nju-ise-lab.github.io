@@ -3,6 +3,7 @@
   <div class="page-shell container">
     <article class="page-main article">
       <h1>{{ .Title }}</h1>
+      {{ partial "page-image.html" . }}
       <div class="article__body">{{ .Content }}</div>
     </article>
   </div>

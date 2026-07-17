@@ -27,7 +27,7 @@ def test_normalize_datetime_outputs_hugo_timestamp():
     assert core.normalize_datetime("") is None
 
 
-def test_news_front_matter_maps_views_to_views_seed():
+def test_news_front_matter_does_not_include_view_count_data():
     record = {
         "newsId": 64,
         "name": "博士生张犬俊在安全漏洞修复方面取得新进展",
@@ -45,7 +45,6 @@ def test_news_front_matter_maps_views_to_views_seed():
         "category": "业界新闻",
         "creator": "iSE实验室",
         "legacy_id": 64,
-        "views_seed": 712,
         "draft": False,
         "url": "/news/news-64/",
     }
@@ -64,7 +63,7 @@ def test_platform_front_matter_uses_platform_url_base():
 
     assert core.section_base_url("platform") == "/platform/"
     assert front_matter["url"] == "/platform/platform-7/"
-    assert front_matter["views_seed"] == 12
+    assert "views_seed" not in front_matter
 
 
 def test_activity_front_matter_uses_activities_url_and_event_time():
@@ -83,7 +82,7 @@ def test_activity_front_matter_uses_activities_url_and_event_time():
     assert core.section_base_url("activities") == "/activities/"
     assert front_matter["url"] == "/activities/activities-4/"
     assert front_matter["event_time"] == "2023-11-01T15:00:00+08:00"
-    assert front_matter["views_seed"] == 33
+    assert "views_seed" not in front_matter
 
 
 def test_student_member_front_matter_adds_research_direction_mapping():
@@ -104,7 +103,7 @@ def test_student_member_front_matter_adds_research_direction_mapping():
     assert front_matter["research_direction"] == "智能化软件测试与质量保障"
     assert front_matter["student_label"] == "24级博士生"
     assert front_matter["avatar"] == "avatar.jpg"
-    assert front_matter["avatar_url"] == "http://118.178.18.181:9090/test01/avatar.jpg"
+    assert "avatar_url" not in front_matter
     assert front_matter["legacy_id"] == 39
 
 

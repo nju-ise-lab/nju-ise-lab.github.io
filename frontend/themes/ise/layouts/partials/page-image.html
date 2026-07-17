@@ -1,0 +1,7 @@
+{{ with .Params.image }}
+  {{ with $.Resources.GetMatch . }}
+    <figure class="article__image">
+      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+    </figure>
+  {{ end }}
+{{ end }}

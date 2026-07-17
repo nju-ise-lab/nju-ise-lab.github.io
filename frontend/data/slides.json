@@ -1,66 +1,58 @@
 [
   {
     "legacy_id": 14,
-    "image": "http://118.178.18.181:9090/test01/ae24eae1-05ee-41a1-817e-b9b297ae528c2.png",
+    "image": "/images/slides/slide-14.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/ae24eae1-05ee-41a1-817e-b9b297ae528c2.png",
     "create_time": "2023-12-11T14:59:08+08:00"
   },
   {
     "legacy_id": 15,
-    "image": "http://118.178.18.181:9090/test01/197c4811-ae7b-4ac0-b74e-4ce0ea2963583.png",
+    "image": "/images/slides/slide-15.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/197c4811-ae7b-4ac0-b74e-4ce0ea2963583.png",
     "create_time": "2023-12-11T14:59:26+08:00"
   },
   {
     "legacy_id": 16,
-    "image": "http://118.178.18.181:9090/test01/06d94b3e-0809-4e16-ac1d-b8da5fb409f14.png",
+    "image": "/images/slides/slide-16.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/06d94b3e-0809-4e16-ac1d-b8da5fb409f14.png",
     "create_time": "2023-12-11T14:59:50+08:00"
   },
   {
     "legacy_id": 17,
-    "image": "http://118.178.18.181:9090/test01/85a65949-26cb-47c5-b2e7-e81fc7570fb35.png",
+    "image": "/images/slides/slide-17.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/85a65949-26cb-47c5-b2e7-e81fc7570fb35.png",
     "create_time": "2023-12-11T15:00:50+08:00"
   },
   {
     "legacy_id": 18,
-    "image": "http://118.178.18.181:9090/test01/d4719354-dbcf-43a0-8cf4-db246cce7d85banner1.png",
+    "image": "/images/slides/slide-18.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/d4719354-dbcf-43a0-8cf4-db246cce7d85banner1.png",
     "create_time": "2023-12-12T20:33:39+08:00"
   },
   {
     "legacy_id": 19,
-    "image": "http://118.178.18.181:9090/test01/eff48b0d-66de-4c4a-8d08-feb21c43d81fbanner2.png",
+    "image": "/images/slides/slide-19.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/eff48b0d-66de-4c4a-8d08-feb21c43d81fbanner2.png",
     "create_time": "2023-12-12T20:33:51+08:00"
   },
   {
     "legacy_id": 20,
-    "image": "http://118.178.18.181:9090/test01/4c963c68-a01d-4a93-85bf-8bd10d9c6c59banner3.png",
+    "image": "/images/slides/slide-20.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/4c963c68-a01d-4a93-85bf-8bd10d9c6c59banner3.png",
     "create_time": "2023-12-12T20:34:16+08:00"
   },
   {
     "legacy_id": 21,
-    "image": "http://118.178.18.181:9090/test01/b8a08dc8-a43c-4fa6-a1e2-bce0a0fbbd5bbanner4.png",
+    "image": "/images/slides/slide-21.png",
     "fit": "contain",
     "url": "",
-    "image_url": "http://118.178.18.181:9090/test01/b8a08dc8-a43c-4fa6-a1e2-bce0a0fbbd5bbanner4.png",
     "create_time": "2023-12-12T20:34:40+08:00"
   }
 ]

@@ -3,6 +3,7 @@
   <div class="page-shell container">
     <article class="page-main article">
       <h1>{{ .Title }}</h1>
+      {{ partial "page-image.html" . }}
       {{ if eq .Params.content_kind "publication" }}
         <div class="publication-meta">
           {{ with .Params.authors }}
@@ -14,7 +15,6 @@
       {{ else }}
         <time class="article__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
       {{ end }}
-      {{ partial "view-counter.html" . }}
       <div class="article__body">
         {{ if eq .Params.content_kind "publication" }}
           {{ with .Params.raw_citation }}

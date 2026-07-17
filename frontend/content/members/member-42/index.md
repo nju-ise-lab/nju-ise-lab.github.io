@@ -3,7 +3,6 @@ title: "刘嘉"
 role: "教授"
 email: "liujia@nju.edu.cn"
 avatar: "avatar.jpg"
-avatar_url: "http://118.178.18.181:9090/test01/5ef87513-13b9-408c-b4ac-ac50b628ccc3刘嘉.jpg"
 academy: "软件学院"
 sort: 1
 legacy_id: 42

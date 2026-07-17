@@ -4,7 +4,7 @@
     <article class="page-main article">
       <h1>{{ .Title }}</h1>
       <time class="article__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-      {{ partial "view-counter.html" . }}
+      {{ partial "page-image.html" . }}
       <div class="article__body">{{ .Content }}</div>
       {{ $patentIDs := .Params.patent_ids | default (slice) }}
       {{ $relatedPatents := slice }}

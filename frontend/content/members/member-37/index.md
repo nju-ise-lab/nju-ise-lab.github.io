@@ -3,7 +3,6 @@ title: "陈振宇"
 role: "教授"
 email: "zychen@nju.edu.cn"
 avatar: "avatar.jpg"
-avatar_url: "http://118.178.18.181:9090/test01/213af27a-c7c6-45dd-86e3-fd42b2fa391e20210608223031817vnik66.jpg"
 academy: "软件学院"
 sort: 1
 legacy_id: 37

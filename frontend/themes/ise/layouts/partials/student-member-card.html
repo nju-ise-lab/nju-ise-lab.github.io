@@ -1,8 +1,8 @@
-{{ $avatar := .Params.avatar_url | default .Params.avatar }}
+{{ $avatar := .Resources.GetMatch (.Params.avatar | default "") }}
 <article class="student-member-card">
   <a href="{{ .RelPermalink }}" class="student-member-card__photo" aria-label="{{ .Title }}">
     {{ with $avatar }}
-      <img src="{{ . }}" alt="{{ $.Title }}">
+      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
     {{ else }}
       <span>{{ substr .Title 0 1 }}</span>
     {{ end }}
