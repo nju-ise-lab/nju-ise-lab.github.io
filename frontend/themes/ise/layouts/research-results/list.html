@@ -1,0 +1,68 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  {{ $catalog := index hugo.Data "publication-records" }}
+  {{ $publications := slice }}
+  {{ with $catalog }}{{ with .publications }}{{ $publications = . }}{{ end }}{{ end }}
+  {{ $patents := default (slice) hugo.Data.projects }}
+
+  <div class="page-shell container">
+    <section class="page-main research-results-page" data-results-page>
+      <h1 class="visually-hidden">研究成果</h1>
+
+      <div class="research-results-tabs" role="tablist" aria-label="研究成果分类">
+        <button class="research-results-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="results-panel-all" data-result-tab="all">全部</button>
+        <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-publications" data-result-tab="publications">学术论文</button>
+        <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-patents" data-result-tab="patents">专利</button>
+      </div>
+
+      <div class="research-results-stats" aria-label="研究成果数量">
+        <div class="research-results-stat">
+          <strong>{{ len $publications }}</strong>
+          <span>学术论文</span>
+        </div>
+        <div class="research-results-stat">
+          <strong>{{ len $patents }}</strong>
+          <span>专利</span>
+        </div>
+      </div>
+
+      <div class="research-results-panels">
+        <section id="results-panel-all" class="research-results-panel is-active" role="tabpanel" data-result-panel="all">
+          <div class="research-results-panel__heading">
+            <h2>全部成果</h2>
+            <span>{{ add (len $publications) (len $patents) }} 条记录</span>
+          </div>
+          <div class="research-results-list research-results-list--publications">
+            {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}
+          </div>
+          <div class="research-results-combined__patents">
+            <h3>专利</h3>
+            <div class="research-results-list">
+              {{ range $patents }}{{ partial "research-result-patent-card.html" . }}{{ else }}<p class="empty-item">暂无专利内容。</p>{{ end }}
+            </div>
+          </div>
+        </section>
+
+        <section id="results-panel-publications" class="research-results-panel" role="tabpanel" data-result-panel="publications" hidden>
+          <div class="research-results-panel__heading">
+            <h2>学术论文</h2>
+            <span>{{ len $publications }} 条记录</span>
+          </div>
+          <div class="research-results-list research-results-list--publications">
+            {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}
+          </div>
+        </section>
+
+        <section id="results-panel-patents" class="research-results-panel" role="tabpanel" data-result-panel="patents" hidden>
+          <div class="research-results-panel__heading">
+            <h2>专利</h2>
+            <span>{{ len $patents }} 条记录</span>
+          </div>
+          <div class="research-results-list">
+            {{ range $patents }}{{ partial "research-result-patent-card.html" . }}{{ else }}<p class="empty-item">暂无专利内容。</p>{{ end }}
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+{{ end }}

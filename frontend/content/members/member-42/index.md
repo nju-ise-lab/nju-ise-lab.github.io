@@ -2,11 +2,15 @@
 title: "刘嘉"
 role: "教授"
 email: "liujia@nju.edu.cn"
+homepage: "https://software.nju.edu.cn/liujia/index.html"
 avatar: "avatar.jpg"
 academy: "软件学院"
 sort: 1
 legacy_id: 42
 url: "/members/member-42/"
+member_type: "teacher"
+role_title: "教授"
+display_order: 1
 ---
 
 Research Interests

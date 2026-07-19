@@ -1,0 +1,20 @@
+{{ $record := . }}
+<article class="publication-record">
+  <h3 class="publication-record__title">
+    {{ with $record.url }}
+      <a href="{{ . }}" target="_blank" rel="noreferrer">{{ $record.title }}</a>
+    {{ else }}
+      <span>{{ $record.title }}</span>
+    {{ end }}
+    {{ with $record.status_label }}<em class="publication-record__status">({{ . }})</em>{{ end }}
+  </h3>
+  {{ with $record.authors }}<p>{{ partial "publication-author-list.html" . }}</p>{{ end }}
+  {{ if or $record.publication_type_label $record.ccf_level $record.venue $record.note }}
+    <p class="publication-record__venue">
+      {{ with $record.publication_type_label }}<span class="publication-record__type">{{ . }}</span>{{ end }}
+      {{ with $record.ccf_level }}<span class="publication-record__ccf">[{{ . }}]</span>{{ end }}
+      {{ with $record.venue }}<span>{{ . }}</span>{{ end }}
+      {{ with $record.note }}<span class="publication-record__note">{{ . }}</span>{{ end }}
+    </p>
+  {{ end }}
+</article>

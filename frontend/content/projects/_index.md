@@ -1,5 +1,5 @@
 ---
-title: "科研项目"
+title: "项目"
 url: "/projects/"
 ---
 

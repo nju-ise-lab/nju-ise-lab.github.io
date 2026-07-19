@@ -31,17 +31,17 @@ menus:
     - name: "首页"
       url: "/"
       weight: 10
-    - name: "新闻资讯"
-      url: "/news/"
-      weight: 20
-    - name: "学术论文"
-      url: "/activities/"
-      weight: 30
     - name: "成员介绍"
       url: "/members/"
+      weight: 20
+    - name: "研究成果"
+      url: "/research-results/"
+      weight: 30
+    - name: "项目"
+      url: "/projects/"
       weight: 40
-    - name: "科研项目"
-      url: "/platform/"
+    - name: "教育教学"
+      url: "/education/"
       weight: 50
     - name: "关于我们"
       url: "/about/"

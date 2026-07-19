@@ -1,92 +1,104 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
-  {{ partial "page-header.html" (dict "page" . "title" (.Title | default "成员介绍") "eyebrow" "Team" "summary" "实验室教师、博士生、硕士生与科研人员。") }}
   <div class="page-shell container">
     <section class="page-main">
       {{ with .Content }}<div class="article__body">{{ . }}</div>{{ end }}
+      {{ $pages := .Pages.ByParam "display_order" }}
+      {{ $directionOrder := slice "代码自动理解" "代码自动修复" "单元测试生成" "GUI测试生成" "智能系统测试理论与方法" "深度学习框架测试" "自动驾驶与智能网联测试" "众包与群体智能测试" }}
 
-      {{ $pages := .Pages.ByWeight }}
-      {{ $roleGroups := slice
-        (dict "id" "professors" "title" "教授" "roles" (slice "professor" "教授"))
-        (dict "id" "associate-professors" "title" "副教授" "roles" (slice "associate_professor" "associate professor" "副教授"))
-      }}
+      <section class="member-group" aria-labelledby="members-teachers">
+        <div class="member-section-heading">
+          <h2 id="members-teachers">教师</h2>
+        </div>
+        <div class="member-list">
+          {{ range where $pages "Params.member_type" "teacher" }}
+            {{ partial "member-card.html" . }}
+          {{ else }}
+            <p class="empty-item">暂无教师内容。</p>
+          {{ end }}
+        </div>
+      </section>
 
-      {{ range $roleGroups }}
-        {{ $roleTitle := .title }}
-        {{ $members := where $pages "Params.role" "in" .roles }}
-        <section class="member-group" aria-labelledby="members-{{ .id }}">
-          <div class="member-section-heading">
-            <h2 id="members-{{ .id }}">{{ .title }}</h2>
-          </div>
-          <div class="member-list">
-            {{ range $members }}
-              {{ partial "member-card.html" . }}
-            {{ else }}
-              <p class="empty-item">暂无{{ $roleTitle }}内容。</p>
+      <section class="member-group" aria-labelledby="members-phd">
+        <div class="member-section-heading">
+          <h2 id="members-phd">博士研究生</h2>
+        </div>
+        {{ $phd := where $pages "Params.member_type" "phd" }}
+        {{ range $directionOrder }}
+          {{ $direction := . }}
+          {{ $membersInDirection := where $phd "Params.research_direction" $direction }}
+          {{ if gt (len $membersInDirection) 0 }}
+            <section class="member-direction" aria-label="{{ $direction }}">
+              <h3>{{ $direction }}</h3>
+              <div class="student-member-grid">
+                {{ range $membersInDirection }}{{ partial "student-member-card.html" . }}{{ end }}
+              </div>
+            </section>
+          {{ end }}
+        {{ end }}
+        {{ $phdWithoutDirection := where $phd "Params.research_direction" "" }}
+        {{ if gt (len $phdWithoutDirection) 0 }}
+          <div class="student-member-grid member-direction">
+            {{ range $phdWithoutDirection }}
+              {{ partial "student-member-card.html" . }}
             {{ end }}
           </div>
-        </section>
-      {{ end }}
-
-      {{ $studentDirections := slice
-        (dict "id" "software-testing" "title" "智能化软件测试与质量保障")
-        (dict "id" "intelligent-driving" "title" "智能驾驶与测试")
-        (dict "id" "software-maintenance" "title" "软件维护与程序自动化修复")
-      }}
-      {{ $knownDirectionTitles := slice "智能化软件测试与质量保障" "智能驾驶与测试" "软件维护与程序自动化修复" }}
-      {{ $extraDirections := slice }}
-      {{ range $pages.ByWeight }}
-        {{ $direction := .Params.research_direction }}
-        {{ if and $direction (not (in $knownDirectionTitles $direction)) (not (in $extraDirections $direction)) }}
-          {{ $extraDirections = $extraDirections | append $direction }}
         {{ end }}
-      {{ end }}
+      </section>
 
-      <section class="member-group" aria-labelledby="members-students">
+      <section class="member-group" aria-labelledby="members-master">
         <div class="member-section-heading">
-          <h2 id="members-students">博士生 / 硕士生</h2>
+          <h2 id="members-master">硕士研究生</h2>
         </div>
-        {{ range $studentDirections }}
-          {{ $direction := .title }}
-          {{ $members := where $pages "Params.research_direction" $direction }}
-          {{ if gt (len $members) 0 }}
-            <section class="member-direction member-direction--students" aria-label="{{ $direction }}">
-              <h3>{{ $direction }}</h3>
-              <div class="student-member-grid">
-                {{ range $members.ByWeight }}
-                  {{ partial "student-member-card.html" . }}
-                {{ end }}
-              </div>
-            </section>
-          {{ end }}
-        {{ end }}
-
-        {{ range $extraDirections }}
+        {{ $master := where $pages "Params.member_type" "master" }}
+        {{ range $directionOrder }}
           {{ $direction := . }}
-          {{ $members := where $pages "Params.research_direction" $direction }}
-          {{ if gt (len $members) 0 }}
-            <section class="member-direction member-direction--students" aria-label="{{ $direction }}">
+          {{ $membersInDirection := where $master "Params.research_direction" $direction }}
+          {{ if gt (len $membersInDirection) 0 }}
+            <section class="member-direction" aria-label="{{ $direction }}">
               <h3>{{ $direction }}</h3>
-              <div class="student-member-grid">
-                {{ range $members.ByWeight }}
-                  {{ partial "student-member-card.html" . }}
+              <div class="member-text-grid">
+                {{ range $membersInDirection }}
+                  <article class="member-text-card">
+                    <h3>{{ .Title }}</h3>
+                    {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
+                  </article>
                 {{ end }}
               </div>
             </section>
           {{ end }}
         {{ end }}
-
-        {{ $ungroupedStudents := where (where $pages "Params.role" "in" (slice "phd" "phd_student" "博士生" "master" "master_student" "硕士生")) "Params.research_direction" "" }}
-        {{ if gt (len $ungroupedStudents) 0 }}
-          <section class="member-direction member-direction--students" aria-label="方向待补充">
-            <h3>方向待补充</h3>
-            <div class="student-member-grid">
-              {{ range $ungroupedStudents.ByWeight }}
-                {{ partial "student-member-card.html" . }}
-              {{ end }}
-            </div>
-          </section>
+        {{ $masterWithoutDirection := where $master "Params.research_direction" "" }}
+        {{ if gt (len $masterWithoutDirection) 0 }}
+          <div class="member-text-grid member-direction">
+            {{ range $masterWithoutDirection }}
+              <article class="member-text-card">
+                <h3>{{ .Title }}</h3>
+                {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
+              </article>
+            {{ end }}
+          </div>
         {{ end }}
+        {{ if eq (len $master) 0 }}
+            <p class="empty-item">暂无硕士研究生内容。</p>
+        {{ end }}
+      </section>
+
+      <section class="member-group" aria-labelledby="members-alumni">
+        <div class="member-section-heading">
+          <h2 id="members-alumni">过往成员</h2>
+        </div>
+        <div class="member-text-grid">
+          {{ range where $pages "Params.member_type" "alumni" }}
+            <article class="member-text-card">
+              <h3>{{ .Title }}</h3>
+              {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
+              {{ with .Params.destination }}<p>{{ . }}</p>{{ end }}
+            </article>
+          {{ else }}
+            <p class="empty-item">暂无过往成员内容。</p>
+          {{ end }}
+        </div>
       </section>
     </section>
   </div>

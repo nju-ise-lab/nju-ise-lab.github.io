@@ -6,6 +6,10 @@ legacy_id: 32
 views_seed: 3
 draft: false
 url: "/platform/national-quality-supervision-and-testing-center-for-software-projects-jiangsu-crowdsourcing-test-software-testing-system-platforms-transfer-and-implementation-of-patent-2015-2016-2015-2016/"
+project_name: "国家软件产品质量监督检验中心（江苏）：众测软件测试系统平台（专利转让与实施）"
+project_code: ""
+project_period: "2015—2016"
+project_summary: "推动众测软件测试系统平台的专利转让与实施，促进研究成果应用。"
 ---
 
 <p style="text-align: left;">National quality supervision and testing center for software projects (Jiangsu): Crowdsourcing test software testing system platforms (Transfer and implementation of patent), 2015-2016<br>国家软件产品质量监督检验中心（江苏）：众测软件测试系统平台（专利转让与实施），2015-2016</p>

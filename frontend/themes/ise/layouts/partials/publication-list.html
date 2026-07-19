@@ -1,24 +1,38 @@
-{{ $pages := default (where site.RegularPages "Section" "activities") .pages }}
-{{ $publications := sort (where $pages "Params.content_kind" "publication") "Params.publication_year" "desc" }}
-{{ if gt (len $publications) 0 }}
-  {{ range ($publications.GroupByParam "publication_year").Reverse }}
-    <section class="publication-year-group" aria-labelledby="publication-year-{{ .Key }}">
-      <h2 id="publication-year-{{ .Key }}">{{ .Key }}</h2>
-      <ul class="section-list publication-list">
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ with .Params.authors }}
-              <p class="publication-authors">{{ partial "author-list.html" . }}</p>
-            {{ end }}
-            {{ with .Params.publication_year }}<time datetime="{{ . }}">{{ . }}</time>{{ end }}
-          </li>
-        {{ end }}
-      </ul>
-    </section>
-  {{ end }}
+{{ $catalog := index hugo.Data "publication-records" }}
+{{ $structuredPublications := slice }}
+{{ with $catalog }}
+  {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
+{{ end }}
+{{ $useRecords := .use_records | default false }}
+{{ if gt (len $structuredPublications) 0 }}
+  {{ $records := $structuredPublications }}
+  {{ if $useRecords }}{{ $records = default (slice) .records }}{{ end }}
+  {{ $showLegend := true }}
+  {{ if .hide_legend }}{{ $showLegend = false }}{{ end }}
+  {{ partial "publication-record-list.html" (dict "records" $records "show_legend" $showLegend) }}
 {{ else }}
-  <ul class="section-list publication-list">
-    <li class="empty-item">暂无学术论文内容。</li>
-  </ul>
+  {{ $pages := default (where site.RegularPages "Section" "activities") .pages }}
+  {{ $publications := sort (where $pages "Params.content_kind" "publication") "Params.publication_year" "desc" }}
+  {{ if gt (len $publications) 0 }}
+    {{ range ($publications.GroupByParam "publication_year").Reverse }}
+      <section class="publication-year-group" aria-labelledby="publication-year-{{ .Key }}">
+        <h2 id="publication-year-{{ .Key }}">{{ .Key }}</h2>
+        <ul class="section-list publication-list">
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.authors }}
+                <p class="publication-authors">{{ partial "author-list.html" . }}</p>
+              {{ end }}
+              {{ with .Params.publication_year }}<time datetime="{{ . }}">{{ . }}</time>{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  {{ else }}
+    <ul class="section-list publication-list">
+      <li class="empty-item">暂无学术论文内容。</li>
+    </ul>
+  {{ end }}
 {{ end }}

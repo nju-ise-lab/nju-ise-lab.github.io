@@ -6,6 +6,10 @@ legacy_id: 48
 views_seed: 9
 draft: false
 url: "/platform/national-natural-science-foundation-of-china-software-testing-techniques-in-scientific-computing-61011130171-2010-61011130171-2010/"
+project_name: "国家自然科学基金：科学计算中的软件测试技术"
+project_code: "61011130171"
+project_period: "2010"
+project_summary: "面向科学计算软件研究测试技术，关注数值程序的质量保障。"
 ---
 
 <p style="text-align: left;">National natural science foundation of China：Software testing techniques in scientific computing(61011130171), 2010<br>国家自然科学基金：科学计算中的软件测试技术（61011130171），2010</p>

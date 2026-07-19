@@ -6,6 +6,10 @@ legacy_id: 41
 views_seed: 1
 draft: false
 url: "/platform/national-natural-science-foundation-of-china-academy-for-software-engineering-education-and-training-61210306018-2012-2012-61210306018-2012-2012/"
+project_name: "国家自然科学基金：软件工程教育与培训会议"
+project_code: "61210306018"
+project_period: "2012—2012"
+project_summary: "围绕软件工程教育与培训开展研究与交流，探索相关教学支持方法。"
 ---
 
 <p style="text-align: left;">National natural science foundation of China：Academy for software engineering education and training (61210306018). 2012-2012<br>国家自然科学基金：软件工程教育与培训会议（61210306018），2012-2012</p>

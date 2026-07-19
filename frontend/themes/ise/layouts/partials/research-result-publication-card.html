@@ -1,0 +1,17 @@
+{{ $venue := .Params.venue | default "" }}
+{{ $lowerVenue := lower $venue }}
+{{ $kind := "学术论文" }}
+{{ if or (in $venue "[C]") (in $lowerVenue "icse") (in $lowerVenue "issta") (in $lowerVenue "ase") (in $lowerVenue "fse") }}{{ $kind = "会议论文" }}{{ end }}
+{{ if or (in $venue "[J]") (in $lowerVenue "jsep") (in $lowerVenue "journal") }}{{ $kind = "期刊论文" }}{{ end }}
+<article class="research-result-card">
+  <div class="research-result-card__meta">
+    <span class="research-result-card__kind">{{ $kind }}</span>
+    {{ with .Params.publication_year }}<span class="research-result-card__year">{{ . }}</span>{{ end }}
+  </div>
+  <div class="research-result-card__body">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.authors }}<p class="research-result-card__authors">{{ partial "author-list.html" . }}</p>{{ end }}
+    {{ with .Params.venue }}<p class="research-result-card__venue">{{ . }}</p>{{ end }}
+    {{ with .Params.doi }}<p class="research-result-card__doi">DOI: {{ . }}</p>{{ end }}
+  </div>
+</article>

@@ -9,6 +9,9 @@ legacy_id: 58
 url: "/members/member-58/"
 research_direction: ""
 student_label: "24级硕士生"
+member_type: "master"
+display_order: 7
+grade: "24级"
 ---
 
 24级硕士生

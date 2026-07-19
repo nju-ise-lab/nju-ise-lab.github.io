@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <section class="home-hero" aria-label="实验室轮播" data-carousel data-reveal>
+  <section class="home-hero" aria-label="研究亮点轮播图" data-carousel data-reveal>
     {{ with hugo.Data.slides }}
       <div class="home-hero__track" data-slide-count="{{ len . }}">
         {{ range $index, $_ := . }}
@@ -36,7 +36,10 @@
       <a class="more-link" href="/news/">更多</a>
     </div>
 
-    {{ $news := first 5 ((where site.RegularPages "Section" "news").ByDate.Reverse) }}
+    {{ $allNews := (where site.RegularPages "Section" "news").ByDate.Reverse }}
+    {{ $pinnedNews := where $allNews "Params.pinned" true }}
+    {{ $normalNews := where $allNews "Params.pinned" "ne" true }}
+    {{ $news := first 5 (union $pinnedNews $normalNews) }}
     <div class="news-preview" data-reveal>
       <div class="news-preview__image">
         <img src="/images/legacy/home/news-1.jpg" alt="新闻资讯图片">
@@ -45,6 +48,7 @@
         {{ range $news }}
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Params.pinned }}<span class="pin-badge">置顶</span>{{ end }}
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
           </li>
         {{ else }}
@@ -60,29 +64,45 @@
         <h2>{{ partial "section-icon.html" "activity" }}<span>学术论文</span></h2>
         <a class="more-link" href="/activities/">更多</a>
       </div>
-      {{ $publications := first 3 (sort (where (where site.RegularPages "Section" "activities") "Params.content_kind" "publication") "Params.publication_year" "desc") }}
+      {{ $catalog := index hugo.Data "publication-records" }}
+      {{ $structuredPublications := slice }}
+      {{ with $catalog }}
+        {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
+      {{ end }}
       <ul class="activity-list publication-home-list">
-        {{ range $publications }}
-          <li>
-            <time datetime="{{ .Params.publication_year }}">
-              <span>{{ .Params.publication_year }}</span>
-              <strong>论文</strong>
-            </time>
-            <div>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-              {{ with .Params.authors }}<p class="publication-authors">{{ partial "author-list.html" . }}</p>{{ end }}
-            </div>
-          </li>
+        {{ if gt (len $structuredPublications) 0 }}
+          {{ range first 4 (sort $structuredPublications "year" "desc") }}
+            {{ $paper := . }}
+            <li>
+              <time datetime="{{ $paper.year }}"><span>{{ $paper.venue | default $paper.ccf_level | default "论文" }}</span></time>
+              <div>
+                {{ with $paper.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $paper.title }}</a>{{ else }}<span class="publication-home-list__title">{{ $paper.title }}</span>{{ end }}
+                {{ with $paper.status_label }}<em class="publication-home-list__status">({{ . }})</em>{{ end }}
+                {{ with $paper.authors }}<p class="publication-authors">{{ partial "publication-author-list.html" . }}</p>{{ end }}
+              </div>
+            </li>
+          {{ end }}
         {{ else }}
-          <li class="empty-item">暂无学术论文内容。</li>
+          {{ $publications := first 4 (sort (where (where site.RegularPages "Section" "activities") "Params.content_kind" "publication") "Params.publication_year" "desc") }}
+          {{ range $publications }}
+            <li>
+              <time datetime="{{ .Params.publication_year }}"><span>{{ .Params.venue | default "论文" }}</span></time>
+              <div>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ with .Params.authors }}<p class="publication-authors">{{ partial "author-list.html" . }}</p>{{ end }}
+              </div>
+            </li>
+          {{ else }}
+            <li class="empty-item">暂无学术论文内容。</li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>
 
     <div class="home-column" data-reveal>
       <div class="section-heading">
-        <h2>{{ partial "section-icon.html" "project" }}<span>科研项目</span></h2>
-        <a class="more-link" href="/platform/">更多</a>
+        <h2>{{ partial "section-icon.html" "project" }}<span>项目</span></h2>
+        <a class="more-link" href="/projects/">更多</a>
       </div>
       {{ $projects := first 4 (default (slice) (index hugo.Data "featured-projects")) }}
       <ul class="platform-list">
@@ -91,8 +111,8 @@
             {{ $badge := "科研项目" }}
             {{ if in .title "国家重点研发计划" }}{{ $badge = "国家重点研发计划" }}{{ end }}
             {{ if in .title "国家自然科学基金" }}{{ $badge = "国家自然科学基金" }}{{ end }}
-            <span class="project-badge">{{ $badge }}</span>
-            <a href="{{ .url }}">{{ .title }}</a>
+            <span class="project-badge">{{ .label | default $badge }}</span>
+            <span class="platform-list__title">{{ .title }}</span>
           </li>
         {{ else }}
           <li class="empty-item">暂无科研项目内容。</li>

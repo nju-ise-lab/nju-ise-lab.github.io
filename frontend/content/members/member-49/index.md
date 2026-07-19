@@ -7,8 +7,9 @@ academy: ""
 sort: 8
 legacy_id: 49
 url: "/members/member-49/"
-research_direction: "智能化软件测试与质量保障"
+research_direction: "深度学习框架测试"
 student_label: "博士生"
+member_type: "phd"
+display_order: 8
 ---
-
 

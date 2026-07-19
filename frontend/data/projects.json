@@ -23,6 +23,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -32,6 +52,26 @@
     "title": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
     "raw_authors": "房春荣、王擎宇、张犬俊、刘佳玮、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "王擎宇"
+      },
+      {
+        "name": "张犬俊"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -75,6 +115,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -84,6 +144,23 @@
     "title": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
     "raw_authors": "房春荣、何家伟、刘佳玮、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "何家伟"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -124,6 +201,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于梯度攻击的三维激光雷达点云数据扩增方法（202111471857.8）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -147,6 +244,23 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于排序学习的代码漏洞误报检测方法（202111471775.3）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "葛修婷"
+      },
+      {
+        "name": "葛宇"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -156,6 +270,26 @@
     "title": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
     "raw_authors": "房春荣、顾明政、刘佳玮、何云、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -199,6 +333,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -225,6 +379,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -234,6 +408,30 @@
     "title": "一种基于深度图像理解的移动应用跨平台强化学习遍历测试技术（202111471771.5）",
     "raw_authors": "房春荣、刘昱磊、张子谦、虞圣呈、恽叶霄、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘昱磊"
+      },
+      {
+        "name": "张子谦"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "恽叶霄"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于深度图像理解的移动应用跨平台强化学习遍历测试技术（202111471771.5）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -282,6 +480,27 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种面向安卓应用的崩溃信息线上分析方法（202111471664.2）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "李秋婷"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -291,6 +510,30 @@
     "title": "一种基于图像文本融合分析的移动应用众包测试报告排序的方法（202111471921.2）",
     "raw_authors": "房春荣、王旭、曹振飞、虞圣呈、李彤宇、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "王旭"
+      },
+      {
+        "name": "曹振飞"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "李彤宇"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于图像文本融合分析的移动应用众包测试报告排序的方法（202111471921.2）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -337,6 +580,25 @@
       {
         "name": "周赛"
       }
+    ],
+    "patent_name": "一种面向测试学习场景下的动态测试代码推荐方法（2020104872298）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "门铎"
+      },
+      {
+        "name": "韩奇"
+      },
+      {
+        "name": "袁阳阳"
+      },
+      {
+        "name": "周赛"
+      }
     ]
   },
   {
@@ -346,6 +608,25 @@
     "title": "一种基于项目特征的测试用例优先级算法的选择方法（2020104872283）",
     "raw_authors": "刘钦、王俊超、李煜超、刘子覃、房春荣",
     "authors": [
+      {
+        "name": "刘钦"
+      },
+      {
+        "name": "王俊超"
+      },
+      {
+        "name": "李煜超"
+      },
+      {
+        "name": "刘子覃"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      }
+    ],
+    "patent_name": "一种基于项目特征的测试用例优先级算法的选择方法（2020104872283）",
+    "inventors": [
       {
         "name": "刘钦"
       },
@@ -390,6 +671,28 @@
       {
         "name": "段嘉琪"
       }
+    ],
+    "patent_name": "一种基于深度学习的代码漏洞误报自动化识别与过滤方法（2020104872279）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘子夕"
+      },
+      {
+        "name": "葛修婷"
+      },
+      {
+        "name": "葛宇"
+      },
+      {
+        "name": "李宁"
+      },
+      {
+        "name": "段嘉琪"
+      }
     ]
   },
   {
@@ -415,6 +718,25 @@
       {
         "name": "王逸璠"
       }
+    ],
+    "patent_name": "一种面向初学者的方法级Java测试用例生成方法（2020104872264）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "袁阳阳"
+      },
+      {
+        "name": "门铎"
+      },
+      {
+        "name": "韩奇"
+      },
+      {
+        "name": "王逸璠"
+      }
     ]
   },
   {
@@ -424,6 +746,29 @@
     "title": "一种基于图像理解技术的移动应用众包测试缺陷报告自动生成的方法（2020104872052）",
     "raw_authors": "房春荣、虞圣呈、恽叶霄、王旭、曹振飞、李彤宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "恽叶霄"
+      },
+      {
+        "name": "王旭"
+      },
+      {
+        "name": "曹振飞"
+      },
+      {
+        "name": "李彤宇"
+      }
+    ],
+    "patent_name": "一种基于图像理解技术的移动应用众包测试缺陷报告自动生成的方法（2020104872052）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -472,6 +817,28 @@
       {
         "name": "李宁"
       }
+    ],
+    "patent_name": "一种代码漏洞扫描与定位的方法（2020104872048）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "葛宇"
+      },
+      {
+        "name": "刘子夕"
+      },
+      {
+        "name": "葛修婷"
+      },
+      {
+        "name": "钱美缘"
+      },
+      {
+        "name": "李宁"
+      }
     ]
   },
   {
@@ -497,6 +864,25 @@
       {
         "name": "李林昱"
       }
+    ],
+    "patent_name": "一种基于人机协同的代码漏洞智能检测方法（2020104872033）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "葛修婷"
+      },
+      {
+        "name": "刘子夕"
+      },
+      {
+        "name": "葛宇"
+      },
+      {
+        "name": "李林昱"
+      }
     ]
   },
   {
@@ -506,6 +892,29 @@
     "title": "一种基于自然语言处理的众包测试报告相似度检测的方法（2020104872029",
     "raw_authors": "房春荣、曹振飞、王旭、虞圣呈、恽叶霄、李彤宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "曹振飞"
+      },
+      {
+        "name": "王旭"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "恽叶霄"
+      },
+      {
+        "name": "李彤宇"
+      }
+    ],
+    "patent_name": "一种基于自然语言处理的众包测试报告相似度检测的方法（2020104872029",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -554,6 +963,28 @@
       {
         "name": "顾逸飞"
       }
+    ],
+    "patent_name": "一种针对深度学习算子运算精度的差分模糊测试工具（2020104872014）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "曹可凡"
+      },
+      {
+        "name": "吕军"
+      },
+      {
+        "name": "章许帆"
+      },
+      {
+        "name": "沪胜浩"
+      },
+      {
+        "name": "顾逸飞"
+      }
     ]
   },
   {
@@ -582,6 +1013,28 @@
       {
         "name": "吕军"
       }
+    ],
+    "patent_name": "一种基于模糊测试的深度学习算子测试工具（2020104871651）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "曹可凡"
+      },
+      {
+        "name": "顾逸飞"
+      },
+      {
+        "name": "章许帆"
+      },
+      {
+        "name": "沪胜浩"
+      },
+      {
+        "name": "吕军"
+      }
     ]
   },
   {
@@ -591,6 +1044,28 @@
     "title": "一种基于Fuzz的人工神经网络测试方法（2020104871647）",
     "raw_authors": "房春荣、曹可凡、吕军、章许帆、顾逸飞、沪胜浩",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "曹可凡"
+      },
+      {
+        "name": "吕军"
+      },
+      {
+        "name": "章许帆"
+      },
+      {
+        "name": "顾逸飞"
+      },
+      {
+        "name": "沪胜浩"
+      }
+    ],
+    "patent_name": "一种基于Fuzz的人工神经网络测试方法（2020104871647）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -641,6 +1116,31 @@
       {
         "name": "李宁"
       }
+    ],
+    "patent_name": "一种代码漏洞智能检测的数据收集方法（2020104871632）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "钱美缘"
+      },
+      {
+        "name": "葛修婷"
+      },
+      {
+        "name": "刘子夕"
+      },
+      {
+        "name": "葛宇"
+      },
+      {
+        "name": "段嘉琪"
+      },
+      {
+        "name": "李宁"
+      }
     ]
   },
   {
@@ -668,6 +1168,27 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "赵文远"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -677,6 +1198,26 @@
     "title": "一种基于噪音数据的机器学习模型鲁棒性评估方法（2019109520574）",
     "raw_authors": "房春荣、龚爱、王栋、陈振宇、李玉莹",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "龚爱"
+      },
+      {
+        "name": "王栋"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
+    ],
+    "patent_name": "一种基于噪音数据的机器学习模型鲁棒性评估方法（2019109520574）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -723,6 +1264,29 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种结合群体智能与机器智能增强移动应用测试的方法（201910952056X）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "徐悠然"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "韦志宾"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -749,6 +1313,26 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种结合源代码语义与语法特征的基于CNN的bug定位方法（2019109519990）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "蒋燕"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -758,6 +1342,26 @@
     "title": "一种基于微服务的安卓众包在线验证方法（2019109519986）",
     "raw_authors": "房春荣、史洋洋、蒋燕、陈振宇、李玉莹",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "蒋燕"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
+    ],
+    "patent_name": "一种基于微服务的安卓众包在线验证方法（2019109519986）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -804,6 +1408,29 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种功能粒度上基于语义信息的源代码相似度评估方法（2019109519971）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "蒋燕"
+      },
+      {
+        "name": "王逸璠"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -813,6 +1440,26 @@
     "title": "一种基于图像识别的跨平台测试脚本录制与回放方法（2019109518907）",
     "raw_authors": "房春荣、田元汉、虞圣呈、李秋婷、刘佳玮",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "虞圣呈",
+        "member_url": "/members/member-43/"
+      },
+      {
+        "name": "李秋婷"
+      },
+      {
+        "name": "刘佳玮"
+      }
+    ],
+    "patent_name": "一种基于图像识别的跨平台测试脚本录制与回放方法（2019109518907）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -855,6 +1502,25 @@
       {
         "name": "刘佳玮"
       }
+    ],
+    "patent_name": "一种面向移动应用的一体化测试效率评估方法（2019109518894）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "徐悠然"
+      },
+      {
+        "name": "钟怡"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "刘佳玮"
+      }
     ]
   },
   {
@@ -864,6 +1530,26 @@
     "title": "一种面向Python语言的文档缺陷检测方法（2019109518875）",
     "raw_authors": "刘嘉、梁思宇、冯洋、时清凯、刘佳玮",
     "authors": [
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "梁思宇"
+      },
+      {
+        "name": "冯洋",
+        "member_url": "/members/member-53/"
+      },
+      {
+        "name": "时清凯"
+      },
+      {
+        "name": "刘佳玮"
+      }
+    ],
+    "patent_name": "一种面向Python语言的文档缺陷检测方法（2019109518875）",
+    "inventors": [
       {
         "name": "刘嘉",
         "member_url": "/members/member-42/"
@@ -907,6 +1593,26 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种质量驱动的司法数据质量治理方法（2019103524660）",
+    "inventors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "秦泽民"
+      },
+      {
+        "name": "许金"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -916,6 +1622,23 @@
     "title": "一种基于LDA主题模型的司法案例筛选方法（201910352429X）",
     "raw_authors": "何铁科、许金、廉昊、刘嘉",
     "authors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "许金"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      }
+    ],
+    "patent_name": "一种基于LDA主题模型的司法案例筛选方法（201910352429X）",
+    "inventors": [
       {
         "name": "何铁科",
         "member_url": "/members/member-44/"
@@ -956,6 +1679,26 @@
       {
         "name": "严格"
       }
+    ],
+    "patent_name": "一种基于案情事实的深度刑期预测方法（2019103524285）",
+    "inventors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "黎宇"
+      },
+      {
+        "name": "张舒"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "严格"
+      }
     ]
   },
   {
@@ -965,6 +1708,25 @@
     "title": "一种基于路径状态的神经网络测试充分性评估方法（201910268447X）",
     "raw_authors": "陈振宇、王栋、王子元、陈炎斌、钱航",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "王栋"
+      },
+      {
+        "name": "王子元"
+      },
+      {
+        "name": "陈炎斌"
+      },
+      {
+        "name": "钱航"
+      }
+    ],
+    "patent_name": "一种基于路径状态的神经网络测试充分性评估方法（201910268447X）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1008,6 +1770,27 @@
       {
         "name": "段定"
       }
+    ],
+    "patent_name": "一种基于支持向量机的测试程序抄袭检测方法（2019100557910）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "孙泽嵩"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "段定"
+      }
     ]
   },
   {
@@ -1017,6 +1800,31 @@
     "title": "一种基于窥孔优化的智能合约性能优化方法（2019100557003）",
     "raw_authors": "陈振宇、王新宇、赵源、王兴亚、何铁科、史洋洋",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "王新宇"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "史洋洋"
+      }
+    ],
+    "patent_name": "一种基于窥孔优化的智能合约性能优化方法（2019100557003）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1069,6 +1877,30 @@
       {
         "name": "孙泽嵩"
       }
+    ],
+    "patent_name": "一种基于机器学习的测试抄袭检测方法（2019100556994）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "段定"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "巫浩然"
+      },
+      {
+        "name": "孙泽嵩"
+      }
     ]
   },
   {
@@ -1078,6 +1910,34 @@
     "title": "一种基于变异fuzz的智能合约安全测试方法（2019100516304）",
     "raw_authors": "房春荣、徐文远、王兴亚、赵源、史洋洋、蒋燕、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "徐文远"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "蒋燕"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于变异fuzz的智能合约安全测试方法（2019100516304）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -1135,6 +1995,32 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种司法领域数据的规范方法（201810561376.8）",
+    "inventors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "秦泽民"
+      },
+      {
+        "name": "严格"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "周业茂"
+      },
+      {
+        "name": "骆斌"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -1144,6 +2030,26 @@
     "title": "一种基于词嵌入的协同过滤推荐方法（201810561270.8）",
     "raw_authors": "何铁科、廉昊、严格、陈振宇、李玉莹",
     "authors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "严格"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
+    ],
+    "patent_name": "一种基于词嵌入的协同过滤推荐方法（201810561270.8）",
+    "inventors": [
       {
         "name": "何铁科",
         "member_url": "/members/member-44/"
@@ -1189,6 +2095,28 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种演化环境下变异测试强度需求预测方法（201810561267.6）",
+    "inventors": [
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -1198,6 +2126,34 @@
     "title": "一种基于测试代码片段相似性的测试程序抄袭检测方法（201810561223.3）",
     "raw_authors": "陈振宇、孙伟松、王兴亚、段定、巫浩然、赵源、孙泽嵩",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "段定"
+      },
+      {
+        "name": "巫浩然"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "孙泽嵩"
+      }
+    ],
+    "patent_name": "一种基于测试代码片段相似性的测试程序抄袭检测方法（201810561223.3）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1252,6 +2208,29 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种用于刑罚推断的主题模型PTM（201810561189.X）",
+    "inventors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "严格"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "秦泽民"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -1278,6 +2257,26 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种规则约束下的文本信息质量度量方法（201810561187.0）",
+    "inventors": [
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "严格"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -1287,6 +2286,32 @@
     "title": "一种基于静态分析的Java测试覆盖分析方法（201810470195.4）",
     "raw_authors": "房春荣、程翔、徐朱峰、袁阳阳、张馨中、韩奇、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "程翔"
+      },
+      {
+        "name": "徐朱峰"
+      },
+      {
+        "name": "袁阳阳"
+      },
+      {
+        "name": "张馨中"
+      },
+      {
+        "name": "韩奇"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于静态分析的Java测试覆盖分析方法（201810470195.4）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -1342,6 +2367,32 @@
         "name": "房春荣",
         "member_url": "/members/member-38/"
       }
+    ],
+    "patent_name": "一种面向多语言的高并发在线开发支撑方法（201810470192.0）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "袁阳阳"
+      },
+      {
+        "name": "韩奇"
+      },
+      {
+        "name": "徐朱峰"
+      },
+      {
+        "name": "张馨中"
+      },
+      {
+        "name": "程翔"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      }
     ]
   },
   {
@@ -1351,6 +2402,32 @@
     "title": "一种基于混合云的可扩展的移动应用自动化测试框架（201810336477.5）",
     "raw_authors": "陈振宇、张天、房春荣、田元汉、徐悠然、黄勇、臧晓杰",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张天"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "徐悠然"
+      },
+      {
+        "name": "黄勇"
+      },
+      {
+        "name": "臧晓杰"
+      }
+    ],
+    "patent_name": "一种基于混合云的可扩展的移动应用自动化测试框架（201810336477.5）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1402,6 +2479,28 @@
       {
         "name": "黄勇"
       }
+    ],
+    "patent_name": "一种面向代码可读性的单元测试用例优化方法（201810325049.2）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "黄勇"
+      }
     ]
   },
   {
@@ -1411,6 +2510,30 @@
     "title": "一种众包测试报告聚合和摘要的方法（201810325035.0）",
     "raw_authors": "陈振宇、张欣、李玉莹、郝蕊、冯洋、刘嘉",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张欣"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "郝蕊"
+      },
+      {
+        "name": "冯洋",
+        "member_url": "/members/member-53/"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      }
+    ],
+    "patent_name": "一种众包测试报告聚合和摘要的方法（201810325035.0）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1461,6 +2584,29 @@
         "name": "房春荣",
         "member_url": "/members/member-38/"
       }
+    ],
+    "patent_name": "一种基于方法相似度的单元测试用例生成方法（201810324955.0）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "王兴亚",
+        "member_url": "/members/member-52/"
+      },
+      {
+        "name": "孙伟松",
+        "member_url": "/members/member-50/"
+      },
+      {
+        "name": "赵源",
+        "member_url": "/members/member-40/"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      }
     ]
   },
   {
@@ -1470,6 +2616,29 @@
     "title": "一种基于众包和机器学习的web漏洞验证方法（201810324687.2）",
     "raw_authors": "陈振宇、臧晓杰、仲逸秋、于越、房春荣、张欣",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "臧晓杰"
+      },
+      {
+        "name": "仲逸秋"
+      },
+      {
+        "name": "于越"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "张欣"
+      }
+    ],
+    "patent_name": "一种基于众包和机器学习的web漏洞验证方法（201810324687.2）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1516,6 +2685,26 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种移动应用人机测试对战的框架及评价方法（201810093017.4）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "徐悠然"
+      },
+      {
+        "name": "田元汉"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -1539,6 +2728,23 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于群体智能的移动应用测试报告提交及处理方法（201810092970.7）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "张欣"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -1548,6 +2754,23 @@
     "title": "一种基于众包测试的Android和iOS移动应用静态安全测试系统的构建方法（201810092880.8）",
     "raw_authors": "房春荣、史洋洋、李玉莹、陈振宇",
     "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "史洋洋"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于众包测试的Android和iOS移动应用静态安全测试系统的构建方法（201810092880.8）",
+    "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
@@ -1588,6 +2811,26 @@
       {
         "name": "李玉莹"
       }
+    ],
+    "patent_name": "一种针对数值稳定性相关的软件安全漏洞隐患的自动检测方法（201810092879.5）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "沈维军"
+      },
+      {
+        "name": "汤恩义"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "李玉莹"
+      }
     ]
   },
   {
@@ -1597,6 +2840,25 @@
     "title": "一种基于Star信息和README文档的Github相似仓库推荐（201810092877.6）",
     "raw_authors": "刘嘉、刘锦涛、方文强、邹卫琴、李玉莹",
     "authors": [
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "刘锦涛"
+      },
+      {
+        "name": "方文强"
+      },
+      {
+        "name": "邹卫琴"
+      },
+      {
+        "name": "李玉莹"
+      }
+    ],
+    "patent_name": "一种基于Star信息和README文档的Github相似仓库推荐（201810092877.6）",
+    "inventors": [
       {
         "name": "刘嘉",
         "member_url": "/members/member-42/"
@@ -1642,6 +2904,29 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "patent_name": "一种基于Android源代码的风险等级预测方法（201810092876.1）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "龚爱"
+      },
+      {
+        "name": "徐文远"
+      },
+      {
+        "name": "蒋燕"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
     ]
   },
   {
@@ -1651,6 +2936,32 @@
     "title": "一种问答社区中的感知信息质量度量方法（201711200605.5）",
     "raw_authors": "陈振宇、何铁科、廉昊、秦泽民、骆斌、李玉莹、张欣",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "秦泽民"
+      },
+      {
+        "name": "骆斌"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "张欣"
+      }
+    ],
+    "patent_name": "一种问答社区中的感知信息质量度量方法（201711200605.5）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1706,6 +3017,32 @@
       {
         "name": "张欣"
       }
+    ],
+    "patent_name": "一种基于k-means的类案推荐方法（201711200604.0）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      },
+      {
+        "name": "秦泽民"
+      },
+      {
+        "name": "廉昊"
+      },
+      {
+        "name": "骆斌"
+      },
+      {
+        "name": "李玉莹"
+      },
+      {
+        "name": "张欣"
+      }
     ]
   },
   {
@@ -1715,6 +3052,26 @@
     "title": "一种基于步骤提示的安卓众包测试（201711200460.9）",
     "raw_authors": "陈振宇、张欣、房春荣、张智轶、李玉莹",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张欣"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "张智轶"
+      },
+      {
+        "name": "李玉莹"
+      }
+    ],
+    "patent_name": "一种基于步骤提示的安卓众包测试（201711200460.9）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -1758,6 +3115,26 @@
       {
         "name": "郭玉晨"
       }
+    ],
+    "patent_name": "一种基于移动即时通讯软件的软件缺陷智能跟踪管理方法(2015100242838)",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "豆梦宇"
+      },
+      {
+        "name": "冯洋",
+        "member_url": "/members/member-53/"
+      },
+      {
+        "name": "张智轶"
+      },
+      {
+        "name": "郭玉晨"
+      }
     ]
   },
   {
@@ -1767,6 +3144,44 @@
     "title": "基于频繁子图挖掘的错误定位方法(2014107135777)",
     "raw_authors": "徐宝文，周骏贵，房春荣，高则宝，沈毅，陈振宇，张驰，濮力，程秀才，谢佩章，王婧宇",
     "authors": [
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "周骏贵"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "高则宝"
+      },
+      {
+        "name": "沈毅"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张驰"
+      },
+      {
+        "name": "濮力"
+      },
+      {
+        "name": "程秀才"
+      },
+      {
+        "name": "谢佩章"
+      },
+      {
+        "name": "王婧宇"
+      }
+    ],
+    "patent_name": "基于频繁子图挖掘的错误定位方法(2014107135777)",
+    "inventors": [
       {
         "name": "徐宝文"
       },
@@ -1842,6 +3257,40 @@
       {
         "name": "王婧宇"
       }
+    ],
+    "patent_name": "基于符号执行的GUI程序测试用例扩增方法(2014107127978)",
+    "inventors": [
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "周骏贵"
+      },
+      {
+        "name": "张智轶"
+      },
+      {
+        "name": "杨薇然"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张驰"
+      },
+      {
+        "name": "濮力"
+      },
+      {
+        "name": "程秀才"
+      },
+      {
+        "name": "谢佩章"
+      },
+      {
+        "name": "王婧宇"
+      }
     ]
   },
   {
@@ -1851,6 +3300,34 @@
     "title": "一种用于软件开发的缺陷预测方法(2014107100956)",
     "raw_authors": "周骏贵，陈振宇，张伟强，张驰，濮力，程秀才，谢佩章，王婧宇",
     "authors": [
+      {
+        "name": "周骏贵"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张伟强"
+      },
+      {
+        "name": "张驰"
+      },
+      {
+        "name": "濮力"
+      },
+      {
+        "name": "程秀才"
+      },
+      {
+        "name": "谢佩章"
+      },
+      {
+        "name": "王婧宇"
+      }
+    ],
+    "patent_name": "一种用于软件开发的缺陷预测方法(2014107100956)",
+    "inventors": [
       {
         "name": "周骏贵"
       },
@@ -1913,6 +3390,37 @@
       {
         "name": "王婧宇"
       }
+    ],
+    "patent_name": "一种验证并发程序中违反原子性错误是否被正确修复的方法(2014107099836)",
+    "inventors": [
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "周骏贵"
+      },
+      {
+        "name": "时清凯"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张驰"
+      },
+      {
+        "name": "濮力"
+      },
+      {
+        "name": "程秀才"
+      },
+      {
+        "name": "谢佩章"
+      },
+      {
+        "name": "王婧宇"
+      }
     ]
   },
   {
@@ -1922,6 +3430,37 @@
     "title": "一种基于混合策略的测试数据生成方法(2014107097169)",
     "raw_authors": "周骏贵，徐宝文，刘子聪，陈振宇，张驰，濮力，程秀才，谢佩章，王婧宇",
     "authors": [
+      {
+        "name": "周骏贵"
+      },
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "刘子聪"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张驰"
+      },
+      {
+        "name": "濮力"
+      },
+      {
+        "name": "程秀才"
+      },
+      {
+        "name": "谢佩章"
+      },
+      {
+        "name": "王婧宇"
+      }
+    ],
+    "patent_name": "一种基于混合策略的测试数据生成方法(2014107097169)",
+    "inventors": [
       {
         "name": "周骏贵"
       },
@@ -1988,6 +3527,38 @@
         "name": "房春荣",
         "member_url": "/members/member-38/"
       }
+    ],
+    "patent_name": "程序执行序列的获取方法及装置（2014100012757）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "田亮"
+      },
+      {
+        "name": "张旭辉"
+      },
+      {
+        "name": "黄明明"
+      },
+      {
+        "name": "曾卫"
+      },
+      {
+        "name": "汪亚斌"
+      },
+      {
+        "name": "周锴"
+      },
+      {
+        "name": "高则宝 沈毅"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      }
     ]
   },
   {
@@ -1997,6 +3568,23 @@
     "title": "面向动态Web应用的多目标测试用例优先级测试方法（2013104769441）",
     "raw_authors": "陈振宇，邹云潇，房春荣，高则宝",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "邹云潇"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "高则宝"
+      }
+    ],
+    "patent_name": "面向动态Web应用的多目标测试用例优先级测试方法（2013104769441）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2033,6 +3621,22 @@
       {
         "name": "张智轶. 授权"
       }
+    ],
+    "patent_name": "一种联合差异性随机测试方法（2012100526910）",
+    "inventors": [
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "时清凯"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "张智轶. 授权"
+      }
     ]
   },
   {
@@ -2042,6 +3646,25 @@
     "title": "一种基于关键字的电子商务商品推荐方法(2012100500573)",
     "raw_authors": "陈振宇，姚佳玮，杨睿，姚嘉俊，周国兵. 授权",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "姚佳玮"
+      },
+      {
+        "name": "杨睿"
+      },
+      {
+        "name": "姚嘉俊"
+      },
+      {
+        "name": "周国兵. 授权"
+      }
+    ],
+    "patent_name": "一种基于关键字的电子商务商品推荐方法(2012100500573)",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2084,6 +3707,26 @@
       {
         "name": "赵志宏. 授权"
       }
+    ],
+    "patent_name": "一种基于标签迁移学习的推荐方法(2011104196652)",
+    "inventors": [
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "王维清"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "祁奇"
+      },
+      {
+        "name": "赵志宏. 授权"
+      }
     ]
   },
   {
@@ -2106,6 +3749,22 @@
       {
         "name": "骆斌. 授权"
       }
+    ],
+    "patent_name": "跨模型图形用户界面测试脚本自动修复方法（2011104195359）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "高则宝"
+      },
+      {
+        "name": "邹云潇"
+      },
+      {
+        "name": "骆斌. 授权"
+      }
     ]
   },
   {
@@ -2115,6 +3774,27 @@
     "title": "基于商品属性熵值的个性化推荐方法（201110385722X）",
     "raw_authors": "陈振宇，都兴中，刘嘉，惠成峰，何铁科",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "都兴中"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "惠成峰"
+      },
+      {
+        "name": "何铁科",
+        "member_url": "/members/member-44/"
+      }
+    ],
+    "patent_name": "基于商品属性熵值的个性化推荐方法（201110385722X）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2156,6 +3836,23 @@
         "name": "赵志宏",
         "member_url": "/members/member-55/"
       }
+    ],
+    "patent_name": "基于事件可达性模型的图形用户界面测试脚本修复方法（2011103722909）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "邹云潇"
+      },
+      {
+        "name": "高则宝"
+      },
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      }
     ]
   },
   {
@@ -2165,6 +3862,27 @@
     "title": "一种基于谓词自适应随机测试的测试用例集扩增方法（2011103069433）",
     "raw_authors": "陈振宇，房春荣，杨忠军，赵志宏，张杰",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "杨忠军"
+      },
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "张杰"
+      }
+    ],
+    "patent_name": "一种基于谓词自适应随机测试的测试用例集扩增方法（2011103069433）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2208,6 +3926,25 @@
       {
         "name": "张智轶. 授权"
       }
+    ],
+    "patent_name": "一种基于扩展有限状态机的测试用例生成方法（2011103069429）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "杨瑞"
+      },
+      {
+        "name": "徐宝文"
+      },
+      {
+        "name": "张洁"
+      },
+      {
+        "name": "张智轶. 授权"
+      }
     ]
   },
   {
@@ -2234,6 +3971,26 @@
       {
         "name": "王维清. 授权"
       }
+    ],
+    "patent_name": "一种结合评分和标签数据的个性化推荐方法(2011103069414)",
+    "inventors": [
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "祁奇"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "吴清"
+      },
+      {
+        "name": "王维清. 授权"
+      }
     ]
   },
   {
@@ -2243,6 +4000,26 @@
     "title": "一种网站数据的获取及迁移使用方法(2011102549359)",
     "raw_authors": "陈振宇，惠成峰，刘嘉，祁奇, 吴清",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "惠成峰"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "祁奇"
+      },
+      {
+        "name": "吴清"
+      }
+    ],
+    "patent_name": "一种网站数据的获取及迁移使用方法(2011102549359)",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2287,6 +4064,27 @@
       {
         "name": "张智轶. 授权"
       }
+    ],
+    "patent_name": "一种回归测试中基于分布的测试用例优先级划分方法（2011102253167）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "吴堃"
+      },
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "张智轶. 授权"
+      }
     ]
   },
   {
@@ -2296,6 +4094,26 @@
     "title": "基于覆盖度的错误定位技术的测试用例集优化方法（2011101266329）",
     "raw_authors": "陈振宇，赵志宏，缪怡，纪昌斌，张智轶. 授权",
     "authors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "缪怡"
+      },
+      {
+        "name": "纪昌斌"
+      },
+      {
+        "name": "张智轶. 授权"
+      }
+    ],
+    "patent_name": "基于覆盖度的错误定位技术的测试用例集优化方法（2011101266329）",
+    "inventors": [
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
@@ -2340,6 +4158,27 @@
       {
         "name": "徐宝文"
       }
+    ],
+    "patent_name": "一种使用半监督聚类信息进行聚类的回归测试用例选择方法（2011100031627）",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "陈松宇"
+      },
+      {
+        "name": "冯洋",
+        "member_url": "/members/member-53/"
+      },
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "徐宝文"
+      }
     ]
   },
   {
@@ -2363,6 +4202,23 @@
       {
         "name": "惠成峰"
       }
+    ],
+    "patent_name": "一种面向垂直电子商务网站的首页推荐方法(2011100021362)",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "祁奇"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "惠成峰"
+      }
     ]
   },
   {
@@ -2372,6 +4228,23 @@
     "title": "一种基于聚类分析的回归测试用例选择方法(201010212473X)",
     "raw_authors": "赵志宏，章宸，陈振宇，严莎莉. 授权",
     "authors": [
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "章宸"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "严莎莉. 授权"
+      }
+    ],
+    "patent_name": "一种基于聚类分析的回归测试用例选择方法(201010212473X)",
+    "inventors": [
       {
         "name": "赵志宏",
         "member_url": "/members/member-55/"
@@ -2412,6 +4285,26 @@
       {
         "name": "吴一帆. 授权"
       }
+    ],
+    "patent_name": "一种基于多马尔科夫链的内容推荐方法(2010101828444)",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "封煜佳"
+      },
+      {
+        "name": "王浩然"
+      },
+      {
+        "name": "刘嘉",
+        "member_url": "/members/member-42/"
+      },
+      {
+        "name": "吴一帆. 授权"
+      }
     ]
   },
   {
@@ -2421,6 +4314,23 @@
     "title": "一种测试用例聚类取样方法 (2010101398484)",
     "raw_authors": "赵志宏, 严莎莉， 陈振宇，章宸. 授权",
     "authors": [
+      {
+        "name": "赵志宏",
+        "member_url": "/members/member-55/"
+      },
+      {
+        "name": "严莎莉"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "章宸. 授权"
+      }
+    ],
+    "patent_name": "一种测试用例聚类取样方法 (2010101398484)",
+    "inventors": [
       {
         "name": "赵志宏",
         "member_url": "/members/member-55/"
@@ -2454,6 +4364,19 @@
       {
         "name": "张瑾玉. 授权"
       }
+    ],
+    "patent_name": "一种基于数据驱动的测试脚本繁殖方法(2009100263951)",
+    "inventors": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      },
+      {
+        "name": "杨健"
+      },
+      {
+        "name": "张瑾玉. 授权"
+      }
     ]
   },
   {
@@ -2462,6 +4385,8 @@
     "chinese": "代码与模型相融合的调试系统（2018SR727221）",
     "title": "代码与模型相融合的调试系统（2018SR727221）",
     "raw_authors": "代码与模型相融合的调试系统（2018SR727221）",
-    "authors": []
+    "authors": [],
+    "patent_name": "代码与模型相融合的调试系统（2018SR727221）",
+    "inventors": []
   }
 ]

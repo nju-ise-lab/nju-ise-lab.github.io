@@ -7,8 +7,9 @@ academy: ""
 sort: 8
 legacy_id: 48
 url: "/members/member-48/"
-research_direction: "深度学习框架测试"
+research_direction: "智能系统测试理论与方法"
 student_label: "博士生"
+member_type: "phd"
+display_order: 8
 ---
-
 

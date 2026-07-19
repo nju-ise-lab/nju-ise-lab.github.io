@@ -7,6 +7,8 @@ academy: ""
 sort: 5
 legacy_id: 40
 url: "/members/member-40/"
+member_type: "alumni"
+display_order: 5
 ---
 
 

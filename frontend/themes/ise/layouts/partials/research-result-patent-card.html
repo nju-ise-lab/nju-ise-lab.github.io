@@ -1,0 +1,13 @@
+{{ $patentName := .patent_name | default .title | default .english | default .chinese }}
+{{ $inventors := .inventors | default .authors }}
+<article class="research-result-card">
+  <div class="research-result-card__meta">
+    <span class="research-result-card__kind">专利</span>
+  </div>
+  <div class="research-result-card__body">
+    <h3>{{ $patentName }}</h3>
+    {{ if $inventors }}
+      <p class="research-result-card__authors">{{ partial "author-list.html" $inventors }}</p>
+    {{ end }}
+  </div>
+</article>

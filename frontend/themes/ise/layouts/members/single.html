@@ -1,28 +1,71 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
-    <article class="page-main article">
-      <h1>{{ .Title }}</h1>
-      {{ $role := .Params.role_title | default .Params.role }}
-      {{ with $role }}<p class="article__date">{{ . }}</p>{{ end }}
-      <div class="article__body">{{ .Content }}</div>
-      {{ $memberURL := .RelPermalink }}
-      {{ $relatedPublications := slice }}
-      {{ range where site.RegularPages "Section" "activities" }}
-        {{ if eq .Params.content_kind "publication" }}
-          {{ $paper := . }}
-          {{ $matched := false }}
-          {{ range .Params.authors }}
-            {{ if eq .member_url $memberURL }}{{ $matched = true }}{{ end }}
-          {{ end }}
-          {{ if $matched }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
+    <article class="page-main article member-profile">
+      {{ if eq .Params.member_type "teacher" }}
+        {{ $avatar := .Resources.GetMatch (.Params.avatar | default "") }}
+        {{ with $avatar }}
+          <div class="member-profile__avatar"><img src="{{ .RelPermalink }}" alt="{{ $.Title }}"></div>
         {{ end }}
       {{ end }}
-      {{ if gt (len $relatedPublications) 0 }}
-        <section class="related-block" aria-labelledby="member-publications">
-          <h2 id="member-publications">学术论文</h2>
-          {{ partial "publication-list.html" (dict "pages" $relatedPublications) }}
-        </section>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.role_title }}<p class="member-profile__role">{{ . }}</p>{{ end }}
+      <dl class="member-profile__meta">
+        {{ with .Params.homepage }}<div><dt>个人主页</dt><dd><a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a></dd></div>{{ end }}
+        {{ with .Params.grade }}<div><dt>年级</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.research_direction }}<div><dt>研究方向</dt><dd>{{ . }}</dd></div>{{ end }}
+      </dl>
+      <div class="article__body">{{ .Content }}</div>
+
+      {{ if or (eq .Params.member_type "teacher") (eq .Params.member_type "phd") }}
+        {{ $memberURL := .RelPermalink }}
+        {{ $catalog := index hugo.Data "publication-records" }}
+        {{ $structuredPublications := slice }}
+        {{ with $catalog }}
+          {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
+        {{ end }}
+        {{ $relatedPublications := slice }}
+        {{ if gt (len $structuredPublications) 0 }}
+          {{ range $structuredPublications }}
+            {{ $paper := . }}
+            {{ range .authors }}
+              {{ if eq .member_url $memberURL }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          {{ range where site.RegularPages "Section" "activities" }}
+            {{ if eq .Params.content_kind "publication" }}
+              {{ $paper := . }}
+              {{ range .Params.authors }}
+                {{ if eq .member_url $memberURL }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if gt (len $relatedPublications) 0 }}
+          <section class="related-block" aria-labelledby="member-publications">
+            <h2 id="member-publications">学术论文</h2>
+            {{ if gt (len $structuredPublications) 0 }}
+              {{ partial "publication-list.html" (dict "records" $relatedPublications "use_records" true "hide_legend" true) }}
+            {{ else }}
+              {{ partial "publication-list.html" (dict "pages" $relatedPublications "hide_legend" true) }}
+            {{ end }}
+          </section>
+        {{ end }}
+
+        {{ $relatedPatents := slice }}
+        {{ range hugo.Data.projects }}
+          {{ $patent := . }}
+          {{ range (.inventors | default .authors) }}
+            {{ if eq .member_url $memberURL }}{{ $relatedPatents = $relatedPatents | append $patent }}{{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if gt (len $relatedPatents) 0 }}
+          <section class="related-block" aria-labelledby="member-patents">
+            <h2 id="member-patents">专利</h2>
+            {{ partial "patent-list.html" (dict "patents" $relatedPatents) }}
+          </section>
+        {{ end }}
       {{ end }}
     </article>
   </div>

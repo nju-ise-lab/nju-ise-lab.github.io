@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="page-shell container">
+    <section class="page-main">
+      <h1 class="visually-hidden">专利</h1>
+      <section class="research-project-block" aria-labelledby="patents-title">
+        <h2 id="patents-title" class="page-subtitle">专利</h2>
+        <div class="research-project-list related-card-list">
+          {{ partial "patent-list.html" (dict "patents" hugo.Data.projects) }}
+        </div>
+      </section>
+    </section>
+  </div>
+{{ end }}

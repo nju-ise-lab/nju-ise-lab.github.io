@@ -1,9 +1,11 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
-  {{ partial "page-header.html" (dict "page" . "title" (.Title | default "新闻资讯") "eyebrow" "News") }}
   <div class="page-shell container">
     <section class="page-main">
-      {{ partial "section-list.html" (dict "pages" .Pages) }}
+      {{ $allNews := .Pages.ByDate.Reverse }}
+      {{ $pinnedNews := where $allNews "Params.pinned" true }}
+      {{ $normalNews := where $allNews "Params.pinned" "ne" true }}
+      {{ partial "section-list.html" (dict "pages" (union $pinnedNews $normalNews)) }}
     </section>
   </div>
 {{ end }}

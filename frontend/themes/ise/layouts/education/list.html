@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="page-shell container">
+    <article class="page-main article">
+      <h1 class="visually-hidden">教育教学</h1>
+      <div class="article__body">{{ .Content }}</div>
+    </article>
+  </div>
+{{ end }}

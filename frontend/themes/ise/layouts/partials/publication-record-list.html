@@ -1,0 +1,34 @@
+{{ $records := default (slice) .records }}
+{{ $showLegend := .show_legend | default false }}
+{{ if gt (len $records) 0 }}
+  <div class="publication-catalog">
+    {{ if $showLegend }}
+      <p class="publication-catalog__legend"><span>#：共同一作</span><span>*：通讯作者</span></p>
+    {{ end }}
+
+    {{ $manuscripts := where $records "category" "manuscript" }}
+    {{ if gt (len $manuscripts) 0 }}
+      <section class="publication-catalog__section" aria-labelledby="publication-manuscript-title">
+        <h2 id="publication-manuscript-title">Manuscript</h2>
+        {{ range $manuscripts }}
+          {{ partial "publication-record.html" . }}
+        {{ end }}
+      </section>
+    {{ end }}
+
+    {{ $published := where $records "category" "ne" "manuscript" }}
+    {{ $lastYear := 0 }}
+    {{ range $published }}
+      {{ if ne .year $lastYear }}
+        {{ if ne $lastYear 0 }}</section>{{ end }}
+        {{ $lastYear = .year }}
+        <section class="publication-catalog__section" aria-labelledby="publication-year-{{ .year }}">
+          <h2 id="publication-year-{{ .year }}">{{ .year }}</h2>
+      {{ end }}
+      {{ partial "publication-record.html" . }}
+    {{ end }}
+    {{ if ne $lastYear 0 }}</section>{{ end }}
+  </div>
+{{ else }}
+  <p class="empty-item">暂无学术论文内容。</p>
+{{ end }}

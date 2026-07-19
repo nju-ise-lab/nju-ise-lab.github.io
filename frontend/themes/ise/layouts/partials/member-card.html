@@ -8,8 +8,5 @@
     {{ end }}
   </a>
   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  {{ $role := .Params.role_title | default .Params.role }}
-  {{ with $role }}<p class="member-card__role">{{ . }}</p>{{ end }}
-  {{ with .Params.research_direction }}<p class="member-card__direction">{{ . }}</p>{{ end }}
-  {{ with .Summary }}<p class="member-card__summary">{{ . | plainify | truncate 96 }}</p>{{ end }}
+  {{ with .Params.role_title }}<p class="member-card__role">{{ . }}</p>{{ end }}
 </article>

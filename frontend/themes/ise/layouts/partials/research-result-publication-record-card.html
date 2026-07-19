@@ -1,0 +1,22 @@
+{{ $record := . }}
+{{ $kind := $record.publication_type_label | default "学术论文" }}
+<article class="research-result-card research-publication-card">
+  <div class="research-result-card__meta">
+    <span class="research-result-card__kind">{{ $kind }}</span>
+    <span class="research-result-card__year">{{ $record.year }}</span>
+  </div>
+  <div class="research-result-card__body">
+    <h3>
+      {{ with $record.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $record.title }}</a>{{ else }}<span>{{ $record.title }}</span>{{ end }}
+    </h3>
+    {{ with $record.authors }}<p class="research-result-card__authors">{{ partial "publication-author-list.html" . }}</p>{{ end }}
+    {{ with $record.venue }}<p class="research-result-card__venue">{{ . }}</p>{{ end }}
+    {{ if or $record.ccf_level $record.status_label $record.note }}
+      <div class="research-result-card__tags" aria-label="论文标签">
+        {{ with $record.ccf_level }}<span>{{ . }}</span>{{ end }}
+        {{ with $record.status_label }}<span>{{ . }}</span>{{ end }}
+        {{ with $record.note }}<span>{{ . }}</span>{{ end }}
+      </div>
+    {{ end }}
+  </div>
+</article>

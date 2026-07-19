@@ -1,9 +1,9 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
-  {{ partial "page-header.html" (dict "page" . "title" (.Title | default "科研项目") "eyebrow" "Research" "summary" "实验室科研项目、平台建设与专利成果。") }}
   <div class="page-shell container">
     <section class="page-main">
-      {{ partial "research-projects.html" (dict "platformPages" .Pages.ByDate.Reverse) }}
+      <h1 class="visually-hidden">科研项目</h1>
+      {{ partial "project-list.html" (dict "pages" .Pages.ByDate.Reverse) }}
     </section>
   </div>
 {{ end }}

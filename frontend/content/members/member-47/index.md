@@ -7,8 +7,9 @@ academy: ""
 sort: 8
 legacy_id: 47
 url: "/members/member-47/"
-research_direction: "智能驾驶与测试"
+research_direction: "自动驾驶与智能网联测试"
 student_label: "博士生"
+member_type: "phd"
+display_order: 8
+grade: "20级"
 ---
-
-

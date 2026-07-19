@@ -1,0 +1,13 @@
+{{ $authors := default (slice) . }}
+<span class="publication-record__authors">
+  {{- range $index, $author := $authors -}}
+    {{- if gt $index 0 }}, {{ end -}}
+    {{- with $author.member_url -}}
+      <a class="publication-record__author-link" href="{{ . }}">{{ $author.name }}</a>
+    {{- else -}}
+      <span>{{ $author.name }}</span>
+    {{- end -}}
+    {{- if $author.co_first -}}<sup aria-label="共同一作">#</sup>{{ end -}}
+    {{- if $author.corresponding -}}<sup aria-label="通讯作者">*</sup>{{ end -}}
+  {{- end -}}
+</span>

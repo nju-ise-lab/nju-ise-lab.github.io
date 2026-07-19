@@ -6,6 +6,10 @@ legacy_id: 42
 views_seed: 3
 draft: false
 url: "/platform/supported-by-projects-of-international-cooperation-and-exchanges-nsfc-research-on-software-engineering-recommendation-technology-based-on-developer-social-network-61211120438-2012-61211120438-2012/"
+project_name: "国家自然科学基金项目(国际合作交流项目)：基于开发者社会化网络的软件工程推荐技术研究"
+project_code: "61211120438"
+project_period: "2012"
+project_summary: "基于开发者社会化网络研究软件工程推荐技术，支持开发活动中的知识发现。"
 ---
 
 <p style="text-align: left;">Supported by projects of international cooperation and exchanges NSFC：Research on software engineering recommendation technology based on developer social network (61211120438), 2012<br>国家自然科学基金项目(国际合作交流项目)：基于开发者社会化网络的软件工程推荐技术研究(61211120438), 2012</p>

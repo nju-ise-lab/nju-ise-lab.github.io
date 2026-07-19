@@ -1,0 +1,4417 @@
+{
+  "schema_version": 1,
+  "publications": [
+    {
+      "id": "curated-0beb1043c52d",
+      "year": 2026,
+      "title": "Deep Learning Framework Testing via Model Mutation: How Far Are We?",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Deep+Learning+Framework+Testing+via+Model+Mutation%3A+How+Far+Are+We%3F",
+      "source_url": "https://doi.org/10.1109/TSE.2026.3651022",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yanzhou Mu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Rong Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Xiang Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Peiran Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhixiang Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ruixiang Qian",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-49/"
+        },
+        {
+          "name": "Shaoyu Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 1
+    },
+    {
+      "id": "curated-0c55f46f941f",
+      "year": 2026,
+      "title": "Drivence: Realistic Driving Sequence Synthesis for Testing Multi-Sensor Fusion Perception Systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Drivence%3A+Realistic+Driving+Sequence+Synthesis+for+Testing+Multi-Sensor+Fusion+Perception+Systems",
+      "source_url": "https://doi.org/10.1109/TSE.2025.3650399",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhijie Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Chaolan Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhehua Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuheng Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Lei Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 2
+    },
+    {
+      "id": "curated-e6f076c174b5",
+      "year": 2026,
+      "title": "Human Cognitive Pattern Simulation for Crowdsourced Test Report Consistency Detection",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Human+Cognitive+Pattern+Simulation+for+Crowdsourced+Test+Report+Consistency+Detection",
+      "source_url": "https://doi.org/10.1109/TSE.2026.3659293",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuchen Ling",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Shuguang Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Liuming Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Wenbin Guo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 3
+    },
+    {
+      "id": "curated-09b1a6d290af",
+      "year": 2026,
+      "title": "Scalpel: Automotive Deep Learning Framework Testing via Assembling Model Components",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Scalpel%3A+Automotive+Deep+Learning+Framework+Testing+via+Assembling+Model+Components",
+      "source_url": "https://doi.org/10.48550/arXiv.2510.21451",
+      "status": "accepted",
+      "status_label": "Accepted",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yinglong Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 4
+    },
+    {
+      "id": "curated-a625bfdd8a79",
+      "year": 2026,
+      "title": "Spatial Semantic Fuzzing for LiDAR-Based Autonomous Driving Perception Systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Spatial+Semantic+Fuzzing+for+LiDAR-Based+Autonomous+Driving+Perception+Systems",
+      "source_url": "https://doi.org/10.1109/TSE.2025.3627580",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Zhiwei Su",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Senrong Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Haoxiang Tian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Wu Wen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Lei Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 5
+    },
+    {
+      "id": "curated-d317f5c5ff1f",
+      "year": 2026,
+      "title": "Test Script Intention Generation for Mobile Application via GUI Image and Code Understanding",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Test+Script+Intention+Generation+for+Mobile+Application+via+GUI+Image+and+Code+Understanding",
+      "source_url": "https://doi.org/10.1145/3722105",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 6
+    },
+    {
+      "id": "curated-b2f40141cc3c",
+      "year": 2026,
+      "title": "Vision-Based Mobile App GUI Testing: A Survey",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Vision-Based+Mobile+App+GUI+Testing%3A+A+Survey",
+      "source_url": "https://doi.org/10.1145/3773027",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Ziyuan Tuo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunyang Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Zhendong Su",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "",
+      "publication_type_label": "",
+      "venue": "ACM Computing Surveys",
+      "note": "",
+      "source_order": 7
+    },
+    {
+      "id": "curated-7e9012a045de",
+      "year": 2025,
+      "title": "A Large-Scale Empirical Study on Fine-Tuning Large Language Models for Unit Testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=A+Large-Scale+Empirical+Study+on+Fine-Tuning+Large+Language+Models+for+Unit+Testing",
+      "source_url": "https://doi.org/10.1145/3728951",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ye Shang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Siqi Gu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-46/"
+        },
+        {
+          "name": "Jianyi Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 8
+    },
+    {
+      "id": "curated-0e7772bc7131",
+      "year": 2025,
+      "title": "ACTesting: Automated Cross-modal Testing Method of Text-to-Image Software",
+      "url": "https://scholar.google.com/scholar?hl=en&q=ACTesting%3A+Automated+Cross-modal+Testing+Method+of+Text-to-Image+Software",
+      "source_url": "https://doi.org/10.1145/3768581",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Siqi Gu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-46/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 9
+    },
+    {
+      "id": "curated-e89974a99209",
+      "year": 2025,
+      "title": "Automated Detection and Repair of Floating-point Precision Problems in Convolutional Neural Network Operators",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Automated+Detection+and+Repair+of+Floating-point+Precision+Problems+in+Convolutional+Neural+Network+Operators",
+      "source_url": "https://doi.org/10.1145/3715104",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xufan Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Lurong Xu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Mingzheng Gu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisi Luo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Dong Chai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiang Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhihong Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-55/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 10
+    },
+    {
+      "id": "curated-d42bb29a142a",
+      "year": 2025,
+      "title": "Enhanced Crowdsourced Test Report Prioritization via Image-and-Text Semantic Understanding and Feature Integration",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Enhanced+Crowdsourced+Test+Report+Prioritization+via+Image-and-Text+Semantic+Understanding+and+Feature+Integration",
+      "source_url": "https://doi.org/10.1109/TSE.2024.3516372",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xin Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yulei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 11
+    },
+    {
+      "id": "curated-8eb3cc4d9a9e",
+      "year": 2025,
+      "title": "Exploring Automated Assertion Generation via Large Language Models",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Exploring+Automated+Assertion+Generation+via+Large+Language+Models",
+      "source_url": "https://doi.org/10.1145/3699598",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weifeng Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Bowen Yu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Hongyan Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Meng Yan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jianyi Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 12
+    },
+    {
+      "id": "curated-611b2a89d58b",
+      "year": 2025,
+      "title": "Improving Deep Assertion Generation via Fine-Tuning Retrieval-Augmented Pre-Trained Language Models",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Improving+Deep+Assertion+Generation+via+Fine-Tuning+Retrieval-Augmented+Pre-Trained+Language+Models",
+      "source_url": "https://doi.org/10.1145/3721128",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yi Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yaxin Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-40/"
+        },
+        {
+          "name": "Rubing Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jianyi Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yun Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tao Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 13
+    },
+    {
+      "id": "curated-b9fc61d5951d",
+      "year": 2025,
+      "title": "Improving Retrieval-Augmented Deep Assertion Generation via Joint Training",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Improving+Retrieval-Augmented+Deep+Assertion+Generation+via+Joint+Training",
+      "source_url": "https://doi.org/10.1109/TSE.2025.3545970",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yi Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ruixiang Qian",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-49/"
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-40/"
+        },
+        {
+          "name": "Jianyi Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yun Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tao Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 14
+    },
+    {
+      "id": "curated-2ff930e94885",
+      "year": 2025,
+      "title": "Multi-dimensional Assessment of Crowdsourced Testing Reports via LLMs",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Multi-dimensional+Assessment+of+Crowdsourced+Testing+Reports+via+LLMs",
+      "source_url": "https://doi.org/10.1109/ASE63991.2025.00150",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yue Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 15
+    },
+    {
+      "id": "curated-55dd83221823",
+      "year": 2025,
+      "title": "Source Code Summarization in the Era of Large Language Models",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Source+Code+Summarization+in+the+Era+of+Large+Language+Models",
+      "source_url": "https://doi.org/10.1109/ICSE55347.2025.00034",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Yun Miao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuekang Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Hongyu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Gelei Deng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 16
+    },
+    {
+      "id": "curated-3da9b9dbbe84",
+      "year": 2025,
+      "title": "Tightening Robustness Verification of MaxPool-based Neural Networks via Minimizing the Over-Approximation Zone",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Tightening+Robustness+Verification+of+MaxPool-based+Neural+Networks+via+Minimizing+the+Over-Approximation+Zone",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Tightening_Robustness_Verification_of_MaxPool-based_Neural_Networks_via_Minimizing_the_CVPR_2025_paper.html",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shiqing Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Tongtong Bai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Mingzheng Gu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuxin Cheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yanwei Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "note": "",
+      "source_order": 17
+    },
+    {
+      "id": "curated-1b9f0edc6783",
+      "year": 2025,
+      "title": "When Autonomous Vehicle Meets V2X Cooperative Perception: How Far Are We?",
+      "url": "https://scholar.google.com/scholar?hl=en&q=When+Autonomous+Vehicle+Meets+V2X+Cooperative+Perception%3A+How+Far+Are+We%3F",
+      "source_url": "https://doi.org/10.1109/ASE63991.2025.00101",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Shuoxiao Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Enyi Tang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Haomin Pang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Haoxiang Tian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yanzhou Mu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Wu Wen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 18
+    },
+    {
+      "id": "curated-0c9229bb4729",
+      "year": 2024,
+      "title": "A Survey of Learning-based Automated Program Repair",
+      "url": "https://scholar.google.com/scholar?hl=en&q=A+Survey+of+Learning-based+Automated+Program+Repair",
+      "source_url": "https://doi.org/10.1145/3631974",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yuxiang Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 19
+    },
+    {
+      "id": "curated-fd331ef3be82",
+      "year": 2024,
+      "title": "A Survey of Source Code Search: A 3-Dimensional Perspective",
+      "url": "https://scholar.google.com/scholar?hl=en&q=A+Survey+of+Source+Code+Search%3A+A+3-Dimensional+Perspective",
+      "source_url": "https://doi.org/10.1145/3656341",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yifei Ge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuling Hu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiuting Ge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 20
+    },
+    {
+      "id": "curated-e89040bb5c4a",
+      "year": 2024,
+      "title": "An Extractive-and-Abstractive Framework for Source Code Summarization",
+      "url": "https://scholar.google.com/scholar?hl=en&q=An+Extractive-and-Abstractive+Framework+for+Source+Code+Summarization",
+      "source_url": "https://doi.org/10.1145/3632742",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Guanhong Tao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yudu You",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tingxu Han",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yifei Ge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuling Hu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Bin Luo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 21
+    },
+    {
+      "id": "curated-43b00b68d079",
+      "year": 2024,
+      "title": "APPT: Boosting Automated Patch Correctness Prediction via Fine-Tuning Pre-Trained Models",
+      "url": "https://scholar.google.com/scholar?hl=en&q=APPT%3A+Boosting+Automated+Patch+Correctness+Prediction+via+Fine-Tuning+Pre-Trained+Models",
+      "source_url": "https://doi.org/10.1109/TSE.2024.3354969",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Yan Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tieke He",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-44/"
+        },
+        {
+          "name": "Xiaodong Hao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 22
+    },
+    {
+      "id": "curated-ba703bbbe952",
+      "year": 2024,
+      "title": "CooTest: An Automated Testing Approach for V2X Communication Systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=CooTest%3A+An+Automated+Testing+Approach+for+V2X+Communication+Systems",
+      "source_url": "https://doi.org/10.1145/3650212.3680373",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiakai Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiuting Ge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 23
+    },
+    {
+      "id": "curated-5a95f0b6f39d",
+      "year": 2024,
+      "title": "DevMuT: Testing Deep Learning Framework via Developer Expertise-Based Mutation",
+      "url": "https://scholar.google.com/scholar?hl=en&q=DevMuT%3A+Testing+Deep+Learning+Framework+via+Developer+Expertise-Based+Mutation",
+      "source_url": "https://doi.org/10.48550/arXiv.2507.04360",
+      "status": "accepted",
+      "status_label": "Accepted",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yanzhou Mu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Xiang Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhixiang Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Peiran Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yinglong Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tao Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 24
+    },
+    {
+      "id": "curated-86991bffeb48",
+      "year": 2024,
+      "title": "Effective, Platform-Independent GUI Testing via Image Embedding and Reinforcement Learning",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Effective%2C+Platform-Independent+GUI+Testing+via+Image+Embedding+and+Reinforcement+Learning",
+      "source_url": "https://doi.org/10.1145/3674728",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Xin Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Ling",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Zhendong Su",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 25
+    },
+    {
+      "id": "curated-19796170dd2c",
+      "year": 2024,
+      "title": "Esale: Enhancing Code-Summary Alignment Learning for Source Code Summarization",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Esale%3A+Enhancing+Code-Summary+Alignment+Learning+for+Source+Code+Summarization",
+      "source_url": "https://doi.org/10.1109/TSE.2024.3422274",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiao Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhao Wei",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yudu You",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Bin Luo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 26
+    },
+    {
+      "id": "curated-7ab5cd6cdef3",
+      "year": 2024,
+      "title": "Generation-based Differential Fuzzing for Deep Learning Libraries",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Generation-based+Differential+Fuzzing+for+Deep+Learning+Libraries",
+      "source_url": "https://doi.org/10.1145/3628159",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuheng Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhijie Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Lei Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Mingzheng Gu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xufan Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "note": "",
+      "source_order": 27
+    },
+    {
+      "id": "curated-6c7f5df3369a",
+      "year": 2024,
+      "title": "MultiTest: Physical-Aware Object Insertion for Testing Multi-sensor Fusion Perception Systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=MultiTest%3A+Physical-Aware+Object+Insertion+for+Testing+Multi-sensor+Fusion+Perception+Systems",
+      "source_url": "https://doi.org/10.1145/3597503.3639191",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhijie Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Lei Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 28
+    },
+    {
+      "id": "curated-6678e4efb6ab",
+      "year": 2024,
+      "title": "Mutation-Based Deep Learning Framework Testing Method in JavaScript Environment",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Mutation-Based+Deep+Learning+Framework+Testing+Method+in+JavaScript+Environment",
+      "source_url": "https://doi.org/10.1145/3691620.3695478",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yinglong Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tao Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 29
+    },
+    {
+      "id": "curated-1a579234d82e",
+      "year": 2024,
+      "title": "Practical Non-Intrusive GUI Exploration Testing with Visual-based Robotic Arms",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Practical+Non-Intrusive+GUI+Exploration+Testing+with+Visual-based+Robotic+Arms",
+      "source_url": "https://doi.org/10.1145/3597503.3639161",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Mingzhe Du",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Ling",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Zhendong Su",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 30
+    },
+    {
+      "id": "curated-c7240d81a5ad",
+      "year": 2024,
+      "title": "Practical, Automated Scenario-Based Mobile App Testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Practical%2C+Automated+Scenario-Based+Mobile+App+Testing",
+      "source_url": "https://doi.org/10.1109/TSE.2024.3414672",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Mingzhe Du",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zimin Ding",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Zhendong Su",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 31
+    },
+    {
+      "id": "curated-0dc96d60fa4a",
+      "year": 2024,
+      "title": "Pre-Trained Model-Based Automated Software Vulnerability Repair: How Far are We?",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Pre-Trained+Model-Based+Automated+Software+Vulnerability+Repair%3A+How+Far+are+We%3F",
+      "source_url": "https://doi.org/10.1109/TDSC.2023.3308897",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Bowen Yu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Tongke Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "note": "",
+      "source_order": 32
+    },
+    {
+      "id": "curated-4479ee0e923d",
+      "year": 2024,
+      "title": "Semantic-guided fuzzing for virtual testing of autonomous driving systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Semantic-guided+fuzzing+for+virtual+testing+of+autonomous+driving+systems",
+      "source_url": "https://doi.org/10.1016/j.jss.2024.112017",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Yizhen Cheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Journal of Systems and Software",
+      "note": "",
+      "source_order": 33
+    },
+    {
+      "id": "curated-e6a405cfd337",
+      "year": 2024,
+      "title": "Semi-supervised Crowdsourced Test Report Clustering via Screenshot-Text Binding Rules",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Semi-supervised+Crowdsourced+Test+Report+Clustering+via+Screenshot-Text+Binding+Rules",
+      "source_url": "https://doi.org/10.1145/3660776",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Mingzhe Du",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM International Conference on the Foundations of Software Engineering (FSE)",
+      "note": "",
+      "source_order": 34
+    },
+    {
+      "id": "curated-f8a6193e4c37",
+      "year": 2024,
+      "title": "SoVAR: Build Generalizable Scenarios from Accident Reports for Autonomous Driving Testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=SoVAR%3A+Build+Generalizable+Scenarios+from+Accident+Reports+for+Autonomous+Driving+Testing",
+      "source_url": "https://doi.org/10.1145/3691620.3695037",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Yuan Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Haoxiang Tian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yunjian Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Anh Tuan Luu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 35
+    },
+    {
+      "id": "curated-f63cdc64ea9e",
+      "year": 2024,
+      "title": "Towards General Robustness Verification of MaxPool-Based Convolutional Neural Networks via Tightening Linear Approximation",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Towards+General+Robustness+Verification+of+MaxPool-Based+Convolutional+Neural+Networks+via+Tightening+Linear+Approximation",
+      "source_url": "https://doi.org/10.1109/CVPR52733.2024.02339",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shiqing Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Jinyuan Jia",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "note": "",
+      "source_order": 36
+    },
+    {
+      "id": "curated-e44f9709e52c",
+      "year": 2024,
+      "title": "TransformCode: A Contrastive Learning Framework for Code Embedding via Subtree Transformation",
+      "url": "https://scholar.google.com/scholar?hl=en&q=TransformCode%3A+A+Contrastive+Learning+Framework+for+Code+Embedding+via+Subtree+Transformation",
+      "source_url": "https://doi.org/10.1109/TSE.2024.3393419",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zixiang Xian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Rubing Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Dave Towey",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 37
+    },
+    {
+      "id": "publication-41",
+      "year": 2023,
+      "title": "Are duplicates really harmful? An empirical study on bug report summarization techniques",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Are+duplicates+really+harmful%3F+An+empirical+study+on+bug+report+summarization+techniques",
+      "source_url": "https://doi.org/10.1002/smr.2424",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Rui Hao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuying Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Journal of Software: Evolution and Process",
+      "note": "",
+      "source_order": 38
+    },
+    {
+      "id": "curated-69e416500a75",
+      "year": 2023,
+      "title": "Dynamic Data Fault Localization for Deep Neural Networks",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Dynamic+Data+Fault+Localization+for+Deep+Neural+Networks",
+      "source_url": "https://doi.org/10.1145/3611643.3616345",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yining Yin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Shihao Weng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Yao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yichi Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhihong Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-55/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM International Conference on the Foundations of Software Engineering (FSE)",
+      "note": "",
+      "source_order": 39
+    },
+    {
+      "id": "curated-679b2cef2437",
+      "year": 2023,
+      "title": "Gamma: Revisiting Template-Based Automated Program Repair Via Mask Prediction",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Gamma%3A+Revisiting+Template-Based+Automated+Program+Repair+Via+Mask+Prediction",
+      "source_url": "https://doi.org/10.1109/ASE56229.2023.00063",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Tongke Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Bowen Yu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 40
+    },
+    {
+      "id": "curated-a397dc33daa6",
+      "year": 2023,
+      "title": "Mobile App Crowdsourced Test Report Consistency Detection via Deep Image-and-Text Fusion Understanding",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Mobile+App+Crowdsourced+Test+Report+Consistency+Detection+via+Deep+Image-and-Text+Fusion+Understanding",
+      "source_url": "https://doi.org/10.1109/TSE.2023.3285787",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhihao Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yexiao Yun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenfei Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Kai Mei",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 41
+    },
+    {
+      "id": "publication-39",
+      "year": 2022,
+      "title": "Adaptive Test Selection for Deep Neural Networks",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Adaptive+Test+Selection+for+Deep+Neural+Networks",
+      "source_url": "https://doi.org/10.1145/3510003.3510232",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Yining Yin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 42
+    },
+    {
+      "id": "publication-33",
+      "year": 2022,
+      "title": "ASRTest: automated testing for deep-neural-network-driven speech recognition systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=ASRTest%3A+automated+testing+for+deep-neural-network-driven+speech+recognition+systems",
+      "source_url": "https://doi.org/10.1145/3533767.3534391",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Pin Ji",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-48/"
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Zhihong Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-55/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 43
+    },
+    {
+      "id": "publication-42",
+      "year": 2022,
+      "title": "Classifying crowdsourced mobile test reports with image features: An empirical study",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Classifying+crowdsourced+mobile+test+reports+with+image+features%3A+An+empirical+study",
+      "source_url": "https://doi.org/10.1016/j.jss.2021.111121",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuying Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Rui Hao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Di Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Journal of Systems and Software",
+      "note": "",
+      "source_order": 44
+    },
+    {
+      "id": "publication-40",
+      "year": 2022,
+      "title": "Code Search based on Context-aware Code Translation",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Code+Search+based+on+Context-aware+Code+Translation",
+      "source_url": "https://doi.org/10.1145/3510003.3510140",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Guanhong Tao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tingxu Han",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 45
+    },
+    {
+      "id": "publication-38",
+      "year": 2022,
+      "title": "DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks",
+      "url": "https://scholar.google.com/scholar?hl=en&q=DeepState%3A+Selecting+Test+Suites+to+Enhance+the+Robustness+of+Recurrent+Neural+Networks",
+      "source_url": "https://doi.org/10.1145/3510003.3510231",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Yining Yin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 46
+    },
+    {
+      "id": "publication-34",
+      "year": 2022,
+      "title": "LiRTest: augmenting LiDAR point clouds for automated testing of autonomous driving systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=LiRTest%3A+augmenting+LiDAR+point+clouds+for+automated+testing+of+autonomous+driving+systems",
+      "source_url": "https://doi.org/10.1145/3533767.3534397",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "An Guo",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-47/"
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 47
+    },
+    {
+      "id": "curated-ec29d030cbf3",
+      "year": 2022,
+      "title": "QATest: A Uniform Fuzzing Framework for Question Answering Systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=QATest%3A+A+Uniform+Fuzzing+Framework+for+Question+Answering+Systems",
+      "source_url": "https://doi.org/10.1145/3551349.3556929",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Yining Yin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jingyu Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 48
+    },
+    {
+      "id": "publication-49",
+      "year": 2021,
+      "title": "DialTest: automated testing for recurrent-neural-network-driven dialogue systems",
+      "url": "https://scholar.google.com/scholar?hl=en&q=DialTest%3A+automated+testing+for+recurrent-neural-network-driven+dialogue+systems",
+      "source_url": "https://doi.org/10.1145/3460319.3464829",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 49
+    },
+    {
+      "id": "publication-50",
+      "year": 2021,
+      "title": "Graph-based Fuzz Testing for Deep Learning Inference Engines",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Graph-based+Fuzz+Testing+for+Deep+Learning+Inference+Engines",
+      "source_url": "https://doi.org/10.1109/ICSE43902.2021.00037",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weisi Luo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Dong Chai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaoyue Run",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiang Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 50
+    },
+    {
+      "id": "publication-52",
+      "year": 2021,
+      "title": "Layout and Image Recognition Driving Cross-Platform Automated Mobile Testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Layout+and+Image+Recognition+Driving+Cross-Platform+Automated+Mobile+Testing",
+      "source_url": "https://doi.org/10.1109/ICSE43902.2021.00139",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yexiao Yun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 51
+    },
+    {
+      "id": "publication-48",
+      "year": 2021,
+      "title": "Predoo: precision testing of deep learning operators",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Predoo%3A+precision+testing+of+deep+learning+operators",
+      "source_url": "https://doi.org/10.1145/3460319.3464843",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xufan Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ning Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Dong Chai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiang Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 52
+    },
+    {
+      "id": "publication-51",
+      "year": 2021,
+      "title": "Prioritize Crowdsourced Test Reports via Deep Screenshot Understanding",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Prioritize+Crowdsourced+Test+Reports+via+Deep+Screenshot+Understanding",
+      "source_url": "https://doi.org/10.1109/ICSE43902.2021.00090",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenfei Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xu Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tongyu Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 53
+    },
+    {
+      "id": "publication-47",
+      "year": 2021,
+      "title": "TauMed: test augmentation of deep learning in medical diagnosis",
+      "url": "https://scholar.google.com/scholar?hl=en&q=TauMed%3A+test+augmentation+of+deep+learning+in+medical+diagnosis",
+      "source_url": "https://doi.org/10.1145/3460319.3469080",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yunhan Hou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Daiwei Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiawei He",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 54
+    },
+    {
+      "id": "publication-60",
+      "year": 2020,
+      "title": "Crowdsourced Requirements Generation for Automatic Testing via Knowledge Graph",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Crowdsourced+Requirements+Generation+for+Automatic+Testing+via+Knowledge+Graph",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Chao Guo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tieke He",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-44/"
+        },
+        {
+          "name": "Wei Yuan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yue Guo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Rui Hao",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "[C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 545-548",
+      "note": "",
+      "source_order": 55
+    },
+    {
+      "id": "publication-63",
+      "year": 2020,
+      "title": "DeepGini: prioritizing massive tests to enhance the robustness of deep neural networks",
+      "url": "https://scholar.google.com/scholar?hl=en&q=DeepGini%3A+prioritizing+massive+tests+to+enhance+the+robustness+of+deep+neural+networks",
+      "source_url": "https://doi.org/10.1145/3395363.3397357",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xinyu Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jun Wan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 56
+    },
+    {
+      "id": "publication-62",
+      "year": 2020,
+      "title": "Functional code clone detection with syntax and semantics fusion learning",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Functional+code+clone+detection+with+syntax+and+semantics+fusion+learning",
+      "source_url": "https://doi.org/10.1145/3395363.3397362",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zixi Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yangyang Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jeff Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 57
+    },
+    {
+      "id": "publication-57",
+      "year": 2020,
+      "title": "HomoTR: Online Test Recommendation System Based on Homologous Code Matching",
+      "url": "https://scholar.google.com/scholar?hl=en&q=HomoTR%3A+Online+Test+Recommendation+System+Based+on+Homologous+Code+Matching",
+      "source_url": "https://doi.org/10.1145/3324884.3415296",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Chenqian Zhu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-50/"
+        },
+        {
+          "name": "Qin Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yangyang Yuan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yong Huang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 58
+    },
+    {
+      "id": "publication-56",
+      "year": 2020,
+      "title": "Jones, Zhenyu Chen. Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Jones%2C+Zhenyu+Chen.+Clustering+Crowdsourced+Test+Reports+of+Mobile+Applications+Using+Image+Understanding",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Di Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Xiaofang Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "James A",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "[J]. IEEE Transactions on Software Engineering, 2020",
+      "note": "",
+      "source_order": 59
+    },
+    {
+      "id": "publication-58",
+      "year": 2020,
+      "title": "STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis",
+      "url": "https://scholar.google.com/scholar?hl=en&q=STIFA%3A+Crowdsourced+Mobile+Testing+Report+Selection+Based+on+Text+and+Image+Fusion+Analysis",
+      "source_url": "https://doi.org/10.1145/3324884.3415300",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zhenfei Cao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xu Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Yexiao Yun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 60
+    },
+    {
+      "id": "publication-61",
+      "year": 2020,
+      "title": "TauJud: Test Augmentation of Machine Learning in Judicial Documents",
+      "url": "https://scholar.google.com/scholar?hl=en&q=TauJud%3A+Test+Augmentation+of+Machine+Learning+in+Judicial+Documents",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zichen Guo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tieke He",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-44/"
+        },
+        {
+          "name": "Zhuoyang Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Peitian Zhangzhu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "[C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 549-552",
+      "note": "",
+      "source_order": 61
+    },
+    {
+      "id": "publication-59",
+      "year": 2020,
+      "title": "Test recommendation system based on slicing coverage filtering",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Test+recommendation+system+based+on+slicing+coverage+filtering",
+      "source_url": "https://doi.org/10.1145/3395363.3404370",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ruixiang Qian",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-49/"
+        },
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-40/"
+        },
+        {
+          "name": "Duo Men",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yong Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 62
+    },
+    {
+      "id": "publication-90",
+      "year": 2019,
+      "title": "A Unified Framework for Bug Report Assignment",
+      "url": "https://scholar.google.com/scholar?hl=en&q=A+Unified+Framework+for+Bug+Report+Assignment",
+      "source_url": "https://doi.org/10.1142/S0218194019500256",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-40/"
+        },
+        {
+          "name": "Tieke He",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-44/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-C",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "International Journal of Software Engineering and Knowledge Engineering",
+      "note": "",
+      "source_order": 63
+    },
+    {
+      "id": "publication-80",
+      "year": 2019,
+      "title": "CoCoTest: collaborative crowdsourced testing for Android applications",
+      "url": "https://scholar.google.com/scholar?hl=en&q=CoCoTest%3A+collaborative+crowdsourced+testing+for+Android+applications",
+      "source_url": "https://doi.org/10.1145/3293882.3339000",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Haoyu Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Zhibin Wei",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 64
+    },
+    {
+      "id": "publication-79",
+      "year": 2019,
+      "title": "CTRAS: a tool for aggregating and summarizing crowdsourced test reports",
+      "url": "https://scholar.google.com/scholar?hl=en&q=CTRAS%3A+a+tool+for+aggregating+and+summarizing+crowdsourced+test+reports",
+      "source_url": "https://doi.org/10.1145/3293882.3339004",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuying Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Rui Hao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "James A. Jones",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaofang Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 65
+    },
+    {
+      "id": "publication-87",
+      "year": 2019,
+      "title": "CTRAS: crowdsourced test report aggregation and summarization",
+      "url": "https://scholar.google.com/scholar?hl=en&q=CTRAS%3A+crowdsourced+test+report+aggregation+and+summarization",
+      "source_url": "https://doi.org/10.1109/ICSE.2019.00096",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Rui Hao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "James A. Jones",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuying Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 66
+    },
+    {
+      "id": "publication-81",
+      "year": 2019,
+      "title": "File-level socio-technical congruence and its relationship with bug proneness in OSS projects",
+      "url": "https://scholar.google.com/scholar?hl=en&q=File-level+socio-technical+congruence+and+its+relationship+with+bug+proneness+in+OSS+projects",
+      "source_url": "https://doi.org/10.1016/j.jss.2019.05.030",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weiqiang Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shing-Chi Cheung",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Yuming Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Bin Luo",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Journal of Systems and Software",
+      "note": "",
+      "source_order": 67
+    },
+    {
+      "id": "publication-88",
+      "year": 2019,
+      "title": "Global optimization of numerical programs via prioritized stochastic algebraic transformations",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Global+optimization+of+numerical+programs+via+prioritized+stochastic+algebraic+transformations",
+      "source_url": "https://doi.org/10.1109/ICSE.2019.00116",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xie Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Huaijin Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhendong Su",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Enyi Tang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xin Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weijun Shen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Linzhang Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xianpei Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xuandong Li",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 68
+    },
+    {
+      "id": "publication-82",
+      "year": 2019,
+      "title": "How does code style inconsistency affect pull request integration? An exploratory study on 117 GitHub projects",
+      "url": "https://scholar.google.com/scholar?hl=en&q=How+does+code+style+inconsistency+affect+pull+request+integration%3F+An+exploratory+study+on+117+GitHub+projects",
+      "source_url": "https://doi.org/10.1007/s10664-019-09720-x",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weiqin Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jifeng Xuan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaoyuan Xie",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Empirical Software Engineering",
+      "note": "",
+      "source_order": 69
+    },
+    {
+      "id": "publication-73",
+      "year": 2019,
+      "title": "LIRAT: Layout and Image Recognition Driving Automated Mobile Testing of Cross-Platform",
+      "url": "https://scholar.google.com/scholar?hl=en&q=LIRAT%3A+Layout+and+Image+Recognition+Driving+Automated+Mobile+Testing+of+Cross-Platform",
+      "source_url": "https://doi.org/10.1109/ASE.2019.00103",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-43/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Wenyuan Zhao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 70
+    },
+    {
+      "id": "publication-74",
+      "year": 2019,
+      "title": "MuSC: A Tool for Mutation Testing of Ethereum Smart Contract",
+      "url": "https://scholar.google.com/scholar?hl=en&q=MuSC%3A+A+Tool+for+Mutation+Testing+of+Ethereum+Smart+Contract",
+      "source_url": "https://doi.org/10.1109/ASE.2019.00136",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zixin Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Haoran Wu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiehui Xu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xingya Wang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-52/"
+        },
+        {
+          "name": "Lingming Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 71
+    },
+    {
+      "id": "publication-75",
+      "year": 2019,
+      "title": "NeuralVis: Visualizing and Interpreting Deep Learning Models",
+      "url": "https://scholar.google.com/scholar?hl=en&q=NeuralVis%3A+Visualizing+and+Interpreting+Deep+Learning+Models",
+      "source_url": "https://doi.org/10.1109/ASE.2019.00113",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xufan Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ziyue Yin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-42/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 72
+    },
+    {
+      "id": "publication-67",
+      "year": 2019,
+      "title": "Smart contract development: challenges and opportunities",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Smart+contract+development%3A+challenges+and+opportunities",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weiqin Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "David Lo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Pavneet Singh Kochhar",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xuan-Bach Dinh Le",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xin Xia",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "[J]. IEEE Transactions on Software Engineering, 2019",
+      "note": "",
+      "source_order": 73
+    },
+    {
+      "id": "publication-89",
+      "year": 2019,
+      "title": "Successes, challenges, and rethinking - an industrial investigation on crowdsourced mobile application testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Successes%2C+challenges%2C+and+rethinking+-+an+industrial+investigation+on+crowdsourced+mobile+application+testing",
+      "source_url": "https://doi.org/10.1007/s10664-018-9618-5",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ruizhi Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yabin Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "W. Eric Wong",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Empirical Software Engineering",
+      "note": "",
+      "source_order": 74
+    },
+    {
+      "id": "publication-93",
+      "year": 2018,
+      "title": "How practitioners perceive automated bug report management techniques",
+      "url": "https://scholar.google.com/scholar?hl=en&q=How+practitioners+perceive+automated+bug+report+management+techniques",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Weiqin Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "David Lo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Xin Xia",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "[J]. IEEE Transactions on Software Engineering, 2018, 46(8): 836-862",
+      "note": "",
+      "source_order": 75
+    },
+    {
+      "id": "publication-101",
+      "year": 2017,
+      "title": "Eric Wong, Zhenyu Chen, Yabin Wang. Effective software fault localization using predicted execution results",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Eric+Wong%2C+Zhenyu+Chen%2C+Yabin+Wang.+Effective+software+fault+localization+using+predicted+execution+results",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ruizhi Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "W",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-C",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "[J]. Software Quality Journal, 2017, 25(1): 131-169",
+      "note": "",
+      "source_order": 76
+    },
+    {
+      "id": "publication-104",
+      "year": 2017,
+      "title": "Eric Wong, Zhenyu Chen, Yabin Wang. Effective software fault localization using predicted execution results",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Eric+Wong%2C+Zhenyu+Chen%2C+Yabin+Wang.+Effective+software+fault+localization+using+predicted+execution+results",
+      "source_url": "",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ruizhi Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "W",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-C",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "[J]. Software Quality Journal, 2017",
+      "note": "",
+      "source_order": 77
+    },
+    {
+      "id": "publication-105",
+      "year": 2017,
+      "title": "Software Numerical Instability Detection and Diagnosis by Combining Stochastic and Infinite-Precision Testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Software+Numerical+Instability+Detection+and+Diagnosis+by+Combining+Stochastic+and+Infinite-Precision+Testing",
+      "source_url": "https://doi.org/10.1109/TSE.2016.2642956",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Enyi Tang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiangyu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Norbert Th. Müller",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Xuandong Li",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 78
+    },
+    {
+      "id": "publication-106",
+      "year": 2016,
+      "title": "Multi-objective test report prioritization using image understanding",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Multi-objective+test+report+prioritization+using+image+understanding",
+      "source_url": "https://doi.org/10.1145/2970276.2970367",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "James A. Jones",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "note": "",
+      "source_order": 79
+    },
+    {
+      "id": "publication-109",
+      "year": 2016,
+      "title": "Revisit of automatic debugging via human focus-tracking analysis",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Revisit+of+automatic+debugging+via+human+focus-tracking+analysis",
+      "source_url": "https://doi.org/10.1145/2884781.2884834",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xiaoyuan Xie",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zicong Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shuo Song",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Jifeng Xuan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "IEEE/ACM International Conference on Software Engineering (ICSE)",
+      "note": "",
+      "source_order": 80
+    },
+    {
+      "id": "publication-113",
+      "year": 2016,
+      "title": "SITAR: GUI Test Script Repair",
+      "url": "https://scholar.google.com/scholar?hl=en&q=SITAR%3A+GUI+Test+Script+Repair",
+      "source_url": "https://doi.org/10.1109/TSE.2015.2454510",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zebao Gao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Yunxiao Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Atif M. Memon",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 81
+    },
+    {
+      "id": "publication-111",
+      "year": 2016,
+      "title": "Verifying Synchronization for Atomicity Violation Fixing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Verifying+Synchronization+for+Atomicity+Violation+Fixing",
+      "source_url": "https://doi.org/10.1109/TSE.2015.2477820",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jeff Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 82
+    },
+    {
+      "id": "publication-112",
+      "year": 2016,
+      "title": "Verifying Synchronization for Atomicity Violation Fixing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Verifying+Synchronization+for+Atomicity+Violation+Fixing",
+      "source_url": "https://doi.org/10.1109/TSE.2015.2477820",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Qingkai Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jeff Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Software Engineering",
+      "note": "",
+      "source_order": 83
+    },
+    {
+      "id": "publication-117",
+      "year": 2015,
+      "title": "EFSM-Based Test Case Generation: Sequence, Data, and Oracle",
+      "url": "https://scholar.google.com/scholar?hl=en&q=EFSM-Based+Test+Case+Generation%3A+Sequence%2C+Data%2C+and+Oracle",
+      "source_url": "https://doi.org/10.1142/S0218194015300018",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Rui Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Zhiyi Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-C",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "International Journal of Software Engineering and Knowledge Engineering",
+      "note": "",
+      "source_order": 84
+    },
+    {
+      "id": "curated-f9f370e9bed5",
+      "year": 2015,
+      "title": "Test report prioritization to assist crowdsourced testing",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Test+report+prioritization+to+assist+crowdsourced+testing",
+      "source_url": "https://doi.org/10.1145/2786805.2786862",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yang Feng",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-53/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "James A. Jones",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-38/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM International Conference on the Foundations of Software Engineering (FSE)",
+      "note": "",
+      "source_order": 85
+    },
+    {
+      "id": "curated-3371d371d618",
+      "year": 2014,
+      "title": "Virtual DOM coverage for effective testing of dynamic web applications",
+      "url": "https://scholar.google.com/scholar?hl=en&q=Virtual+DOM+coverage+for+effective+testing+of+dynamic+web+applications",
+      "source_url": "https://doi.org/10.1145/2610384.2610399",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yunxiao Zou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/member-37/"
+        },
+        {
+          "name": "Yunhui Zheng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiangyu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zebao Gao",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+      "note": "",
+      "source_order": 86
+    }
+  ]
+}

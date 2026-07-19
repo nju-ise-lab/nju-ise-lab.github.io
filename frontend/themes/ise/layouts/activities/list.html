@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
-  {{ partial "page-header.html" (dict "page" . "title" (.Title | default "学术论文") "eyebrow" "Publications" "summary" "围绕智能软件工程、软件测试、程序分析与质量保障等方向的代表性研究成果。") }}
   <div class="page-shell container">
     <section class="page-main">
       {{ partial "publication-list.html" (dict "pages" .Pages) }}
