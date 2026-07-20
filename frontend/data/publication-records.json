@@ -8,7 +8,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Deep+Learning+Framework+Testing+via+Model+Mutation%3A+How+Far+Are+We%3F",
       "source_url": "https://doi.org/10.1109/TSE.2026.3651022",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -79,7 +79,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Drivence%3A+Realistic+Driving+Sequence+Synthesis+for+Testing+Multi-Sensor+Fusion+Perception+Systems",
       "source_url": "https://doi.org/10.1109/TSE.2025.3650399",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -144,7 +144,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Human+Cognitive+Pattern+Simulation+for+Crowdsourced+Test+Report+Consistency+Detection",
       "source_url": "https://doi.org/10.1109/TSE.2026.3659293",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -257,7 +257,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Spatial+Semantic+Fuzzing+for+LiDAR-Based+Autonomous+Driving+Perception+Systems",
       "source_url": "https://doi.org/10.1109/TSE.2025.3627580",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -323,7 +323,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Test+Script+Intention+Generation+for+Mobile+Application+via+GUI+Image+and+Code+Understanding",
       "source_url": "https://doi.org/10.1145/3722105",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -365,7 +365,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Vision-Based+Mobile+App+GUI+Testing%3A+A+Survey",
       "source_url": "https://doi.org/10.1145/3773027",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -421,7 +421,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=A+Large-Scale+Empirical+Study+on+Fine-Tuning+Large+Language+Models+for+Unit+Testing",
       "source_url": "https://doi.org/10.1145/3728951",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -472,7 +472,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=ACTesting%3A+Automated+Cross-modal+Testing+Method+of+Text-to-Image+Software",
       "source_url": "https://doi.org/10.1145/3768581",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -513,7 +513,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Automated+Detection+and+Repair+of+Floating-point+Precision+Problems+in+Convolutional+Neural+Network+Operators",
       "source_url": "https://doi.org/10.1145/3715104",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -584,7 +584,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Enhanced+Crowdsourced+Test+Report+Prioritization+via+Image-and-Text+Semantic+Understanding+and+Feature+Integration",
       "source_url": "https://doi.org/10.1109/TSE.2024.3516372",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -635,7 +635,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Exploring+Automated+Assertion+Generation+via+Large+Language+Models",
       "source_url": "https://doi.org/10.1145/3699598",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -695,7 +695,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Improving+Deep+Assertion+Generation+via+Fine-Tuning+Retrieval-Augmented+Pre-Trained+Language+Models",
       "source_url": "https://doi.org/10.1145/3721128",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -766,7 +766,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Improving+Retrieval-Augmented+Deep+Assertion+Generation+via+Joint+Training",
       "source_url": "https://doi.org/10.1109/TSE.2025.3545970",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -839,7 +839,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Multi-dimensional+Assessment+of+Crowdsourced+Testing+Reports+via+LLMs",
       "source_url": "https://doi.org/10.1109/ASE63991.2025.00150",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -879,7 +879,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Source+Code+Summarization+in+the+Era+of+Large+Language+Models",
       "source_url": "https://doi.org/10.1109/ICSE55347.2025.00034",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -945,7 +945,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Tightening+Robustness+Verification+of+MaxPool-based+Neural+Networks+via+Minimizing+the+Over-Approximation+Zone",
       "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Tightening_Robustness_Verification_of_MaxPool-based_Neural_Networks_via_Minimizing_the_CVPR_2025_paper.html",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1010,7 +1010,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=When+Autonomous+Vehicle+Meets+V2X+Cooperative+Perception%3A+How+Far+Are+We%3F",
       "source_url": "https://doi.org/10.1109/ASE63991.2025.00101",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1081,7 +1081,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=A+Survey+of+Learning-based+Automated+Program+Repair",
       "source_url": "https://doi.org/10.1145/3631974",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1127,7 +1127,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=A+Survey+of+Source+Code+Search%3A+A+3-Dimensional+Perspective",
       "source_url": "https://doi.org/10.1145/3656341",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1193,7 +1193,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=An+Extractive-and-Abstractive+Framework+for+Source+Code+Summarization",
       "source_url": "https://doi.org/10.1145/3632742",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1269,7 +1269,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=APPT%3A+Boosting+Automated+Patch+Correctness+Prediction+via+Fine-Tuning+Pre-Trained+Models",
       "source_url": "https://doi.org/10.1109/TSE.2024.3354969",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1326,7 +1326,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=CooTest%3A+An+Automated+Testing+Approach+for+V2X+Communication+Systems",
       "source_url": "https://doi.org/10.1145/3650212.3680373",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1453,7 +1453,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Effective%2C+Platform-Independent+GUI+Testing+via+Image+Embedding+and+Reinforcement+Learning",
       "source_url": "https://doi.org/10.1145/3674728",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1504,7 +1504,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Esale%3A+Enhancing+Code-Summary+Alignment+Learning+for+Source+Code+Summarization",
       "source_url": "https://doi.org/10.1109/TSE.2024.3422274",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1575,7 +1575,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Generation-based+Differential+Fuzzing+for+Deep+Learning+Libraries",
       "source_url": "https://doi.org/10.1145/3628159",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1635,7 +1635,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=MultiTest%3A+Physical-Aware+Object+Insertion+for+Testing+Multi-sensor+Fusion+Perception+Systems",
       "source_url": "https://doi.org/10.1145/3597503.3639191",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1685,7 +1685,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Mutation-Based+Deep+Learning+Framework+Testing+Method+in+JavaScript+Environment",
       "source_url": "https://doi.org/10.1145/3691620.3695478",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1735,7 +1735,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Practical+Non-Intrusive+GUI+Exploration+Testing+with+Visual-based+Robotic+Arms",
       "source_url": "https://doi.org/10.1145/3597503.3639161",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1786,7 +1786,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Practical%2C+Automated+Scenario-Based+Mobile+App+Testing",
       "source_url": "https://doi.org/10.1109/TSE.2024.3414672",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1837,7 +1837,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Pre-Trained+Model-Based+Automated+Software+Vulnerability+Repair%3A+How+Far+are+We%3F",
       "source_url": "https://doi.org/10.1109/TDSC.2023.3308897",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1888,7 +1888,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Semantic-guided+fuzzing+for+virtual+testing+of+autonomous+driving+systems",
       "source_url": "https://doi.org/10.1016/j.jss.2024.112017",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1929,7 +1929,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Semi-supervised+Crowdsourced+Test+Report+Clustering+via+Screenshot-Text+Binding+Rules",
       "source_url": "https://doi.org/10.1145/3660776",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -1981,7 +1981,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=SoVAR%3A+Build+Generalizable+Scenarios+from+Accident+Reports+for+Autonomous+Driving+Testing",
       "source_url": "https://doi.org/10.1145/3691620.3695037",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2053,7 +2053,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Towards+General+Robustness+Verification+of+MaxPool-Based+Convolutional+Neural+Networks+via+Tightening+Linear+Approximation",
       "source_url": "https://doi.org/10.1109/CVPR52733.2024.02339",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2103,7 +2103,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=TransformCode%3A+A+Contrastive+Learning+Framework+for+Code+Embedding+via+Subtree+Transformation",
       "source_url": "https://doi.org/10.1109/TSE.2024.3393419",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2148,7 +2148,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Are+duplicates+really+harmful%3F+An+empirical+study+on+bug+report+summarization+techniques",
       "source_url": "https://doi.org/10.1002/smr.2424",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2188,7 +2188,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Dynamic+Data+Fault+Localization+for+Deep+Neural+Networks",
       "source_url": "https://doi.org/10.1145/3611643.3616345",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2249,7 +2249,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Gamma%3A+Revisiting+Template-Based+Automated+Program+Repair+Via+Mask+Prediction",
       "source_url": "https://doi.org/10.1109/ASE56229.2023.00063",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2300,7 +2300,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Mobile+App+Crowdsourced+Test+Report+Consistency+Detection+via+Deep+Image-and-Text+Fusion+Understanding",
       "source_url": "https://doi.org/10.1109/TSE.2023.3285787",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2361,7 +2361,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Adaptive+Test+Selection+for+Deep+Neural+Networks",
       "source_url": "https://doi.org/10.1145/3510003.3510232",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2411,7 +2411,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=ASRTest%3A+automated+testing+for+deep-neural-network-driven+speech+recognition+systems",
       "source_url": "https://doi.org/10.1145/3533767.3534391",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2459,7 +2459,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Classifying+crowdsourced+mobile+test+reports+with+image+features%3A+An+empirical+study",
       "source_url": "https://doi.org/10.1016/j.jss.2021.111121",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2515,7 +2515,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Code+Search+based+on+Context-aware+Code+Translation",
       "source_url": "https://doi.org/10.1145/3510003.3510140",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2565,7 +2565,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=DeepState%3A+Selecting+Test+Suites+to+Enhance+the+Robustness+of+Recurrent+Neural+Networks",
       "source_url": "https://doi.org/10.1145/3510003.3510231",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2605,7 +2605,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=LiRTest%3A+augmenting+LiDAR+point+clouds+for+automated+testing+of+autonomous+driving+systems",
       "source_url": "https://doi.org/10.1145/3533767.3534397",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2641,7 +2641,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=QATest%3A+A+Uniform+Fuzzing+Framework+for+Question+Answering+Systems",
       "source_url": "https://doi.org/10.1145/3551349.3556929",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2691,7 +2691,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=DialTest%3A+automated+testing+for+recurrent-neural-network-driven+dialogue+systems",
       "source_url": "https://doi.org/10.1145/3460319.3464829",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2726,7 +2726,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Graph-based+Fuzz+Testing+for+Deep+Learning+Inference+Engines",
       "source_url": "https://doi.org/10.1109/ICSE43902.2021.00037",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2776,7 +2776,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Layout+and+Image+Recognition+Driving+Cross-Platform+Automated+Mobile+Testing",
       "source_url": "https://doi.org/10.1109/ICSE43902.2021.00139",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2817,7 +2817,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Predoo%3A+precision+testing+of+deep+learning+operators",
       "source_url": "https://doi.org/10.1145/3460319.3464843",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2878,7 +2878,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Prioritize+Crowdsourced+Test+Reports+via+Deep+Screenshot+Understanding",
       "source_url": "https://doi.org/10.1109/ICSE43902.2021.00090",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2929,7 +2929,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=TauMed%3A+test+augmentation+of+deep+learning+in+medical+diagnosis",
       "source_url": "https://doi.org/10.1145/3460319.3469080",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -2979,7 +2979,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Crowdsourced+Requirements+Generation+for+Automatic+Testing+via+Knowledge+Graph",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3023,7 +3023,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=DeepGini%3A+prioritizing+massive+tests+to+enhance+the+robustness+of+deep+neural+networks",
       "source_url": "https://doi.org/10.1145/3395363.3397357",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3074,7 +3074,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Functional+code+clone+detection+with+syntax+and+semantics+fusion+learning",
       "source_url": "https://doi.org/10.1145/3395363.3397362",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3118,7 +3118,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=HomoTR%3A+Online+Test+Recommendation+System+Based+on+Homologous+Code+Matching",
       "source_url": "https://doi.org/10.1145/3324884.3415296",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3168,7 +3168,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Jones%2C+Zhenyu+Chen.+Clustering+Crowdsourced+Test+Reports+of+Mobile+Applications+Using+Image+Understanding",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3207,7 +3207,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=STIFA%3A+Crowdsourced+Mobile+Testing+Report+Selection+Based+on+Text+and+Image+Fusion+Analysis",
       "source_url": "https://doi.org/10.1145/3324884.3415300",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3252,7 +3252,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=TauJud%3A+Test+Augmentation+of+Machine+Learning+in+Judicial+Documents",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3296,7 +3296,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Test+recommendation+system+based+on+slicing+coverage+filtering",
       "source_url": "https://doi.org/10.1145/3395363.3404370",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3353,7 +3353,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=A+Unified+Framework+for+Bug+Report+Assignment",
       "source_url": "https://doi.org/10.1142/S0218194019500256",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3389,7 +3389,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=CoCoTest%3A+collaborative+crowdsourced+testing+for+Android+applications",
       "source_url": "https://doi.org/10.1145/3293882.3339000",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3429,7 +3429,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=CTRAS%3A+a+tool+for+aggregating+and+summarizing+crowdsourced+test+reports",
       "source_url": "https://doi.org/10.1145/3293882.3339004",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3479,7 +3479,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=CTRAS%3A+crowdsourced+test+report+aggregation+and+summarization",
       "source_url": "https://doi.org/10.1109/ICSE.2019.00096",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3524,7 +3524,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=File-level+socio-technical+congruence+and+its+relationship+with+bug+proneness+in+OSS+projects",
       "source_url": "https://doi.org/10.1016/j.jss.2019.05.030",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3568,7 +3568,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Global+optimization+of+numerical+programs+via+prioritized+stochastic+algebraic+transformations",
       "source_url": "https://doi.org/10.1109/ICSE.2019.00116",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3637,7 +3637,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=How+does+code+style+inconsistency+affect+pull+request+integration%3F+An+exploratory+study+on+117+GitHub+projects",
       "source_url": "https://doi.org/10.1007/s10664-019-09720-x",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3681,7 +3681,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=LIRAT%3A+Layout+and+Image+Recognition+Driving+Automated+Mobile+Testing+of+Cross-Platform",
       "source_url": "https://doi.org/10.1109/ASE.2019.00103",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3728,7 +3728,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=MuSC%3A+A+Tool+for+Mutation+Testing+of+Ethereum+Smart+Contract",
       "source_url": "https://doi.org/10.1109/ASE.2019.00136",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3778,7 +3778,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=NeuralVis%3A+Visualizing+and+Interpreting+Deep+Learning+Models",
       "source_url": "https://doi.org/10.1109/ASE.2019.00113",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3829,7 +3829,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Smart+contract+development%3A+challenges+and+opportunities",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3889,7 +3889,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Successes%2C+challenges%2C+and+rethinking+-+an+industrial+investigation+on+crowdsourced+mobile+application+testing",
       "source_url": "https://doi.org/10.1007/s10664-018-9618-5",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3934,7 +3934,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=How+practitioners+perceive+automated+bug+report+management+techniques",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -3984,7 +3984,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Eric+Wong%2C+Zhenyu+Chen%2C+Yabin+Wang.+Effective+software+fault+localization+using+predicted+execution+results",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4012,7 +4012,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Eric+Wong%2C+Zhenyu+Chen%2C+Yabin+Wang.+Effective+software+fault+localization+using+predicted+execution+results",
       "source_url": "",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4040,7 +4040,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Software+Numerical+Instability+Detection+and+Diagnosis+by+Combining+Stochastic+and+Infinite-Precision+Testing",
       "source_url": "https://doi.org/10.1109/TSE.2016.2642956",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4084,7 +4084,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Multi-objective+test+report+prioritization+using+image+understanding",
       "source_url": "https://doi.org/10.1145/2970276.2970367",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4125,7 +4125,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Revisit+of+automatic+debugging+via+human+focus-tracking+analysis",
       "source_url": "https://doi.org/10.1145/2884781.2884834",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4174,7 +4174,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=SITAR%3A+GUI+Test+Script+Repair",
       "source_url": "https://doi.org/10.1109/TSE.2015.2454510",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4213,7 +4213,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Verifying+Synchronization+for+Atomicity+Violation+Fixing",
       "source_url": "https://doi.org/10.1109/TSE.2015.2477820",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4252,7 +4252,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Verifying+Synchronization+for+Atomicity+Violation+Fixing",
       "source_url": "https://doi.org/10.1109/TSE.2015.2477820",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4291,7 +4291,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=EFSM-Based+Test+Case+Generation%3A+Sequence%2C+Data%2C+and+Oracle",
       "source_url": "https://doi.org/10.1142/S0218194015300018",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4330,7 +4330,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Test+report+prioritization+to+assist+crowdsourced+testing",
       "source_url": "https://doi.org/10.1145/2786805.2786862",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {
@@ -4376,7 +4376,7 @@
       "url": "https://scholar.google.com/scholar?hl=en&q=Virtual+DOM+coverage+for+effective+testing+of+dynamic+web+applications",
       "source_url": "https://doi.org/10.1145/2610384.2610399",
       "status": "published",
-      "status_label": "",
+      "status_label": "Published",
       "category": "publication",
       "authors": [
         {

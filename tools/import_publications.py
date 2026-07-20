@@ -24,7 +24,7 @@ REQUIRED_COLUMNS = {
 }
 
 STATUS_ALIASES = {
-    "published": ("published", ""),
+    "published": ("published", "Published"),
     "accepted": ("accepted", "Accepted"),
     "acctpted": ("accepted", "Accepted"),
     "preprint": ("preprint", "Preprint"),
