@@ -2,6 +2,7 @@
 {{ $kind := $record.publication_type_label | default "学术论文" }}
 <article class="research-result-card research-publication-card">
   <div class="research-result-card__meta">
+    <span class="research-result-card__venue-code">{{ $record.venue_short | default "PAPER" }}</span>
     <span class="research-result-card__kind">{{ $kind }}</span>
     <span class="research-result-card__year">{{ $record.year }}</span>
   </div>
@@ -11,12 +12,18 @@
     </h3>
     {{ with $record.authors }}<p class="research-result-card__authors">{{ partial "publication-author-list.html" . }}</p>{{ end }}
     {{ with $record.venue }}<p class="research-result-card__venue">{{ . }}</p>{{ end }}
-    {{ if or $record.ccf_level $record.status_label $record.note }}
+    {{ if or $record.ccf_level $record.status_label $record.topics $record.note }}
       <div class="research-result-card__tags" aria-label="论文标签">
-        {{ with $record.ccf_level }}<span>{{ . }}</span>{{ end }}
-        {{ with $record.status_label }}<span>{{ . }}</span>{{ end }}
-        {{ with $record.note }}<span>{{ . }}</span>{{ end }}
+        {{ with $record.ccf_level }}<span class="research-result-card__tag research-result-card__tag--ccf">{{ . }}</span>{{ end }}
+        {{ with $record.status_label }}<span class="research-result-card__tag research-result-card__tag--status">{{ . }}</span>{{ end }}
+        {{ range $record.topics }}<span class="research-result-card__tag">{{ . }}</span>{{ end }}
+        {{ with $record.note }}<span class="research-result-card__tag">{{ . }}</span>{{ end }}
       </div>
     {{ end }}
   </div>
+  {{ with $record.url }}
+    <div class="research-result-card__action">
+      <a href="{{ . }}" target="_blank" rel="noreferrer">查看论文 <span aria-hidden="true">↗</span></a>
+    </div>
+  {{ end }}
 </article>

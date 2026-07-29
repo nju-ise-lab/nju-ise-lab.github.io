@@ -24,7 +24,7 @@ REQUIRED_COLUMNS = {
 }
 
 STATUS_ALIASES = {
-    "published": ("published", "Published"),
+    "published": ("published", ""),
     "accepted": ("accepted", "Accepted"),
     "acctpted": ("accepted", "Accepted"),
     "preprint": ("preprint", "Preprint"),
@@ -50,6 +50,56 @@ SCHOLARLY_TITLE_LINK_HOSTS = (
     "scholar.google.com",
     "semanticscholar.org",
     "openreview.net",
+)
+VENUE_SHORT_HINTS = (
+    ("TOSEM", ("transactions on software engineering and methodology",)),
+    ("TOSEM", ("acm trans. softw. eng. methodol.",)),
+    ("TSE", ("transactions on software engineering",)),
+    ("TDSC", ("transactions on dependable and secure computing",)),
+    ("TDSC", ("ieee trans. dependable secur. comput.",)),
+    ("TIFS", ("ieee transactions on information forensics and security", "ieee trans. inf. forensics secur.")),
+    ("T-ITS", ("ieee transactions on intelligent transportation systems", "ieee trans. intell. transp. syst.")),
+    ("TR", ("transactions on reliability",)),
+    ("CSUR", ("computing surveys",)),
+    ("ICSE", ("international conference on software engineering",)),
+    ("ISSTA", ("international symposium on software testing and analysis",)),
+    ("ASE", ("international conference on automated software engineering",)),
+    ("FSE", ("foundations of software engineering",)),
+    ("FSE", ("esec/sigsoft fse",)),
+    ("CVPR", ("computer vision and pattern recognition",)),
+    ("JSS", ("journal of systems and software",)),
+    ("JSEP", ("journal of software: evolution and process",)),
+    ("EMSE", ("empirical software engineering",)),
+    ("IJSEKE", ("international journal of software engineering and knowledge engineering",)),
+    ("IJCV", ("international journal of computer vision", "int. j. comput. vis.")),
+    ("SQJ", ("software quality journal",)),
+    ("PACMSE", ("proc. acm softw. eng.",)),
+    ("IST", ("information and software technology", "inf. softw. technol.")),
+    ("ASEJ", ("automated software engineering", "autom. softw. eng.")),
+    ("SCIS", ("science china information sciences",)),
+    ("FCS", ("frontiers of computer science",)),
+    ("SPE", ("software: practice and experience", "softw. pract. exp.")),
+)
+TOPIC_HINTS = (
+    ("Code Intelligence", ("source code", "code search", "code summarization", "code clone", "code embedding", "code translation")),
+    ("Program Repair", ("program repair", "patch correctness", "vulnerability repair", "bug fixing", "repair technology")),
+    ("Unit Testing", ("unit test", "assertion generation", "test case generation")),
+    ("GUI Testing", ("gui", "mobile app", "mobile testing", "layout and image recognition", "test script")),
+    ("Deep Learning Testing", ("deep learning", "neural network", "dnn", "inference engine", "model mutation")),
+    ("Model Mutation", ("model mutation", "mutation-based", "mutation testing")),
+    ("Autonomous Driving", ("autonomous driving", "automotive", "lidar", "v2x", "multi-sensor", "driving sequence")),
+    ("Multi-Sensor Fusion", ("multi-sensor", "sensor fusion")),
+    ("Scenario Generation", ("scenario generation", "sequence synthesis", "scenario-based")),
+    ("Crowdsourced Testing", ("crowdsourced", "crowdsourcing", "test report")),
+    ("Test Report Analysis", ("test report",)),
+    ("Large Language Models", ("large language model", "llm")),
+    ("Fuzz Testing", ("fuzz", "fuzzing")),
+    ("Robustness Testing", ("robustness", "robust")),
+    ("Test Prioritization", ("test prioritization", "test selection", "prioritize")),
+    ("Mutation Testing", ("mutation testing", "mutation-based")),
+    ("Bug Report Analytics", ("bug report",)),
+    ("Smart Contract", ("smart contract",)),
+    ("Numerical Software", ("numerical", "floating-point", "precision problem")),
 )
 
 
@@ -113,13 +163,58 @@ def infer_ccf_level(venue: str, title: str) -> str:
 
 def infer_publication_type(venue: str, status: str) -> tuple[str, str]:
     searchable = venue.lower()
-    if status == "preprint" or "arxiv" in searchable:
+    if status == "preprint" or "arxiv" in searchable or searchable == "corr":
         return "preprint", "预印本"
-    if any(hint in searchable for hint in ("[j]", "journal", "transactions", "empirical software engineering")):
+    if any(
+        hint in searchable
+        for hint in (
+            "[j]",
+            "journal",
+            "transactions",
+            "computing surveys",
+            " trans.",
+            "empirical software engineering",
+            "proc. acm softw. eng.",
+            "information and software technology",
+            "inf. softw. technol.",
+            "automated software engineering",
+            "autom. softw. eng.",
+            "frontiers of computer science",
+            "science china information sciences",
+            "software: practice and experience",
+            "softw. pract. exp.",
+        )
+    ):
         return "journal", "期刊论文"
-    if any(hint in searchable for hint in ("[c]", "conference", "proceedings", "symposium")) or re.search(r"\b(icse|issta|ase|fse|saner)\b", searchable):
+    if any(hint in searchable for hint in ("[c]", "conference", "proceedings", "symposium")) or re.search(r"\b(icse|issta|ase|fse|saner|issre|acl)\b", searchable):
         return "conference", "会议论文"
     return "", ""
+
+
+def infer_venue_short(venue: str) -> str:
+    searchable = clean_text(venue).lower()
+    for short_name, hints in VENUE_SHORT_HINTS:
+        if any(hint in searchable for hint in hints):
+            return short_name
+
+    parenthesized = re.findall(r"\(([A-Z][A-Z0-9-]{1,9})\)", venue)
+    if parenthesized:
+        return parenthesized[-1]
+
+    compact = clean_text(venue).upper()
+    if re.fullmatch(r"[A-Z][A-Z0-9-]{1,9}", compact):
+        return compact
+    return "PAPER"
+
+
+def infer_topics(title: str) -> list[str]:
+    searchable = clean_text(title).lower()
+    topics = [
+        topic
+        for topic, hints in TOPIC_HINTS
+        if any(hint in searchable for hint in hints)
+    ]
+    return topics[:3]
 
 
 def normalize_year(value: str, row_number: int) -> int:
@@ -231,6 +326,8 @@ def import_csv(csv_path: Path, aliases_path: Path) -> tuple[dict[str, Any], set[
                 "publication_type": publication_type,
                 "publication_type_label": publication_type_label,
                 "venue": venue,
+                "venue_short": infer_venue_short(venue),
+                "topics": infer_topics(title),
                 "note": clean_text(row.get("note")),
                 "source_order": source_order,
             }

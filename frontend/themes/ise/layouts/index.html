@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <section class="home-hero" aria-label="研究亮点轮播图" data-carousel data-reveal>
+  <section class="home-hero" aria-label="研究亮点轮播图" data-carousel>
     {{ with hugo.Data.slides }}
       <div class="home-hero__track" data-slide-count="{{ len . }}">
         {{ range $index, $_ := . }}
@@ -30,7 +30,7 @@
     {{ end }}
   </section>
 
-  <section class="home-section container" aria-labelledby="home-news-title" data-reveal>
+  <section class="home-section container" aria-labelledby="home-news-title">
     <div class="section-heading">
       <h2 id="home-news-title">{{ partial "section-icon.html" "news" }}<span>新闻资讯</span></h2>
       <a class="more-link" href="/news/">更多</a>
@@ -40,7 +40,7 @@
     {{ $pinnedNews := where $allNews "Params.pinned" true }}
     {{ $normalNews := where $allNews "Params.pinned" "ne" true }}
     {{ $news := first 5 (union $pinnedNews $normalNews) }}
-    <div class="news-preview" data-reveal>
+    <div class="news-preview">
       <div class="news-preview__image">
         <img src="/images/legacy/home/news-1.jpg" alt="新闻资讯图片">
       </div>
@@ -58,11 +58,11 @@
     </div>
   </section>
 
-  <section class="home-section container home-feature-grid" aria-label="首页栏目" data-reveal>
-    <div class="home-column" data-reveal>
+  <section class="home-section container home-feature-grid" aria-label="首页栏目">
+    <div class="home-column">
       <div class="section-heading">
         <h2>{{ partial "section-icon.html" "activity" }}<span>学术论文</span></h2>
-        <a class="more-link" href="/activities/">更多</a>
+        <a class="more-link" href="/research-results/">更多</a>
       </div>
       {{ $catalog := index hugo.Data "publication-records" }}
       {{ $structuredPublications := slice }}
@@ -74,7 +74,7 @@
           {{ range first 4 (sort $structuredPublications "year" "desc") }}
             {{ $paper := . }}
             <li>
-              <time datetime="{{ $paper.year }}"><span>{{ $paper.venue | default $paper.ccf_level | default "论文" }}</span></time>
+              <time datetime="{{ $paper.year }}"><span>{{ $paper.venue_short | default $paper.ccf_level | default "PAPER" }}</span></time>
               <div>
                 {{ with $paper.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $paper.title }}</a>{{ else }}<span class="publication-home-list__title">{{ $paper.title }}</span>{{ end }}
                 {{ with $paper.status_label }}<em class="publication-home-list__status">({{ . }})</em>{{ end }}
@@ -99,7 +99,7 @@
       </ul>
     </div>
 
-    <div class="home-column" data-reveal>
+    <div class="home-column">
       <div class="section-heading">
         <h2>{{ partial "section-icon.html" "project" }}<span>项目</span></h2>
         <a class="more-link" href="/projects/">更多</a>

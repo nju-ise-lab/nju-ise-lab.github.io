@@ -1,0 +1,13 @@
+{{ $softwareName := .software_name | default .name | default .title }}
+{{ $owners := .owners | default .authors }}
+<article class="research-result-card research-software-card">
+  <div class="research-result-card__meta">
+    <span class="research-result-card__kind">软件著作</span>
+    {{ with .year }}<span class="research-result-card__year">{{ . }}</span>{{ end }}
+  </div>
+  <div class="research-result-card__body">
+    <h3>{{ $softwareName }}</h3>
+    {{ with .registration_number }}<p class="research-result-card__venue">登记号：{{ . }}</p>{{ end }}
+    {{ with $owners }}<p class="research-result-card__authors">{{ partial "author-list.html" . }}</p>{{ end }}
+  </div>
+</article>

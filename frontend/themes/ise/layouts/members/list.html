@@ -4,7 +4,6 @@
     <section class="page-main">
       {{ with .Content }}<div class="article__body">{{ . }}</div>{{ end }}
       {{ $pages := .Pages.ByParam "display_order" }}
-      {{ $directionOrder := slice "代码自动理解" "代码自动修复" "单元测试生成" "GUI测试生成" "智能系统测试理论与方法" "深度学习框架测试" "自动驾驶与智能网联测试" "众包与群体智能测试" }}
 
       <section class="member-group" aria-labelledby="members-teachers">
         <div class="member-section-heading">
@@ -24,26 +23,13 @@
           <h2 id="members-phd">博士研究生</h2>
         </div>
         {{ $phd := where $pages "Params.member_type" "phd" }}
-        {{ range $directionOrder }}
-          {{ $direction := . }}
-          {{ $membersInDirection := where $phd "Params.research_direction" $direction }}
-          {{ if gt (len $membersInDirection) 0 }}
-            <section class="member-direction" aria-label="{{ $direction }}">
-              <h3>{{ $direction }}</h3>
-              <div class="student-member-grid">
-                {{ range $membersInDirection }}{{ partial "student-member-card.html" . }}{{ end }}
-              </div>
-            </section>
+        <div class="student-member-grid">
+          {{ range $phd }}
+            {{ partial "student-member-card.html" . }}
+          {{ else }}
+            <p class="empty-item">暂无博士研究生内容。</p>
           {{ end }}
-        {{ end }}
-        {{ $phdWithoutDirection := where $phd "Params.research_direction" "" }}
-        {{ if gt (len $phdWithoutDirection) 0 }}
-          <div class="student-member-grid member-direction">
-            {{ range $phdWithoutDirection }}
-              {{ partial "student-member-card.html" . }}
-            {{ end }}
-          </div>
-        {{ end }}
+        </div>
       </section>
 
       <section class="member-group" aria-labelledby="members-master">
@@ -51,52 +37,11 @@
           <h2 id="members-master">硕士研究生</h2>
         </div>
         {{ $master := where $pages "Params.member_type" "master" }}
-        {{ range $directionOrder }}
-          {{ $direction := . }}
-          {{ $membersInDirection := where $master "Params.research_direction" $direction }}
-          {{ if gt (len $membersInDirection) 0 }}
-            <section class="member-direction" aria-label="{{ $direction }}">
-              <h3>{{ $direction }}</h3>
-              <div class="member-text-grid">
-                {{ range $membersInDirection }}
-                  <article class="member-text-card">
-                    <h3>{{ .Title }}</h3>
-                    {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
-                  </article>
-                {{ end }}
-              </div>
-            </section>
-          {{ end }}
-        {{ end }}
-        {{ $masterWithoutDirection := where $master "Params.research_direction" "" }}
-        {{ if gt (len $masterWithoutDirection) 0 }}
-          <div class="member-text-grid member-direction">
-            {{ range $masterWithoutDirection }}
-              <article class="member-text-card">
-                <h3>{{ .Title }}</h3>
-                {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
-              </article>
-            {{ end }}
-          </div>
-        {{ end }}
-        {{ if eq (len $master) 0 }}
-            <p class="empty-item">暂无硕士研究生内容。</p>
-        {{ end }}
-      </section>
-
-      <section class="member-group" aria-labelledby="members-alumni">
-        <div class="member-section-heading">
-          <h2 id="members-alumni">过往成员</h2>
-        </div>
-        <div class="member-text-grid">
-          {{ range where $pages "Params.member_type" "alumni" }}
-            <article class="member-text-card">
-              <h3>{{ .Title }}</h3>
-              {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
-              {{ with .Params.destination }}<p>{{ . }}</p>{{ end }}
-            </article>
+        <div class="student-member-grid">
+          {{ range $master }}
+            {{ partial "student-member-card.html" . }}
           {{ else }}
-            <p class="empty-item">暂无过往成员内容。</p>
+            <p class="empty-item">暂无硕士研究生内容。</p>
           {{ end }}
         </div>
       </section>

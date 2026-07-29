@@ -1,179 +1,537 @@
 [
   {
-    "legacy_id": 20,
-    "english": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
-    "chinese": "房春荣、何云、刘佳玮、顾明政、陈振宇",
-    "title": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
-    "raw_authors": "房春荣、何云、刘佳玮、顾明政、陈振宇",
-    "authors": [
+    "legacy_id": "application-CN202512061772.7",
+    "title": "一种面向车联无线通讯的数据扩增方法（CN202512061772.7）",
+    "patent_name": "一种面向车联无线通讯的数据扩增方法（CN202512061772.7）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN122179814A",
+    "application_number": "CN202512061772.7",
+    "application_date": "2025-12-25",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "何云"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "顾明政"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
-      }
-    ],
-    "patent_name": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
-    "inventors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "何云"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "顾明政"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学深圳研究院"
       }
     ]
   },
   {
-    "legacy_id": 21,
-    "english": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
-    "chinese": "房春荣、王擎宇、张犬俊、刘佳玮、陈振宇",
-    "title": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
-    "raw_authors": "房春荣、王擎宇、张犬俊、刘佳玮、陈振宇",
-    "authors": [
+    "legacy_id": "application-CN202511678424.8",
+    "title": "一种面向无线通讯的多模态数据扩增技术（CN202511678424.8）",
+    "patent_name": "一种面向无线通讯的多模态数据扩增技术（CN202511678424.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN121615065A",
+    "application_number": "CN202511678424.8",
+    "application_date": "2025-11-02",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "王擎宇"
-      },
-      {
-        "name": "张犬俊"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
-      }
-    ],
-    "patent_name": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
-    "inventors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "王擎宇"
-      },
-      {
-        "name": "张犬俊"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学深圳研究院"
       }
     ]
   },
   {
-    "legacy_id": 22,
-    "english": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
-    "chinese": "房春荣、林聚、刘佳玮、刘关迪、陈振宇",
-    "title": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
-    "raw_authors": "房春荣、林聚、刘佳玮、刘关迪、陈振宇",
-    "authors": [
+    "legacy_id": "application-CN202511678418.2",
+    "title": "一种基于大语言模型多模态多层聚类树解析的众测报告排序方法（CN202511678418.2）",
+    "patent_name": "一种基于大语言模型多模态多层聚类树解析的众测报告排序方法（CN202511678418.2）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN121478654A",
+    "application_number": "CN202511678418.2",
+    "application_date": "2025-11-02",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "林聚"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "刘关迪"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
-      }
-    ],
-    "patent_name": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
-    "inventors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "林聚"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "刘关迪"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学"
       }
     ]
   },
   {
-    "legacy_id": 23,
-    "english": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
-    "chinese": "房春荣、何家伟、刘佳玮、陈振宇",
-    "title": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
-    "raw_authors": "房春荣、何家伟、刘佳玮、陈振宇",
-    "authors": [
+    "legacy_id": "application-CN202411888940.9",
+    "title": "一种基于视觉理解与大模型业务感知的自动化GUI测试方法（CN202411888940.9）",
+    "patent_name": "一种基于视觉理解与大模型业务感知的自动化GUI测试方法（CN202411888940.9）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN120162247A",
+    "application_number": "CN202411888940.9",
+    "application_date": "2024-12-14",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "何家伟"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学"
       }
-    ],
-    "patent_name": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
-    "inventors": [
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411888636.4",
+    "title": "一种基于大语言模型场景理解的脚本粒度GUI测试迁移方法（CN202411888636.4）",
+    "patent_name": "一种基于大语言模型场景理解的脚本粒度GUI测试迁移方法（CN202411888636.4）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN120086126A",
+    "application_number": "CN202411888636.4",
+    "application_date": "2024-12-13",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411888527.2",
+    "title": "一种基于多智能体的场景粒度界面测试用例生成方法（CN202411888527.2）",
+    "patent_name": "一种基于多智能体的场景粒度界面测试用例生成方法（CN202411888527.2）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN120086125A",
+    "application_number": "CN202411888527.2",
+    "application_date": "2024-12-13",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411569964.8",
+    "title": "一种基于Kuhn-Munkres的众包测试任务分配方法（CN202411569964.8）",
+    "patent_name": "一种基于Kuhn-Munkres的众包测试任务分配方法（CN202411569964.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN119476820A",
+    "application_number": "CN202411569964.8",
+    "application_date": "2024-11-02",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411569988.3",
+    "title": "一种基于任务动态优先级的众测任务分配方法（CN202411569988.3）",
+    "patent_name": "一种基于任务动态优先级的众测任务分配方法（CN202411569988.3）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN119398439A",
+    "application_number": "CN202411569988.3",
+    "application_date": "2024-11-02",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411310964.6",
+    "title": "深度学习框架测试方法、装置、计算机设备及存储介质（CN202411310964.6）",
+    "patent_name": "深度学习框架测试方法、装置、计算机设备及存储介质（CN202411310964.6）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN119129682A",
+    "application_number": "CN202411310964.6",
+    "application_date": "2024-09-19",
+    "applicants": [
+      {
+        "name": "深圳市金溢科技股份有限公司"
       },
       {
-        "name": "何家伟"
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411312873.6",
+    "title": "一种基于开发者经验的深度学习框架变异测试方法（CN202411312873.6）",
+    "patent_name": "一种基于开发者经验的深度学习框架变异测试方法（CN202411312873.6）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN119201727A",
+    "application_number": "CN202411312873.6",
+    "application_date": "2024-09-15",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202411312862.8",
+    "title": "一种基于事故报告的自动驾驶泛化性测试场景构建方法（CN202411312862.8）",
+    "patent_name": "一种基于事故报告的自动驾驶泛化性测试场景构建方法（CN202411312862.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN119358208A",
+    "application_number": "CN202411312862.8",
+    "application_date": "2024-09-15",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410961426.7",
+    "title": "一种测试代码修复方法及相关设备（CN202410961426.7）",
+    "patent_name": "一种测试代码修复方法及相关设备（CN202410961426.7）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN121070314A",
+    "application_number": "CN202410961426.7",
+    "application_date": "2024-07-17",
+    "applicants": [
+      {
+        "name": "华为云计算技术有限公司"
       },
       {
-        "name": "刘佳玮"
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410839275.8",
+    "title": "基于智能交通V2X模型的领域特定变异测试方法、装置及计算机设备（CN202410839275.8）",
+    "patent_name": "基于智能交通V2X模型的领域特定变异测试方法、装置及计算机设备（CN202410839275.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118689771A",
+    "application_number": "CN202410839275.8",
+    "application_date": "2024-06-26",
+    "applicants": [
+      {
+        "name": "深圳市金溢科技股份有限公司"
       },
       {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410839296.X",
+    "title": "基于智能交通模型神经元特性的变异测试方法、装置及计算机设备（CN202410839296.X）",
+    "patent_name": "基于智能交通模型神经元特性的变异测试方法、装置及计算机设备（CN202410839296.X）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118689772A",
+    "application_number": "CN202410839296.X",
+    "application_date": "2024-06-26",
+    "applicants": [
+      {
+        "name": "深圳市金溢科技股份有限公司"
+      },
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410649782.5",
+    "title": "一种基于大语言模型的移动众包测试报告聚合框架（CN202410649782.5）",
+    "patent_name": "一种基于大语言模型的移动众包测试报告聚合框架（CN202410649782.5）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118885377A",
+    "application_number": "CN202410649782.5",
+    "application_date": "2024-05-18",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410651012.4",
+    "title": "一种结合文本和截图信息的移动众包测试报告聚类、排名与概要方法（CN202410651012.4）",
+    "patent_name": "一种结合文本和截图信息的移动众包测试报告聚类、排名与概要方法（CN202410651012.4）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118760579A",
+    "application_number": "CN202410651012.4",
+    "application_date": "2024-05-18",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202410437473.1",
+    "title": "一种依托大模型的代码异味检测与重构引导技术（CN202410437473.1）",
+    "patent_name": "一种依托大模型的代码异味检测与重构引导技术（CN202410437473.1）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118210729A",
+    "application_number": "CN202410437473.1",
+    "application_date": "2024-04-09",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202311214187.0",
+    "title": "一种面向场景特征的语音识别系统的测试方法（CN202311214187.0）",
+    "patent_name": "一种面向场景特征的语音识别系统的测试方法（CN202311214187.0）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117133272A",
+    "application_number": "CN202311214187.0",
+    "application_date": "2023-09-19",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202311206311.9",
+    "title": "一种基于多样性的深度神经网络测试用例选择方法（CN202311206311.9）",
+    "patent_name": "一种基于多样性的深度神经网络测试用例选择方法（CN202311206311.9）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117194262A",
+    "application_number": "CN202311206311.9",
+    "application_date": "2023-09-18",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202310511954.8",
+    "title": "一种基于测试日志分析与人机交互对话的测试复现引导的方法（CN202310511954.8）",
+    "patent_name": "一种基于测试日志分析与人机交互对话的测试复现引导的方法（CN202310511954.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118916257A",
+    "application_number": "CN202310511954.8",
+    "application_date": "2023-05-08",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202310512064.9",
+    "title": "一种基于多轴机械臂物理仿真与强化学习的移动应用自动化测试的方法（CN202310512064.9）",
+    "patent_name": "一种基于多轴机械臂物理仿真与强化学习的移动应用自动化测试的方法（CN202310512064.9）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN118918056A",
+    "application_number": "CN202310512064.9",
+    "application_date": "2023-05-08",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202310284200.3",
+    "title": "一种基于局部到全局补全策略的室内场景光照估计方法（CN202310284200.3）",
+    "patent_name": "一种基于局部到全局补全策略的室内场景光照估计方法（CN202310284200.3）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN116228986A",
+    "application_number": "CN202310284200.3",
+    "application_date": "2023-03-22",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210715645.8",
+    "title": "一种基于图像理解与代码分析结合的移动测试脚本意图识别的方法（CN202210715645.8）",
+    "patent_name": "一种基于图像理解与代码分析结合的移动测试脚本意图识别的方法（CN202210715645.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117234587A",
+    "application_number": "CN202210715645.8",
+    "application_date": "2022-06-02",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210715644.3",
+    "title": "一种基于深度图像理解的通用型强化学习软件遍历测试技术（CN202210715644.3）",
+    "patent_name": "一种基于深度图像理解的通用型强化学习软件遍历测试技术（CN202210715644.3）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117194214A",
+    "application_number": "CN202210715644.3",
+    "application_date": "2022-06-02",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210715711.1",
+    "title": "一种基于机械臂仿真与深度界面理解的移动测试脚本录制回放的方法（CN202210715711.1）",
+    "patent_name": "一种基于机械臂仿真与深度界面理解的移动测试脚本录制回放的方法（CN202210715711.1）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117215906A",
+    "application_number": "CN202210715711.1",
+    "application_date": "2022-06-02",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210613530.8",
+    "title": "一种基于变异图像熵值引导的神经网络模糊测试方法（CN202210613530.8）",
+    "patent_name": "一种基于变异图像熵值引导的神经网络模糊测试方法（CN202210613530.8）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117218051A",
+    "application_number": "CN202210613530.8",
+    "application_date": "2022-06-01",
+    "applicants": [
+      {
+        "name": "深圳慕智科技有限公司"
+      },
+      {
+        "name": "南京大学深圳研究院"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210613831.0",
+    "title": "一种基于司法多维评估的模型评估系统（CN202210613831.0）",
+    "patent_name": "一种基于司法多维评估的模型评估系统（CN202210613831.0）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117217565A",
+    "application_number": "CN202210613831.0",
+    "application_date": "2022-06-01",
+    "applicants": [
+      {
+        "name": "深圳慕智科技有限公司"
+      },
+      {
+        "name": "南京大学深圳研究院"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210616477.7",
+    "title": "一种基于工业缺陷特征的图像扩增方法（CN202210616477.7）",
+    "patent_name": "一种基于工业缺陷特征的图像扩增方法（CN202210616477.7）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117197605A",
+    "application_number": "CN202210616477.7",
+    "application_date": "2022-06-01",
+    "applicants": [
+      {
+        "name": "深圳慕智科技有限公司"
+      },
+      {
+        "name": "南京大学深圳研究院"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210701026.3",
+    "title": "一种基于图像文本语意融合分析的移动应用众测报告一致性检测的方法（CN202210701026.3）",
+    "patent_name": "一种基于图像文本语意融合分析的移动应用众测报告一致性检测的方法（CN202210701026.3）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117171006A",
+    "application_number": "CN202210701026.3",
+    "application_date": "2022-05-27",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210584778.6",
+    "title": "一种基于GAN生成的三维图像扩增方法（CN202210584778.6）",
+    "patent_name": "一种基于GAN生成的三维图像扩增方法（CN202210584778.6）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117197601A",
+    "application_number": "CN202210584778.6",
+    "application_date": "2022-05-27",
+    "applicants": [
+      {
+        "name": "深圳慕智科技有限公司"
+      },
+      {
+        "name": "南京大学深圳研究院"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210700870.4",
+    "title": "一种基于知识图谱的移动应用功能点测试知识库搭建的方法（CN202210700870.4）",
+    "patent_name": "一种基于知识图谱的移动应用功能点测试知识库搭建的方法（CN202210700870.4）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117194213A",
+    "application_number": "CN202210700870.4",
+    "application_date": "2022-05-27",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210700869.1",
+    "title": "一种基于深度图像语义挖掘的移动应用众包测试报告聚类的方法（CN202210700869.1）",
+    "patent_name": "一种基于深度图像语义挖掘的移动应用众包测试报告聚类的方法（CN202210700869.1）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN117194212A",
+    "application_number": "CN202210700869.1",
+    "application_date": "2022-05-27",
+    "applicants": [
+      {
+        "name": "南京大学"
       }
     ]
   },
@@ -221,6 +579,49 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "public_number": "CN114581727A",
+    "application_number": "CN202111471857.8",
+    "application_date": "2022-02-19",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202210052086.7",
+    "title": "一种基于差分测试和嵌入模型的知识图谱评估方法（CN202210052086.7）",
+    "patent_name": "一种基于差分测试和嵌入模型的知识图谱评估方法（CN202210052086.7）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN114579753A",
+    "application_number": "CN202210052086.7",
+    "application_date": "2022-01-17",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202111677164.4",
+    "title": "一种智慧农业植物保障系统（CN202111677164.4）",
+    "patent_name": "一种智慧农业植物保障系统（CN202111677164.4）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN114354508A",
+    "application_number": "CN202111677164.4",
+    "application_date": "2021-12-31",
+    "applicants": [
+      {
+        "name": "深圳铯敏发科技有限公司"
+      },
+      {
+        "name": "南京大学深圳研究院"
+      }
     ]
   },
   {
@@ -261,143 +662,115 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "public_number": "CN114139159A",
+    "application_number": "CN202111471775.3",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
     ]
   },
   {
-    "legacy_id": 26,
-    "english": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
-    "chinese": "房春荣、顾明政、刘佳玮、何云、陈振宇",
-    "title": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
-    "raw_authors": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "legacy_id": 23,
+    "english": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
+    "chinese": "房春荣、何家伟、刘佳玮、陈振宇",
+    "title": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
+    "raw_authors": "房春荣、何家伟、刘佳玮、陈振宇",
     "authors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
       },
       {
-        "name": "顾明政"
+        "name": "何家伟"
       },
       {
         "name": "刘佳玮"
-      },
-      {
-        "name": "何云"
       },
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
     ],
-    "patent_name": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
+    "patent_name": "一种基于蜕变方法的雷达波原始数据增强方法（202111471993.7）",
     "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
       },
       {
-        "name": "顾明政"
+        "name": "何家伟"
       },
       {
         "name": "刘佳玮"
       },
       {
-        "name": "何云"
-      },
-      {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114280592A",
+    "application_number": "CN202111471993.7",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
       }
     ]
   },
   {
-    "legacy_id": 27,
-    "english": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
-    "chinese": "房春荣、顾明政、刘佳玮、何云、陈振宇",
-    "title": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
-    "raw_authors": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "legacy_id": 21,
+    "english": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
+    "chinese": "房春荣、王擎宇、张犬俊、刘佳玮、陈振宇",
+    "title": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
+    "raw_authors": "房春荣、王擎宇、张犬俊、刘佳玮、陈振宇",
     "authors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
       },
       {
-        "name": "顾明政"
+        "name": "王擎宇"
+      },
+      {
+        "name": "张犬俊"
       },
       {
         "name": "刘佳玮"
-      },
-      {
-        "name": "何云"
       },
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
     ],
-    "patent_name": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
+    "patent_name": "一种基于语法树剪枝的翻译机测试方法（202111471991.8）",
     "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
       },
       {
-        "name": "顾明政"
+        "name": "王擎宇"
+      },
+      {
+        "name": "张犬俊"
       },
       {
         "name": "刘佳玮"
-      },
-      {
-        "name": "何云"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
-      }
-    ]
-  },
-  {
-    "legacy_id": 28,
-    "english": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
-    "chinese": "房春荣、刘关迪、刘佳玮、林聚、陈振宇",
-    "title": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
-    "raw_authors": "房春荣、刘关迪、刘佳玮、林聚、陈振宇",
-    "authors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "刘关迪"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "林聚"
       },
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
     ],
-    "patent_name": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
-    "inventors": [
+    "public_number": "CN114239546A",
+    "application_number": "CN202111471991.8",
+    "application_date": "2021-11-30",
+    "applicants": [
       {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "刘关迪"
-      },
-      {
-        "name": "刘佳玮"
-      },
-      {
-        "name": "林聚"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "name": "南京大学"
       }
     ]
   },
@@ -453,42 +826,47 @@
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
+    ],
+    "public_number": "CN114138653A",
+    "application_number": "CN202111471771.5",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
     ]
   },
   {
-    "legacy_id": 30,
-    "english": "一种面向安卓应用的崩溃信息线上分析方法（202111471664.2）",
-    "chinese": "房春荣、李秋婷、田元汉、虞圣呈、陈振宇",
-    "title": "一种面向安卓应用的崩溃信息线上分析方法（202111471664.2）",
-    "raw_authors": "房春荣、李秋婷、田元汉、虞圣呈、陈振宇",
+    "legacy_id": 44,
+    "english": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
+    "chinese": "房春荣、田元汉、虞圣呈、赵文远、陈振宇",
+    "title": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
+    "raw_authors": "房春荣、田元汉、虞圣呈、赵文远、陈振宇",
     "authors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
       },
       {
-        "name": "李秋婷"
-      },
-      {
         "name": "田元汉"
       },
       {
         "name": "虞圣呈",
         "member_url": "/members/member-43/"
+      },
+      {
+        "name": "赵文远"
       },
       {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
       }
     ],
-    "patent_name": "一种面向安卓应用的崩溃信息线上分析方法（202111471664.2）",
+    "patent_name": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
     "inventors": [
       {
         "name": "房春荣",
         "member_url": "/members/member-38/"
-      },
-      {
-        "name": "李秋婷"
       },
       {
         "name": "田元汉"
@@ -498,8 +876,73 @@
         "member_url": "/members/member-43/"
       },
       {
+        "name": "赵文远"
+      },
+      {
         "name": "陈振宇",
         "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114138537A",
+    "application_number": "CN202111471664.2",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": 20,
+    "english": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
+    "chinese": "房春荣、何云、刘佳玮、顾明政、陈振宇",
+    "title": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
+    "raw_authors": "房春荣、何云、刘佳玮、顾明政、陈振宇",
+    "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于语法规则的深度神经网络自动生成方法（202111471925.0）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114265581A",
+    "application_number": "CN202111471925.0",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
       }
     ]
   },
@@ -550,6 +993,254 @@
       },
       {
         "name": "李彤宇"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114780373A",
+    "application_number": "CN202111471921.2",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": 26,
+    "english": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
+    "chinese": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "title": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
+    "raw_authors": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于强化学习的深度学习算子测试数据生成方法（202111471856.3）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114265765A",
+    "application_number": "CN202111471856.3",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": 22,
+    "english": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
+    "chinese": "房春荣、林聚、刘佳玮、刘关迪、陈振宇",
+    "title": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
+    "raw_authors": "房春荣、林聚、刘佳玮、刘关迪、陈振宇",
+    "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于蜕变算法的三维激光雷达点云数据扩增方法（202111471923.1）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114265074A",
+    "application_number": "CN202111471923.1",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": 27,
+    "english": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
+    "chinese": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "title": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
+    "raw_authors": "房春荣、顾明政、刘佳玮、何云、陈振宇",
+    "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于带权重采样的深度学习算子测试数据生成方法（202111471772.X）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "顾明政"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "何云"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "public_number": "CN114265764A",
+    "application_number": "CN202111471772.X",
+    "application_date": "2021-11-30",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202110581487.7",
+    "title": "一种基于句法成分分析的自动化机器翻译测试方法（CN202110581487.7）",
+    "patent_name": "一种基于句法成分分析的自动化机器翻译测试方法（CN202110581487.7）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN113283250A",
+    "application_number": "CN202110581487.7",
+    "application_date": "2021-05-26",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": "application-CN202110581488.1",
+    "title": "一种针对递归神经网络驱动的对话系统的自动化测试方法（CN202110581488.1）",
+    "patent_name": "一种针对递归神经网络驱动的对话系统的自动化测试方法（CN202110581488.1）",
+    "raw_authors": "",
+    "authors": [],
+    "inventors": [],
+    "public_number": "CN113204488A",
+    "application_number": "CN202110581488.1",
+    "application_date": "2021-05-26",
+    "applicants": [
+      {
+        "name": "南京大学"
+      }
+    ]
+  },
+  {
+    "legacy_id": 28,
+    "english": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
+    "chinese": "房春荣、刘关迪、刘佳玮、林聚、陈振宇",
+    "title": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
+    "raw_authors": "房春荣、刘关迪、刘佳玮、林聚、陈振宇",
+    "authors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "林聚"
+      },
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ],
+    "patent_name": "一种基于CycleGAN的二维激光雷达点云图像数据扩增方法（202111471992.2）",
+    "inventors": [
+      {
+        "name": "房春荣",
+        "member_url": "/members/member-38/"
+      },
+      {
+        "name": "刘关迪"
+      },
+      {
+        "name": "刘佳玮"
+      },
+      {
+        "name": "林聚"
       },
       {
         "name": "陈振宇",
@@ -1140,54 +1831,6 @@
       },
       {
         "name": "李宁"
-      }
-    ]
-  },
-  {
-    "legacy_id": 44,
-    "english": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
-    "chinese": "房春荣、田元汉、虞圣呈、赵文远、陈振宇",
-    "title": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
-    "raw_authors": "房春荣、田元汉、虞圣呈、赵文远、陈振宇",
-    "authors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "田元汉"
-      },
-      {
-        "name": "虞圣呈",
-        "member_url": "/members/member-43/"
-      },
-      {
-        "name": "赵文远"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
-      }
-    ],
-    "patent_name": "一种面向安卓应用的崩溃信息线上分析方法（2019109520589）",
-    "inventors": [
-      {
-        "name": "房春荣",
-        "member_url": "/members/member-38/"
-      },
-      {
-        "name": "田元汉"
-      },
-      {
-        "name": "虞圣呈",
-        "member_url": "/members/member-43/"
-      },
-      {
-        "name": "赵文远"
-      },
-      {
-        "name": "陈振宇",
-        "member_url": "/members/member-37/"
       }
     ]
   },

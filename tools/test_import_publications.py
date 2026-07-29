@@ -31,6 +31,7 @@ class ImportPublicationsTest(unittest.TestCase):
         self.assertEqual(record["ccf_level"], "CCF-A")
         self.assertEqual(record["publication_type"], "conference")
         self.assertEqual(record["publication_type_label"], "会议论文")
+        self.assertEqual(record["venue_short"], "ASE")
         self.assertEqual(record["source_url"], "https://doi.org/example")
         self.assertTrue(record["url"].startswith("https://scholar.google.com/scholar?"))
         self.assertEqual(record["authors"][1]["member_url"], "/members/member-37/")
@@ -59,7 +60,22 @@ class ImportPublicationsTest(unittest.TestCase):
 
         self.assertEqual(catalog["publications"][0]["ccf_level"], "CCF-A")
         self.assertEqual(catalog["publications"][0]["publication_type_label"], "期刊论文")
+        self.assertEqual(catalog["publications"][0]["venue_short"], "TSE")
+        self.assertEqual(catalog["publications"][0]["status_label"], "")
         self.assertEqual(catalog["publications"][1]["ccf_level"], "")
+
+    def test_import_infers_compact_topics(self):
+        with tempfile.TemporaryDirectory() as temp:
+            csv_path, aliases_path = self.write_fixture(
+                Path(temp),
+                "year,id,title,link,status,author,cofauthor,corauthor,level,venue,note\n"
+                "2026,paper-1,Deep Learning Framework Testing via Model Mutation,,accepted,Zhenyu Chen,,,A,IEEE Transactions on Software Engineering,\n",
+            )
+            catalog, _ = import_publications.import_csv(csv_path, aliases_path)
+
+        record = catalog["publications"][0]
+        self.assertEqual(record["venue_short"], "TSE")
+        self.assertEqual(record["topics"], ["Deep Learning Testing", "Model Mutation"])
 
     def test_title_link_preserves_academic_discovery_urls(self):
         arxiv_url = "https://arxiv.org/abs/2604.17016"

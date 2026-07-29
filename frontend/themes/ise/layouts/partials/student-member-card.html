@@ -1,5 +1,10 @@
 <article class="student-member-card">
-  <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+  <h3>
+    {{ if eq .Params.member_type "phd" }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ else }}
+      <span>{{ .Title }}</span>
+    {{ end }}
+  </h3>
   {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
-  {{ with .Params.research_direction }}<p>{{ . }}</p>{{ end }}
 </article>

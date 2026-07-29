@@ -73,11 +73,11 @@ year,id,title,link,status,author,cofauthor,corauthor,level,venue,note
 | --- | --- |
 | `year`、`id`、`title` | 必填；年份、唯一编号和论文标题 |
 | `link` | 论文来源链接。标题只跳转至 Google Scholar、arXiv、OpenReview 或 Semantic Scholar；其他链接（如 DOI、出版社页面）会自动改为 Google Scholar 的题名检索链接。 |
-| `status` | `published`、`accepted`（也兼容 `acctpted`）、`pre-print`、`submitted`、`under-review`、`in-press` |
+| `status` | `published`、`accepted`（也兼容 `acctpted`）、`pre-print`、`submitted`、`under-review`、`in-press`；`published` 不显示标签，其余特殊状态按需显示 |
 | `author` | 必填；按作者顺序填写，使用 `;` 分隔 |
 | `cofauthor`、`corauthor` | 共同一作与通讯作者，页面分别显示 `#` 与 `*` |
 | `level` | `CCF-A`、`CCF-B`、`CCF-C` 或留空；请优先手动填写。旧数据中少量可明确识别的期刊/会议会自动补充，手动值优先。 |
-| `venue`、`note` | 期刊/会议名与补充说明；为空时自动隐藏 |
+| `venue`、`note` | 期刊/会议名与补充说明；为空时自动隐藏。页面会从 `venue` 生成 TSE、ICSE、ASE 等简称，并按标题关键词生成最多三个 Topic 标签。 |
 
 作者链接只来自 `frontend/data/member-aliases.json` 的精确映射，避免因同名或写法猜测而误链。例如：
 
@@ -95,7 +95,33 @@ python3 tools/import_publications.py
 bash scripts/build.sh
 ```
 
-脚本会生成页面所需的 `publication-records.json`，并按 Manuscript、年份、状态、作者标记、CCF 等级、期刊/会议和备注展示到“研究成果”的学术论文区及首页论文区。可使用 `python3 tools/import_publications.py --check` 检查生成文件是否已同步。
+脚本会生成页面所需的 `publication-records.json`，并按 Manuscript、年份、特殊状态、作者标记、CCF 等级、期刊/会议、Topic 和备注展示到“研究成果”的学术论文区及首页论文区。可使用 `python3 tools/import_publications.py --check` 检查生成文件是否已同步。
+
+## 软件著作
+
+软件著作维护文件：
+
+```text
+frontend/data/software-copyrights.json
+```
+
+示例：
+
+```json
+[
+  {
+    "software_name": "软件名称",
+    "registration_number": "登记号",
+    "year": "2026",
+    "owners": [
+      {
+        "name": "陈振宇",
+        "member_url": "/members/member-37/"
+      }
+    ]
+  }
+]
+```
 
 ## 成员
 
@@ -107,7 +133,7 @@ title: "姓名"
 member_type: "phd" # teacher | phd | master | alumni
 role_title: "博士生" # 教师可填写职称
 grade: "2021级" # 缺失时不显示
-research_direction: "智能驾驶与测试" # 博士生按此字段分组
+research_direction: "智能驾驶与测试" # 数据可保留，成员列表不再按方向分组
 homepage: "https://..." # 可选；个人页显示
 destination: "华为" # 过往成员可选
 display_order: 10
@@ -151,7 +177,7 @@ frontend/data/featured-projects.json
 frontend/data/projects.json
 ```
 
-每条专利使用 `patent_name` 和 `inventors` 字段；专利本身不可点击，明确关联的专利人可以链接到成员页。
+每条专利使用 `patent_name` 和 `inventors` 字段；申请信息可使用 `public_number`、`application_number`、`application_date` 和 `applicants`。专利本身不可点击，明确关联的专利人可以链接到成员页；缺少发明人时申请人会单独标注，不会被当作发明人。
 
 ## 首页轮播
 
