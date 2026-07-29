@@ -4,8 +4,8 @@
 
 ## 维护原则
 
-- 正式内容修改 `frontend/content/`；论文源数据维护在 `frontend/publication-source/`。
-- 首页和列表数据修改 `frontend/data/`，其中 `publication-records.json` 由论文 CSV 自动生成，不手动编辑。
+- 正式内容修改 `frontend/content/`；论文源数据维护在 `frontend/publication-source/`，成员源数据维护在 `frontend/member-source/`。
+- 首页和列表数据修改 `frontend/data/`，其中 `publication-records.json` 和 `member-records.json` 均由 CSV 自动生成，不手动编辑。
 - 新闻、项目和成员图片放在对应 `index.md` 的同目录页面包；首页轮播放到 `frontend/static/images/slides/`。
 - `migration/output/` 和 `migration_exports/` 只作为迁移记录。
 - 修改内容后必须重新构建并上传 `public/`。
@@ -18,7 +18,11 @@
 | 学术论文源数据 | `frontend/publication-source/publications.csv` |
 | 论文生成数据 | `frontend/data/publication-records.json`（执行脚本生成，不手动编辑） |
 | 论文作者—成员链接 | `frontend/data/member-aliases.json`（精确姓名映射） |
-| 成员 | `frontend/content/members/<slug>/index.md` |
+| 教师维护源 | `frontend/member-source/teachers.csv` |
+| 博士维护源 | `frontend/member-source/phd.csv` |
+| 硕士维护源 | `frontend/member-source/masters.csv` |
+| 成员生成数据 | `frontend/data/member-records.json`（执行脚本生成，不手动编辑） |
+| 成员个人页 | `frontend/content/members/<id>/index.md`（执行脚本生成；同目录保留教师头像） |
 | 研究成果入口 | `frontend/content/research-results/_index.md`；论文和专利仍分别维护 |
 | 科研项目 | `frontend/content/platform/<slug>/index.md`（兼容入口 `/platform/`；新入口 `/projects/`） |
 | 关于我们 | `frontend/content/about/_index.md` |
@@ -91,11 +95,10 @@ year,id,title,link,status,author,cofauthor,corauthor,level,venue,note
 更新 CSV 后，在项目根目录执行：
 
 ```bash
-python3 tools/import_publications.py
 bash scripts/build.sh
 ```
 
-脚本会生成页面所需的 `publication-records.json`，并按 Manuscript、年份、特殊状态、作者标记、CCF 等级、期刊/会议、Topic 和备注展示到“研究成果”的学术论文区及首页论文区。可使用 `python3 tools/import_publications.py --check` 检查生成文件是否已同步。
+构建脚本会先生成页面所需的 `publication-records.json`，再按 Manuscript、年份、特殊状态、作者标记、CCF 等级、期刊/会议、Topic 和备注展示到“研究成果”的学术论文区及首页论文区。也可单独执行 `python3 tools/import_publications.py` 更新数据，或使用 `python3 tools/import_publications.py --check` 检查生成文件是否已同步。
 
 ## 软件著作
 
@@ -125,24 +128,49 @@ frontend/data/software-copyrights.json
 
 ## 成员
 
-示例：
+成员以三个 CSV 作为唯一维护源：
 
-```yaml
----
-title: "姓名"
-member_type: "phd" # teacher | phd | master | alumni
-role_title: "博士生" # 教师可填写职称
-grade: "2021级" # 缺失时不显示
-research_direction: "智能驾驶与测试" # 数据可保留，成员列表不再按方向分组
-homepage: "https://..." # 可选；个人页显示
-destination: "华为" # 过往成员可选
-display_order: 10
-avatar: "avatar.jpg" # 数据保留；只有教师列表和个人页渲染
-draft: false
----
+```text
+frontend/member-source/teachers.csv
+frontend/member-source/phd.csv
+frontend/member-source/masters.csv
 ```
 
-成员类型映射为：教授/副教授使用 `teacher`，博士生使用 `phd`，硕士生使用 `master`，现有博士后归入 `alumni`。教师和博士生可以进入个人页；论文和专利只依据明确的 `member_url` 关联，不按姓名模糊匹配。
+教师字段：
+
+```csv
+id,name,avatar,member_type,identity,homepage,bio
+member-37,陈振宇,avatar.jpg,teacher,教授,https://...,个人简介
+```
+
+博士和硕士字段：
+
+```csv
+id,name,member_type,identity,homepage
+member-47,郭安,phd,2020级博士研究生,
+```
+
+字段说明：
+
+| 字段 | 用途 |
+| --- | --- |
+| `id` | 必填且不可随意修改；生成 `/members/member-37/` 这样的稳定个人页地址，论文作者链接依赖该地址 |
+| `name` | 成员姓名 |
+| `avatar` | 仅教师 CSV 使用；填写教师页面包中的头像文件名 |
+| `member_type` | 教师、博士、硕士分别固定为 `teacher`、`phd`、`master` |
+| `identity` | 教师填写职称；学生填写“2024级博士研究生”或“硕士研究生”等 |
+| `homepage` | 可选的个人主页链接 |
+| `bio` | 仅教师 CSV 使用；个人简介 |
+
+CSV 中的行顺序就是页面展示顺序。修改后在项目根目录执行：
+
+```bash
+bash scripts/build.sh
+```
+
+构建脚本会自动校验字段、重复 ID/姓名、成员类型、主页链接和教师头像，并生成 `member-records.json` 以及稳定的教师、博士和硕士成员页。也可单独执行 `python3 tools/import_members.py` 更新数据，或使用 `python3 tools/import_members.py --check` 检查生成文件是否已同步。教师和博士可以进入个人页，硕士只在成员列表展示；非教师不显示头像。已有过往成员页面仅用于保留历史论文作者链接，不出现在成员列表，也不进入三个日常维护 CSV。
+
+论文和专利只依据明确的 `member_url` 关联，不按姓名模糊匹配。英文作者名仍在 `frontend/data/member-aliases.json` 中维护。
 
 ## 科研项目
 

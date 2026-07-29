@@ -1,10 +1,10 @@
 <article class="student-member-card">
   <h3>
-    {{ if eq .Params.member_type "phd" }}
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ if eq .member_type "phd" }}
+      <a href="{{ .url }}">{{ .name }}</a>
     {{ else }}
-      <span>{{ .Title }}</span>
+      <span>{{ .name }}</span>
     {{ end }}
   </h3>
-  {{ with .Params.grade }}<p>{{ . }}</p>{{ end }}
+  {{ with .identity }}<p>{{ . }}</p>{{ end }}
 </article>

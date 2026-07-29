@@ -9,11 +9,9 @@
         {{ end }}
       {{ end }}
       <h1>{{ .Title }}</h1>
-      {{ with .Params.role_title }}<p class="member-profile__role">{{ . }}</p>{{ end }}
+      {{ with (.Params.identity | default .Params.role_title) }}<p class="member-profile__role">{{ . }}</p>{{ end }}
       <dl class="member-profile__meta">
         {{ with .Params.homepage }}<div><dt>个人主页</dt><dd><a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a></dd></div>{{ end }}
-        {{ with .Params.grade }}<div><dt>年级</dt><dd>{{ . }}</dd></div>{{ end }}
-        {{ with .Params.research_direction }}<div><dt>研究方向</dt><dd>{{ . }}</dd></div>{{ end }}
       </dl>
       <div class="article__body">{{ .Content }}</div>
 

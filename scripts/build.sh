@@ -7,11 +7,15 @@ SITE_DIR="${SITE_DIR:-${ROOT_DIR}/frontend}"
 DEST_DIR="${DEST_DIR:-${SITE_DIR}/public}"
 BASE_URL="${BASE_URL:-https://nju-ise-lab.github.io/}"
 HUGO_BIN="${HUGO_BIN:-hugo}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 
 case "${BASE_URL}" in
   */) ;;
   *) BASE_URL="${BASE_URL}/" ;;
 esac
+
+"${PYTHON_BIN}" "${ROOT_DIR}/tools/import_publications.py"
+"${PYTHON_BIN}" "${ROOT_DIR}/tools/import_members.py"
 
 "${HUGO_BIN}" \
   --source "${SITE_DIR}" \

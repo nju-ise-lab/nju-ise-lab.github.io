@@ -1,15 +1,9 @@
 ---
 title: "伊高磊"
-role: "博士生"
-email: ""
-avatar: "avatar.jpg"
-academy: "软件学院"
-sort: 8
-legacy_id: 39
 url: "/members/member-39/"
-research_direction: "智能系统测试理论与方法"
-student_label: "博士生"
+member_id: "member-39"
 member_type: "phd"
-display_order: 8
+identity: "博士研究生"
+display_order: 1
+generated_from: "frontend/member-source/phd.csv"
 ---
-

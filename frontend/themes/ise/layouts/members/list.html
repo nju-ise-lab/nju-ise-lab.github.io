@@ -3,14 +3,18 @@
   <div class="page-shell container">
     <section class="page-main">
       {{ with .Content }}<div class="article__body">{{ . }}</div>{{ end }}
-      {{ $pages := .Pages.ByParam "display_order" }}
+      {{ $catalog := index hugo.Data "member-records" }}
+      {{ $members := slice }}
+      {{ with $catalog }}
+        {{ with .members }}{{ $members = . }}{{ end }}
+      {{ end }}
 
       <section class="member-group" aria-labelledby="members-teachers">
         <div class="member-section-heading">
           <h2 id="members-teachers">教师</h2>
         </div>
         <div class="member-list">
-          {{ range where $pages "Params.member_type" "teacher" }}
+          {{ range where $members "member_type" "teacher" }}
             {{ partial "member-card.html" . }}
           {{ else }}
             <p class="empty-item">暂无教师内容。</p>
@@ -22,7 +26,7 @@
         <div class="member-section-heading">
           <h2 id="members-phd">博士研究生</h2>
         </div>
-        {{ $phd := where $pages "Params.member_type" "phd" }}
+        {{ $phd := where $members "member_type" "phd" }}
         <div class="student-member-grid">
           {{ range $phd }}
             {{ partial "student-member-card.html" . }}
@@ -36,7 +40,7 @@
         <div class="member-section-heading">
           <h2 id="members-master">硕士研究生</h2>
         </div>
-        {{ $master := where $pages "Params.member_type" "master" }}
+        {{ $master := where $members "member_type" "master" }}
         <div class="student-member-grid">
           {{ range $master }}
             {{ partial "student-member-card.html" . }}

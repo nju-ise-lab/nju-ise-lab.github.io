@@ -1,12 +1,11 @@
 <article class="member-card">
-  {{ $avatar := .Resources.GetMatch (.Params.avatar | default "") }}
-  <a class="member-card__avatar" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-    {{ with $avatar }}
-      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+  <a class="member-card__avatar" href="{{ .url }}" aria-label="{{ .name }}">
+    {{ with .avatar_url }}
+      <img src="{{ . }}" alt="{{ $.name }}">
     {{ else }}
-      <span>{{ substr .Title 0 1 }}</span>
+      <span>{{ substr .name 0 1 }}</span>
     {{ end }}
   </a>
-  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  {{ with .Params.role_title }}<p class="member-card__role">{{ . }}</p>{{ end }}
+  <h3><a href="{{ .url }}">{{ .name }}</a></h3>
+  {{ with .identity }}<p class="member-card__role">{{ . }}</p>{{ end }}
 </article>

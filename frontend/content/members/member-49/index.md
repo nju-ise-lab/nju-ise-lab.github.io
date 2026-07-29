@@ -1,15 +1,9 @@
 ---
 title: "钱瑞祥"
-role: "博士生"
-email: ""
-avatar: "avatar.png"
-academy: ""
-sort: 8
-legacy_id: 49
 url: "/members/member-49/"
-research_direction: "深度学习框架测试"
-student_label: "博士生"
+member_id: "member-49"
 member_type: "phd"
-display_order: 8
+identity: "博士研究生"
+display_order: 5
+generated_from: "frontend/member-source/phd.csv"
 ---
-

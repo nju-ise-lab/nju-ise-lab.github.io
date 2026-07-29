@@ -7,7 +7,7 @@ THEME = ROOT / "frontend" / "themes" / "ise"
 
 
 class DesignStructureTest(unittest.TestCase):
-    def test_shared_page_header_partial_is_used_by_inner_pages(self):
+    def test_redundant_page_header_is_removed_from_inner_pages(self):
         partial = THEME / "layouts" / "partials" / "page-header.html"
         self.assertTrue(partial.exists())
 
@@ -18,7 +18,7 @@ class DesignStructureTest(unittest.TestCase):
             "layouts/platform/list.html",
         ):
             content = (THEME / relative).read_text(encoding="utf-8")
-            self.assertIn('partial "page-header.html"', content)
+            self.assertNotIn('partial "page-header.html"', content)
 
     def test_refreshed_design_classes_are_present(self):
         css = (THEME / "assets" / "css" / "main.css").read_text(encoding="utf-8")
@@ -26,7 +26,6 @@ class DesignStructureTest(unittest.TestCase):
         for selector in (
             ".page-header",
             ".home-feature-grid",
-            "[data-reveal]",
             ".publication-year-group",
             ".member-section-heading",
             ".project-card-list",
@@ -34,7 +33,7 @@ class DesignStructureTest(unittest.TestCase):
         ):
             self.assertIn(selector, css)
 
-    def test_homepage_effects_assets_are_wired(self):
+    def test_homepage_delay_effects_are_removed(self):
         home = (THEME / "layouts" / "index.html").read_text(encoding="utf-8")
         base = (THEME / "layouts" / "_default" / "baseof.html").read_text(encoding="utf-8")
         script = THEME / "assets" / "js" / "home-effects.js"
@@ -42,9 +41,9 @@ class DesignStructureTest(unittest.TestCase):
         self.assertNotIn("home-stats", home)
         self.assertNotIn("home-stat-card", home)
         self.assertNotIn("data-count", home)
-        self.assertIn("data-reveal", home)
-        self.assertTrue(script.exists())
-        self.assertIn('resources.Get "js/home-effects.js"', base)
+        self.assertNotIn("data-reveal", home)
+        self.assertFalse(script.exists())
+        self.assertNotIn('resources.Get "js/home-effects.js"', base)
 
     def test_homepage_stats_cards_are_removed(self):
         css = (THEME / "assets" / "css" / "main.css").read_text(encoding="utf-8")

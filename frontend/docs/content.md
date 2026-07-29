@@ -15,6 +15,8 @@ Sections:
 - `about/`
 - `jobs/`
 
-Edit these files directly for normal content updates. Do not edit `migration/output/content/` unless you are intentionally rerunning or debugging migration.
+Edit these files directly for normal page-content updates. Do not edit `migration/output/content/` unless you are intentionally rerunning or debugging migration.
 
 Publication source data is maintained separately in `frontend/publication-source/publications.csv`; run `python3 tools/import_publications.py` to regenerate Hugo data after edits.
+
+Active member source data is maintained separately in `frontend/member-source/teachers.csv`, `phd.csv`, and `masters.csv`; run `python3 tools/import_members.py` to regenerate the member catalog and stable member pages after edits.

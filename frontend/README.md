@@ -15,7 +15,8 @@
 - `themes/ise/layouts/members/`：成员介绍列表页和详情页模板。
 - `themes/ise/assets/css/main.css`：旧站视觉骨架样式。
 - `static/images/legacy/`：从旧站复制来的视觉资产。
-- `content/`：新闻、学术活动、成员介绍、科研项目、关于我们、诚聘英才等 Markdown 内容。
+- `content/`：新闻、学术活动、成员个人页、科研项目、关于我们、诚聘英才等 Markdown 内容。
+- `member-source/`：教师、博士研究生、硕士研究生三个成员维护 CSV。
 - `data/`：首页轮播、首页精选科研项目、专利/产出、论文等 JSON 数据。
 - 页面封面/代表图使用 front matter 的 `image: "cover.png"`，文件与 `index.md` 同目录。
 - 成员头像使用 `avatar: "avatar.jpg"`，文件与成员的 `index.md` 同目录；论文作者只通过 `member_url` 关联成员页。
@@ -23,13 +24,12 @@
 
 ## 内容维护方式
 
-新闻、学术活动、科研项目、成员介绍均使用 Hugo section 维护：
+新闻、学术活动和科研项目使用 Hugo section 维护：
 
 ```text
 content/news/my-news.md
 content/activities/my-activity.md
 content/platform/my-platform.md
-content/members/member-name.md
 ```
 
 推荐 front matter：
@@ -51,15 +51,15 @@ draft: false
 
 首页轮播读取 `data/slides.json`；论文截图、长图等内容会用完整展示方式避免被裁切。
 
-成员介绍推荐使用：
+成员介绍统一维护三个 CSV：
 
-```yaml
-role: "professor" # professor / associate_professor / phd / master
-role_title: "教授"
-avatar: "avatar.jpg" # 文件与 index.md 同目录
-research_direction: "智能软件工程" # 博士生、硕士生可选；缺省显示“方向待补充”
-weight: 10
+```text
+member-source/teachers.csv
+member-source/phd.csv
+member-source/masters.csv
 ```
+
+修改后执行项目根目录的 `bash scripts/build.sh`，构建过程会自动生成 `data/member-records.json` 和稳定的成员个人页。教师头像仍与对应 `content/members/<id>/index.md` 放在同一页面包中。
 
 当前 `content/` 和 `data/` 已经是迁移后的正式内容源。后续不要编辑 `migration/output/`，除非你明确要重新做迁移实验。
 
