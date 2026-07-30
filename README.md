@@ -17,7 +17,7 @@ ise-quick/
 └── tools/                 # Excel 校验与转换脚本
 ```
 
-日常内容维护请先阅读 [`frontend/data-source/README.md`](frontend/data-source/README.md)。
+日常内容维护请先阅读 [`frontend/data-source/README.md`](frontend/data-source/README.md)。其中包含手动修改 Excel、Markdown 或图片后，重新生成 JSON、本地预览、测试、提交 Git 和触发 GitHub Pages 部署的完整步骤。
 
 ## 本地预览
 

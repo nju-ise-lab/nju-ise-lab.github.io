@@ -97,20 +97,36 @@ featured, featured_order, homepage_label
 - 新闻仍在 `frontend/content/news/` 中按一篇一个 Markdown 维护。
 - `fig/` 会映射到网站 `/images/data-source/`，Markdown 和 Excel 中不要填写本机绝对路径。
 
-## 转换、预览与发布
+## 手动修改后如何更新网站
 
-在项目根目录执行：
+以下命令都需要在项目根目录 `ise-quick/` 下执行。
+
+### 第一步：开始修改前同步 GitHub
 
 ```bash
-# Excel → JSON，并更新成员页面
-bash scripts/import_data.sh
-
-# 本地预览（会自动先导入）
-bash scripts/serve.sh
-
-# 正式构建（会自动先导入）
-bash scripts/build.sh
+git pull --ff-only origin main
 ```
+
+这样可以避免在旧版本上继续修改。
+
+### 第二步：修改维护源
+
+- 成员、论文、专利、软件著作或项目：修改本目录中的对应 Excel。
+- 首页、关于我们或教育教学：修改 `content/` 中对应的 Markdown。
+- 首页或教师图片：把图片放入 `fig/`，同时更新 Excel 或 Markdown 中的相对路径。
+- 新闻：修改 `frontend/content/news/` 中对应的 Markdown 页面。
+
+不要直接修改 `frontend/data/*.json` 或 `frontend/content/members/<成员编号>/index.md`，这些文件会由脚本覆盖。
+
+### 第三步：重新生成 JSON
+
+如果修改了任何 Excel，执行：
+
+```bash
+bash scripts/import_data.sh
+```
+
+如果只修改了 Markdown 或图片，可以跳过这一步；后面的预览和构建命令也会自动执行一次数据导入。
 
 自动生成的文件包括：
 
@@ -124,4 +140,70 @@ frontend/data/project-records.json
 frontend/content/members/<成员编号>/index.md
 ```
 
-不要手工修改这些生成文件；修改 Excel 后重新运行导入即可。推送 `main` 分支会触发 GitHub Pages 自动发布。
+### 第四步：本地预览
+
+```bash
+bash scripts/serve.sh
+```
+
+浏览器打开 `http://localhost:1313/`，检查首页、成员页、研究成果、项目和刚修改的页面。确认无误后，在终端按 `Control + C` 停止预览。
+
+### 第五步：正式构建和测试
+
+```bash
+python3 -m unittest discover -s tools -p 'test_*.py'
+bash scripts/build.sh
+```
+
+两条命令都成功完成后再提交。`frontend/public/` 是临时构建结果，已被 Git 忽略，不需要提交。
+
+### 第六步：检查修改
+
+```bash
+git status
+git diff --check
+```
+
+确认列表中只有本次准备发布的内容。Excel 更新后，同时出现生成的 JSON 和成员 Markdown 变化是正常的。
+
+### 第七步：提交并推送 GitHub
+
+```bash
+git add -A
+git commit -m "更新网站内容"
+git push origin main
+```
+
+提交说明可以写得更具体，例如：
+
+```bash
+git commit -m "更新2026年论文和成员信息"
+```
+
+推送成功后，GitHub Actions 会自动构建并发布 GitHub Pages。通常等待几十秒后访问：
+
+```text
+https://nju-ise-lab.github.io/
+```
+
+可以在 GitHub 仓库的 `Actions` 页面查看部署是否成功。
+
+## 常用命令速查
+
+```bash
+# 重新生成 Excel 对应的数据
+bash scripts/import_data.sh
+
+# 启动本地预览
+bash scripts/serve.sh
+
+# 运行测试并构建正式网站
+python3 -m unittest discover -s tools -p 'test_*.py'
+bash scripts/build.sh
+
+# 提交并推送
+git status
+git add -A
+git commit -m "更新网站内容"
+git push origin main
+```
