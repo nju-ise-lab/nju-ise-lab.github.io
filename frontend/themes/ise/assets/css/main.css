@@ -3094,13 +3094,6 @@ img {
   background: var(--ise-purple);
 }
 
-.project-filter-bar > span {
-  margin-left: auto;
-  padding-right: 10px;
-  color: var(--ise-muted);
-  font-size: 12px;
-}
-
 .projects-page .project-record-list {
   gap: 14px;
 }
@@ -3386,12 +3379,6 @@ img {
     flex-wrap: wrap;
   }
 
-  .project-filter-bar > span {
-    width: 100%;
-    margin: 4px 0 0;
-    padding-left: 8px;
-  }
-
   .editorial-page__index {
     position: static;
     display: flex;
@@ -3450,10 +3437,6 @@ img {
   .project-filter-bar button {
     min-width: 0;
     padding-inline: 8px;
-  }
-
-  .project-filter-bar > span {
-    grid-column: 1 / -1;
   }
 
   .projects-page .project-record {
