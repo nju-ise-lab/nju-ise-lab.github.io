@@ -13,7 +13,9 @@
       var value = filter.getAttribute("data-project-filter");
 
       filters.forEach(function (item) {
-        item.classList.toggle("is-active", item === filter);
+        var active = item === filter;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", active ? "true" : "false");
       });
 
       cards.forEach(function (card) {

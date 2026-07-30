@@ -3117,6 +3117,10 @@ img {
   box-shadow: none;
 }
 
+.projects-page .project-record[hidden] {
+  display: none;
+}
+
 .projects-page .project-record__index {
   position: relative;
   color: #b58a25;
