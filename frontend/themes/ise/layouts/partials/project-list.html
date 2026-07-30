@@ -1,4 +1,21 @@
 {{ $records := .records }}
+{{ $nationalProjects := slice }}
+{{ $provincialProjects := slice }}
+{{ $otherProjects := slice }}
+{{ range $records }}
+  {{ if or (in .project_name "国家") (in .project_name "科技部") (in .project_name "973") }}
+    {{ $nationalProjects = $nationalProjects | append . }}
+  {{ else if or (in .project_name "江苏省") (in .project_name "教育部") (in .project_name "南京市") }}
+    {{ $provincialProjects = $provincialProjects | append . }}
+  {{ else }}
+    {{ $otherProjects = $otherProjects | append . }}
+  {{ end }}
+{{ end }}
+{{ $projectGroups := slice
+  (dict "scope" "national" "prefix" "N" "records" $nationalProjects)
+  (dict "scope" "provincial" "prefix" "P" "records" $provincialProjects)
+  (dict "scope" "other" "prefix" "O" "records" $otherProjects)
+}}
 <section class="research-project-block" aria-labelledby="research-project-list-title">
   <h2 id="research-project-list-title" class="visually-hidden">项目列表</h2>
   <div class="project-filter-bar" role="group" aria-label="项目分类">
@@ -9,33 +26,32 @@
   </div>
   <div class="research-project-list project-card-list">
     <ul class="project-record-list">
-      {{ range $index, $record := $records }}
-        {{ $scope := "other" }}
-        {{ if or (in $record.project_name "国家") (in $record.project_name "科技部") (in $record.project_name "973") }}
-          {{ $scope = "national" }}
-        {{ else if or (in $record.project_name "江苏省") (in $record.project_name "教育部") (in $record.project_name "南京市") }}
-          {{ $scope = "provincial" }}
-        {{ end }}
-        {{ $projectType := "科研项目" }}
-        {{ $projectTitle := $record.project_name }}
-        {{ $nameParts := split $record.project_name "：" }}
-        {{ if gt (len $nameParts) 1 }}
-          {{ $projectType = index $nameParts 0 }}
-          {{ $projectTitle = delimit (after 1 $nameParts) "：" }}
-        {{ end }}
-        <li class="project-record" data-project-card="{{ $scope }}">
-          <span class="project-record__index">{{ printf "%02d" (add $index 1) }}</span>
-          <div class="project-record__content">
-            <span class="project-record__type">{{ $projectType }}</span>
-            <h3>{{ $projectTitle }}</h3>
-          {{ with .project_summary }}<p class="project-record__summary">{{ . }}</p>{{ end }}
-          <div class="project-record__meta">
-              {{ with .project_code }}<span>{{ . }}</span>{{ end }}
-              {{ with .project_period }}<span>{{ . }}</span>{{ end }}
+      {{ range $projectGroups }}
+        {{ $scope := .scope }}
+        {{ $prefix := .prefix }}
+        {{ range $index, $record := .records }}
+          {{ $projectType := "科研项目" }}
+          {{ $projectTitle := $record.project_name }}
+          {{ $nameParts := split $record.project_name "：" }}
+          {{ if gt (len $nameParts) 1 }}
+            {{ $projectType = index $nameParts 0 }}
+            {{ $projectTitle = delimit (after 1 $nameParts) "：" }}
+          {{ end }}
+          <li class="project-record" data-project-card="{{ $scope }}">
+            <span class="project-record__index">{{ $prefix }}{{ printf "%02d" (add $index 1) }}</span>
+            <div class="project-record__content">
+              <span class="project-record__type">{{ $projectType }}</span>
+              <h3>{{ $projectTitle }}</h3>
+              {{ with $record.project_summary }}<p class="project-record__summary">{{ . }}</p>{{ end }}
+              <div class="project-record__meta">
+                {{ with $record.project_code }}<span>{{ . }}</span>{{ end }}
+                {{ with $record.project_period }}<span>{{ . }}</span>{{ end }}
+              </div>
             </div>
-          </div>
-        </li>
-      {{ else }}
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if eq (len $records) 0 }}
         <li class="empty-item">暂无科研项目内容。</li>
       {{ end }}
     </ul>
