@@ -6,7 +6,10 @@
       <section class="research-project-block" aria-labelledby="patents-title">
         <h2 id="patents-title" class="page-subtitle">专利</h2>
         <div class="research-project-list related-card-list">
-          {{ partial "patent-list.html" (dict "patents" hugo.Data.projects) }}
+          {{ $catalog := index hugo.Data "patent-records" }}
+          {{ $patents := slice }}
+          {{ with $catalog }}{{ with .patents }}{{ $patents = . }}{{ end }}{{ end }}
+          {{ partial "patent-list.html" (dict "patents" $patents) }}
         </div>
       </section>
     </section>

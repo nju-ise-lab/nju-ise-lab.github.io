@@ -7,5 +7,5 @@ identity: "2024级硕士研究生"
 display_order: 4
 aliases:
   - "/members/member-58/"
-generated_from: "frontend/member-source/masters.csv"
+generated_from: "frontend/data-source/members.xlsx#硕士研究生"
 ---

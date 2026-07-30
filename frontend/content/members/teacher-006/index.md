@@ -9,5 +9,5 @@ aliases:
   - "/members/member-52/"
 homepage: "https://cise.njtech.edu.cn/info/1015/6159.htm"
 avatar: "avatar.png"
-generated_from: "frontend/member-source/teachers.csv"
+generated_from: "frontend/data-source/members.xlsx#教师"
 ---

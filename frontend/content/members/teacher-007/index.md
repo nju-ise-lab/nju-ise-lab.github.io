@@ -9,5 +9,5 @@ aliases:
   - "/members/member-53/"
 homepage: "http://cs.nju.edu.cn/fengyang"
 avatar: "avatar.jpg"
-generated_from: "frontend/member-source/teachers.csv"
+generated_from: "frontend/data-source/members.xlsx#教师"
 ---

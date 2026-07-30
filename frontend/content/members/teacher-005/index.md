@@ -9,5 +9,5 @@ aliases:
   - "/members/member-44/"
 homepage: "https://software.nju.edu.cn/hetieke/index.html"
 avatar: "avatar.jpg"
-generated_from: "frontend/member-source/teachers.csv"
+generated_from: "frontend/data-source/members.xlsx#教师"
 ---

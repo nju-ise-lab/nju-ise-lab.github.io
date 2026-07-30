@@ -1,15 +1,21 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 from pathlib import Path
 import re
 from typing import Any
 from urllib.parse import quote_plus, urlparse
 
+try:
+    from tools.xlsx_reader import XlsxReadError, read_table
+except ModuleNotFoundError:
+    from xlsx_reader import XlsxReadError, read_table
 
-REQUIRED_COLUMNS = {
+
+ROOT = Path(__file__).resolve().parents[1]
+FRONTEND = ROOT / "frontend"
+REQUIRED_COLUMNS = (
     "year",
     "id",
     "title",
@@ -21,7 +27,7 @@ REQUIRED_COLUMNS = {
     "level",
     "venue",
     "note",
-}
+)
 
 STATUS_ALIASES = {
     "published": ("published", ""),
@@ -111,8 +117,8 @@ def normalize_name(value: str) -> str:
     return re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", value.lower())
 
 
-def clean_text(value: str | None) -> str:
-    return re.sub(r"\s+", " ", (value or "").strip())
+def clean_text(value: Any) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip())
 
 
 def split_names(value: str | None) -> list[str]:
@@ -285,56 +291,65 @@ def build_authors(row: dict[str, str], aliases: dict[str, str], row_number: int,
     return authors
 
 
-def import_csv(csv_path: Path, aliases_path: Path) -> tuple[dict[str, Any], set[str]]:
+def import_rows(
+    rows: list[dict[str, Any]], aliases_path: Path
+) -> tuple[dict[str, Any], set[str]]:
     aliases = load_aliases(aliases_path)
-    with csv_path.open("r", encoding="utf-8-sig", newline="") as source:
-        reader = csv.DictReader(source)
-        columns = set(reader.fieldnames or [])
-        missing = REQUIRED_COLUMNS - columns
-        if missing:
-            raise PublicationImportError(f"CSV 缺少字段：{', '.join(sorted(missing))}。")
+    records: list[dict[str, Any]] = []
+    ids: set[str] = set()
+    unmatched: set[str] = set()
+    for source_order, row in enumerate(rows, start=1):
+        row_number = int(row.get("_source_row", source_order + 1))
+        paper_id = clean_text(row.get("id"))
+        title = clean_text(row.get("title"))
+        if not paper_id or not title:
+            raise PublicationImportError(f"第 {row_number} 行必须包含 id 和 title。")
+        if paper_id in ids:
+            raise PublicationImportError(f"第 {row_number} 行的 id `{paper_id}` 重复。")
+        ids.add(paper_id)
 
-        records: list[dict[str, Any]] = []
-        ids: set[str] = set()
-        unmatched: set[str] = set()
-        for source_order, row in enumerate(reader, start=1):
-            row_number = source_order + 1
-            paper_id = clean_text(row.get("id"))
-            title = clean_text(row.get("title"))
-            if not paper_id or not title:
-                raise PublicationImportError(f"第 {row_number} 行必须包含 id 和 title。")
-            if paper_id in ids:
-                raise PublicationImportError(f"第 {row_number} 行的 id `{paper_id}` 重复。")
-            ids.add(paper_id)
-
-            status, status_label = normalize_status(row.get("status", ""), row_number)
-            venue = clean_text(row.get("venue"))
-            publication_type, publication_type_label = infer_publication_type(venue, status)
-            ccf_level = normalize_level(row.get("level", ""), row_number) or infer_ccf_level(venue, title)
-            source_url = validate_url(row.get("link", ""), row_number)
-            record = {
-                "id": paper_id,
-                "year": normalize_year(row.get("year", ""), row_number),
-                "title": title,
-                "url": title_link(source_url, title),
-                "source_url": source_url,
-                "status": status,
-                "status_label": status_label,
-                "category": "manuscript" if status in MANUSCRIPT_STATUSES else "publication",
-                "authors": build_authors(row, aliases, row_number, unmatched),
-                "ccf_level": ccf_level,
-                "publication_type": publication_type,
-                "publication_type_label": publication_type_label,
-                "venue": venue,
-                "venue_short": infer_venue_short(venue),
-                "topics": infer_topics(title),
-                "note": clean_text(row.get("note")),
-                "source_order": source_order,
-            }
-            records.append(record)
+        status, status_label = normalize_status(row.get("status", ""), row_number)
+        venue = clean_text(row.get("venue"))
+        publication_type, publication_type_label = infer_publication_type(venue, status)
+        ccf_level = normalize_level(row.get("level", ""), row_number) or infer_ccf_level(venue, title)
+        source_url = validate_url(row.get("link", ""), row_number)
+        record = {
+            "id": paper_id,
+            "year": normalize_year(row.get("year", ""), row_number),
+            "title": title,
+            "url": title_link(source_url, title),
+            "source_url": source_url,
+            "status": status,
+            "status_label": status_label,
+            "category": "manuscript" if status in MANUSCRIPT_STATUSES else "publication",
+            "authors": build_authors(row, aliases, row_number, unmatched),
+            "ccf_level": ccf_level,
+            "publication_type": publication_type,
+            "publication_type_label": publication_type_label,
+            "venue": venue,
+            "venue_short": infer_venue_short(venue),
+            "topics": infer_topics(title),
+            "note": clean_text(row.get("note")),
+            "source_order": source_order,
+        }
+        records.append(record)
 
     records.sort(key=lambda record: (-record["year"], record["source_order"]))
     return {"schema_version": 1, "publications": records}, unmatched
+
+
+def import_xlsx(
+    xlsx_path: Path, aliases_path: Path
+) -> tuple[dict[str, Any], set[str]]:
+    try:
+        rows = read_table(
+            xlsx_path,
+            "学术论文",
+            expected_columns=REQUIRED_COLUMNS,
+        )
+    except XlsxReadError as exc:
+        raise PublicationImportError(str(exc)) from exc
+    return import_rows(rows, aliases_path)
 
 
 def write_catalog(catalog: dict[str, Any], output_path: Path, *, check: bool) -> bool:
@@ -350,17 +365,17 @@ def write_catalog(catalog: dict[str, Any], output_path: Path, *, check: bool) ->
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Convert the laboratory publication CSV into Hugo JSON data.")
+    parser = argparse.ArgumentParser(description="Convert the laboratory publication Excel workbook into Hugo JSON data.")
     parser.add_argument(
-        "--csv", type=Path, default=Path("frontend/publication-source/publications.csv")
+        "--xlsx", type=Path, default=FRONTEND / "data-source" / "publications.xlsx"
     )
-    parser.add_argument("--aliases", type=Path, default=Path("frontend/data/member-aliases.json"))
-    parser.add_argument("--output", type=Path, default=Path("frontend/data/publication-records.json"))
+    parser.add_argument("--aliases", type=Path, default=FRONTEND / "data" / "member-aliases.json")
+    parser.add_argument("--output", type=Path, default=FRONTEND / "data" / "publication-records.json")
     parser.add_argument("--check", action="store_true", help="Fail when the generated JSON is not current.")
     parser.add_argument("--show-unlinked", action="store_true", help="Print every author that has no exact member alias.")
     args = parser.parse_args()
 
-    catalog, unmatched = import_csv(args.csv, args.aliases)
+    catalog, unmatched = import_xlsx(args.xlsx, args.aliases)
     changed = write_catalog(catalog, args.output, check=args.check)
     verb = "Updated" if changed else "Verified"
     print(f"{verb} {args.output} with {len(catalog['publications'])} publications.")

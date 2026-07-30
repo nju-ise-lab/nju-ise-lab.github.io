@@ -3,8 +3,12 @@
   {{ $catalog := index hugo.Data "publication-records" }}
   {{ $publications := slice }}
   {{ with $catalog }}{{ with .publications }}{{ $publications = . }}{{ end }}{{ end }}
-  {{ $patents := default (slice) hugo.Data.projects }}
-  {{ $softwareCopyrights := default (slice) (index hugo.Data "software-copyrights") }}
+  {{ $patentCatalog := index hugo.Data "patent-records" }}
+  {{ $patents := slice }}
+  {{ with $patentCatalog }}{{ with .patents }}{{ $patents = . }}{{ end }}{{ end }}
+  {{ $softwareCatalog := index hugo.Data "software-copyright-records" }}
+  {{ $softwareCopyrights := slice }}
+  {{ with $softwareCatalog }}{{ with .software_copyrights }}{{ $softwareCopyrights = . }}{{ end }}{{ end }}
 
   <div class="page-shell container">
     <section class="page-main research-results-page" data-results-page>

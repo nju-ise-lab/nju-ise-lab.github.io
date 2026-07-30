@@ -7,5 +7,5 @@ identity: "博士研究生"
 display_order: 4
 aliases:
   - "/members/member-48/"
-generated_from: "frontend/member-source/phd.csv"
+generated_from: "frontend/data-source/members.xlsx#博士研究生"
 ---

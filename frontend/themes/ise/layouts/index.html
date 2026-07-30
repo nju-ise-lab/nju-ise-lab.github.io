@@ -104,15 +104,18 @@
         <h2>{{ partial "section-icon.html" "project" }}<span>项目</span></h2>
         <a class="more-link" href="/projects/">更多</a>
       </div>
-      {{ $projects := first 4 (default (slice) (index hugo.Data "featured-projects")) }}
+      {{ $projectCatalog := index hugo.Data "project-records" }}
+      {{ $allProjects := slice }}
+      {{ with $projectCatalog }}{{ with .projects }}{{ $allProjects = . }}{{ end }}{{ end }}
+      {{ $projects := first 4 (sort (where $allProjects "featured" true) "featured_order" "asc") }}
       <ul class="platform-list">
         {{ range $projects }}
           <li>
             {{ $badge := "科研项目" }}
-            {{ if in .title "国家重点研发计划" }}{{ $badge = "国家重点研发计划" }}{{ end }}
-            {{ if in .title "国家自然科学基金" }}{{ $badge = "国家自然科学基金" }}{{ end }}
-            <span class="project-badge">{{ .label | default $badge }}</span>
-            <span class="platform-list__title">{{ .title }}</span>
+            {{ if in .project_name "国家重点研发计划" }}{{ $badge = "国家重点研发计划" }}{{ end }}
+            {{ if in .project_name "国家自然科学基金" }}{{ $badge = "国家自然科学基金" }}{{ end }}
+            <span class="project-badge">{{ .homepage_label | default $badge }}</span>
+            <span class="platform-list__title">{{ .project_name }}</span>
           </li>
         {{ else }}
           <li class="empty-item">暂无科研项目内容。</li>

@@ -14,8 +14,7 @@ case "${BASE_URL}" in
   *) BASE_URL="${BASE_URL}/" ;;
 esac
 
-"${PYTHON_BIN}" "${ROOT_DIR}/tools/import_publications.py"
-"${PYTHON_BIN}" "${ROOT_DIR}/tools/import_members.py"
+PYTHON_BIN="${PYTHON_BIN}" "${ROOT_DIR}/scripts/import_data.sh"
 
 "${HUGO_BIN}" \
   --source "${SITE_DIR}" \

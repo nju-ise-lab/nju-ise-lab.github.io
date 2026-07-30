@@ -1,15 +1,15 @@
-{{ $pages := .pages }}
+{{ $records := .records }}
 <section class="research-project-block" aria-labelledby="research-project-list-title">
   <h2 id="research-project-list-title" class="page-subtitle">项目</h2>
   <div class="research-project-list project-card-list">
     <ul class="project-record-list">
-      {{ range $pages }}
+      {{ range $records }}
         <li class="project-record">
-          <h3>{{ .Params.project_name | default .Title }}</h3>
-          {{ with .Params.project_summary }}<p class="project-record__summary">{{ . }}</p>{{ end }}
+          <h3>{{ .project_name }}</h3>
+          {{ with .project_summary }}<p class="project-record__summary">{{ . }}</p>{{ end }}
           <div class="project-record__meta">
-            {{ with .Params.project_code }}<span><b>项目号</b>{{ . }}</span>{{ end }}
-            {{ with .Params.project_period }}<span><b>项目时间</b>{{ . }}</span>{{ end }}
+            {{ with .project_code }}<span><b>项目号</b>{{ . }}</span>{{ end }}
+            {{ with .project_period }}<span><b>项目时间</b>{{ . }}</span>{{ end }}
           </div>
         </li>
       {{ else }}

@@ -52,7 +52,10 @@
         {{ end }}
 
         {{ $relatedPatents := slice }}
-        {{ range hugo.Data.projects }}
+        {{ $patentCatalog := index hugo.Data "patent-records" }}
+        {{ $patents := slice }}
+        {{ with $patentCatalog }}{{ with .patents }}{{ $patents = . }}{{ end }}{{ end }}
+        {{ range $patents }}
           {{ $patent := . }}
           {{ range (.inventors | default .authors) }}
             {{ if eq .member_url $memberURL }}{{ $relatedPatents = $relatedPatents | append $patent }}{{ end }}

@@ -9,21 +9,48 @@ from tools import import_publications
 
 
 class ImportPublicationsTest(unittest.TestCase):
-    def write_fixture(self, directory: Path, csv_text: str) -> tuple[Path, Path]:
-        csv_path = directory / "publications.csv"
+    def write_aliases(self, directory: Path) -> Path:
         aliases_path = directory / "aliases.json"
-        csv_path.write_text(csv_text, encoding="utf-8")
-        aliases_path.write_text(json.dumps({"Zhenyu Chen": "/members/teacher-001/"}), encoding="utf-8")
-        return csv_path, aliases_path
+        aliases_path.write_text(
+            json.dumps({"Zhenyu Chen": "/members/teacher-001/"}),
+            encoding="utf-8",
+        )
+        return aliases_path
+
+    def row(self, **overrides):
+        record = {
+            "year": 2026,
+            "id": "paper-1",
+            "title": "Paper title",
+            "link": "",
+            "status": "published",
+            "author": "Zhenyu Chen",
+            "cofauthor": "",
+            "corauthor": "",
+            "level": "",
+            "venue": "ASE",
+            "note": "",
+            "_source_row": 2,
+        }
+        record.update(overrides)
+        return record
 
     def test_import_enriches_exact_member_alias_and_author_marks(self):
         with tempfile.TemporaryDirectory() as temp:
-            csv_path, aliases_path = self.write_fixture(
-                Path(temp),
-                "year,id,title,link,status,author,cofauthor,corauthor,level,venue,note\n"
-                "2026,paper-1,Paper title,https://doi.org/example,acctpted,Jane Doe;Zhenyu Chen,,Zhenyu Chen,A,ASE,Industry Track\n",
+            aliases_path = self.write_aliases(Path(temp))
+            catalog, unmatched = import_publications.import_rows(
+                [
+                    self.row(
+                        link="https://doi.org/example",
+                        status="acctpted",
+                        author="Jane Doe;Zhenyu Chen",
+                        corauthor="Zhenyu Chen",
+                        level="A",
+                        note="Industry Track",
+                    )
+                ],
+                aliases_path,
             )
-            catalog, unmatched = import_publications.import_csv(csv_path, aliases_path)
 
         record = catalog["publications"][0]
         self.assertEqual(record["status"], "accepted")
@@ -40,23 +67,32 @@ class ImportPublicationsTest(unittest.TestCase):
 
     def test_import_rejects_marked_author_not_in_author_list(self):
         with tempfile.TemporaryDirectory() as temp:
-            csv_path, aliases_path = self.write_fixture(
-                Path(temp),
-                "year,id,title,link,status,author,cofauthor,corauthor,level,venue,note\n"
-                "2026,paper-1,Paper title,,published,Jane Doe,Zhenyu Chen,,,ASE,\n",
-            )
+            aliases_path = self.write_aliases(Path(temp))
             with self.assertRaises(import_publications.PublicationImportError):
-                import_publications.import_csv(csv_path, aliases_path)
+                import_publications.import_rows(
+                    [self.row(author="Jane Doe", cofauthor="Zhenyu Chen")],
+                    aliases_path,
+                )
 
     def test_import_inferrs_conservative_legacy_metadata(self):
         with tempfile.TemporaryDirectory() as temp:
-            csv_path, aliases_path = self.write_fixture(
-                Path(temp),
-                "year,id,title,link,status,author,cofauthor,corauthor,level,venue,note\n"
-                "2026,paper-1,Regular paper,,published,Zhenyu Chen,,,,IEEE Transactions on Software Engineering,\n"
-                "2026,paper-2,Demo paper,,published,Zhenyu Chen,,,,International Conference on Software Engineering,\n",
+            aliases_path = self.write_aliases(Path(temp))
+            catalog, _ = import_publications.import_rows(
+                [
+                    self.row(
+                        id="paper-1",
+                        title="Regular paper",
+                        venue="IEEE Transactions on Software Engineering",
+                    ),
+                    self.row(
+                        id="paper-2",
+                        title="Demo paper",
+                        venue="International Conference on Software Engineering",
+                        _source_row=3,
+                    ),
+                ],
+                aliases_path,
             )
-            catalog, _ = import_publications.import_csv(csv_path, aliases_path)
 
         self.assertEqual(catalog["publications"][0]["ccf_level"], "CCF-A")
         self.assertEqual(catalog["publications"][0]["publication_type_label"], "期刊论文")
@@ -66,12 +102,18 @@ class ImportPublicationsTest(unittest.TestCase):
 
     def test_import_infers_compact_topics(self):
         with tempfile.TemporaryDirectory() as temp:
-            csv_path, aliases_path = self.write_fixture(
-                Path(temp),
-                "year,id,title,link,status,author,cofauthor,corauthor,level,venue,note\n"
-                "2026,paper-1,Deep Learning Framework Testing via Model Mutation,,accepted,Zhenyu Chen,,,A,IEEE Transactions on Software Engineering,\n",
+            aliases_path = self.write_aliases(Path(temp))
+            catalog, _ = import_publications.import_rows(
+                [
+                    self.row(
+                        title="Deep Learning Framework Testing via Model Mutation",
+                        status="accepted",
+                        level="A",
+                        venue="IEEE Transactions on Software Engineering",
+                    )
+                ],
+                aliases_path,
             )
-            catalog, _ = import_publications.import_csv(csv_path, aliases_path)
 
         record = catalog["publications"][0]
         self.assertEqual(record["venue_short"], "TSE")
@@ -81,9 +123,9 @@ class ImportPublicationsTest(unittest.TestCase):
         arxiv_url = "https://arxiv.org/abs/2604.17016"
         self.assertEqual(import_publications.title_link(arxiv_url, "Paper title"), arxiv_url)
         self.assertTrue(
-            import_publications.title_link("https://example.com/paper", "Paper title").startswith(
-                "https://scholar.google.com/scholar?"
-            )
+            import_publications.title_link(
+                "https://example.com/paper", "Paper title"
+            ).startswith("https://scholar.google.com/scholar?")
         )
 
 

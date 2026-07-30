@@ -10,6 +10,7 @@ __pycache__/
 frontend/public/
 frontend/resources/
 frontend/.hugo_build.lock
+outputs/
 
 # Node dependencies if theme tooling is added later
 node_modules/

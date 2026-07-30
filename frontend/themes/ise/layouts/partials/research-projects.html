@@ -1,10 +1,14 @@
-{{ $platformPages := default (where site.RegularPages "Section" "platform") .platformPages }}
-{{ $outputs := default (slice) hugo.Data.projects }}
+{{ $projectCatalog := index hugo.Data "project-records" }}
+{{ $projects := slice }}
+{{ with $projectCatalog }}{{ with .projects }}{{ $projects = . }}{{ end }}{{ end }}
+{{ $patentCatalog := index hugo.Data "patent-records" }}
+{{ $outputs := slice }}
+{{ with $patentCatalog }}{{ with .patents }}{{ $outputs = . }}{{ end }}{{ end }}
 
 <section class="research-project-block" aria-labelledby="research-project-platforms">
   <h2 id="research-project-platforms" class="page-subtitle">项目</h2>
   <div class="research-project-list research-project-list--platforms project-card-list">
-    {{ partial "section-list.html" (dict "pages" $platformPages) }}
+    {{ partial "project-list.html" (dict "records" $projects) }}
   </div>
 </section>
 

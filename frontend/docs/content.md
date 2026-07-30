@@ -1,22 +1,7 @@
 # Content Directory
 
-Hugo Markdown content lives here. This directory currently contains migrated legacy content and is the day-to-day maintenance source.
+`frontend/content/` 保存新闻、教育教学、关于我们等 Markdown 页面，以及成员头像所在的页面包。
 
-Sections:
+成员、论文、专利、软件著作和项目不再以这里的 Markdown 作为日常结构化维护源，而统一维护在 `frontend/data-source/` 的 Excel 文件中。成员导入器会根据 `members.xlsx` 自动更新稳定成员页，同时保留页面包内的教师头像。
 
-- `news/`
-- `activities/`（历史论文页面，保留兼容；新论文从 CSV 导入）
-- `platform/`
-- `projects/`（项目入口；内容仍兼容 `platform/`）
-- `patents/`
-- `research-results/`（学术论文与专利的统一成果入口）
-- `education/`
-- `members/`
-- `about/`
-- `jobs/`
-
-Edit these files directly for normal page-content updates. Do not edit `migration/output/content/` unless you are intentionally rerunning or debugging migration.
-
-Publication source data is maintained separately in `frontend/publication-source/publications.csv`; run `python3 tools/import_publications.py` to regenerate Hugo data after edits.
-
-Active member source data is maintained separately in `frontend/member-source/teachers.csv`, `phd.csv`, and `masters.csv`; run `python3 tools/import_members.py` to regenerate the member catalog and stable member pages after edits.
+`content/platform/` 和 `content/activities/` 中的历史页面暂时保留用于旧链接兼容，但项目列表和论文列表已经改为读取 Excel 生成的 JSON。

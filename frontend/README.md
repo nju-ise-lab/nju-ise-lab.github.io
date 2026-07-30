@@ -1,95 +1,51 @@
-# ISE Quick Frontend
+# ISE Lab Hugo Frontend
 
-这是 ISE Quick 的 Hugo 前端。当前已经使用旧系统迁移出的真实内容，后续日常维护主要修改 Markdown、JSON 和图片附件；本目录不包含后端、CMS 或搜索实现。
+南京大学智能软件工程实验室网站的 Hugo 前端。
 
-## 目录结构
+## 数据维护方式
 
-- `hugo.yaml`：Hugo 站点配置、站点参数和主导航。
-- `themes/ise/`：自建 Hugo 主题。
-- `themes/ise/layouts/_default/baseof.html`：全站 HTML 基础模板。
-- `themes/ise/layouts/partials/`：页头、页脚、面包屑、左侧栏等公共片段。
-- `themes/ise/layouts/index.html`：首页模板，包含轮播、新闻 5 条、学术活动 3 条、科研项目 4 条。
-- `themes/ise/layouts/news/`：新闻列表页和详情页模板。
-- `themes/ise/layouts/activities/`：学术活动列表页和详情页模板。
-- `themes/ise/layouts/platform/`：科研项目列表页和详情页模板，URL 为 `/platform/`。
-- `themes/ise/layouts/members/`：成员介绍列表页和详情页模板。
-- `themes/ise/assets/css/main.css`：旧站视觉骨架样式。
-- `static/images/legacy/`：从旧站复制来的视觉资产。
-- `content/`：新闻、学术活动、成员个人页、科研项目、关于我们、诚聘英才等 Markdown 内容。
-- `member-source/`：教师、博士研究生、硕士研究生三个成员维护 CSV。
-- `data/`：首页轮播、首页精选科研项目、专利/产出、论文等 JSON 数据。
-- 页面封面/代表图使用 front matter 的 `image: "cover.png"`，文件与 `index.md` 同目录。
-- 成员头像使用 `avatar: "avatar.jpg"`，文件与成员的 `index.md` 同目录；论文作者只通过 `member_url` 关联成员页。
-- 首页轮播使用 `data/slides.json` 的本地 `/images/slides/...` 路径，实际文件位于 `static/images/slides/`。
+成员、研究成果和项目统一维护在 `data-source/` 的五个 Excel 文件中：
 
-## 内容维护方式
+- `members.xlsx`：教师、博士研究生、硕士研究生三个工作表。
+- `publications.xlsx`：学术论文。
+- `patents.xlsx`：专利。
+- `software-copyrights.xlsx`：软件著作。
+- `projects.xlsx`：科研项目及首页精选顺序。
 
-新闻、学术活动和科研项目使用 Hugo section 维护：
+这些 Excel 是正式维护源。`data/` 中的 `*-records.json` 均由脚本生成，不应手工编辑。构建数据流为：
 
 ```text
-content/news/my-news.md
-content/activities/my-activity.md
-content/platform/my-platform.md
+Excel
+  → tools/import_*.py 校验并生成 JSON / 成员页
+  → Hugo 读取 JSON
+  → public/ 静态网站
 ```
 
-推荐 front matter：
-
-```yaml
----
-title: "标题"
-date: 2026-06-14
-summary: "摘要，可选"
-draft: false
----
-```
-
-首页会自动读取：
-
-- `content/news/` 最新 5 条。
-- `content/activities/` 最新 3 条。
-- `data/featured-projects.json` 精选科研项目 4 条。
-
-首页轮播读取 `data/slides.json`；论文截图、长图等内容会用完整展示方式避免被裁切。
-
-成员介绍统一维护三个 CSV：
-
-```text
-member-source/teachers.csv
-member-source/phd.csv
-member-source/masters.csv
-```
-
-修改后执行项目根目录的 `bash scripts/build.sh`，构建过程会自动生成 `data/member-records.json` 和稳定的成员个人页。教师头像仍与对应 `content/members/<id>/index.md` 放在同一页面包中。
-
-当前 `content/` 和 `data/` 已经是迁移后的正式内容源。后续不要编辑 `migration/output/`，除非你明确要重新做迁移实验。
-
-更完整的日常维护说明见 `../docs/content-maintenance-guide.md`，里面按“页面模块 -> 模板组件 -> 数据文件 -> 更新方式”整理了所有主要页面。
-
-## 旧视觉约定
-
-已固化的旧站基础视觉：
-
-- 主色：`#63065f`
-- 辅助蓝：`#2e6590`
-- 页面容器：`1200px`
-- 顶部：logo、实验室中文名、英文名、紫色导航
-- 页脚：黑色背景、友情链接、版权和备案号
-- 内页：左侧栏背景图和高亮状态
-
-## 静态资产
-
-复制自旧项目，原文件未移动：
-
-- `static/favicon.ico`
-- `static/favicon/nju.ico`
-- `static/images/legacy/logo/`
-- `static/images/legacy/home/`
-- `static/images/legacy/ui/leftbar_bg.jpg`
+新闻、关于我们和教育教学等正文仍在 `content/` 中用 Markdown 维护；轮播图配置保留在 `data/slides.json`。
 
 ## 本地预览
 
-本地预览可在本目录执行：
+从项目根目录执行：
 
 ```bash
-hugo server
+bash scripts/serve.sh
 ```
+
+该命令会先更新全部 JSON，再启动 Hugo 开发服务器。仅需生成静态网站时执行：
+
+```bash
+bash scripts/build.sh
+```
+
+更完整的字段说明见：
+
+- `data-source/README.md`
+- `../docs/content-maintenance-guide.md`
+
+## 主要目录
+
+- `data-source/`：五个正式 Excel 数据源。
+- `data/`：Hugo JSON 数据；生成文件与少量手工配置。
+- `content/`：Markdown 页面和成员头像页面包。
+- `themes/ise/`：模板、CSS 和 JavaScript。
+- `static/`：轮播图、Logo、favicon 等静态资源。

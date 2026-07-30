@@ -1,21 +1,20 @@
 # Data Directory
 
-Hugo data files live here. This directory currently contains migrated legacy data and is the day-to-day maintenance source for non-page data.
+`frontend/data/` 是 Hugo 运行时数据目录。
 
-Files:
+以下文件由 `frontend/data-source/*.xlsx` 自动生成，禁止手工编辑：
 
-- `featured-projects.json`: homepage selected research projects.
-- `projects.json`: patent list; records use `patent_name` and `inventors`; imported application data may also include `public_number`, `application_number`, `application_date`, and `applicants`.
-- `publications.json`: legacy publication migration input; keep unchanged for migration traceability.
-- `publication-records.json`: generated publication catalog consumed by the site; do not edit directly.
-- `member-records.json`: generated active-member catalog consumed by the member list; do not edit directly.
-- `member-aliases.json`: exact author-name-to-member-page mappings used by the publication importer.
-- `software-copyrights.json`: software copyright records shown in the research-results tabs.
-- `slides.json`: homepage carousel.
-- `legacy-map.json`: legacy ID/URL mapping for migration traceability.
+- `member-records.json`
+- `publication-records.json`
+- `patent-records.json`
+- `software-copyright-records.json`
+- `project-records.json`
 
-The editable publication source is `frontend/publication-source/publications.csv`, outside this directory so Hugo does not try to parse the CSV as a data file. Run `python3 tools/import_publications.py` after updating it.
+以下文件仍手工维护：
 
-Active members are maintained in `frontend/member-source/teachers.csv`, `phd.csv`, and `masters.csv`. Run `python3 tools/import_members.py` after updating them.
+- `slides.json`：首页轮播。
+- `member-aliases.json`：英文作者名等精确写法到成员页的映射。
+- `legacy-map.json`：历史迁移映射。
+- `publications.json`：旧系统论文迁移记录，不参与当前页面维护。
 
-Each software copyright can use `software_name`, `registration_number`, `year`, and an `owners` array. Empty fields are hidden.
+执行 `bash scripts/import_data.sh` 可重新生成全部 `*-records.json`；`bash scripts/build.sh` 和 `bash scripts/serve.sh` 会自动先执行该步骤。
