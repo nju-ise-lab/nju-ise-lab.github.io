@@ -9,9 +9,9 @@ authors:
   - name: "Xin Chen"
   - name: "He Jiang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Liming Nie"
 raw_citation: "Xin Chen, He Jiang, Zhenyu Chen, Tieke He, Liming Nie. Automatic test report augmentation to assist crowdsourced testing [J]. Frontiers of Computer Science, 2019, 13(5): 943-959."
 legacy_id: 85

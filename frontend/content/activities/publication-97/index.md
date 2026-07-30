@@ -7,11 +7,11 @@ publication_year: "2018"
 venue: "[J]. Journal of Computer Science and Technology, 2018, 33(4): 756-767"
 authors:
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Hao Lian"
   - name: "Zemin Qin"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Bin Luo"
 raw_citation: "Tieke He, Hao Lian, Zemin Qin, Zhenyu Chen, Bin Luo. PTM: A topic model for the inferring of the penalty [J]. Journal of Computer Science and Technology, 2018, 33(4): 756-767."
 legacy_id: 97

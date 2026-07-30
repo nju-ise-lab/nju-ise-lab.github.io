@@ -8,10 +8,10 @@ venue: "[J]. Journal of Software, 2018, 29(1): 69-88"
 authors:
   - name: "Xiaofang Zhang"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Di Liu"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Baowen Xu"
 raw_citation: "Xiaofang Zhang, Yang Feng, Di Liu, Zhenyu Chen, Baowen Xu. Research progress of crowdsourced software testing [J]. Journal of Software, 2018, 29(1): 69-88."
 legacy_id: 98

@@ -11,7 +11,7 @@ authors:
   - name: "Dong Wang"
   - name: "Shu Zhang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Cheng Lei, Benlin Hu, Dong Wang, Shu Zhang and Zhenyu Chen. A preliminary study on data augmentation of Deep Learning for image classification [C]//Proceedings of the 11th Asia-Pacific Symposium on Internetware. 2019: 1-6."
 legacy_id: 69
 url: "/activities/publication-69/"

@@ -7,7 +7,7 @@ publication_year: "2019"
 venue: "[J]. Computer, 2019, 52(10): 61-69"
 authors:
   - name: "Xingya Wang"
-    member_url: "/members/member-52/"
+    member_url: "/members/teacher-006/"
   - name: "Weisong Sun"
     member_url: "/members/member-50/"
   - name: "Yuan Zhao"
@@ -15,7 +15,7 @@ authors:
   - name: "Linghuan Hu"
   - name: "Eric Wong"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Xingya Wang, Weisong Sun, Yuan Zhao, Linghuan Hu, Eric Wong, Zhenyu Chen. Software-testing contests: Observations and lessons learned [J]. Computer, 2019, 52(10): 61-69."
 legacy_id: 83
 url: "/activities/publication-83/"

@@ -10,9 +10,9 @@ authors:
   - name: "Zhilong Xia"
   - name: "Fangtong Zhao"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Ye Ni, Zhilong Xia, Fangtong Zhao, Chunrong Fang and Zhenyu Chen. An Online Multi-step-forward Voltage Prediction Approach based on LSTM-TD Model and KF Algorithm [J]. Computer, 2021, 54(8): 56-65."
 legacy_id: 46
 url: "/activities/publication-46/"

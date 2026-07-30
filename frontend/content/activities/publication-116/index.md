@@ -10,7 +10,7 @@ authors:
   - name: "Xin Xia"
   - name: "Weiqiang Zhang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "David Lo"
 raw_citation: "Weiqin Zou, Xin Xia, Weiqiang Zhang, Zhenyu Chen, David Lo. An empirical study of bug fixing rate [C]//2015 IEEE 39th Annual Computer Software and Applications Conference. IEEE, 2015, 2: 254-263."
 legacy_id: 116

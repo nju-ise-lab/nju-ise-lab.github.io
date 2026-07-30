@@ -12,7 +12,7 @@ authors:
   - name: "Ziyuan Wang"
   - name: "Jieqiong Li"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Tianxing He, Shengcheng Yu, Ziyuan Wang, Jieqiong Li and Zhenyu Chen. From data quality to model quality: an exploratory study on Deep Learning [C]//Proceedings of the 11th Asia-Pacific Symposium on Internetware. 2019: 1-6."
 legacy_id: 68
 url: "/activities/publication-68/"

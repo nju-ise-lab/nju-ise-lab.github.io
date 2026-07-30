@@ -8,9 +8,9 @@ venue: "[C]//Proceedings of the 30th ACM SIGSOFT International Symposium on Soft
 authors:
   - name: "Zixi Liu"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Zixi Liu, Yang Feng, Zhenyu Chen. DialTest: Automated Testing for Recurrent-Neural-Network-Driven Dialogue Systems [C]//Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2021: 115-126."
 legacy_id: 49
 url: "/activities/publication-49/"

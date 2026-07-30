@@ -10,7 +10,7 @@ authors:
   - name: "Jiawei Liu"
   - name: "Yifan Wang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Tianqi Zhou, Jiawei Liu, Yifan Wang, Zhenyu Chen. META: Multidimensional Evalutation of Testing Ability ICSE 2022 demo"
 legacy_id: 35
 url: "/activities/publication-35/"

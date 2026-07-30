@@ -8,9 +8,9 @@ venue: "[C]//Proceedings of the 38th International Conference on Software Engine
 authors:
   - name: "Xin Zhang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Zicong Liu"
 raw_citation: "Xin Zhang, Zhenyu Chen, Chunrong Fang, Zicong Liu. Guiding the crowds for android testing [C]//Proceedings of the 38th International Conference on Software Engineering Companion. 2016: 752-753.[Chinese Brief]"
 legacy_id: 108

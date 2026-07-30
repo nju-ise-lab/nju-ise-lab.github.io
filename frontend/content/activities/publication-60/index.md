@@ -8,7 +8,7 @@ venue: "[C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Soft
 authors:
   - name: "Chao Guo"
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Wei Yuan"
   - name: "Yue Guo"
   - name: "Rui Hao"

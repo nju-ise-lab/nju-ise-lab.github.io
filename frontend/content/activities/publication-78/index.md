@@ -11,7 +11,7 @@ authors:
   - name: "Xin Xia"
   - name: "Reid Holmes"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Weiqin Zou, Weiqiang Zhang, Xin Xia, Reid Holmes, Zhenyu Chen. Branch use in practice: A large-scale empirical study of 2,923 projects on github [C]2019 IEEE 19th International Conference on Software Quality, Reliability and Security. IEEE, 2019: 306-317."
 legacy_id: 78
 url: "/activities/publication-78/"

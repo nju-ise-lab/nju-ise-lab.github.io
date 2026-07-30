@@ -11,7 +11,7 @@ authors:
   - name: "Xuefei Hao"
   - name: "Zicong Liu"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Yilin Yang, Xinhai Huang, Xuefei Hao, Zicong Liu, Zhenyu Chen. An industrial study of natural language processing based test case prioritization [C] IEEE, 2017: 548-549."
 legacy_id: 102
 url: "/activities/publication-102/"

@@ -6,8 +6,8 @@ from tools import research_content
 class ResearchContentTest(unittest.TestCase):
     def test_publication_record_extracts_title_authors_and_member_links(self):
         members = {
-            "Zhenyu Chen": "/members/member-37/",
-            "Chunrong Fang": "/members/member-38/",
+            "Zhenyu Chen": "/members/teacher-001/",
+            "Chunrong Fang": "/members/teacher-004/",
         }
         record = {
             "legacy_id": 40,
@@ -29,17 +29,17 @@ class ResearchContentTest(unittest.TestCase):
         self.assertEqual(publication["authors"][0], {"name": "Weisong Sun"})
         self.assertEqual(
             publication["authors"][1],
-            {"name": "Chunrong Fang", "member_url": "/members/member-38/"},
+            {"name": "Chunrong Fang", "member_url": "/members/teacher-004/"},
         )
         self.assertEqual(
             publication["authors"][3],
-            {"name": "Zhenyu Chen", "member_url": "/members/member-37/"},
+            {"name": "Zhenyu Chen", "member_url": "/members/teacher-001/"},
         )
 
     def test_patent_record_keeps_title_and_links_known_chinese_authors(self):
         members = {
-            "陈振宇": "/members/member-37/",
-            "房春荣": "/members/member-38/",
+            "陈振宇": "/members/teacher-001/",
+            "房春荣": "/members/teacher-004/",
         }
         record = {
             "legacy_id": 20,
@@ -54,9 +54,9 @@ class ResearchContentTest(unittest.TestCase):
         self.assertEqual(
             patent["authors"],
             [
-                {"name": "房春荣", "member_url": "/members/member-38/"},
+                {"name": "房春荣", "member_url": "/members/teacher-004/"},
                 {"name": "何云"},
-                {"name": "陈振宇", "member_url": "/members/member-37/"},
+                {"name": "陈振宇", "member_url": "/members/teacher-001/"},
             ],
         )
 

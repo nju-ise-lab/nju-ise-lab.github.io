@@ -10,7 +10,7 @@ authors:
   - name: "Zicong Liu"
   - name: "Shuo Song"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Jifeng Xuan"
   - name: "Baowen Xu"
 raw_citation: "Xiaoyuan Xie, Zicong Liu, Shuo Song, Zhenyu Chen, Jifeng Xuan, Baowen Xu. Revisit of automatic debugging via human focus-tracking analysis [C]//Proceedings of the 38th International Conference on Software Engineering. 2016: 808-819."

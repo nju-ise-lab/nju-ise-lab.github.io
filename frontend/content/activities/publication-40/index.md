@@ -9,7 +9,7 @@ authors:
   - name: "Weisong Sun"
     member_url: "/members/member-50/"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Yuchen Chen"
   - name: "Guanhong Tao"
   - name: "Tingxu Han"

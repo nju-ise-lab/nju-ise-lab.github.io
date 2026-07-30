@@ -11,9 +11,9 @@ authors:
   - name: "Dong Chai"
   - name: "Jiang Wang"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Weisi Luo, Xiaoyue Run, Dong Chai, Jiang Wang, Chunrong Fang, Zhenyu Chen. Graph-based Fuzz Testing for Deep Learning Inference Engines [C]//2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE). IEEE, 2021: 288-299."
 legacy_id: 50
 url: "/activities/publication-50/"

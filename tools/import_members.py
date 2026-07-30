@@ -19,19 +19,41 @@ SOURCE_DEFINITIONS = (
     (
         "teachers.csv",
         "teacher",
-        ("id", "name", "avatar", "member_type", "identity", "homepage", "bio"),
+        "teacher_id",
+        ("teacher_id", "name", "avatar", "member_type", "identity", "homepage", "bio"),
     ),
     (
         "phd.csv",
         "phd",
-        ("id", "name", "member_type", "identity", "homepage"),
+        "phd_id",
+        ("phd_id", "name", "member_type", "identity", "homepage"),
     ),
     (
         "masters.csv",
         "master",
-        ("id", "name", "member_type", "identity", "homepage"),
+        "master_id",
+        ("master_id", "name", "member_type", "identity", "homepage"),
     ),
 )
+
+LEGACY_MEMBER_URLS = {
+    "teacher-001": "/members/member-37/",
+    "teacher-002": "/members/member-42/",
+    "teacher-003": "/members/member-55/",
+    "teacher-004": "/members/member-38/",
+    "teacher-005": "/members/member-44/",
+    "teacher-006": "/members/member-52/",
+    "teacher-007": "/members/member-53/",
+    "phd-001": "/members/member-39/",
+    "phd-002": "/members/member-46/",
+    "phd-003": "/members/member-47/",
+    "phd-004": "/members/member-48/",
+    "phd-005": "/members/member-49/",
+    "master-001": "/members/member-45/",
+    "master-002": "/members/member-56/",
+    "master-003": "/members/member-57/",
+    "master-004": "/members/member-58/",
+}
 
 
 class MemberImportError(ValueError):
@@ -58,6 +80,7 @@ def validate_homepage(value: str, filename: str, row_number: int) -> str:
 def load_source(
     filename: str,
     expected_type: str,
+    id_column: str,
     required_columns: tuple[str, ...],
 ) -> list[dict[str, Any]]:
     path = SOURCE_DIR / filename
@@ -76,15 +99,15 @@ def load_source(
         records: list[dict[str, Any]] = []
         for source_order, row in enumerate(reader, start=1):
             row_number = source_order + 1
-            member_id = clean_text(row.get("id"))
+            member_id = clean_text(row.get(id_column))
             name = clean_text(row.get("name"))
             member_type = clean_text(row.get("member_type")).lower()
             identity = clean_text(row.get("identity"))
 
-            if not re.fullmatch(r"member-[a-z0-9-]+", member_id):
+            if not re.fullmatch(rf"{re.escape(expected_type)}-\d{{3,}}", member_id):
                 raise MemberImportError(
-                    f"{filename} 第 {row_number} 行的 id `{member_id}` "
-                    "应使用 member-37 这样的稳定格式。"
+                    f"{filename} 第 {row_number} 行的 {id_column} `{member_id}` "
+                    f"应使用 {expected_type}-001 这样的独立编号格式。"
                 )
             if not name:
                 raise MemberImportError(f"{filename} 第 {row_number} 行缺少 name。")
@@ -140,10 +163,13 @@ def render_member_page(record: dict[str, Any], source_filename: str) -> str:
         f"title: {yaml_string(record['name'])}",
         f"url: {yaml_string(record['url'])}",
         f"member_id: {yaml_string(record['id'])}",
-        f"member_type: {yaml_string(record['member_type'])}",
-        f"identity: {yaml_string(record['identity'])}",
-        f"display_order: {record['source_order']}",
+            f"member_type: {yaml_string(record['member_type'])}",
+            f"identity: {yaml_string(record['identity'])}",
+            f"display_order: {record['source_order']}",
     ]
+    legacy_url = LEGACY_MEMBER_URLS.get(record["id"])
+    if legacy_url:
+        lines.extend(["aliases:", f"  - {yaml_string(legacy_url)}"])
     if record.get("homepage"):
         lines.append(f"homepage: {yaml_string(record['homepage'])}")
     if record.get("avatar"):
@@ -166,8 +192,8 @@ def build_outputs() -> tuple[dict[str, Any], dict[Path, str]]:
     seen_ids: set[str] = set()
     seen_names: set[str] = set()
 
-    for filename, member_type, columns in SOURCE_DEFINITIONS:
-        records = load_source(filename, member_type, columns)
+    for filename, member_type, id_column, columns in SOURCE_DEFINITIONS:
+        records = load_source(filename, member_type, id_column, columns)
         for record in records:
             if record["id"] in seen_ids:
                 raise MemberImportError(f"成员 id 重复：{record['id']}")

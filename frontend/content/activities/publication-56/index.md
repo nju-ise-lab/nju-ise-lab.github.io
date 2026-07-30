@@ -8,7 +8,7 @@ venue: "[J]. IEEE Transactions on Software Engineering, 2020"
 authors:
   - name: "Di Liu"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Xiaofang Zhang"
   - name: "James A"
 raw_citation: "Di Liu, Yang Feng, Xiaofang Zhang, James A. Jones, Zhenyu Chen. Clustering Crowdsourced Test Reports of Mobile Applications Using Image Understanding [J]. IEEE Transactions on Software Engineering, 2020."

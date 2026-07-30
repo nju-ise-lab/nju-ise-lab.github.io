@@ -12,7 +12,7 @@ authors:
   - name: "Guian Zhou"
   - name: "Yongxiang Liu"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Shiqing Ma"
   - name: "Lin Tan"
   - name: "Xiangyu Zhang"

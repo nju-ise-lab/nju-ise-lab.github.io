@@ -8,10 +8,10 @@ venue: ""
 authors:
   - name: "Zixi Liu"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Yining Yin"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Zixi Liu, Yang Feng, Yining Yin, Zhenyu Chen. DeepState: Selecting Test Suites to Enhance the Robustness of Recurrent Neural Networks ICSE 2022"
 legacy_id: 38
 url: "/activities/publication-38/"

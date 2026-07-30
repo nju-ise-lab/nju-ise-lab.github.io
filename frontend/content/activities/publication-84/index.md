@@ -7,7 +7,7 @@ publication_year: "2019"
 venue: "[C]2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER). IEEE, 2019: 549-553"
 authors:
   - name: "Xingya Wang"
-    member_url: "/members/member-52/"
+    member_url: "/members/teacher-006/"
   - name: "Haoran Wu"
   - name: "Weisong Sun"
     member_url: "/members/member-50/"

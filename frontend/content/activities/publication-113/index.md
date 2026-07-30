@@ -8,7 +8,7 @@ venue: "[J]. Ieee transactions on software engineering, 2015, 42(2): 170-186.[Ch
 authors:
   - name: "Zebao Gao"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Atif Memon"
   - name: "Yunxiao Zou"
 raw_citation: "Zebao Gao,Zhenyu Chen, Atif Memon, Yunxiao Zou. SITAR: GUI test script repair [J]. Ieee transactions on software engineering, 2015, 42(2): 170-186.[Chinese Brief]"

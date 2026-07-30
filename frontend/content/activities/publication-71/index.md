@@ -9,10 +9,10 @@ authors:
   - name: "Dong Wang"
   - name: "Ziyuan Wang"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Yanshan Chen"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Dong Wang, Ziyuan Wang, Chunrong Fang, Yanshan Chen, Zhenyu Chen. DeepPath: Path-driven testing criteria for Deep Neural Networks [C]//2019 IEEE International Conference On Artificial Intelligence Testing (AITest). IEEE, 2019: 119-120."
 legacy_id: 71
 url: "/activities/publication-71/"

@@ -13,7 +13,7 @@ authors:
   - name: "Xin Chen"
   - name: "Weijun Shen"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Linzhang Wang"
   - name: "Xianpei Zhang"
   - name: "Xuandong Li"

@@ -10,7 +10,7 @@ authors:
   - name: "Shengcheng Yu"
     member_url: "/members/member-43/"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Peiyuan Li"
 raw_citation: "Yuanhan Tian, Shengcheng Yu, Chunrong Fang and Peiyuan Li. FuRong: Fusing Report of Automated Android Testing on Multi-Devices [C]//Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: Companion Proceedings. 2020: 49-52."
 legacy_id: 64

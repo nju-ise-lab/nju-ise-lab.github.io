@@ -87,8 +87,8 @@ year,id,title,link,status,author,cofauthor,corauthor,level,venue,note
 
 ```json
 {
-  "Zhenyu Chen": "/members/member-37/",
-  "陈振宇": "/members/member-37/"
+  "Zhenyu Chen": "/members/teacher-001/",
+  "陈振宇": "/members/teacher-001/"
 }
 ```
 
@@ -119,7 +119,7 @@ frontend/data/software-copyrights.json
     "owners": [
       {
         "name": "陈振宇",
-        "member_url": "/members/member-37/"
+        "member_url": "/members/teacher-001/"
       }
     ]
   }
@@ -139,22 +139,29 @@ frontend/member-source/masters.csv
 教师字段：
 
 ```csv
-id,name,avatar,member_type,identity,homepage,bio
-member-37,陈振宇,avatar.jpg,teacher,教授,https://...,个人简介
+teacher_id,name,avatar,member_type,identity,homepage,bio
+teacher-001,陈振宇,avatar.jpg,teacher,教授,https://...,个人简介
 ```
 
-博士和硕士字段：
+博士字段：
 
 ```csv
-id,name,member_type,identity,homepage
-member-47,郭安,phd,2020级博士研究生,
+phd_id,name,member_type,identity,homepage
+phd-003,郭安,phd,2020级博士研究生,
+```
+
+硕士字段：
+
+```csv
+master_id,name,member_type,identity,homepage
+master-001,乔力,master,硕士研究生,
 ```
 
 字段说明：
 
 | 字段 | 用途 |
 | --- | --- |
-| `id` | 必填且不可随意修改；生成 `/members/member-37/` 这样的稳定个人页地址，论文作者链接依赖该地址 |
+| `teacher_id`、`phd_id`、`master_id` | 必填且不可随意修改；三类成员分别独立编号，如 `teacher-001`、`phd-001`、`master-001` |
 | `name` | 成员姓名 |
 | `avatar` | 仅教师 CSV 使用；填写教师页面包中的头像文件名 |
 | `member_type` | 教师、博士、硕士分别固定为 `teacher`、`phd`、`master` |
@@ -162,7 +169,7 @@ member-47,郭安,phd,2020级博士研究生,
 | `homepage` | 可选的个人主页链接 |
 | `bio` | 仅教师 CSV 使用；个人简介 |
 
-CSV 中的行顺序就是页面展示顺序。修改后在项目根目录执行：
+新增成员时，在对应 CSV 内查看该类型的最大编号并顺延即可，不需要与另外两类成员共同排号。CSV 中的行顺序就是页面展示顺序。修改后在项目根目录执行：
 
 ```bash
 bash scripts/build.sh

@@ -13,7 +13,7 @@ class ImportPublicationsTest(unittest.TestCase):
         csv_path = directory / "publications.csv"
         aliases_path = directory / "aliases.json"
         csv_path.write_text(csv_text, encoding="utf-8")
-        aliases_path.write_text(json.dumps({"Zhenyu Chen": "/members/member-37/"}), encoding="utf-8")
+        aliases_path.write_text(json.dumps({"Zhenyu Chen": "/members/teacher-001/"}), encoding="utf-8")
         return csv_path, aliases_path
 
     def test_import_enriches_exact_member_alias_and_author_marks(self):
@@ -34,7 +34,7 @@ class ImportPublicationsTest(unittest.TestCase):
         self.assertEqual(record["venue_short"], "ASE")
         self.assertEqual(record["source_url"], "https://doi.org/example")
         self.assertTrue(record["url"].startswith("https://scholar.google.com/scholar?"))
-        self.assertEqual(record["authors"][1]["member_url"], "/members/member-37/")
+        self.assertEqual(record["authors"][1]["member_url"], "/members/teacher-001/")
         self.assertTrue(record["authors"][1]["corresponding"])
         self.assertEqual(unmatched, {"Jane Doe"})
 

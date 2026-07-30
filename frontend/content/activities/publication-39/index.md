@@ -8,11 +8,11 @@ venue: "ICSE 2022"
 authors:
   - name: "Xinyu Gao"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Yining Yin"
   - name: "Zixi Liu"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Baowen Xu"
 raw_citation: "Xinyu Gao, Yang Feng, Yining Yin, Zixi Liu, Zhenyu Chen, Baowen Xu. Adaptive Test Selection for Deep Neural Networks ICSE 2022"
 legacy_id: 39

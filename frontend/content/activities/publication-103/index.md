@@ -8,7 +8,7 @@ venue: "[J]. Science China Information Sciences, 2017, 60(1): 1-15"
 authors:
   - name: "Zhiyi Zhang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Ruizhi Gao"
   - name: "W"
 raw_citation: "Zhiyi Zhang, Zhenyu Chen, Ruizhi Gao, W. Eric Wong, Baowen Xu. An empirical study on constraint optimization techniques for test generation [J]. Science China Information Sciences, 2017, 60(1): 1-15."

@@ -10,7 +10,7 @@ authors:
   - name: "Jifeng Xuan"
   - name: "Xiaoyuan Xie"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Baowen Xu"
 raw_citation: "Weiqin Zou, Jifeng Xuan, Xiaoyuan Xie, Zhenyu Chen, Baowen Xu. How does code style inconsistency affect pull request integration? An exploratory study on 117 GitHub projects [J]. Empirical Software Engineering, 2019, 24(6): 3871-3903."
 legacy_id: 82

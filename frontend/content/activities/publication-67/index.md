@@ -12,9 +12,9 @@ authors:
   - name: "Xuan-Bach Dinh Le"
   - name: "Xin Xia"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Baowen Xu"
 raw_citation: "Weiqin Zou, David Lo, Pavneet Singh Kochhar, Xuan-Bach Dinh Le, Xin Xia, Yang Feng, Zhenyu Chen and Baowen Xu. Smart contract development: challenges and opportunities [J]. IEEE Transactions on Software Engineering, 2019."
 legacy_id: 67

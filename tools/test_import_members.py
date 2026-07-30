@@ -13,22 +13,22 @@ class ImportMembersTest(unittest.TestCase):
         source_dir = root / "member-source"
         content_dir = root / "content" / "members"
         source_dir.mkdir(parents=True)
-        (content_dir / "member-1").mkdir(parents=True)
-        (content_dir / "member-1" / "avatar.jpg").write_bytes(b"avatar")
+        (content_dir / "teacher-001").mkdir(parents=True)
+        (content_dir / "teacher-001" / "avatar.jpg").write_bytes(b"avatar")
 
         source_dir.joinpath("teachers.csv").write_text(
-            "id,name,avatar,member_type,identity,homepage,bio\n"
-            "member-1,张老师,avatar.jpg,teacher,教授,https://example.com/,个人简介\n",
+            "teacher_id,name,avatar,member_type,identity,homepage,bio\n"
+            "teacher-001,张老师,avatar.jpg,teacher,教授,https://example.com/,个人简介\n",
             encoding="utf-8",
         )
         source_dir.joinpath("phd.csv").write_text(
-            "id,name,member_type,identity,homepage\n"
-            f"member-2,{'张老师' if duplicate_name else '李同学'},phd,2024级博士研究生,\n",
+            "phd_id,name,member_type,identity,homepage\n"
+            f"phd-001,{'张老师' if duplicate_name else '李同学'},phd,2024级博士研究生,\n",
             encoding="utf-8",
         )
         source_dir.joinpath("masters.csv").write_text(
-            "id,name,member_type,identity,homepage\n"
-            "member-3,王同学,master,2025级硕士研究生,\n",
+            "master_id,name,member_type,identity,homepage\n"
+            "master-001,王同学,master,2025级硕士研究生,\n",
             encoding="utf-8",
         )
         return source_dir, content_dir
@@ -44,10 +44,10 @@ class ImportMembersTest(unittest.TestCase):
 
         self.assertEqual(len(payload["members"]), 3)
         teacher = payload["members"][0]
-        self.assertEqual(teacher["url"], "/members/member-1/")
-        self.assertEqual(teacher["avatar_url"], "/members/member-1/avatar.jpg")
+        self.assertEqual(teacher["url"], "/members/teacher-001/")
+        self.assertEqual(teacher["avatar_url"], "/members/teacher-001/avatar.jpg")
         self.assertEqual(teacher["bio"], "个人简介")
-        phd_page = pages[content_dir / "member-2" / "index.md"]
+        phd_page = pages[content_dir / "phd-001" / "index.md"]
         self.assertIn('identity: "2024级博士研究生"', phd_page)
         self.assertIn('generated_from: "frontend/member-source/phd.csv"', phd_page)
 
@@ -66,8 +66,8 @@ class ImportMembersTest(unittest.TestCase):
             source_dir, content_dir = self.write_sources(Path(temp))
             phd_path = source_dir / "phd.csv"
             phd_path.write_text(
-                "id,name,member_type,identity,homepage\n"
-                "member-2,李同学,master,2024级博士研究生,\n",
+                "phd_id,name,member_type,identity,homepage\n"
+                "phd-001,李同学,master,2024级博士研究生,\n",
                 encoding="utf-8",
             )
             with (

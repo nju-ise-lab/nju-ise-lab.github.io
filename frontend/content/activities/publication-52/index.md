@@ -9,10 +9,10 @@ authors:
   - name: "Shengcheng Yu"
     member_url: "/members/member-43/"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Yexlao Yun"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
 raw_citation: "Shengcheng Yu, Chunrong Fang, Yexlao Yun, Yang Feng. Layout and Image Recognition Driving Cross-platform Automated Mobile Testing [C]//2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE). IEEE, 2021: 1561-1571."
 legacy_id: 52
 url: "/activities/publication-52/"

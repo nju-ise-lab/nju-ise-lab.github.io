@@ -9,7 +9,7 @@ authors:
   - name: "Zichen Guo"
   - name: "Jiawei Liu"
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Zhuoyang Li"
   - name: "Peitian Zhangzhu"
 raw_citation: "Zichen Guo, Jiawei Liu, Tieke He, Zhuoyang Li and Peitian Zhangzhu. TauJud: Test Augmentation of Machine Learning in Judicial Documents [C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 549-552."

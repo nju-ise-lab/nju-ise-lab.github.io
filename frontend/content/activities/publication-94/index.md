@@ -10,9 +10,9 @@ authors:
   - name: "He Jiang"
   - name: "Xiaochen Li"
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Xin Chen, He Jiang, Xiaochen Li, Tieke He, Zhenyu Chen. Automated quality assessment for crowdsourced test reports of mobile applications [C]。 IEEE, 2018: 368-379."
 legacy_id: 94
 url: "/activities/publication-94/"

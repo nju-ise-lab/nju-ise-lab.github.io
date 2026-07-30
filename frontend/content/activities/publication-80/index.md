@@ -8,10 +8,10 @@ venue: "[C]Proceedings of the 28th ACM SIGSOFT International Symposium on Softwa
 authors:
   - name: "Haoyu Li"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Zhibin Wei"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Haoyu Li, Chunrong Fang, Zhibin Wei, Zhenyu Chen. CoCoTest: Collaborative crowdsourced testing for Android applications. [C]Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2019: 390-393."
 legacy_id: 80
 url: "/activities/publication-80/"

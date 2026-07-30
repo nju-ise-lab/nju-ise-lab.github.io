@@ -8,11 +8,11 @@ venue: "[C]2019 IEEE/ACM 41st International Conference on Software Engineering (
 authors:
   - name: "Rui Hao"
   - name: "Yang Feng"
-    member_url: "/members/member-53/"
+    member_url: "/members/teacher-007/"
   - name: "James Jones"
   - name: "Yuying Li"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Rui Hao, Yang Feng, James Jones, Yuying Li, Zhenyu Chen. Ctras: Crowdsourced test report aggregation and summarization[ [C]2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). IEEE, 2019: 900-911."
 legacy_id: 87
 url: "/activities/publication-87/"

@@ -10,7 +10,7 @@ authors:
   - name: "Jiawei Liu"
   - name: "Quanjun Zhang"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Xufan Zhang"
 raw_citation: "Guandi Liu, Jiawei Liu, Quanjun Zhang, Chunrong Fang, Xufan Zhang. TauPad: Test Data Augmentation of Point Clouds by Adversarial Mutation ICSE 2022 demo"
 legacy_id: 37

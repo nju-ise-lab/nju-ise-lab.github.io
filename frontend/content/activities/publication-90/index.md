@@ -9,9 +9,9 @@ authors:
   - name: "Yuan Zhao"
     member_url: "/members/member-40/"
   - name: "Tieke He"
-    member_url: "/members/member-44/"
+    member_url: "/members/teacher-005/"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
 raw_citation: "Yuan Zhao, Tieke He, Zhenyu Chen. A unified framework for bug report assignment [J]. International Journal of Software Engineering and Knowledge Engineering, 2019, 29(04): 607-628."
 legacy_id: 90
 url: "/activities/publication-90/"

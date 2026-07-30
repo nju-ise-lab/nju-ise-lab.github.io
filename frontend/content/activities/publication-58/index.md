@@ -12,7 +12,7 @@ authors:
     member_url: "/members/member-43/"
   - name: "Yexiao Yun"
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
 raw_citation: "Zhenfei Cao, Xu Wang, Shengcheng Yu, Yexiao Yun and Chunrong Fang. STIFA: Crowdsourced Mobile Testing Report Selection Based on Text and Image Fusion Analysis [C] IEEE, 2020: 1331-1335."
 legacy_id: 58
 url: "/activities/publication-58/"

@@ -7,7 +7,7 @@ publication_year: "2020"
 venue: "[C]//Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis. 2020: 516-527"
 authors:
   - name: "Chunrong Fang"
-    member_url: "/members/member-38/"
+    member_url: "/members/teacher-004/"
   - name: "Zixi Liu"
   - name: "Yangyang Shi"
   - name: "Jeff Huang"

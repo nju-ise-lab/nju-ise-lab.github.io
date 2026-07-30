@@ -1,0 +1,11 @@
+---
+title: "顾思琦"
+url: "/members/phd-002/"
+member_id: "phd-002"
+member_type: "phd"
+identity: "博士研究生"
+display_order: 2
+aliases:
+  - "/members/member-46/"
+generated_from: "frontend/member-source/phd.csv"
+---

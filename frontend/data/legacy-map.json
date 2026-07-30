@@ -285,43 +285,43 @@
     "section": "members",
     "legacy_id": 37,
     "old": "/member/detail?memberId=37",
-    "new": "/members/member-37/"
+    "new": "/members/teacher-001/"
   },
   {
     "section": "members",
     "legacy_id": 42,
     "old": "/member/detail?memberId=42",
-    "new": "/members/member-42/"
+    "new": "/members/teacher-002/"
   },
   {
     "section": "members",
     "legacy_id": 55,
     "old": "/member/detail?memberId=55",
-    "new": "/members/member-55/"
+    "new": "/members/teacher-003/"
   },
   {
     "section": "members",
     "legacy_id": 45,
     "old": "/member/detail?memberId=45",
-    "new": "/members/member-45/"
+    "new": "/members/master-001/"
   },
   {
     "section": "members",
     "legacy_id": 56,
     "old": "/member/detail?memberId=56",
-    "new": "/members/member-56/"
+    "new": "/members/master-002/"
   },
   {
     "section": "members",
     "legacy_id": 57,
     "old": "/member/detail?memberId=57",
-    "new": "/members/member-57/"
+    "new": "/members/master-003/"
   },
   {
     "section": "members",
     "legacy_id": 58,
     "old": "/member/detail?memberId=58",
-    "new": "/members/member-58/"
+    "new": "/members/master-004/"
   },
   {
     "section": "members",
@@ -345,54 +345,54 @@
     "section": "members",
     "legacy_id": 39,
     "old": "/member/detail?memberId=39",
-    "new": "/members/member-39/"
+    "new": "/members/phd-001/"
   },
   {
     "section": "members",
     "legacy_id": 46,
     "old": "/member/detail?memberId=46",
-    "new": "/members/member-46/"
+    "new": "/members/phd-002/"
   },
   {
     "section": "members",
     "legacy_id": 47,
     "old": "/member/detail?memberId=47",
-    "new": "/members/member-47/"
+    "new": "/members/phd-003/"
   },
   {
     "section": "members",
     "legacy_id": 48,
     "old": "/member/detail?memberId=48",
-    "new": "/members/member-48/"
+    "new": "/members/phd-004/"
   },
   {
     "section": "members",
     "legacy_id": 49,
     "old": "/member/detail?memberId=49",
-    "new": "/members/member-49/"
+    "new": "/members/phd-005/"
   },
   {
     "section": "members",
     "legacy_id": 38,
     "old": "/member/detail?memberId=38",
-    "new": "/members/member-38/"
+    "new": "/members/teacher-004/"
   },
   {
     "section": "members",
     "legacy_id": 44,
     "old": "/member/detail?memberId=44",
-    "new": "/members/member-44/"
+    "new": "/members/teacher-005/"
   },
   {
     "section": "members",
     "legacy_id": 52,
     "old": "/member/detail?memberId=52",
-    "new": "/members/member-52/"
+    "new": "/members/teacher-006/"
   },
   {
     "section": "members",
     "legacy_id": 53,
     "old": "/member/detail?memberId=53",
-    "new": "/members/member-53/"
+    "new": "/members/teacher-007/"
   }
 ]

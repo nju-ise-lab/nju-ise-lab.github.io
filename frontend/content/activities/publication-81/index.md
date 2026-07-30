@@ -9,7 +9,7 @@ authors:
   - name: "Weiqiang Zhang"
   - name: "Shing-Chi Cheung"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Yuming Zhou"
   - name: "Bin Luo"
 raw_citation: "Weiqiang Zhang, Shing-Chi Cheung, Zhenyu Chen, Yuming Zhou, Bin Luo. File-level socio-technical congruence and its relationship with bug proneness in OSS projects [J]. Journal of Systems and Software, 2019, 156: 21-40."

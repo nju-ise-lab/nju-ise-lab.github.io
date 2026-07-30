@@ -8,7 +8,7 @@ venue: "[J]. International Journal of Software Engineering and Knowledge Enginee
 authors:
   - name: "Rui Yang"
   - name: "Zhenyu Chen"
-    member_url: "/members/member-37/"
+    member_url: "/members/teacher-001/"
   - name: "Zhiyi Zhang"
   - name: "Baowen Xu"
 raw_citation: "Rui Yang, Zhenyu Chen, Zhiyi Zhang, Baowen Xu. Efsm-based test case generation: Sequence, data, and oracle [J]. International Journal of Software Engineering and Knowledge Engineering, 2015, 25(04): 633-667."
