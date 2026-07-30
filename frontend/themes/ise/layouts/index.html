@@ -1,30 +1,23 @@
 {{ define "main" }}
-  <section class="home-hero home-hero--editorial" aria-label="研究成果轮播图" data-carousel>
+  <section class="home-hero" aria-label="研究亮点轮播图" data-carousel>
     {{ with .Params.slides }}
-      {{ $slideCount := len . }}
-      <div class="home-hero__track" data-slide-count="{{ $slideCount }}">
+      <div class="home-hero__track" data-slide-count="{{ len . }}">
         {{ range $index, $_ := . }}
           {{ $image := .image | default "/images/data-source/home/default.jpg" }}
           {{ $title := .title | default "" }}
-          {{ $hasCopy := or $title .summary }}
-          {{ if .url }}<a class="home-hero__slide{{ if $hasCopy }} home-hero__slide--with-copy{{ end }}{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if $hasCopy }} home-hero__slide--with-copy{{ end }}{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
-            {{ if $hasCopy }}
-              <div class="home-hero__copy">
-                <div class="home-hero__kicker">RESEARCH · {{ printf "%02d" (add $index 1) }} / {{ printf "%02d" $slideCount }}</div>
-                {{ with $title }}<h1>{{ . }}</h1>{{ end }}
-                {{ with .summary }}<p>{{ . }}</p>{{ end }}
-                {{ with .url }}<span class="home-hero__link">了解这项工作 <b>→</b></span>{{ end }}
+          {{ if .url }}<a class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
+            <img src="{{ $image }}" alt="{{ .alt | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
+            {{ if or $title .summary }}
+              <div class="home-hero__caption">
+                {{ with $title }}<strong>{{ . }}</strong>{{ end }}
+                {{ with .summary }}<span>{{ . }}</span>{{ end }}
               </div>
             {{ end }}
-            <div class="home-hero__visual">
-              <img src="{{ $image }}" alt="{{ .alt | default $title | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
-              <span class="home-hero__counter"><strong>{{ printf "%02d" (add $index 1) }}</strong> / {{ printf "%02d" $slideCount }}</span>
-            </div>
           {{ if .url }}</a>{{ else }}</div>{{ end }}
         {{ end }}
       </div>
-      <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">‹</button>
-      <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">›</button>
+      <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">&lt;</button>
+      <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">&gt;</button>
       <div class="home-hero__dots" aria-label="轮播图切换">
         {{ range $index, $_ := . }}
           <button type="button" class="{{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="第 {{ add $index 1 }} 张轮播图"></button>
