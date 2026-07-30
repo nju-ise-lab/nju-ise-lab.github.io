@@ -2,9 +2,6 @@
 title: "博士生张犬俊在基于大模型的安全漏洞修复方面取得新进展"
 date: "2023-12-11T14:43:55+08:00"
 category: "业界新闻"
-creator: "iSE实验室"
-legacy_id: 64
-views_seed: 712
 draft: false
 url: "/news/news-64/"
 image: "cover.png"

@@ -2,9 +2,6 @@
 title: "iSE实验室博士生刘佳玮在深度学习库测试方面取得新进展"
 date: "2023-12-11T14:36:31+08:00"
 category: "业界新闻"
-creator: "iSE实验室"
-legacy_id: 62
-views_seed: 359
 draft: false
 url: "/news/ise-2/"
 image: "cover.png"

@@ -18,6 +18,17 @@ markup:
     renderer:
       unsafe: true
 
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: data-source/content
+      target: content
+    - source: static
+      target: static
+    - source: data-source/fig
+      target: static/images/data-source
+
 params:
   labName: "南京大学智能软件工程实验室"
   labNameEn: "Nanjing University, Laboratory of Intelligent SoftWare Engineering"

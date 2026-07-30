@@ -2,9 +2,6 @@
 title: "iSE博士生张犬俊在基于深度学习的程序修复方面取得新进展"
 date: "2023-12-11T14:30:14+08:00"
 category: "本院新闻"
-creator: "iSE实验室"
-legacy_id: 60
-views_seed: 195
 draft: false
 url: "/news/ise-3/"
 image: "cover.png"

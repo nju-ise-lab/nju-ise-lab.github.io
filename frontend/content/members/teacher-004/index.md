@@ -5,10 +5,8 @@ member_id: "teacher-004"
 member_type: "teacher"
 identity: "副教授"
 display_order: 4
-aliases:
-  - "/members/member-38/"
 homepage: "https://www.iselab.cn/html/people/faculty/ChunrongFang.html"
-avatar: "avatar.jpeg"
+avatar_url: "/images/data-source/members/teacher-004/avatar.jpeg"
 generated_from: "frontend/data-source/members.xlsx#教师"
 ---
 

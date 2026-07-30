@@ -1,5 +1,5 @@
-{{ $softwareName := .software_name | default .name | default .title }}
-{{ $owners := .owners | default .authors }}
+{{ $softwareName := .software_name }}
+{{ $owners := .owners }}
 <article class="research-result-card research-software-card">
   <div class="research-result-card__meta">
     <span class="research-result-card__kind">软件著作</span>

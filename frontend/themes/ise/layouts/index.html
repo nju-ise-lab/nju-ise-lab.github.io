@@ -1,9 +1,9 @@
 {{ define "main" }}
   <section class="home-hero" aria-label="研究亮点轮播图" data-carousel>
-    {{ with hugo.Data.slides }}
+    {{ with .Params.slides }}
       <div class="home-hero__track" data-slide-count="{{ len . }}">
         {{ range $index, $_ := . }}
-          {{ $image := .image | default "/images/legacy/home/01.jpg" }}
+          {{ $image := .image | default "/images/data-source/home/default.jpg" }}
           {{ $title := .title | default "" }}
           {{ if .url }}<a class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
             <img src="{{ $image }}" alt="{{ .alt | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
@@ -25,14 +25,14 @@
       </div>
     {{ else }}
       <div class="home-hero__track">
-        <img src="/images/legacy/home/01.jpg" alt="南京大学智能软件工程实验室" class="home-hero__image">
+        <img src="/images/data-source/home/default.jpg" alt="南京大学智能软件工程实验室" class="home-hero__image">
       </div>
     {{ end }}
   </section>
 
   <section class="home-section container" aria-labelledby="home-news-title">
     <div class="section-heading">
-      <h2 id="home-news-title">{{ partial "section-icon.html" "news" }}<span>新闻资讯</span></h2>
+      <h2 id="home-news-title">{{ partial "section-icon.html" "news" }}<span>{{ .Params.news_title | default "新闻资讯" }}</span></h2>
       <a class="more-link" href="/news/">更多</a>
     </div>
 
@@ -42,7 +42,7 @@
     {{ $news := first 5 (union $pinnedNews $normalNews) }}
     <div class="news-preview">
       <div class="news-preview__image">
-        <img src="/images/legacy/home/news-1.jpg" alt="新闻资讯图片">
+        <img src="{{ .Params.news_image | default "/images/data-source/home/news.jpg" }}" alt="新闻资讯图片">
       </div>
       <ul class="news-list">
         {{ range $news }}
@@ -61,7 +61,7 @@
   <section class="home-section container home-feature-grid" aria-label="首页栏目">
     <div class="home-column">
       <div class="section-heading">
-        <h2>{{ partial "section-icon.html" "activity" }}<span>学术论文</span></h2>
+        <h2>{{ partial "section-icon.html" "activity" }}<span>{{ .Params.publications_title | default "学术论文" }}</span></h2>
         <a class="more-link" href="/research-results/">更多</a>
       </div>
       {{ $catalog := index hugo.Data "publication-records" }}
@@ -83,39 +83,28 @@
             </li>
           {{ end }}
         {{ else }}
-          {{ $publications := first 4 (sort (where (where site.RegularPages "Section" "activities") "Params.content_kind" "publication") "Params.publication_year" "desc") }}
-          {{ range $publications }}
-            <li>
-              <time datetime="{{ .Params.publication_year }}"><span>{{ .Params.venue | default "论文" }}</span></time>
-              <div>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                {{ with .Params.authors }}<p class="publication-authors">{{ partial "author-list.html" . }}</p>{{ end }}
-              </div>
-            </li>
-          {{ else }}
-            <li class="empty-item">暂无学术论文内容。</li>
-          {{ end }}
+          <li class="empty-item">暂无学术论文内容。</li>
         {{ end }}
       </ul>
     </div>
 
     <div class="home-column">
       <div class="section-heading">
-        <h2>{{ partial "section-icon.html" "project" }}<span>项目</span></h2>
+        <h2>{{ partial "section-icon.html" "project" }}<span>{{ .Params.projects_title | default "项目" }}</span></h2>
         <a class="more-link" href="/projects/">更多</a>
       </div>
       {{ $projectCatalog := index hugo.Data "project-records" }}
       {{ $allProjects := slice }}
       {{ with $projectCatalog }}{{ with .projects }}{{ $allProjects = . }}{{ end }}{{ end }}
       {{ $projects := first 4 (sort (where $allProjects "featured" true) "featured_order" "asc") }}
-      <ul class="platform-list">
+      <ul class="home-project-list">
         {{ range $projects }}
           <li>
             {{ $badge := "科研项目" }}
             {{ if in .project_name "国家重点研发计划" }}{{ $badge = "国家重点研发计划" }}{{ end }}
             {{ if in .project_name "国家自然科学基金" }}{{ $badge = "国家自然科学基金" }}{{ end }}
             <span class="project-badge">{{ .homepage_label | default $badge }}</span>
-            <span class="platform-list__title">{{ .project_name }}</span>
+            <span class="home-project-list__title">{{ .project_name }}</span>
           </li>
         {{ else }}
           <li class="empty-item">暂无科研项目内容。</li>

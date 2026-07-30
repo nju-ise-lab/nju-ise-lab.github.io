@@ -5,7 +5,5 @@ member_id: "phd-002"
 member_type: "phd"
 identity: "博士研究生"
 display_order: 2
-aliases:
-  - "/members/member-46/"
 generated_from: "frontend/data-source/members.xlsx#博士研究生"
 ---

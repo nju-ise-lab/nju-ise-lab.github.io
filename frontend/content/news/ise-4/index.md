@@ -2,9 +2,6 @@
 title: "iSE实验室在智能化代码摘要领域取得重要进展"
 date: "2023-12-11T14:26:13+08:00"
 category: "本院新闻"
-creator: "iSE实验室"
-legacy_id: 59
-views_seed: 72
 draft: false
 url: "/news/ise-4/"
 image: "cover.png"

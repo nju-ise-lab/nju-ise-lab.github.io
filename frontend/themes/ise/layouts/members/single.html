@@ -3,13 +3,12 @@
   <div class="page-shell container">
     <article class="page-main article member-profile">
       {{ if eq .Params.member_type "teacher" }}
-        {{ $avatar := .Resources.GetMatch (.Params.avatar | default "") }}
-        {{ with $avatar }}
-          <div class="member-profile__avatar"><img src="{{ .RelPermalink }}" alt="{{ $.Title }}"></div>
+        {{ with .Params.avatar_url }}
+          <div class="member-profile__avatar"><img src="{{ . }}" alt="{{ $.Title }}"></div>
         {{ end }}
       {{ end }}
       <h1>{{ .Title }}</h1>
-      {{ with (.Params.identity | default .Params.role_title) }}<p class="member-profile__role">{{ . }}</p>{{ end }}
+      {{ with .Params.identity }}<p class="member-profile__role">{{ . }}</p>{{ end }}
       <dl class="member-profile__meta">
         {{ with .Params.homepage }}<div><dt>个人主页</dt><dd><a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a></dd></div>{{ end }}
       </dl>
@@ -23,31 +22,16 @@
           {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
         {{ end }}
         {{ $relatedPublications := slice }}
-        {{ if gt (len $structuredPublications) 0 }}
-          {{ range $structuredPublications }}
-            {{ $paper := . }}
-            {{ range .authors }}
-              {{ if eq .member_url $memberURL }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
-            {{ end }}
-          {{ end }}
-        {{ else }}
-          {{ range where site.RegularPages "Section" "activities" }}
-            {{ if eq .Params.content_kind "publication" }}
-              {{ $paper := . }}
-              {{ range .Params.authors }}
-                {{ if eq .member_url $memberURL }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
-              {{ end }}
-            {{ end }}
+        {{ range $structuredPublications }}
+          {{ $paper := . }}
+          {{ range .authors }}
+            {{ if eq .member_url $memberURL }}{{ $relatedPublications = $relatedPublications | append $paper }}{{ end }}
           {{ end }}
         {{ end }}
         {{ if gt (len $relatedPublications) 0 }}
           <section class="related-block" aria-labelledby="member-publications">
             <h2 id="member-publications">学术论文</h2>
-            {{ if gt (len $structuredPublications) 0 }}
-              {{ partial "publication-list.html" (dict "records" $relatedPublications "use_records" true "hide_legend" true) }}
-            {{ else }}
-              {{ partial "publication-list.html" (dict "pages" $relatedPublications "hide_legend" true) }}
-            {{ end }}
+            {{ partial "publication-list.html" (dict "records" $relatedPublications "hide_legend" true) }}
           </section>
         {{ end }}
 
@@ -57,7 +41,7 @@
         {{ with $patentCatalog }}{{ with .patents }}{{ $patents = . }}{{ end }}{{ end }}
         {{ range $patents }}
           {{ $patent := . }}
-          {{ range (.inventors | default .authors) }}
+          {{ range .inventors }}
             {{ if eq .member_url $memberURL }}{{ $relatedPatents = $relatedPatents | append $patent }}{{ end }}
           {{ end }}
         {{ end }}

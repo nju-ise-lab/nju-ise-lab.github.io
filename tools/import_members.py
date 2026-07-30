@@ -17,7 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
 SOURCE_PATH = FRONTEND / "data-source" / "members.xlsx"
 OUTPUT_PATH = FRONTEND / "data" / "member-records.json"
+ALIASES_OUTPUT_PATH = FRONTEND / "data" / "member-aliases.json"
 CONTENT_DIR = FRONTEND / "content" / "members"
+FIG_DIR = FRONTEND / "data-source" / "fig"
 
 SOURCE_DEFINITIONS = (
     (
@@ -39,26 +41,6 @@ SOURCE_DEFINITIONS = (
         ("master_id", "name", "member_type", "identity", "homepage"),
     ),
 )
-
-LEGACY_MEMBER_URLS = {
-    "teacher-001": "/members/member-37/",
-    "teacher-002": "/members/member-42/",
-    "teacher-003": "/members/member-55/",
-    "teacher-004": "/members/member-38/",
-    "teacher-005": "/members/member-44/",
-    "teacher-006": "/members/member-52/",
-    "teacher-007": "/members/member-53/",
-    "phd-001": "/members/member-39/",
-    "phd-002": "/members/member-46/",
-    "phd-003": "/members/member-47/",
-    "phd-004": "/members/member-48/",
-    "phd-005": "/members/member-49/",
-    "master-001": "/members/member-45/",
-    "master-002": "/members/member-56/",
-    "master-003": "/members/member-57/",
-    "master-004": "/members/member-58/",
-}
-
 
 class MemberImportError(ValueError):
     pass
@@ -128,7 +110,12 @@ def load_source(
                 raise MemberImportError(
                     f"{sheet_name} 第 {row_number} 行的教师缺少 avatar。"
                 )
-            avatar_path = CONTENT_DIR / member_id / avatar
+            avatar_relative = Path(avatar)
+            if avatar_relative.is_absolute() or ".." in avatar_relative.parts:
+                raise MemberImportError(
+                    f"{sheet_name} 第 {row_number} 行的 avatar 必须是 fig 下的相对路径。"
+                )
+            avatar_path = FIG_DIR / avatar_relative
             if not avatar_path.is_file():
                 raise MemberImportError(
                     f"{sheet_name} 第 {row_number} 行的头像不存在：{avatar_path}"
@@ -145,7 +132,7 @@ def load_source(
         }
         if avatar:
             record["avatar"] = avatar
-            record["avatar_url"] = f"/members/{member_id}/{avatar}"
+            record["avatar_url"] = f"/images/data-source/{avatar}"
         if bio:
             record["bio"] = bio
         records.append(record)
@@ -167,13 +154,10 @@ def render_member_page(record: dict[str, Any], source_sheet: str) -> str:
         f"identity: {yaml_string(record['identity'])}",
         f"display_order: {record['source_order']}",
     ]
-    legacy_url = LEGACY_MEMBER_URLS.get(record["id"])
-    if legacy_url:
-        lines.extend(["aliases:", f"  - {yaml_string(legacy_url)}"])
     if record.get("homepage"):
         lines.append(f"homepage: {yaml_string(record['homepage'])}")
-    if record.get("avatar"):
-        lines.append(f"avatar: {yaml_string(record['avatar'])}")
+    if record.get("avatar_url"):
+        lines.append(f"avatar_url: {yaml_string(record['avatar_url'])}")
     lines.extend(
         [
             f"generated_from: {yaml_string(f'frontend/data-source/members.xlsx#{source_sheet}')}",
@@ -186,7 +170,52 @@ def render_member_page(record: dict[str, Any], source_sheet: str) -> str:
     return "\n".join(lines)
 
 
-def build_outputs() -> tuple[dict[str, Any], dict[Path, str]]:
+def normalize_name(value: str) -> str:
+    return re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", value.lower())
+
+
+def build_aliases(records: list[dict[str, Any]]) -> dict[str, str]:
+    member_urls = {record["id"]: record["url"] for record in records}
+    aliases: dict[str, str] = {}
+    normalized_aliases: dict[str, str] = {}
+
+    def add_alias(alias: str, member_id: str, source: str) -> None:
+        cleaned = clean_text(alias)
+        normalized = normalize_name(cleaned)
+        if not cleaned or not normalized:
+            raise MemberImportError(f"{source} 的 alias 不能为空。")
+        member_url = member_urls.get(member_id)
+        if not member_url:
+            raise MemberImportError(f"{source} 引用了不存在的 member_id：{member_id}")
+        existing = normalized_aliases.get(normalized)
+        if existing and existing != member_url:
+            raise MemberImportError(f"{source} 的 alias `{cleaned}` 与其他成员冲突。")
+        normalized_aliases[normalized] = member_url
+        aliases[cleaned] = member_url
+
+    for record in records:
+        add_alias(record["name"], record["id"], f"成员 {record['id']}")
+
+    try:
+        rows = read_table(
+            SOURCE_PATH,
+            "作者别名",
+            expected_columns=("alias", "member_id"),
+        )
+    except XlsxReadError as exc:
+        raise MemberImportError(str(exc)) from exc
+
+    for source_order, row in enumerate(rows, start=1):
+        row_number = int(row.get("_source_row", source_order + 1))
+        add_alias(
+            clean_text(row.get("alias")),
+            clean_text(row.get("member_id")),
+            f"作者别名 第 {row_number} 行",
+        )
+    return aliases
+
+
+def build_outputs() -> tuple[dict[str, Any], dict[Path, str], dict[str, str]]:
     all_records: list[dict[str, Any]] = []
     pages: dict[Path, str] = {}
     seen_ids: set[str] = set()
@@ -210,18 +239,28 @@ def build_outputs() -> tuple[dict[str, Any], dict[Path, str]]:
         "schema_version": 1,
         "members": all_records,
     }
-    return payload, pages
+    return payload, pages, build_aliases(all_records)
 
 
 def expected_json(payload: dict[str, Any]) -> str:
     return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
 
 
-def check_outputs(payload: dict[str, Any], pages: dict[Path, str]) -> bool:
+def check_outputs(
+    payload: dict[str, Any],
+    pages: dict[Path, str],
+    aliases: dict[str, str],
+) -> bool:
     mismatches: list[str] = []
     expected_data = expected_json(payload)
     if not OUTPUT_PATH.exists() or OUTPUT_PATH.read_text(encoding="utf-8") != expected_data:
         mismatches.append(str(OUTPUT_PATH))
+    expected_aliases = expected_json(aliases)
+    if (
+        not ALIASES_OUTPUT_PATH.exists()
+        or ALIASES_OUTPUT_PATH.read_text(encoding="utf-8") != expected_aliases
+    ):
+        mismatches.append(str(ALIASES_OUTPUT_PATH))
 
     for path, expected in pages.items():
         if not path.exists() or path.read_text(encoding="utf-8") != expected:
@@ -237,13 +276,19 @@ def check_outputs(payload: dict[str, Any], pages: dict[Path, str]) -> bool:
     return True
 
 
-def write_outputs(payload: dict[str, Any], pages: dict[Path, str]) -> None:
+def write_outputs(
+    payload: dict[str, Any],
+    pages: dict[Path, str],
+    aliases: dict[str, str],
+) -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(expected_json(payload), encoding="utf-8")
+    ALIASES_OUTPUT_PATH.write_text(expected_json(aliases), encoding="utf-8")
     for path, content in pages.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
     print(f"Updated {OUTPUT_PATH} with {len(payload['members'])} active members.")
+    print(f"Updated {ALIASES_OUTPUT_PATH} with {len(aliases)} exact author aliases.")
     print(f"Updated {len(pages)} stable member pages.")
 
 
@@ -259,10 +304,10 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        payload, pages = build_outputs()
+        payload, pages, aliases = build_outputs()
         if args.check:
-            return 0 if check_outputs(payload, pages) else 1
-        write_outputs(payload, pages)
+            return 0 if check_outputs(payload, pages, aliases) else 1
+        write_outputs(payload, pages, aliases)
         return 0
     except MemberImportError as exc:
         print(f"Member import failed: {exc}")

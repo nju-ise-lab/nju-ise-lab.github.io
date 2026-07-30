@@ -5,10 +5,8 @@ member_id: "teacher-001"
 member_type: "teacher"
 identity: "教授"
 display_order: 1
-aliases:
-  - "/members/member-37/"
 homepage: "https://software.nju.edu.cn/zychen/"
-avatar: "avatar.jpg"
+avatar_url: "/images/data-source/members/teacher-001/avatar.jpg"
 generated_from: "frontend/data-source/members.xlsx#教师"
 ---
 

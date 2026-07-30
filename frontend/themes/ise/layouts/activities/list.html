@@ -1,8 +1,0 @@
-{{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <div class="page-shell container">
-    <section class="page-main">
-      {{ partial "publication-list.html" (dict "pages" .Pages) }}
-    </section>
-  </div>
-{{ end }}

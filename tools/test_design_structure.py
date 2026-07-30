@@ -13,9 +13,9 @@ class DesignStructureTest(unittest.TestCase):
 
         for relative in (
             "layouts/news/list.html",
-            "layouts/activities/list.html",
             "layouts/members/list.html",
-            "layouts/platform/list.html",
+            "layouts/projects/list.html",
+            "layouts/research-results/list.html",
         ):
             content = (THEME / relative).read_text(encoding="utf-8")
             self.assertNotIn('partial "page-header.html"', content)

@@ -2,9 +2,6 @@
 title: "iSE实验室硕士生李昕荣获IEEEDSA2023最佳论文奖"
 date: "2023-12-11T14:35:14+08:00"
 category: "业界新闻"
-creator: "iSE实验室"
-legacy_id: 61
-views_seed: 207
 draft: false
 url: "/news/ise-ieeedsa2023/"
 image: "cover.png"

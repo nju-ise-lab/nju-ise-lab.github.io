@@ -1,5 +1,5 @@
-{{ $patentName := .patent_name | default .title | default .english | default .chinese }}
-{{ $inventors := .inventors | default .authors }}
+{{ $patentName := .patent_name }}
+{{ $inventors := .inventors }}
 {{ $applicants := .applicants }}
 <article class="research-result-card">
   <div class="research-result-card__meta">

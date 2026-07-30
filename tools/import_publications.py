@@ -43,7 +43,7 @@ STATUS_ALIASES = {
 }
 MANUSCRIPT_STATUSES = {"preprint", "under_review", "submitted"}
 
-# Only venues that can be identified unambiguously from the legacy export are
+# Only venues that can be identified unambiguously from the imported workbook are
 # inferred. The explicit CSV `level` value always takes precedence.
 CCF_LEVEL_HINTS = (
     ("CCF-A", ("transactions on software engineering", "acm transactions on software engineering and methodology", "international conference on software engineering", "international symposium on software testing and analysis", "international conference on automated software engineering", "foundations of software engineering")),

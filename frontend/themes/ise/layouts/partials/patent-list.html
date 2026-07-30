@@ -2,13 +2,10 @@
 <ul class="section-list project-list patent-list">
   {{ range $patents }}
     <li>
-      <strong>{{ .patent_name | default .title | default .english | default .chinese }}</strong>
-      {{ $inventors := .inventors | default .authors }}
+      <strong>{{ .patent_name }}</strong>
+      {{ $inventors := .inventors }}
       {{ if $inventors }}
         <p class="project-list__authors">{{ partial "author-list.html" $inventors }}</p>
-      {{ else }}
-        {{ $rawAuthors := .raw_authors | default .chinese }}
-        {{ with $rawAuthors }}<p class="project-list__authors">{{ . }}</p>{{ end }}
       {{ end }}
     </li>
   {{ else }}

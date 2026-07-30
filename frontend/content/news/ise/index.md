@@ -2,9 +2,6 @@
 title: "iSE实验室博士生张犬俊在基于大模型的程序修复方面取得新进展"
 date: "2023-12-11T14:38:04+08:00"
 category: "本院新闻"
-creator: "iSE实验室"
-legacy_id: 63
-views_seed: 274
 draft: false
 url: "/news/ise/"
 image: "cover.png"

@@ -2,9 +2,6 @@
 title: "21级博士生高新宇同学荣获ACMSIGSOFT优秀论文奖"
 date: "2023-12-11T14:22:33+08:00"
 category: "本院新闻"
-creator: "iSE实验室"
-legacy_id: 58
-views_seed: 97
 draft: false
 url: "/news/21-acmsigsoft/"
 image: "cover.png"

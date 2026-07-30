@@ -74,7 +74,7 @@ class ImportPublicationsTest(unittest.TestCase):
                     aliases_path,
                 )
 
-    def test_import_inferrs_conservative_legacy_metadata(self):
+    def test_import_infers_conservative_metadata(self):
         with tempfile.TemporaryDirectory() as temp:
             aliases_path = self.write_aliases(Path(temp))
             catalog, _ = import_publications.import_rows(

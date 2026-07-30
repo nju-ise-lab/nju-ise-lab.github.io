@@ -29,6 +29,16 @@ class XlsxReaderTest(unittest.TestCase):
             7,
         )
         self.assertEqual(
+            len(
+                read_table(
+                    SOURCE / "members.xlsx",
+                    "作者别名",
+                    expected_columns=("alias", "member_id"),
+                )
+            ),
+            28,
+        )
+        self.assertEqual(
             len(read_table(SOURCE / "publications.xlsx", "学术论文")),
             132,
         )
