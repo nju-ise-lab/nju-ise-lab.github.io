@@ -1,23 +1,30 @@
 {{ define "main" }}
-  <section class="home-hero" aria-label="研究亮点轮播图" data-carousel>
+  <section class="home-hero home-hero--editorial" aria-label="研究成果轮播图" data-carousel>
     {{ with .Params.slides }}
-      <div class="home-hero__track" data-slide-count="{{ len . }}">
+      {{ $slideCount := len . }}
+      <div class="home-hero__track" data-slide-count="{{ $slideCount }}">
         {{ range $index, $_ := . }}
           {{ $image := .image | default "/images/data-source/home/default.jpg" }}
           {{ $title := .title | default "" }}
-          {{ if .url }}<a class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
-            <img src="{{ $image }}" alt="{{ .alt | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
-            {{ if or $title .summary }}
-              <div class="home-hero__caption">
-                {{ with $title }}<strong>{{ . }}</strong>{{ end }}
-                {{ with .summary }}<span>{{ . }}</span>{{ end }}
+          {{ $hasCopy := or $title .summary }}
+          {{ if .url }}<a class="home-hero__slide{{ if $hasCopy }} home-hero__slide--with-copy{{ end }}{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if $hasCopy }} home-hero__slide--with-copy{{ end }}{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
+            {{ if $hasCopy }}
+              <div class="home-hero__copy">
+                <div class="home-hero__kicker">RESEARCH · {{ printf "%02d" (add $index 1) }} / {{ printf "%02d" $slideCount }}</div>
+                {{ with $title }}<h1>{{ . }}</h1>{{ end }}
+                {{ with .summary }}<p>{{ . }}</p>{{ end }}
+                {{ with .url }}<span class="home-hero__link">了解这项工作 <b>→</b></span>{{ end }}
               </div>
             {{ end }}
+            <div class="home-hero__visual">
+              <img src="{{ $image }}" alt="{{ .alt | default $title | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
+              <span class="home-hero__counter"><strong>{{ printf "%02d" (add $index 1) }}</strong> / {{ printf "%02d" $slideCount }}</span>
+            </div>
           {{ if .url }}</a>{{ else }}</div>{{ end }}
         {{ end }}
       </div>
-      <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">&lt;</button>
-      <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">&gt;</button>
+      <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">‹</button>
+      <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">›</button>
       <div class="home-hero__dots" aria-label="轮播图切换">
         {{ range $index, $_ := . }}
           <button type="button" class="{{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="第 {{ add $index 1 }} 张轮播图"></button>
@@ -30,86 +37,113 @@
     {{ end }}
   </section>
 
-  <section class="home-section container" aria-labelledby="home-news-title">
-    <div class="section-heading">
-      <h2 id="home-news-title">{{ partial "section-icon.html" "news" }}<span>{{ .Params.news_title | default "新闻资讯" }}</span></h2>
-      <a class="more-link" href="/news/">更多</a>
+  {{ $allNews := (where site.RegularPages "Section" "news").ByDate.Reverse }}
+  {{ $pinnedNews := where $allNews "Params.pinned" true }}
+  {{ $normalNews := where $allNews "Params.pinned" "ne" true }}
+  {{ $news := first 5 (union $pinnedNews $normalNews) }}
+  <section class="home-section home-section--news container" aria-labelledby="home-news-title">
+    <div class="section-heading section-heading--editorial">
+      <div class="section-heading__title">
+        <h2 id="home-news-title">{{ .Params.news_title | default "新闻资讯" }}</h2>
+        <span>LAB NEWS</span>
+      </div>
+      <a class="more-link" href="/news/">浏览全部新闻</a>
     </div>
 
-    {{ $allNews := (where site.RegularPages "Section" "news").ByDate.Reverse }}
-    {{ $pinnedNews := where $allNews "Params.pinned" true }}
-    {{ $normalNews := where $allNews "Params.pinned" "ne" true }}
-    {{ $news := first 5 (union $pinnedNews $normalNews) }}
-    <div class="news-preview">
-      <div class="news-preview__image">
-        <img src="{{ .Params.news_image | default "/images/data-source/home/news.jpg" }}" alt="新闻资讯图片">
-      </div>
-      <ul class="news-list">
-        {{ range $news }}
+    <div class="news-preview news-preview--editorial">
+      {{ if gt (len $news) 0 }}
+        {{ range first 1 $news }}
+          <a class="news-preview__lead" href="{{ .RelPermalink }}">
+            <img src="{{ $.Params.news_image | default "/images/data-source/home/news.jpg" }}" alt="{{ .Title }}">
+            <span class="news-preview__shade"></span>
+            <span class="news-preview__copy">
+              {{ if .Params.pinned }}<b class="pin-badge">置顶</b>{{ end }}
+              <strong>{{ .Title }}</strong>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+            </span>
+          </a>
+        {{ end }}
+      {{ else }}
+        <div class="news-preview__lead news-preview__lead--empty">
+          <img src="{{ .Params.news_image | default "/images/data-source/home/news.jpg" }}" alt="新闻资讯图片">
+        </div>
+      {{ end }}
+      <ul class="news-list news-list--editorial">
+        {{ range after 1 $news }}
           <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if .Params.pinned }}<span class="pin-badge">置顶</span>{{ end }}
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "01 · 02" }}</time>
+            <div>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ if .Params.pinned }}<span class="pin-badge">置顶</span>{{ end }}
+              <p>{{ .Date.Format "2006" }} · iSE Lab</p>
+            </div>
           </li>
         {{ else }}
-          <li class="empty-item">暂无新闻内容，请在 <code>content/news/</code> 添加 Markdown。</li>
+          <li class="empty-item">暂无更多新闻内容。</li>
         {{ end }}
       </ul>
     </div>
   </section>
 
-  <section class="home-section container home-feature-grid" aria-label="首页栏目">
-    <div class="home-column">
-      <div class="section-heading">
-        <h2>{{ partial "section-icon.html" "activity" }}<span>{{ .Params.publications_title | default "学术论文" }}</span></h2>
-        <a class="more-link" href="/research-results/">更多</a>
-      </div>
-      {{ $catalog := index hugo.Data "publication-records" }}
-      {{ $structuredPublications := slice }}
-      {{ with $catalog }}
-        {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
-      {{ end }}
-      <ul class="activity-list publication-home-list">
-        {{ if gt (len $structuredPublications) 0 }}
-          {{ range first 4 (sort $structuredPublications "year" "desc") }}
-            {{ $paper := . }}
-            <li>
-              <time datetime="{{ $paper.year }}"><span>{{ $paper.venue_short | default $paper.ccf_level | default "PAPER" }}</span></time>
-              <div>
-                {{ with $paper.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $paper.title }}</a>{{ else }}<span class="publication-home-list__title">{{ $paper.title }}</span>{{ end }}
-                {{ with $paper.status_label }}<em class="publication-home-list__status">({{ . }})</em>{{ end }}
-                {{ with $paper.authors }}<p class="publication-authors">{{ partial "publication-author-list.html" . }}</p>{{ end }}
-              </div>
-            </li>
+  <section class="home-research">
+    <div class="container home-feature-grid home-feature-grid--editorial" aria-label="首页科研栏目">
+      <div class="home-column home-column--publications">
+        <div class="section-heading section-heading--sub">
+          <h2>{{ .Params.publications_title | default "最新学术论文" }}</h2>
+          <a class="more-link" href="/research-results/">更多论文</a>
+        </div>
+        {{ $catalog := index hugo.Data "publication-records" }}
+        {{ $structuredPublications := slice }}
+        {{ with $catalog }}
+          {{ with .publications }}{{ $structuredPublications = . }}{{ end }}
+        {{ end }}
+        <ul class="activity-list publication-home-list publication-home-list--editorial">
+          {{ if gt (len $structuredPublications) 0 }}
+            {{ range first 4 (sort $structuredPublications "year" "desc") }}
+              {{ $paper := . }}
+              <li>
+                <span class="publication-home-list__venue">{{ $paper.venue_short | default $paper.ccf_level | default "PAPER" }}</span>
+                <div>
+                  <h3>
+                    {{ with $paper.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $paper.title }}</a>{{ else }}<span>{{ $paper.title }}</span>{{ end }}
+                  </h3>
+                  {{ with $paper.authors }}<p class="publication-authors">{{ partial "publication-author-list.html" . }}</p>{{ end }}
+                  <div class="publication-home-list__tags">
+                    {{ with $paper.ccf_level }}<span>{{ . }}</span>{{ end }}
+                    {{ range first 1 $paper.topics }}<span>{{ . }}</span>{{ end }}
+                    <span>{{ $paper.year }}</span>
+                  </div>
+                </div>
+              </li>
+            {{ end }}
+          {{ else }}
+            <li class="empty-item">暂无学术论文内容。</li>
           {{ end }}
-        {{ else }}
-          <li class="empty-item">暂无学术论文内容。</li>
-        {{ end }}
-      </ul>
-    </div>
-
-    <div class="home-column">
-      <div class="section-heading">
-        <h2>{{ partial "section-icon.html" "project" }}<span>{{ .Params.projects_title | default "项目" }}</span></h2>
-        <a class="more-link" href="/projects/">更多</a>
+        </ul>
       </div>
-      {{ $projectCatalog := index hugo.Data "project-records" }}
-      {{ $allProjects := slice }}
-      {{ with $projectCatalog }}{{ with .projects }}{{ $allProjects = . }}{{ end }}{{ end }}
-      {{ $projects := first 4 (sort (where $allProjects "featured" true) "featured_order" "asc") }}
-      <ul class="home-project-list">
-        {{ range $projects }}
-          <li>
-            {{ $badge := "科研项目" }}
-            {{ if in .project_name "国家重点研发计划" }}{{ $badge = "国家重点研发计划" }}{{ end }}
-            {{ if in .project_name "国家自然科学基金" }}{{ $badge = "国家自然科学基金" }}{{ end }}
-            <span class="project-badge">{{ .homepage_label | default $badge }}</span>
-            <span class="home-project-list__title">{{ .project_name }}</span>
-          </li>
-        {{ else }}
-          <li class="empty-item">暂无科研项目内容。</li>
-        {{ end }}
-      </ul>
+
+      <div class="home-column home-column--projects">
+        <div class="section-heading section-heading--sub">
+          <h2>{{ .Params.projects_title | default "科研项目" }}</h2>
+          <a class="more-link" href="/projects/">更多项目</a>
+        </div>
+        {{ $projectCatalog := index hugo.Data "project-records" }}
+        {{ $allProjects := slice }}
+        {{ with $projectCatalog }}{{ with .projects }}{{ $allProjects = . }}{{ end }}{{ end }}
+        {{ $projects := first 4 (sort (where $allProjects "featured" true) "featured_order" "asc") }}
+        <ol class="home-project-list home-project-list--editorial">
+          {{ range $projects }}
+            <li>
+              {{ $projectTitle := replaceRE "^.*?[：:]" "" .project_name }}
+              <span class="project-badge">{{ .homepage_label | default "科研项目" }}</span>
+              <h3>{{ $projectTitle }}</h3>
+              {{ with .project_period }}<time>{{ . }}</time>{{ end }}
+            </li>
+          {{ else }}
+            <li class="empty-item">暂无科研项目内容。</li>
+          {{ end }}
+        </ol>
+      </div>
     </div>
   </section>
 {{ end }}
