@@ -1,9 +1,30 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
-    <article class="page-main article">
-      <h1 class="visually-hidden">教育教学</h1>
-      <div class="article__body">{{ .Content }}</div>
-    </article>
+    <section class="page-main editorial-page">
+      <header class="inner-section-heading">
+        <div class="inner-section-heading__title">
+          <h1>教育教学</h1>
+          <span>EDUCATION</span>
+        </div>
+        <p>围绕课程建设、人才培养和工程实践，持续完善软件工程教学体系。</p>
+      </header>
+      <div class="editorial-page__layout">
+        <nav class="editorial-page__index" aria-label="教育教学目录">
+          <a class="is-active" href="#education-overview">教育教学概述</a>
+          <a href="#课程与培养">课程与培养</a>
+          <a href="#教学实践">教学实践</a>
+        </nav>
+        <article class="editorial-page__body">
+          {{ with .Params.lead }}
+            <div id="education-overview" class="editorial-page__lede">
+              <span>TEACHING · PRACTICE · GROWTH</span>
+              <h2>{{ . }}</h2>
+            </div>
+          {{ end }}
+          <div class="editorial-page__content article__body">{{ .Content }}</div>
+        </article>
+      </div>
+    </section>
   </div>
 {{ end }}

@@ -1,8 +1,28 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
-    <article class="page-main article about-page">
-      <div class="article__body">{{ .Content }}</div>
-    </article>
+    <section class="page-main about-page">
+      <header class="inner-section-heading">
+        <div class="inner-section-heading__title">
+          <h1>关于我们</h1>
+          <span>ABOUT iSE LAB</span>
+        </div>
+        <p>南京大学软件学院智能软件工程实验室</p>
+      </header>
+      <div class="about-overview">
+        <article class="about-overview__copy">
+          <span class="about-overview__eyebrow">NANJING UNIVERSITY · SOFTWARE INSTITUTE</span>
+          {{ with .Params.lead_title }}<h2>{{ . }}</h2>{{ end }}
+          <div class="article__body">{{ .Content }}</div>
+        </article>
+        <aside class="about-overview__identity">
+          <div>
+            <strong>{{ .Params.institution | default "南京大学软件学院" }}</strong>
+            <p>智能软件工程实验室</p>
+          </div>
+          <span>iSE · NJU</span>
+        </aside>
+      </div>
+    </section>
   </div>
 {{ end }}

@@ -1,8 +1,14 @@
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
-    <section class="page-main">
-      <h1 class="visually-hidden">项目</h1>
+    <section class="page-main projects-page" data-projects-page>
+      <header class="inner-section-heading">
+        <div class="inner-section-heading__title">
+          <h1>科研项目</h1>
+          <span>RESEARCH PROJECTS</span>
+        </div>
+        <p>项目名称、简介、项目号与项目时间集中呈现，缺失字段自动隐藏。</p>
+      </header>
       {{ $catalog := index hugo.Data "project-records" }}
       {{ $projects := slice }}
       {{ with $catalog }}{{ with .projects }}{{ $projects = . }}{{ end }}{{ end }}

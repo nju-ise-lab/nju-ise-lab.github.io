@@ -12,37 +12,21 @@
 
   <div class="page-shell container">
     <section class="page-main research-results-page" data-results-page>
-      <h1 class="visually-hidden">研究成果</h1>
+      <header class="inner-section-heading">
+        <div class="inner-section-heading__title">
+          <h1>研究成果</h1>
+          <span>RESEARCH OUTPUTS</span>
+        </div>
+        <p>论文、专利与软件著作使用统一的信息结构，完整呈现成果类型、作者和相关信息。</p>
+      </header>
 
       <div class="research-results-tabs" role="tablist" aria-label="研究成果分类">
-        <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-all" data-result-tab="all">全部</button>
         <button class="research-results-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="results-panel-publications" data-result-tab="publications">学术论文</button>
         <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-patents" data-result-tab="patents">专利</button>
         <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-software" data-result-tab="software">软件著作</button>
       </div>
 
       <div class="research-results-panels">
-        <section id="results-panel-all" class="research-results-panel" role="tabpanel" data-result-panel="all" hidden>
-          <div class="research-results-panel__heading">
-            <h2>学术论文</h2>
-          </div>
-          <div class="research-results-list research-results-list--publications">
-            {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}
-          </div>
-          <div class="research-results-combined__patents">
-            <h3>专利</h3>
-            <div class="research-results-list">
-              {{ range $patents }}{{ partial "research-result-patent-card.html" . }}{{ else }}<p class="empty-item">暂无专利内容。</p>{{ end }}
-            </div>
-          </div>
-          <div class="research-results-combined__patents">
-            <h3>软件著作</h3>
-            <div class="research-results-list">
-              {{ range $softwareCopyrights }}{{ partial "research-result-software-card.html" . }}{{ else }}<p class="empty-item">暂无软件著作内容。</p>{{ end }}
-            </div>
-          </div>
-        </section>
-
         <section id="results-panel-publications" class="research-results-panel is-active" role="tabpanel" data-result-panel="publications">
           <div class="research-results-list research-results-list--publications">
             {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}

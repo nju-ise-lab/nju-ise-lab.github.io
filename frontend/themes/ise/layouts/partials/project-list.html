@@ -1,15 +1,38 @@
 {{ $records := .records }}
 <section class="research-project-block" aria-labelledby="research-project-list-title">
-  <h2 id="research-project-list-title" class="page-subtitle">项目</h2>
+  <h2 id="research-project-list-title" class="visually-hidden">项目列表</h2>
+  <div class="project-filter-bar" role="group" aria-label="项目分类">
+    <button class="is-active" type="button" data-project-filter="all">全部项目</button>
+    <button type="button" data-project-filter="national">国家级</button>
+    <button type="button" data-project-filter="provincial">省部级</button>
+    <span>按数据表顺序展示</span>
+  </div>
   <div class="research-project-list project-card-list">
     <ul class="project-record-list">
-      {{ range $records }}
-        <li class="project-record">
-          <h3>{{ .project_name }}</h3>
+      {{ range $index, $record := $records }}
+        {{ $scope := "other" }}
+        {{ if or (in $record.project_name "国家") (in $record.project_name "科技部") (in $record.project_name "973") }}
+          {{ $scope = "national" }}
+        {{ else if or (in $record.project_name "江苏省") (in $record.project_name "教育部") (in $record.project_name "南京市") }}
+          {{ $scope = "provincial" }}
+        {{ end }}
+        {{ $projectType := "科研项目" }}
+        {{ $projectTitle := $record.project_name }}
+        {{ $nameParts := split $record.project_name "：" }}
+        {{ if gt (len $nameParts) 1 }}
+          {{ $projectType = index $nameParts 0 }}
+          {{ $projectTitle = delimit (after 1 $nameParts) "：" }}
+        {{ end }}
+        <li class="project-record" data-project-card="{{ $scope }}">
+          <span class="project-record__index">{{ printf "%02d" (add $index 1) }}</span>
+          <div class="project-record__content">
+            <span class="project-record__type">{{ $projectType }}</span>
+            <h3>{{ $projectTitle }}</h3>
           {{ with .project_summary }}<p class="project-record__summary">{{ . }}</p>{{ end }}
           <div class="project-record__meta">
-            {{ with .project_code }}<span><b>项目号</b>{{ . }}</span>{{ end }}
-            {{ with .project_period }}<span><b>项目时间</b>{{ . }}</span>{{ end }}
+              {{ with .project_code }}<span>{{ . }}</span>{{ end }}
+              {{ with .project_period }}<span>{{ . }}</span>{{ end }}
+            </div>
           </div>
         </li>
       {{ else }}
