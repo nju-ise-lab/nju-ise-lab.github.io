@@ -85,7 +85,7 @@
       "id": "phd-001",
       "name": "伊高磊",
       "member_type": "phd",
-      "identity": "博士研究生",
+      "identity": "2022级博士研究生",
       "homepage": "",
       "url": "/members/phd-001/",
       "source_order": 1
@@ -94,7 +94,7 @@
       "id": "phd-002",
       "name": "顾思琦",
       "member_type": "phd",
-      "identity": "博士研究生",
+      "identity": "2022级博士研究生",
       "homepage": "",
       "url": "/members/phd-002/",
       "source_order": 2
@@ -121,16 +121,16 @@
       "id": "phd-005",
       "name": "钱瑞祥",
       "member_type": "phd",
-      "identity": "博士研究生",
+      "identity": "2022级博士研究生",
       "homepage": "",
       "url": "/members/phd-005/",
       "source_order": 5
     },
     {
       "id": "master-001",
-      "name": "乔力",
+      "name": "李克诚",
       "member_type": "master",
-      "identity": "硕士研究生",
+      "identity": "2024级硕士研究生",
       "homepage": "",
       "url": "/members/master-001/",
       "source_order": 1
@@ -161,6 +161,24 @@
       "homepage": "",
       "url": "/members/master-004/",
       "source_order": 4
+    },
+    {
+      "id": "master-005",
+      "name": "曹企元",
+      "member_type": "master",
+      "identity": "2024级硕士研究生",
+      "homepage": "",
+      "url": "/members/master-005/",
+      "source_order": 5
+    },
+    {
+      "id": "master-006",
+      "name": "杨少宇",
+      "member_type": "master",
+      "identity": "2024级硕士研究生",
+      "homepage": "",
+      "url": "/members/master-006/",
+      "source_order": 6
     }
   ]
 }
