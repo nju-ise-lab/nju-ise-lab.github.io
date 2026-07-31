@@ -2,26 +2,39 @@
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
     <section class="page-main about-page">
-      <header class="inner-section-heading">
-        <div class="inner-section-heading__title">
-          <h1>关于我们</h1>
-          <span>ABOUT iSE LAB</span>
-        </div>
-        <p>南京大学软件学院智能软件工程实验室</p>
-      </header>
       <div class="about-overview">
         <article class="about-overview__copy">
           <span class="about-overview__eyebrow">NANJING UNIVERSITY · SOFTWARE INSTITUTE</span>
           {{ with .Params.lead_title }}<h2>{{ . }}</h2>{{ end }}
           <div class="article__body">{{ .Content }}</div>
-        </article>
-        <aside class="about-overview__identity">
-          <div>
-            <strong>{{ .Params.institution | default "南京大学软件学院" }}</strong>
-            <p>智能软件工程实验室</p>
+
+          <div class="about-overview__showcase">
+            <section class="about-partners" aria-labelledby="about-partners-title">
+              <div class="about-showcase-heading">
+                <span>INDUSTRY COLLABORATION</span>
+                <h3 id="about-partners-title">成果转化与行业合作</h3>
+              </div>
+              <div class="about-partners__logos">
+                {{ range .Params.industry_partners }}
+                  <figure class="about-partner-logo about-partner-logo--{{ .key }}">
+                    <img src="{{ printf "/images/data-source/%s" .logo | relURL }}" alt="{{ .name }}标志">
+                    <figcaption>{{ .name }}</figcaption>
+                  </figure>
+                {{ end }}
+              </div>
+            </section>
+
+            {{ with .Params.contest_image }}
+              <figure class="about-contest">
+                <img src="{{ printf "/images/data-source/%s" . | relURL }}" alt="IEEE 软件测试大赛历届赛事与颁奖现场" loading="lazy">
+                <figcaption>
+                  <span>GLOBAL SOFTWARE TESTING COMMUNITY</span>
+                  <strong>{{ $.Params.contest_title | default "IEEE 软件测试大赛" }}</strong>
+                </figcaption>
+              </figure>
+            {{ end }}
           </div>
-          <span>iSE · NJU</span>
-        </aside>
+        </article>
       </div>
     </section>
   </div>

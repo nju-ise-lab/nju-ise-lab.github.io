@@ -2572,7 +2572,7 @@ img {
 
 .section-heading--sub {
   margin-bottom: 0;
-  padding-bottom: 12px;
+  padding: 8px 8px 14px;
   border-bottom: 1px solid #e5e0e4;
 }
 
@@ -2932,50 +2932,6 @@ img {
     padding-right: 18px;
     padding-left: 18px;
   }
-}
-
-/* Unified inner sections: research, projects, education and about */
-.inner-section-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 28px;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid var(--ise-purple);
-}
-
-.inner-section-heading__title {
-  display: flex;
-  align-items: baseline;
-  gap: 18px;
-}
-
-.inner-section-heading h1 {
-  margin: 0;
-  padding: 0;
-  color: #250924;
-  border: 0;
-  font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
-  font-size: 28px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-}
-
-.inner-section-heading__title span {
-  color: var(--ise-blue);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 10px;
-  letter-spacing: 0.16em;
-}
-
-.inner-section-heading p {
-  max-width: 540px;
-  margin: 0;
-  color: var(--ise-muted);
-  font-size: 12px;
-  line-height: 1.65;
-  text-align: right;
 }
 
 .research-results-page .research-results-tabs {
@@ -3470,20 +3426,18 @@ img {
 }
 
 .about-overview {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.55fr);
-  gap: 28px;
+  display: block;
 }
 
-.about-overview__copy,
-.about-overview__identity {
+.about-overview__copy {
+  overflow: hidden;
   border: 1px solid var(--ise-border);
   border-radius: 18px;
   background: #ffffff;
 }
 
 .about-overview__copy {
-  padding: 42px 44px;
+  padding: 42px 44px 0;
 }
 
 .about-overview__eyebrow {
@@ -3509,49 +3463,149 @@ img {
   line-height: 2;
 }
 
-.about-overview__identity {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  background: #f1eff2;
+.about-overview__showcase {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.82fr) minmax(0, 1.18fr);
+  gap: 0;
+  margin: 36px -44px 0;
+  border-top: 1px solid var(--ise-border);
+  background: #f6f7f9;
 }
 
-.about-overview__identity strong {
-  color: var(--ise-purple);
+.about-partners {
+  padding: 30px 32px 32px 44px;
+  border-right: 1px solid var(--ise-border);
+}
+
+.about-showcase-heading span,
+.about-contest figcaption span {
+  color: var(--ise-blue);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+
+.about-showcase-heading h3 {
+  margin: 7px 0 20px;
+  color: #32102f;
   font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
   font-size: 20px;
+  font-weight: 600;
 }
 
-.about-overview__identity p {
-  margin: 8px 0 0;
-  color: var(--ise-muted);
-  font-size: 13px;
+.about-partners__logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
-.about-overview__identity > span {
-  margin-top: 76px;
-  color: rgba(99, 6, 95, 0.18);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 42px;
-  letter-spacing: -0.04em;
+.about-partner-logo {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #e1e4e9;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.about-partner-logo img {
+  width: auto;
+  max-width: 100%;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+.about-partner-logo--guodian img {
+  max-height: 42px;
+}
+
+.about-partner-logo--baidu img {
+  max-height: 30px;
+}
+
+.about-partner-logo--baic {
+  grid-column: 1 / -1;
+}
+
+.about-partner-logo--baic img {
+  max-width: 220px;
+}
+
+.about-partner-logo figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.about-contest {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #142d5a;
+}
+
+.about-contest::after {
+  position: absolute;
+  inset: 48% 0 0;
+  background: linear-gradient(180deg, rgba(10, 27, 58, 0), rgba(10, 27, 58, 0.9));
+  content: "";
+}
+
+.about-contest img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  display: block;
+  object-fit: cover;
+}
+
+.about-contest figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 26px;
+  bottom: 23px;
+  left: 26px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.about-contest figcaption span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.about-contest figcaption strong {
+  color: #ffffff;
+  font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {
-  .inner-section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .inner-section-heading p {
-    text-align: left;
-  }
-
   #results-panel-patents .research-results-list,
   #results-panel-software .research-results-list,
   .editorial-page__layout,
   .about-overview {
     grid-template-columns: 1fr;
+  }
+
+  .about-overview__showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .about-partners {
+    padding-right: 44px;
+    border-right: 0;
+    border-bottom: 1px solid var(--ise-border);
   }
 
   .research-publication-card {
@@ -3576,12 +3630,6 @@ img {
 }
 
 @media (max-width: 600px) {
-  .inner-section-heading__title {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 6px;
-  }
-
   .research-results-page .research-results-tabs {
     display: flex;
     overflow-x: auto;
@@ -3613,9 +3661,39 @@ img {
 
   .research-publication-card .research-result-card__body,
   .editorial-page__lede,
-  .editorial-page__content,
-  .about-overview__copy {
+  .editorial-page__content {
     padding: 26px 24px;
+  }
+
+  .about-overview__copy {
+    padding: 26px 24px 0;
+  }
+
+  .about-overview__copy h2 {
+    font-size: 24px;
+  }
+
+  .about-overview__showcase {
+    margin: 28px -24px 0;
+  }
+
+  .about-partners {
+    padding: 24px;
+  }
+
+  .about-partner-logo {
+    min-height: 68px;
+    padding: 12px;
+  }
+
+  .about-contest img {
+    min-height: 260px;
+  }
+
+  .about-contest figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
   }
 
   .results-pagination {

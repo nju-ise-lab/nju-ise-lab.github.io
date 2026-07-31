@@ -12,13 +12,6 @@
 
   <div class="page-shell container">
     <section class="page-main research-results-page" data-results-page>
-      <header class="inner-section-heading">
-        <div class="inner-section-heading__title">
-          <h1>研究成果</h1>
-          <span>RESEARCH OUTPUTS</span>
-        </div>
-      </header>
-
       <div class="research-results-tabs" role="tablist" aria-label="研究成果分类">
         <button class="research-results-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="results-panel-publications" data-result-tab="publications">学术论文</button>
         <button class="research-results-tab" type="button" role="tab" aria-selected="false" aria-controls="results-panel-patents" data-result-tab="patents">专利</button>
@@ -26,7 +19,7 @@
       </div>
 
       <div class="research-results-panels">
-        <section id="results-panel-publications" class="research-results-panel is-active" role="tabpanel" data-result-panel="publications" data-paginated-panel data-page-size="10">
+        <section id="results-panel-publications" class="research-results-panel is-active" role="tabpanel" data-result-panel="publications" data-paginated-panel data-page-size="15">
           <div class="research-results-list research-results-list--publications" data-result-list>
             {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}
           </div>
@@ -38,7 +31,7 @@
           </nav>
         </section>
 
-        <section id="results-panel-patents" class="research-results-panel" role="tabpanel" data-result-panel="patents" data-paginated-panel data-page-size="10" hidden>
+        <section id="results-panel-patents" class="research-results-panel" role="tabpanel" data-result-panel="patents" data-paginated-panel data-page-size="15" hidden>
           <div class="research-results-list" data-result-list>
             {{ range $patents }}{{ partial "research-result-patent-card.html" . }}{{ else }}<p class="empty-item">暂无专利内容。</p>{{ end }}
           </div>
