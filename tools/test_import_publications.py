@@ -60,7 +60,7 @@ class ImportPublicationsTest(unittest.TestCase):
         self.assertEqual(record["publication_type_label"], "会议论文")
         self.assertEqual(record["venue_short"], "ASE")
         self.assertEqual(record["source_url"], "https://doi.org/example")
-        self.assertTrue(record["url"].startswith("https://scholar.google.com/scholar?"))
+        self.assertEqual(record["url"], "https://doi.org/example")
         self.assertEqual(record["authors"][1]["member_url"], "/members/teacher-001/")
         self.assertTrue(record["authors"][1]["corresponding"])
         self.assertEqual(unmatched, {"Jane Doe"})
@@ -119,14 +119,14 @@ class ImportPublicationsTest(unittest.TestCase):
         self.assertEqual(record["venue_short"], "TSE")
         self.assertEqual(record["topics"], ["Deep Learning Testing", "Model Mutation"])
 
-    def test_title_link_preserves_academic_discovery_urls(self):
+    def test_title_link_preserves_maintained_source_url(self):
         arxiv_url = "https://arxiv.org/abs/2604.17016"
         self.assertEqual(import_publications.title_link(arxiv_url, "Paper title"), arxiv_url)
-        self.assertTrue(
-            import_publications.title_link(
-                "https://example.com/paper", "Paper title"
-            ).startswith("https://scholar.google.com/scholar?")
+        self.assertEqual(
+            import_publications.title_link("https://example.com/paper", "Paper title"),
+            "https://example.com/paper",
         )
+        self.assertEqual(import_publications.title_link("", "Paper title"), "")
 
 
 if __name__ == "__main__":

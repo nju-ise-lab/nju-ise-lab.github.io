@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import re
 from typing import Any
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import urlparse
 
 try:
     from tools.xlsx_reader import XlsxReadError, read_table
@@ -51,12 +51,6 @@ CCF_LEVEL_HINTS = (
     ("CCF-C", ("international journal of software engineering and knowledge engineering", "software quality journal")),
 )
 NON_REGULAR_PAPER_HINTS = ("companion", "demo", "short paper", "technical brief", "industry showcase", "workshop")
-SCHOLARLY_TITLE_LINK_HOSTS = (
-    "arxiv.org",
-    "scholar.google.com",
-    "semanticscholar.org",
-    "openreview.net",
-)
 VENUE_SHORT_HINTS = (
     ("TOSEM", ("transactions on software engineering and methodology",)),
     ("TOSEM", ("acm trans. softw. eng. methodol.",)),
@@ -243,17 +237,15 @@ def validate_url(value: str, row_number: int) -> str:
     return url
 
 
-def title_link(source_url: str, title: str) -> str:
-    """Return a research-discovery URL suitable for a public paper title.
+def title_link(source_url: str, _title: str) -> str:
+    """Use the exact maintained paper URL for the public title link.
 
-    DOI and publisher pages remain in the source data for maintenance, but the
-    visible paper title should only point to scholarly discovery services. For
-    all other URL types, use a Google Scholar title search instead.
+    The workbook should prefer a DOI resolver or the publisher's official paper
+    page. Preprint and discovery links remain valid fallbacks when no formal
+    publication page is available. An empty source URL deliberately leaves the
+    title unlinked instead of manufacturing an unrelated destination.
     """
-    hostname = (urlparse(source_url).hostname or "").lower()
-    if any(hostname == host or hostname.endswith(f".{host}") for host in SCHOLARLY_TITLE_LINK_HOSTS):
-        return source_url
-    return f"https://scholar.google.com/scholar?hl=en&q={quote_plus(title)}"
+    return source_url
 
 
 def build_authors(row: dict[str, str], aliases: dict[str, str], row_number: int, unmatched: set[str]) -> list[dict[str, Any]]:

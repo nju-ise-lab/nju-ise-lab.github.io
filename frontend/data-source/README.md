@@ -47,7 +47,7 @@ year, id, title, link, status, author, cofauthor, corauthor, level, venue, note
 - `cofauthor` 和 `corauthor` 填写作者姓名；多人仍用 `;` 分隔。
 - `status` 可用：`published`、`accepted`、`pre-print`、`under review`、`submitted`、`in press`。`published` 不显示标签。
 - `level` 可用 `CCF-A`、`CCF-B`、`CCF-C` 或留空。
-- `link` 只使用 Google Scholar、arXiv、Semantic Scholar 或 OpenReview 论文链接。
+- `link` 优先填写 DOI 链接（`https://doi.org/...`）或期刊、会议出版社的论文详情页；预印本可填写 arXiv 或 OpenReview。暂未找到正式页面时可临时使用 Google Scholar，留空则前端不显示题目链接。
 - `note` 用于奖项、研究主题等补充标签，可留空。
 
 ## patents.xlsx

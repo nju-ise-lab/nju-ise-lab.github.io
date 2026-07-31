@@ -26,16 +26,28 @@
       </div>
 
       <div class="research-results-panels">
-        <section id="results-panel-publications" class="research-results-panel is-active" role="tabpanel" data-result-panel="publications">
-          <div class="research-results-list research-results-list--publications">
+        <section id="results-panel-publications" class="research-results-panel is-active" role="tabpanel" data-result-panel="publications" data-paginated-panel data-page-size="10">
+          <div class="research-results-list research-results-list--publications" data-result-list>
             {{ range $publications }}{{ partial "research-result-publication-record-card.html" . }}{{ else }}<p class="empty-item">暂无论文内容。</p>{{ end }}
           </div>
+          <nav class="results-pagination" data-results-pagination aria-label="学术论文分页" hidden>
+            <button type="button" data-page-prev>上一页</button>
+            <div class="results-pagination__pages" data-page-numbers></div>
+            <button type="button" data-page-next>下一页</button>
+            <span class="results-pagination__summary" data-page-summary></span>
+          </nav>
         </section>
 
-        <section id="results-panel-patents" class="research-results-panel" role="tabpanel" data-result-panel="patents" hidden>
-          <div class="research-results-list">
+        <section id="results-panel-patents" class="research-results-panel" role="tabpanel" data-result-panel="patents" data-paginated-panel data-page-size="10" hidden>
+          <div class="research-results-list" data-result-list>
             {{ range $patents }}{{ partial "research-result-patent-card.html" . }}{{ else }}<p class="empty-item">暂无专利内容。</p>{{ end }}
           </div>
+          <nav class="results-pagination" data-results-pagination aria-label="专利分页" hidden>
+            <button type="button" data-page-prev>上一页</button>
+            <div class="results-pagination__pages" data-page-numbers></div>
+            <button type="button" data-page-next>下一页</button>
+            <span class="results-pagination__summary" data-page-summary></span>
+          </nav>
         </section>
 
         <section id="results-panel-software" class="research-results-panel" role="tabpanel" data-result-panel="software" hidden>
