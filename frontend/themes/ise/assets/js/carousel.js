@@ -6,6 +6,7 @@
     var dots = Array.prototype.slice.call(root.querySelectorAll("[data-carousel-dot]"));
     var prev = root.querySelector("[data-carousel-prev]");
     var next = root.querySelector("[data-carousel-next]");
+    var current = root.querySelector("[data-carousel-current]");
     var index = 0;
     var timer = null;
 
@@ -22,6 +23,9 @@
         dot.classList.toggle("is-active", dotIndex === index);
         dot.setAttribute("aria-current", dotIndex === index ? "true" : "false");
       });
+      if (current) {
+        current.textContent = String(index + 1).padStart(2, "0");
+      }
     }
 
     function start() {

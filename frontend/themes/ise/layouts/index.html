@@ -1,31 +1,49 @@
 {{ define "main" }}
   <section class="home-hero" aria-label="研究亮点轮播图" data-carousel>
     {{ with .Params.slides }}
-      <div class="home-hero__track" data-slide-count="{{ len . }}">
-        {{ range $index, $_ := . }}
-          {{ $image := .image | default "/images/data-source/home/default.jpg" }}
-          {{ $title := .title | default "" }}
-          {{ if .url }}<a class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
-            <img src="{{ $image }}" alt="{{ .alt | default site.Title }}" class="home-hero__image{{ if eq .fit "contain" }} home-hero__image--contain{{ end }}">
-            {{ if or $title .summary }}
-              <div class="home-hero__caption">
-                {{ with $title }}<strong>{{ . }}</strong>{{ end }}
-                {{ with .summary }}<span>{{ . }}</span>{{ end }}
-              </div>
+      <div class="home-hero__shell container">
+        <div class="home-hero__track" data-slide-count="{{ len . }}">
+          {{ range $index, $_ := . }}
+            {{ $image := .image | default "/images/data-source/home/default.jpg" }}
+            {{ if .url }}<a class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" href="{{ .url }}">{{ else }}<div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}">{{ end }}
+              <span class="home-hero__sheet">
+                <img src="{{ $image }}" alt="{{ .alt | default site.Title }}" class="home-hero__image">
+              </span>
+            {{ if .url }}</a>{{ else }}</div>{{ end }}
+          {{ end }}
+        </div>
+        <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="home-hero__footer">
+          <div class="home-hero__counter">
+            <strong data-carousel-current>01</strong>
+            <span>/ {{ printf "%02d" (len .) }}</span>
+          </div>
+          <div class="home-hero__dots" aria-label="轮播图切换">
+            {{ range $index, $_ := . }}
+              <button type="button" class="{{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="第 {{ add $index 1 }} 张轮播图"></button>
             {{ end }}
-          {{ if .url }}</a>{{ else }}</div>{{ end }}
-        {{ end }}
-      </div>
-      <button class="home-hero__control home-hero__control--prev" type="button" data-carousel-prev aria-label="上一张轮播图">&lt;</button>
-      <button class="home-hero__control home-hero__control--next" type="button" data-carousel-next aria-label="下一张轮播图">&gt;</button>
-      <div class="home-hero__dots" aria-label="轮播图切换">
-        {{ range $index, $_ := . }}
-          <button type="button" class="{{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="第 {{ add $index 1 }} 张轮播图"></button>
-        {{ end }}
+          </div>
+          <span class="home-hero__label">RESEARCH</span>
+        </div>
       </div>
     {{ else }}
-      <div class="home-hero__track">
-        <img src="/images/data-source/home/default.jpg" alt="南京大学智能软件工程实验室" class="home-hero__image">
+      <div class="home-hero__shell container">
+        <div class="home-hero__track">
+          <div class="home-hero__slide is-active">
+            <span class="home-hero__sheet">
+              <img src="/images/data-source/home/default.jpg" alt="南京大学智能软件工程实验室" class="home-hero__image">
+            </span>
+          </div>
+        </div>
       </div>
     {{ end }}
   </section>

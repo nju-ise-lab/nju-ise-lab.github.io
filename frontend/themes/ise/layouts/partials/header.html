@@ -1,5 +1,6 @@
 <header class="site-header">
-  <div class="header-top container">
+  <div class="site-header__accent" aria-hidden="true"></div>
+  <div class="header-main container">
     <a class="brand" href="/">
       <img class="brand__logo" src="/images/data-source/brand/logo.png" alt="南京大学智能软件工程实验室">
       <span class="brand__text">
@@ -7,26 +8,31 @@
         <span>{{ site.Params.labNameEn }}</span>
       </span>
     </a>
-  </div>
-
-  <nav class="site-nav" aria-label="主导航">
-    <ul class="site-nav__inner container">
-      {{ range site.Menus.main }}
-        <li class="site-nav__item{{ if .HasChildren }} has-children{{ end }}">
-          {{ if .URL }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+    <nav class="site-nav" aria-label="主导航">
+      <ul class="site-nav__inner">
+        {{ range site.Menus.main }}
+          {{ $active := false }}
+          {{ if eq .URL "/" }}
+            {{ $active = $.IsHome }}
           {{ else }}
-            <span>{{ .Name }}</span>
+            {{ $active = hasPrefix $.RelPermalink .URL }}
           {{ end }}
-          {{ if .HasChildren }}
-            <ul class="site-nav__submenu">
-              {{ range .Children }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          {{ end }}
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
+          <li class="site-nav__item{{ if .HasChildren }} has-children{{ end }}{{ if $active }} is-active{{ end }}">
+            {{ if .URL }}
+              <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+            {{ else }}
+              <span>{{ .Name }}</span>
+            {{ end }}
+            {{ if .HasChildren }}
+              <ul class="site-nav__submenu">
+                {{ range .Children }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
 </header>
