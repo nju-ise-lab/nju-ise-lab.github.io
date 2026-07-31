@@ -51,6 +51,33 @@ class DesignStructureTest(unittest.TestCase):
         self.assertNotIn(".home-stats", css)
         self.assertNotIn(".home-stat-card", css)
 
+    def test_results_pagination_keeps_shareable_state(self):
+        script = (THEME / "assets" / "js" / "results-filters.js").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn("URLSearchParams", script)
+        self.assertIn('window.addEventListener("popstate"', script)
+        self.assertNotIn('querySelectorAll(":scope', script)
+
+    def test_teacher_profiles_use_collapsible_output_archives(self):
+        template = (THEME / "layouts" / "members" / "single.html").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn("member-profile__hero", template)
+        self.assertIn('class="member-output-archive"', template)
+        self.assertIn("$publicationPreviewCount := 8", template)
+
+    def test_editorial_footer_structure_is_present(self):
+        footer = (THEME / "layouts" / "partials" / "footer.html").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn('class="site-footer__about"', footer)
+        self.assertIn("快速入口", footer)
+        self.assertIn("南京大学软件学院", footer)
+
 
 if __name__ == "__main__":
     unittest.main()

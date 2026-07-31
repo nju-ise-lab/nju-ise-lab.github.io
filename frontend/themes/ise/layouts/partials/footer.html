@@ -1,14 +1,30 @@
 <footer class="site-footer">
   <div class="site-footer__inner container">
-    <div class="site-footer__links">
-      <h2>友情链接</h2>
-      <ul>
-        <li><a href="https://www.nju.edu.cn/" target="_blank" rel="noreferrer">南京大学</a></li>
-      </ul>
+    <div class="site-footer__main">
+      <div class="site-footer__about">
+        <h2>{{ site.Params.labName }}</h2>
+        <p>面向智能软件工程技术、方法与工具的研发和应用，连接基础研究、人才培养与产业实践。</p>
+      </div>
+      <nav class="site-footer__group" aria-label="页脚快速入口">
+        <h2>快速入口</h2>
+        <ul>
+          <li><a href="/members/">成员介绍</a></li>
+          <li><a href="/research-results/">研究成果</a></li>
+          <li><a href="/projects/">科研项目</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__group" aria-label="页脚相关链接">
+        <h2>相关链接</h2>
+        <ul>
+          <li><a href="https://www.nju.edu.cn/" target="_blank" rel="noreferrer">南京大学</a></li>
+          <li><a href="https://software.nju.edu.cn/" target="_blank" rel="noreferrer">南京大学软件学院</a></li>
+          <li><a href="/about/">联系我们</a></li>
+        </ul>
+      </nav>
     </div>
-    <p class="site-footer__copyright">
-      {{ site.Params.footerCopyright }}
+    <div class="site-footer__bottom">
+      <p>{{ site.Params.footerCopyright }}</p>
       <a href="{{ site.Params.icpURL }}" target="_blank" rel="noreferrer">{{ site.Params.icpText }}</a>
-    </p>
+    </div>
   </div>
 </footer>

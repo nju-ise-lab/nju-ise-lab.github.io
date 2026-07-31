@@ -2,17 +2,23 @@
   {{ partial "breadcrumb.html" . }}
   <div class="page-shell container">
     <article class="page-main article member-profile">
-      {{ if eq .Params.member_type "teacher" }}
-        {{ with .Params.avatar_url }}
-          <div class="member-profile__avatar"><img src="{{ . }}" alt="{{ $.Title }}"></div>
+      <header class="member-profile__hero{{ if ne .Params.member_type "teacher" }} member-profile__hero--simple{{ end }}">
+        {{ if eq .Params.member_type "teacher" }}
+          {{ with .Params.avatar_url }}
+            <div class="member-profile__avatar"><img src="{{ . }}" alt="{{ $.Title }}"></div>
+          {{ end }}
         {{ end }}
-      {{ end }}
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.identity }}<p class="member-profile__role">{{ . }}</p>{{ end }}
-      <dl class="member-profile__meta">
-        {{ with .Params.homepage }}<div><dt>个人主页</dt><dd><a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a></dd></div>{{ end }}
-      </dl>
-      <div class="article__body">{{ .Content }}</div>
+        <div class="member-profile__intro">
+          <span class="member-profile__eyebrow">{{ if eq .Params.member_type "teacher" }}FACULTY PROFILE{{ else }}MEMBER PROFILE{{ end }}</span>
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.identity }}<p class="member-profile__role">{{ . }}</p>{{ end }}
+          {{ with .Params.homepage }}
+            <a class="member-profile__homepage" href="{{ . }}" target="_blank" rel="noreferrer">访问个人主页 <span aria-hidden="true">↗</span></a>
+          {{ end }}
+        </div>
+      </header>
+
+      {{ with .Content }}<div class="article__body member-profile__bio">{{ . }}</div>{{ end }}
 
       {{ if or (eq .Params.member_type "teacher") (eq .Params.member_type "phd") }}
         {{ $memberURL := .RelPermalink }}
@@ -29,9 +35,26 @@
           {{ end }}
         {{ end }}
         {{ if gt (len $relatedPublications) 0 }}
-          <section class="related-block" aria-labelledby="member-publications">
-            <h2 id="member-publications">学术论文</h2>
-            {{ partial "publication-list.html" (dict "records" $relatedPublications "hide_legend" true) }}
+          {{ $publicationPreviewCount := 8 }}
+          <section class="related-block member-output-section" aria-labelledby="member-publications">
+            <div class="member-output-section__heading">
+              <div>
+                <span>SELECTED OUTPUTS</span>
+                <h2 id="member-publications">学术论文</h2>
+              </div>
+              <strong>共 {{ len $relatedPublications }} 篇</strong>
+            </div>
+            {{ partial "member-publication-list.html" (first $publicationPreviewCount $relatedPublications) }}
+            {{ if gt (len $relatedPublications) $publicationPreviewCount }}
+              <details class="member-output-archive">
+                <summary>
+                  <span>其余 {{ sub (len $relatedPublications) $publicationPreviewCount }} 篇论文</span>
+                  <b class="member-output-archive__closed">展开全部</b>
+                  <b class="member-output-archive__open">收起</b>
+                </summary>
+                {{ partial "member-publication-list.html" (after $publicationPreviewCount $relatedPublications) }}
+              </details>
+            {{ end }}
           </section>
         {{ end }}
 
@@ -46,9 +69,26 @@
           {{ end }}
         {{ end }}
         {{ if gt (len $relatedPatents) 0 }}
-          <section class="related-block" aria-labelledby="member-patents">
-            <h2 id="member-patents">专利</h2>
-            {{ partial "patent-list.html" (dict "patents" $relatedPatents) }}
+          {{ $patentPreviewCount := 6 }}
+          <section class="related-block member-output-section" aria-labelledby="member-patents">
+            <div class="member-output-section__heading">
+              <div>
+                <span>INTELLECTUAL PROPERTY</span>
+                <h2 id="member-patents">专利</h2>
+              </div>
+              <strong>共 {{ len $relatedPatents }} 项</strong>
+            </div>
+            {{ partial "member-patent-list.html" (first $patentPreviewCount $relatedPatents) }}
+            {{ if gt (len $relatedPatents) $patentPreviewCount }}
+              <details class="member-output-archive">
+                <summary>
+                  <span>其余 {{ sub (len $relatedPatents) $patentPreviewCount }} 项专利</span>
+                  <b class="member-output-archive__closed">展开全部</b>
+                  <b class="member-output-archive__open">收起</b>
+                </summary>
+                {{ partial "member-patent-list.html" (after $patentPreviewCount $relatedPatents) }}
+              </details>
+            {{ end }}
           </section>
         {{ end }}
       {{ end }}

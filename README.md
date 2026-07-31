@@ -46,5 +46,6 @@ python3 -m unittest discover -s tools -p 'test_*.py'
 ## 数据规则
 
 - 不要直接编辑 `frontend/data/*.json` 或带有 `generated_from` 的成员 Markdown。
+- Excel 与自动生成的 JSON 不一致时，以 `frontend/data-source/*.xlsx` 为准重新导入；Excel 中已经删除的记录不会继续保留在网站数据中。
 - 不再保留旧站迁移脚本、旧 `/activities/`、`/platform/` 和成员 `member-xxx` 兼容路径。
 - 历史内容可从 Git 提交记录恢复，不在当前工作目录保留重复副本。

@@ -1,0 +1,19 @@
+<ol class="member-output-list">
+  {{ range . }}
+    {{ $record := . }}
+    <li class="member-output-row">
+      <span class="member-output-row__year">{{ .year }}</span>
+      <div>
+        <h3>
+          {{ with $record.url }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $record.title }}</a>{{ else }}{{ $record.title }}{{ end }}
+        </h3>
+        {{ if or .venue .ccf_level }}
+          <p>
+            {{ with .ccf_level }}<b>{{ . }}</b>{{ end }}
+            {{ with .venue }}<span>{{ . }}</span>{{ end }}
+          </p>
+        {{ end }}
+      </div>
+    </li>
+  {{ end }}
+</ol>

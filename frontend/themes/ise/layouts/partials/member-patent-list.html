@@ -1,0 +1,11 @@
+<ol class="member-output-list member-output-list--patents">
+  {{ range . }}
+    <li class="member-output-row">
+      <span class="member-output-row__year">{{ with .application_date }}{{ substr . 0 4 }}{{ else }}—{{ end }}</span>
+      <div>
+        <h3>{{ .patent_name }}</h3>
+        {{ with .inventors }}<p><span>{{ partial "author-list.html" . }}</span></p>{{ end }}
+      </div>
+    </li>
+  {{ end }}
+</ol>

@@ -62,6 +62,7 @@ application_date, applicants
 - 多位发明人或申请人使用英文分号 `;` 分隔。
 - `application_date` 使用 `YYYY-MM-DD`。
 - 专利条目不生成详情页。
+- 删除 Excel 中的专利行后，重新运行导入脚本；派生 JSON 中对应条目会同步删除。若 Excel 与 JSON 不一致，一律以本文件夹中的 Excel 为准，不要把旧 JSON 记录补回 Excel。
 
 ## software-copyrights.xlsx
 
@@ -119,6 +120,8 @@ git pull --ff-only origin main
 - 新闻：修改 `frontend/content/news/` 中对应的 Markdown 页面。
 
 不要直接修改 `frontend/data/*.json` 或 `frontend/content/members/<成员编号>/index.md`，这些文件会由脚本覆盖。
+
+维护表的条目数量会随日常更新变化，测试只校验表结构与源数据、派生数据是否同步，不把历史条目数量作为固定标准。
 
 ### 第三步：重新生成 JSON
 
