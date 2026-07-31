@@ -45,7 +45,7 @@ class XlsxReaderTest(unittest.TestCase):
         self.assertEqual(len(read_table(SOURCE / "patents.xlsx", "专利")), 125)
         self.assertEqual(
             len(read_table(SOURCE / "software-copyrights.xlsx", "软件著作")),
-            0,
+            1,
         )
         self.assertEqual(len(read_table(SOURCE / "projects.xlsx", "项目")), 36)
 

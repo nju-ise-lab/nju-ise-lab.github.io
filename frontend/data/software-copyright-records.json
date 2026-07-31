@@ -1,4 +1,27 @@
 {
   "schema_version": 1,
-  "software_copyrights": []
+  "software_copyrights": [
+    {
+      "id": "software-001",
+      "software_name": "标准驱动的集成化众测服务平台V3.0",
+      "registration_number": "2022SR0042472",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "广东拓思软件科学园有限公司"
+        },
+        {
+          "name": "南京慕测信息科技有限公司"
+        },
+        {
+          "name": "上海计算机软件技术开发中心"
+        },
+        {
+          "name": "航天中认软件测评科技(北京)有限责任公司"
+        }
+      ],
+      "note": "来源：2023年度广东省科技进步奖提名项目公示（成果与陈振宇、房春荣参与的“群智驱动众测关键技术研究及其应用”项目关联）：https://www.gdktzx.com/d/file/2023/12/b63ec1e9c01d4dc001e786a6ffe777a0.pdf",
+      "source_order": 1
+    }
+  ]
 }
