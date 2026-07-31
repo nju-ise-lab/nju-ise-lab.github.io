@@ -3518,8 +3518,8 @@ img {
   object-fit: contain;
 }
 
-.about-partner-logo--guodian img {
-  max-height: 42px;
+.about-partner-logo--nari img {
+  max-height: 48px;
 }
 
 .about-partner-logo--baidu img {
@@ -3563,7 +3563,9 @@ img {
   height: 100%;
   min-height: 330px;
   display: block;
-  object-fit: cover;
+  padding: 12px;
+  box-sizing: border-box;
+  object-fit: contain;
 }
 
 .about-contest figcaption {

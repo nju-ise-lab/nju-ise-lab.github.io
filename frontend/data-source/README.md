@@ -97,7 +97,7 @@ featured, featured_order, homepage_label
 - 新闻仍在 `frontend/content/news/` 中按一篇一个 Markdown 维护。
 - `fig/` 会映射到网站 `/images/data-source/`，Markdown 和 Excel 中不要填写本机绝对路径。
 
-“关于我们”页面的合作单位标志与赛事图片位于 `fig/about/`：华为、百度、阿里巴巴、国电南自和北汽标志分别来自企业官方品牌资源或经官方资料核对的公开标志；`ieee-software-testing-contest.webp` 由实验室提供的历届赛事拼图压缩生成。企业标志仅用于说明实验室成果转化与合作关系，商标权利归各自权利人所有。
+“关于我们”页面的合作单位标志与赛事图片位于 `fig/about/`：华为、百度、阿里巴巴、南瑞集团和北汽标志分别来自企业官方品牌资源或经官方资料核对的公开标志；`ieee-software-testing-contest.webp` 由实验室提供的历届赛事拼图压缩生成。企业标志仅用于说明实验室成果转化与合作关系，商标权利归各自权利人所有。
 
 ## 手动修改后如何更新网站
 
