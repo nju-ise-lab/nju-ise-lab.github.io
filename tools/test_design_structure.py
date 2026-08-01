@@ -51,14 +51,20 @@ class DesignStructureTest(unittest.TestCase):
         self.assertNotIn(".home-stats", css)
         self.assertNotIn(".home-stat-card", css)
 
-    def test_results_pagination_keeps_shareable_state(self):
+    def test_only_patents_use_results_pagination(self):
         script = (THEME / "assets" / "js" / "results-filters.js").read_text(
+            encoding="utf-8"
+        )
+        template = (THEME / "layouts" / "research-results" / "list.html").read_text(
             encoding="utf-8"
         )
 
         self.assertIn("URLSearchParams", script)
         self.assertIn('window.addEventListener("popstate"', script)
         self.assertNotIn('querySelectorAll(":scope', script)
+        self.assertNotIn('aria-label="学术论文分页"', template)
+        self.assertIn('aria-label="专利分页"', template)
+        self.assertEqual(template.count("data-paginated-panel"), 1)
 
     def test_teacher_profiles_use_collapsible_output_archives(self):
         template = (THEME / "layouts" / "members" / "single.html").read_text(
