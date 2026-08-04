@@ -1,9 +1,0 @@
----
-title: "李克诚"
-url: "/members/master-001/"
-member_id: "master-001"
-member_type: "master"
-identity: "2024级硕士研究生"
-display_order: 1
-generated_from: "frontend/data-source/members.xlsx#硕士研究生"
----

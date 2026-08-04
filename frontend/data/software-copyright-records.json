@@ -2,6 +2,71 @@
   "schema_version": 1,
   "software_copyrights": [
     {
+      "id": "software-033",
+      "software_name": "基于规则和大语言模型的测试技能综合评估系统",
+      "registration_number": "2025SR1258531",
+      "year": 2025,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-RUM-Test",
+      "source_order": 33
+    },
+    {
+      "id": "software-034",
+      "software_name": "慕测教学智能管理系统",
+      "registration_number": "2025SR1248123",
+      "year": 2025,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-Teaching",
+      "source_order": 34
+    },
+    {
+      "id": "software-032",
+      "software_name": "基于大模型的java单元测试生成系统",
+      "registration_number": "2024SR0498211",
+      "year": 2024,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；开发完成时间：2023-12-30",
+      "source_order": 32
+    },
+    {
+      "id": "software-031",
+      "software_name": "面向APPStudio开发过程的智能化软件精准测试系统",
+      "registration_number": "2023SR0556081",
+      "year": 2023,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；开发完成时间：2022-03-16",
+      "source_order": 31
+    },
+    {
+      "id": "software-052",
+      "software_name": "基于场景语义的自动驾驶模型仿真测试系统V1.0",
+      "registration_number": "2023SR0532784",
+      "year": 2023,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 52
+    },
+    {
       "id": "software-001",
       "software_name": "标准驱动的集成化众测服务平台V3.0",
       "registration_number": "2022SR0042472",
@@ -22,6 +87,712 @@
       ],
       "note": "来源：2023年度广东省科技进步奖提名项目公示（成果与陈振宇、房春荣参与的“群智驱动众测关键技术研究及其应用”项目关联）：https://www.gdktzx.com/d/file/2023/12/b63ec1e9c01d4dc001e786a6ffe777a0.pdf",
       "source_order": 1
+    },
+    {
+      "id": "software-029",
+      "software_name": "慕测实验室管理系统",
+      "registration_number": "2022SR0310190",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-LIMS；开发完成时间：2022-01-12",
+      "source_order": 29
+    },
+    {
+      "id": "software-030",
+      "software_name": "慕测MT-AUG系统软件",
+      "registration_number": "2022SR1575199",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；开发完成时间：2022-05-20",
+      "source_order": 30
+    },
+    {
+      "id": "software-048",
+      "software_name": "南大多样性数据驱动智能测试系统",
+      "registration_number": "2022SR0982369",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2022-05-24",
+      "source_order": 48
+    },
+    {
+      "id": "software-049",
+      "software_name": "南大行为分析数据驱动测试系统",
+      "registration_number": "2022SR1008896",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2022-03-17",
+      "source_order": 49
+    },
+    {
+      "id": "software-050",
+      "software_name": "南大智能装备抗干扰性评测系统",
+      "registration_number": "2022SR0993044",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2022-04-05",
+      "source_order": 50
+    },
+    {
+      "id": "software-051",
+      "software_name": "神经网络测试数据优先级度量系统",
+      "registration_number": "2022SR1008783",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2022-04-28",
+      "source_order": 51
+    },
+    {
+      "id": "software-056",
+      "software_name": "基于色彩分析的艺术品风格识别系统",
+      "registration_number": "2022SR0254335",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "慕德"
+        }
+      ],
+      "note": "来源工作表：慕德；开发完成时间：2021-02-04",
+      "source_order": 56
+    },
+    {
+      "id": "software-057",
+      "software_name": "安卓自动化测试工具评估系统",
+      "registration_number": "2022SR0939034",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "陈振宇",
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "note": "来源工作表：陈振宇；开发完成时间：2021-08-15",
+      "source_order": 57
+    },
+    {
+      "id": "software-058",
+      "software_name": "软件测试能力多维评估系统",
+      "registration_number": "2022SR0950121",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "陈振宇",
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "note": "来源工作表：陈振宇；开发完成时间：2021-04-15",
+      "source_order": 58
+    },
+    {
+      "id": "software-059",
+      "software_name": "基于蜕变关系的激光雷达点云数据扩增系统",
+      "registration_number": "2022SR0950122",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "陈振宇",
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "note": "来源工作表：陈振宇；开发完成时间：2022-01-08",
+      "source_order": 59
+    },
+    {
+      "id": "software-060",
+      "software_name": "基于对抗变异的激光雷达点云数据扩增系统",
+      "registration_number": "2022SR0940055",
+      "year": 2022,
+      "owners": [
+        {
+          "name": "陈振宇",
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "note": "来源工作表：陈振宇；开发完成时间：2022-04-18",
+      "source_order": 60
+    },
+    {
+      "id": "software-016",
+      "software_name": "慕测MT-AITest系统软件",
+      "registration_number": "2021SR0038517",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测AI应用测试系统；简称：MT-AITest；型号：V1.0；开发完成时间：2020-01-24",
+      "source_order": 16
+    },
+    {
+      "id": "software-017",
+      "software_name": "慕测MT-CIT-Server系统软件",
+      "registration_number": "2021SR0038519",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测群体智能测试系统；简称：MT-CIT；型号：V1.0；开发完成时间：2020-02-09",
+      "source_order": 17
+    },
+    {
+      "id": "software-018",
+      "software_name": "慕测MT-Report系统软件",
+      "registration_number": "2021SR0104732",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测智能化测试系统；型号：V1.0；开发完成时间：2019-11-10",
+      "source_order": 18
+    },
+    {
+      "id": "software-019",
+      "software_name": "慕测MT-XCode系统软件",
+      "registration_number": "2021SR0038509",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测智能化编程系统；简称：MT-IDE；型号：V1.0；开发完成时间：2020-04-18",
+      "source_order": 19
+    },
+    {
+      "id": "software-020",
+      "software_name": "慕测MT-EVA系统软件",
+      "registration_number": "2021SR0038497",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测软件作品自动化测评系统；型号：V1.0；开发完成时间：2020-02-22",
+      "source_order": 20
+    },
+    {
+      "id": "software-021",
+      "software_name": "慕测MT-DQM系统软件",
+      "registration_number": "2021SR0038508",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测数据质量测评系统；型号：V1.0；开发完成时间：2019-06-18",
+      "source_order": 21
+    },
+    {
+      "id": "software-022",
+      "software_name": "慕测MT-MQM系统软件",
+      "registration_number": "2021SR0038498",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测AI测试评估与可视化系统；型号：V1.0；开发完成时间：2019-04-20",
+      "source_order": 22
+    },
+    {
+      "id": "software-023",
+      "software_name": "慕测MT-DAU系统软件",
+      "registration_number": "2021SR0039554",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测测试数据扩增系统；简称：MT-TAU；型号：V1.0；开发完成时间：2019-04-15",
+      "source_order": 23
+    },
+    {
+      "id": "software-024",
+      "software_name": "慕测MT-Web系统软件",
+      "registration_number": "2021SR0658487",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测Web应用测试系统；型号：V1.0；开发完成时间：2020-01-14",
+      "source_order": 24
+    },
+    {
+      "id": "software-025",
+      "software_name": "慕测AI模糊测试系统",
+      "registration_number": "2021SR0658501",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0；开发完成时间：2020-04-03",
+      "source_order": 25
+    },
+    {
+      "id": "software-026",
+      "software_name": "慕测MT-FUZ系统软件",
+      "registration_number": "2021SR0293906",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0；开发完成时间：2020-04-03",
+      "source_order": 26
+    },
+    {
+      "id": "software-027",
+      "software_name": "慕测MT-AQUAMAN系统软件",
+      "registration_number": "2021SR0850673",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0；开发完成时间：2021-03-25",
+      "source_order": 27
+    },
+    {
+      "id": "software-028",
+      "software_name": "慕测MT-IAI系统软件",
+      "registration_number": "2021SR1462589",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；开发完成时间：2021-04-30",
+      "source_order": 28
+    },
+    {
+      "id": "software-036",
+      "software_name": "慕智MI-DQM系统软件",
+      "registration_number": "2021SR0086243",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：新能源电池数据质量度量系统；型号：V1.0",
+      "source_order": 36
+    },
+    {
+      "id": "software-037",
+      "software_name": "慕智MI-MQM系统软件",
+      "registration_number": "2021SR0086242",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：面向智能交通模型正确性的蜕变测试系统；型号：V1.0",
+      "source_order": 37
+    },
+    {
+      "id": "software-038",
+      "software_name": "慕智MI-DAU系统软件",
+      "registration_number": "2021SR0265693",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：基于规则变异的自动驾驶激光雷达数据扩增系统；型号：V1.0",
+      "source_order": 38
+    },
+    {
+      "id": "software-039",
+      "software_name": "慕智MI-PRD系统软件",
+      "registration_number": "2021SR0101030",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：新能源电池寿命预测系统；型号：V1.0",
+      "source_order": 39
+    },
+    {
+      "id": "software-040",
+      "software_name": "慕智MI-FIX系统软件",
+      "registration_number": "2021SR0211582",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：新能源电池智能管控系统；型号：V1.0",
+      "source_order": 40
+    },
+    {
+      "id": "software-053",
+      "software_name": "慕尚MS-COL系统软件",
+      "registration_number": "2021SR0331521",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "慕尚"
+        }
+      ],
+      "note": "来源工作表：慕尚；原登记名称：慕尚人机协同众测系统；型号：V1.0",
+      "source_order": 53
+    },
+    {
+      "id": "software-054",
+      "software_name": "慕尚MS-IRF系统软件",
+      "registration_number": "2021SR1011158",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "慕尚"
+        }
+      ],
+      "note": "来源工作表：慕尚；原登记名称：慕尚缺陷报告融合系统；型号：V1.0",
+      "source_order": 54
+    },
+    {
+      "id": "software-055",
+      "software_name": "慕尚MS-EVA系统软件",
+      "registration_number": "2021SR0335231",
+      "year": 2021,
+      "owners": [
+        {
+          "name": "慕尚"
+        }
+      ],
+      "note": "来源工作表：慕尚；原登记名称：慕尚风险等级预测系统；型号：V1.0",
+      "source_order": 55
+    },
+    {
+      "id": "software-014",
+      "software_name": "慕测MT-CIT-BASE系统软件",
+      "registration_number": "2020SR1269635",
+      "year": 2020,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测开发测试一体化系统；简称：MT-DevT；型号：V1.0；开发完成时间：2020-03-06",
+      "source_order": 14
+    },
+    {
+      "id": "software-015",
+      "software_name": "慕测MT-FIX系统软件",
+      "registration_number": "2020SR1269634",
+      "year": 2020,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；原登记名称：慕测安全扫描系统；简称：MT-Sec；型号：V1.0；开发完成时间：2020-03-12",
+      "source_order": 15
+    },
+    {
+      "id": "software-035",
+      "software_name": "慕智MI-FUZ系统软件",
+      "registration_number": "2020SR1855521",
+      "year": 2020,
+      "owners": [
+        {
+          "name": "深圳慕智科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕智；原登记名称：面向自动驾驶图像数据测试用例生成系统；型号：V1.0",
+      "source_order": 35
+    },
+    {
+      "id": "software-004",
+      "software_name": "慕测MT-CUBE系统软件",
+      "registration_number": "2018SR243184",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-CUBE；型号：V1.0；开发完成时间：2018-01-01",
+      "source_order": 4
+    },
+    {
+      "id": "software-005",
+      "software_name": "慕测MT-MOB系统软件",
+      "registration_number": "2018SR243191",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-MOB；型号：V1.0；开发完成时间：2016-11-10",
+      "source_order": 5
+    },
+    {
+      "id": "software-006",
+      "software_name": "慕测MT-BASE系统软件",
+      "registration_number": "2018SR263412",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-BASE；型号：V1.0；开发完成时间：2018-01-03",
+      "source_order": 6
+    },
+    {
+      "id": "software-007",
+      "software_name": "慕测MT-DEV系统软件",
+      "registration_number": "2018SR270560",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：MT-DEV；型号：V1.0；开发完成时间：2017-01-01",
+      "source_order": 7
+    },
+    {
+      "id": "software-008",
+      "software_name": "单元测试用例规范性检查软件",
+      "registration_number": "2018SR549862",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0",
+      "source_order": 8
+    },
+    {
+      "id": "software-009",
+      "software_name": "Java类测试顺序分析软件",
+      "registration_number": "2018SR549858",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0",
+      "source_order": 9
+    },
+    {
+      "id": "software-010",
+      "software_name": "Java代码相似性度量软件",
+      "registration_number": "2018SR549854",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测",
+      "source_order": 10
+    },
+    {
+      "id": "software-011",
+      "software_name": "基于慕测平台的用户测试引导系统",
+      "registration_number": "2018SR549868",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0",
+      "source_order": 11
+    },
+    {
+      "id": "software-012",
+      "software_name": "数值稳定性相关安全漏洞隐患的自动化检测工具",
+      "registration_number": "2018SR575240",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0",
+      "source_order": 12
+    },
+    {
+      "id": "software-013",
+      "software_name": "RepoPal-GitHub相似高质量仓库推荐系统",
+      "registration_number": "2018SR688907",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：RepoPal；型号：V1.0",
+      "source_order": 13
+    },
+    {
+      "id": "software-044",
+      "software_name": "TCDA测试代码相似性分析工具系统",
+      "registration_number": "2018SR726369",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 44
+    },
+    {
+      "id": "software-045",
+      "software_name": "安卓单元测试自动生成工具系统",
+      "registration_number": "2018SR726260",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 45
+    },
+    {
+      "id": "software-046",
+      "software_name": "代码与模型相融合的测试系统",
+      "registration_number": "2018SR725966",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 46
+    },
+    {
+      "id": "software-047",
+      "software_name": "软件的数值稳定性测试工具系统",
+      "registration_number": "2018SR725916",
+      "year": 2018,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 47
+    },
+    {
+      "id": "software-003",
+      "software_name": "慕测可复用测试用例库管理系统软件",
+      "registration_number": "2017SR467926",
+      "year": 2017,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；型号：V1.0；开发完成时间：2015-05-20",
+      "source_order": 3
+    },
+    {
+      "id": "software-002",
+      "software_name": "慕测趋势数据电子商务精准运营分析服务系统软件",
+      "registration_number": "2014SR026706",
+      "year": 2014,
+      "owners": [
+        {
+          "name": "南京慕测信息科技有限公司"
+        }
+      ],
+      "note": "来源工作表：慕测；简称：趋势数据分析系统；型号：V1.0；开发完成时间：2013-12-01",
+      "source_order": 2
+    },
+    {
+      "id": "software-041",
+      "software_name": "软著iOS应用GUI测试系统-2012-06-20iGTS",
+      "registration_number": "2013SR126366",
+      "year": 2013,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大",
+      "source_order": 41
+    },
+    {
+      "id": "software-042",
+      "software_name": "软著测试用例优先级优化系统-2012-06-05TC",
+      "registration_number": "2013SR127950",
+      "year": 2013,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2012-06-05",
+      "source_order": 42
+    },
+    {
+      "id": "software-043",
+      "software_name": "软著动态网页测试覆盖检测软件-2012-06-06TestCoverTool",
+      "registration_number": "2013SR127462",
+      "year": 2013,
+      "owners": [
+        {
+          "name": "南京大学"
+        }
+      ],
+      "note": "来源工作表：南大；开发完成时间：2012-06-06",
+      "source_order": 43
     }
   ]
 }

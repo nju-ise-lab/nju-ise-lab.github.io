@@ -20,6 +20,7 @@ OUTPUT_PATH = FRONTEND / "data" / "member-records.json"
 ALIASES_OUTPUT_PATH = FRONTEND / "data" / "member-aliases.json"
 CONTENT_DIR = FRONTEND / "content" / "members"
 FIG_DIR = FRONTEND / "data-source" / "fig"
+GENERATED_PAGE_MARKER = 'generated_from: "frontend/data-source/members.xlsx#'
 
 SOURCE_DEFINITIONS = (
     (
@@ -48,6 +49,10 @@ class MemberImportError(ValueError):
 
 def clean_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "").strip())
+
+
+def is_placeholder_name(value: str) -> bool:
+    return clean_text(value).casefold() == "xxx"
 
 
 def validate_homepage(value: str, filename: str, row_number: int) -> str:
@@ -194,7 +199,8 @@ def build_aliases(records: list[dict[str, Any]]) -> dict[str, str]:
         aliases[cleaned] = member_url
 
     for record in records:
-        add_alias(record["name"], record["id"], f"成员 {record['id']}")
+        if not is_placeholder_name(record["name"]):
+            add_alias(record["name"], record["id"], f"成员 {record['id']}")
 
     try:
         rows = read_table(
@@ -226,7 +232,7 @@ def build_outputs() -> tuple[dict[str, Any], dict[Path, str], dict[str, str]]:
         for record in records:
             if record["id"] in seen_ids:
                 raise MemberImportError(f"成员 id 重复：{record['id']}")
-            if record["name"] in seen_names:
+            if record["name"] in seen_names and not is_placeholder_name(record["name"]):
                 raise MemberImportError(f"成员姓名重复：{record['name']}")
             seen_ids.add(record["id"])
             seen_names.add(record["name"])
@@ -244,6 +250,17 @@ def build_outputs() -> tuple[dict[str, Any], dict[Path, str], dict[str, str]]:
 
 def expected_json(payload: dict[str, Any]) -> str:
     return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+
+
+def find_generated_pages() -> set[Path]:
+    if not CONTENT_DIR.exists():
+        return set()
+
+    return {
+        path
+        for path in CONTENT_DIR.glob("*/index.md")
+        if GENERATED_PAGE_MARKER in path.read_text(encoding="utf-8")
+    }
 
 
 def check_outputs(
@@ -266,6 +283,9 @@ def check_outputs(
         if not path.exists() or path.read_text(encoding="utf-8") != expected:
             mismatches.append(str(path))
 
+    for path in sorted(find_generated_pages() - set(pages)):
+        mismatches.append(str(path))
+
     if mismatches:
         print("以下生成文件未同步：")
         for path in mismatches:
@@ -287,9 +307,16 @@ def write_outputs(
     for path, content in pages.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
+    stale_pages = find_generated_pages() - set(pages)
+    for path in stale_pages:
+        path.unlink()
+        if not any(path.parent.iterdir()):
+            path.parent.rmdir()
     print(f"Updated {OUTPUT_PATH} with {len(payload['members'])} active members.")
     print(f"Updated {ALIASES_OUTPUT_PATH} with {len(aliases)} exact author aliases.")
     print(f"Updated {len(pages)} stable member pages.")
+    if stale_pages:
+        print(f"Removed {len(stale_pages)} obsolete generated member pages.")
 
 
 def main() -> int:

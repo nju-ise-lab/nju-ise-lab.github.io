@@ -4,6 +4,6 @@ url: "/members/master-002/"
 member_id: "master-002"
 member_type: "master"
 identity: "2024级硕士研究生"
-display_order: 2
+display_order: 1
 generated_from: "frontend/data-source/members.xlsx#硕士研究生"
 ---

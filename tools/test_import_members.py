@@ -122,6 +122,80 @@ class ImportMembersTest(unittest.TestCase):
             ):
                 import_members.build_outputs()
 
+    def test_build_outputs_keeps_placeholders_without_author_aliases(self):
+        with tempfile.TemporaryDirectory() as temp:
+            content_dir, figure_dir = self.build_fixture(Path(temp))
+            rows = self.source_rows()
+            rows["硕士研究生"] = [
+                {
+                    "master_id": "master-006",
+                    "name": "xxx",
+                    "member_type": "master",
+                    "identity": "xxx级硕士研究生",
+                    "homepage": "",
+                    "_source_row": 6,
+                },
+                {
+                    "master_id": "master-007",
+                    "name": "xxx",
+                    "member_type": "master",
+                    "identity": "xxx级硕士研究生",
+                    "homepage": "",
+                    "_source_row": 7,
+                },
+            ]
+            rows["作者别名"] = []
+            with (
+                mock.patch.object(import_members, "CONTENT_DIR", content_dir),
+                mock.patch.object(import_members, "FIG_DIR", figure_dir),
+                mock.patch.object(
+                    import_members,
+                    "read_table",
+                    side_effect=lambda _path, sheet, **_: rows[sheet],
+                ),
+            ):
+                payload, pages, aliases = import_members.build_outputs()
+
+        self.assertEqual(len(payload["members"]), 4)
+        self.assertIn(content_dir / "master-006" / "index.md", pages)
+        self.assertIn(content_dir / "master-007" / "index.md", pages)
+        self.assertNotIn("xxx", aliases)
+
+    def test_write_outputs_removes_only_stale_generated_pages(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            content_dir = root / "content" / "members"
+            stale_page = content_dir / "teacher-001" / "index.md"
+            manual_page = content_dir / "manual" / "index.md"
+            current_page = content_dir / "phd-001" / "index.md"
+            stale_page.parent.mkdir(parents=True)
+            manual_page.parent.mkdir(parents=True)
+            stale_page.write_text(
+                'generated_from: "frontend/data-source/members.xlsx#教师"\n',
+                encoding="utf-8",
+            )
+            manual_page.write_text("manually maintained\n", encoding="utf-8")
+
+            with (
+                mock.patch.object(import_members, "CONTENT_DIR", content_dir),
+                mock.patch.object(import_members, "OUTPUT_PATH", root / "members.json"),
+                mock.patch.object(import_members, "ALIASES_OUTPUT_PATH", root / "aliases.json"),
+            ):
+                import_members.write_outputs(
+                    {"schema_version": 1, "members": []},
+                    {
+                        current_page: (
+                            'generated_from: '
+                            '"frontend/data-source/members.xlsx#博士研究生"\n'
+                        )
+                    },
+                    {},
+                )
+
+            self.assertFalse(stale_page.exists())
+            self.assertTrue(current_page.exists())
+            self.assertTrue(manual_page.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

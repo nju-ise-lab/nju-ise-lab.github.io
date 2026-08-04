@@ -1,5 +1,5 @@
 ---
-title: "吉品"
+title: "邹英龙"
 url: "/members/phd-004/"
 member_id: "phd-004"
 member_type: "phd"

@@ -29,10 +29,38 @@ COLUMNS = (
     "application_date",
     "applicants",
 )
+LABELED_COLUMNS = (
+    "patent_id",
+    "patent_name",
+    "inventors",
+    "public_number（公开号）",
+    "application_number（申请号）",
+    "application_date（申请日）",
+    "applicants",
+)
+LABELED_COLUMN_MAP = dict(zip(LABELED_COLUMNS, COLUMNS))
 
 
 class PatentImportError(ValueError):
     pass
+
+
+def read_source_rows(source_path: Path) -> list[dict[str, Any]]:
+    try:
+        return read_table(source_path, SHEET_NAME, expected_columns=COLUMNS)
+    except XlsxReadError as standard_error:
+        try:
+            rows = read_table(
+                source_path,
+                SHEET_NAME,
+                expected_columns=LABELED_COLUMNS,
+            )
+        except XlsxReadError:
+            raise PatentImportError(str(standard_error)) from standard_error
+        return [
+            {LABELED_COLUMN_MAP.get(key, key): value for key, value in row.items()}
+            for row in rows
+        ]
 
 
 def import_patents(
@@ -41,8 +69,8 @@ def import_patents(
     aliases_path: Path = ALIASES_PATH,
 ) -> dict[str, Any]:
     try:
-        rows = read_table(source_path, SHEET_NAME, expected_columns=COLUMNS)
-    except XlsxReadError as exc:
+        rows = read_source_rows(source_path)
+    except (XlsxReadError, PatentImportError) as exc:
         raise PatentImportError(str(exc)) from exc
 
     member_links = load_member_links(member_records_path, aliases_path)
