@@ -85,6 +85,17 @@ class DesignStructureTest(unittest.TestCase):
         self.assertIn('class="site-footer__about"', footer)
         self.assertIn("快速入口", footer)
         self.assertIn("南京大学软件学院", footer)
+        self.assertIn('class="site-footer__wechat"', footer)
+        self.assertIn("/images/data-source/brand/公众号.jpg", footer)
+
+    def test_projects_do_not_expose_level_filters(self):
+        template = (THEME / "layouts" / "partials" / "project-list.html").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertNotIn("project-filter-bar", template)
+        self.assertNotIn("国家级", template)
+        self.assertNotIn("省部级", template)
 
 
 if __name__ == "__main__":

@@ -1968,8 +1968,8 @@ img {
 
 .site-footer__main {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(150px, 0.7fr) minmax(190px, 0.8fr);
-  gap: clamp(44px, 8vw, 112px);
+  grid-template-columns: minmax(0, 1.5fr) minmax(140px, 0.65fr) minmax(180px, 0.75fr) minmax(132px, 0.5fr);
+  gap: clamp(28px, 5vw, 72px);
   align-items: start;
 }
 
@@ -2016,6 +2016,29 @@ img {
 
 .site-footer__group a:hover {
   color: #ffffff;
+}
+
+.site-footer__wechat {
+  margin: 0;
+  text-align: center;
+}
+
+.site-footer__wechat img {
+  width: 124px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+  background: #ffffff;
+  object-fit: cover;
+}
+
+.site-footer__wechat figcaption {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
 }
 
 .site-footer__bottom {
@@ -2941,6 +2964,16 @@ img {
   filter: saturate(0.9) contrast(1.02);
 }
 
+.member-card__avatar--placeholder {
+  border: 1px dashed rgba(99, 6, 95, 0.24);
+  background: rgba(99, 6, 95, 0.04);
+}
+
+.member-card__avatar--placeholder span {
+  color: rgba(99, 6, 95, 0.32);
+  font-size: 28px;
+}
+
 .member-card h3 {
   color: #250924;
   font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
@@ -3336,39 +3369,6 @@ img {
   text-align: center;
 }
 
-.project-filter-bar {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 20px;
-  padding: 6px;
-  border: 1px solid var(--ise-border);
-  border-radius: 14px;
-  background: #ffffff;
-}
-
-.project-filter-bar button {
-  min-width: 104px;
-  padding: 10px 16px;
-  color: #746d75;
-  border: 0;
-  border-radius: 9px;
-  background: transparent;
-  font: inherit;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.project-filter-bar button:hover {
-  color: var(--ise-purple);
-}
-
-.project-filter-bar button.is-active {
-  color: #ffffff;
-  background: var(--ise-purple);
-}
-
 .projects-page .project-record-list {
   gap: 14px;
 }
@@ -3754,11 +3754,6 @@ img {
     flex-direction: column;
   }
 
-  .project-filter-bar {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
   .editorial-page__index {
     position: static;
     display: flex;
@@ -3825,6 +3820,14 @@ img {
 
   .site-footer__about {
     grid-column: 1 / -1;
+  }
+
+  .site-footer__wechat {
+    text-align: left;
+  }
+
+  .site-footer__wechat img {
+    margin-left: 0;
   }
 
   .site-footer__about h2 {
@@ -3902,16 +3905,6 @@ img {
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
-  }
-
-  .project-filter-bar {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .project-filter-bar button {
-    min-width: 0;
-    padding-inline: 8px;
   }
 
   .projects-page .project-record {

@@ -25,9 +25,5 @@
       {{ $js := . | minify | fingerprint }}
       <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
     {{ end }}
-    {{ with resources.Get "js/project-filters.js" }}
-      {{ $js := . | minify | fingerprint }}
-      <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
-    {{ end }}
   </body>
 </html>

@@ -110,7 +110,7 @@ def load_source(
         avatar = clean_text(row.get("avatar"))
         bio = clean_text(row.get("bio"))
 
-        if expected_type == "teacher":
+        if expected_type == "teacher" and not is_placeholder_name(name):
             if not avatar:
                 raise MemberImportError(
                     f"{sheet_name} 第 {row_number} 行的教师缺少 avatar。"

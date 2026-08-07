@@ -161,6 +161,41 @@ class ImportMembersTest(unittest.TestCase):
         self.assertIn(content_dir / "master-007" / "index.md", pages)
         self.assertNotIn("xxx", aliases)
 
+    def test_teacher_placeholder_does_not_require_avatar(self):
+        with tempfile.TemporaryDirectory() as temp:
+            content_dir, figure_dir = self.build_fixture(Path(temp))
+            rows = self.source_rows()
+            rows["教师"].append(
+                {
+                    "teacher_id": "teacher-005",
+                    "name": "xxx",
+                    "avatar": "",
+                    "member_type": "teacher",
+                    "identity": "xxx",
+                    "homepage": "",
+                    "bio": "",
+                    "_source_row": 3,
+                }
+            )
+            rows["作者别名"] = []
+            with (
+                mock.patch.object(import_members, "CONTENT_DIR", content_dir),
+                mock.patch.object(import_members, "FIG_DIR", figure_dir),
+                mock.patch.object(
+                    import_members,
+                    "read_table",
+                    side_effect=lambda _path, sheet, **_: rows[sheet],
+                ),
+            ):
+                payload, pages, aliases = import_members.build_outputs()
+
+        placeholder = next(
+            member for member in payload["members"] if member["id"] == "teacher-005"
+        )
+        self.assertNotIn("avatar_url", placeholder)
+        self.assertIn(content_dir / "teacher-005" / "index.md", pages)
+        self.assertNotIn("xxx", aliases)
+
     def test_write_outputs_removes_only_stale_generated_pages(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
