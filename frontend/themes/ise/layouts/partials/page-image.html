@@ -1,7 +1,13 @@
 {{ with .Params.image }}
-  {{ with $.Resources.GetMatch . }}
+  {{ if hasPrefix . "/" }}
     <figure class="article__image">
-      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
     </figure>
+  {{ else }}
+    {{ with $.Resources.GetMatch . }}
+      <figure class="article__image">
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+      </figure>
+    {{ end }}
   {{ end }}
 {{ end }}

@@ -5,6 +5,7 @@
 ```text
 data-source/
 ├── members.xlsx
+├── news.csv
 ├── publications.xlsx
 ├── patents.xlsx
 ├── software-copyrights.xlsx
@@ -16,6 +17,7 @@ data-source/
 └── fig/
     ├── brand/                    # 网站标志
     ├── home/                     # 首页轮播图和新闻配图
+    ├── news/<news_id>/           # 爬取新闻的正文图片
     └── members/<teacher_id>/     # 教师头像
 ```
 
@@ -49,6 +51,24 @@ year, id, title, link, status, author, cofauthor, corauthor, level, venue, note
 - `level` 可用 `CCF-A`、`CCF-B`、`CCF-C` 或留空。
 - `link` 优先填写 DOI 链接（`https://doi.org/...`）或期刊、会议出版社的论文详情页；预印本可填写 arXiv 或 OpenReview。暂未找到正式页面时可临时使用 Google Scholar，留空则前端不显示题目链接。
 - `note` 用于奖项、研究主题等补充标签，可留空。
+
+## news.csv
+
+```text
+news_id,title,date,source_url,summary,content_html,cover_image,category,pinned
+```
+
+- `news_id` 使用学院新闻详情页的稳定编号，例如 `nju-401525`；不要重新分配。
+- `date` 使用 `YYYY-MM-DD`；`source_url` 必须为原新闻详情页的完整 `http(s)` 链接。
+- `content_html` 保存新闻正文；`cover_image` 填写相对 `fig/` 的封面路径，例如 `news/nju-401525/image-001.png`，没有图片时可留空。
+- `category` 是新闻分类；`pinned` 填写 `TRUE` 或 `FALSE` 控制新闻列表和首页置顶。
+- 本站维护的 iSE 新闻可用以下命令从南京大学软件学院“学院新闻”重新采集。它只采集 2025 年至今标题包含 `iSE 实验室` 或 `iSE实验室` 的新闻，并下载正文图片到 `fig/news/`：
+
+```bash
+python3 tools/crawl_nju_ise_news.py
+```
+
+- 爬取刷新会保留同一 `news_id` 的 `category` 与 `pinned` 设置；正文、摘要、标题、日期、来源链接和图片以学院新闻官网为准。
 
 ## patents.xlsx
 
@@ -95,7 +115,7 @@ featured, featured_order, homepage_label
 - 首页：`content/_index.md`。轮播图顺序、图片路径和首页栏目名称均在 front matter 中维护。
 - 关于我们：`content/about/_index.md`。
 - 教育教学：`content/education/_index.md`。
-- 新闻仍在 `frontend/content/news/` 中按一篇一个 Markdown 维护。
+- 新闻由 `news.csv` 自动生成到 `frontend/content/news/<news_id>/index.md`；已有未带 `generated_from` 标记的历史新闻继续手工维护。
 - `fig/` 会映射到网站 `/images/data-source/`，Markdown 和 Excel 中不要填写本机绝对路径。
 
 “关于我们”页面的合作单位标志与赛事图片位于 `fig/about/`：华为、百度、阿里巴巴、南瑞集团和北汽标志分别来自企业官方品牌资源或经官方资料核对的公开标志；`ieee-software-testing-contest.webp` 由实验室提供的历届赛事拼图压缩生成。企业标志仅用于说明实验室成果转化与合作关系，商标权利归各自权利人所有。
@@ -114,10 +134,10 @@ git pull --ff-only origin main
 
 ### 第二步：修改维护源
 
-- 成员、论文、专利、软件著作或项目：修改本目录中的对应 Excel。
+- 成员、论文、专利、软件著作或项目：修改本目录中的对应 Excel；新闻：修改 `news.csv`。
 - 首页、关于我们或教育教学：修改 `content/` 中对应的 Markdown。
 - 首页或教师图片：把图片放入 `fig/`，同时更新 Excel 或 Markdown 中的相对路径。
-- 新闻：修改 `frontend/content/news/` 中对应的 Markdown 页面。
+- 新采集新闻的正文和图片由脚本生成，不要直接修改带有 `generated_from: "frontend/data-source/news.csv"` 的新闻 Markdown；需要更新官方新闻时重新运行采集脚本。
 
 不要直接修改 `frontend/data/*.json` 或 `frontend/content/members/<成员编号>/index.md`，这些文件会由脚本覆盖。
 
@@ -142,7 +162,9 @@ frontend/data/publication-records.json
 frontend/data/patent-records.json
 frontend/data/software-copyright-records.json
 frontend/data/project-records.json
+frontend/data/news-records.json
 frontend/content/members/<成员编号>/index.md
+frontend/content/news/<news_id>/index.md
 ```
 
 ### 第四步：本地预览

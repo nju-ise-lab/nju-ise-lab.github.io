@@ -97,6 +97,20 @@ class DesignStructureTest(unittest.TestCase):
         self.assertNotIn("国家级", template)
         self.assertNotIn("省部级", template)
 
+    def test_page_image_accepts_static_source_images(self):
+        partial = (THEME / "layouts" / "partials" / "page-image.html").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn('hasPrefix . "/"', partial)
+        self.assertIn('src="{{ . }}"', partial)
+
+    def test_article_images_are_responsive(self):
+        css = (THEME / "assets" / "css" / "main.css").read_text(encoding="utf-8")
+
+        self.assertIn(".article__body img", css)
+        self.assertIn("max-width: 100%;", css)
+
 
 if __name__ == "__main__":
     unittest.main()

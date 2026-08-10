@@ -1187,9 +1187,16 @@ img {
 }
 
 .article__body img {
+  max-width: 100%;
   height: auto;
+  display: block;
   margin: 20px auto;
   border-radius: 8px;
+}
+
+.article__source {
+  color: var(--ise-muted);
+  font-size: 14px;
 }
 
 .article__image {

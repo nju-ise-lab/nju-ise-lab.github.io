@@ -91,6 +91,9 @@ def load_source(
         member_type = clean_text(row.get("member_type")).lower()
         identity = clean_text(row.get("identity"))
 
+        if not name and expected_type == "teacher" and is_placeholder_name(identity):
+            name = "xxx"
+
         if not re.fullmatch(rf"{re.escape(expected_type)}-\d{{3,}}", member_id):
             raise MemberImportError(
                 f"{sheet_name} 第 {row_number} 行的 {id_column} `{member_id}` "

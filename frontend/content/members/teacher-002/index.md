@@ -1,7 +1,7 @@
 ---
 title: "房春荣"
-url: "/members/teacher-004/"
-member_id: "teacher-004"
+url: "/members/teacher-002/"
+member_id: "teacher-002"
 member_type: "teacher"
 identity: "副教授"
 display_order: 2

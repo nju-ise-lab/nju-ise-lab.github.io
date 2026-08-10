@@ -1,7 +1,7 @@
 ---
 title: "xxx"
-url: "/members/teacher-005/"
-member_id: "teacher-005"
+url: "/members/teacher-003/"
+member_id: "teacher-003"
 member_type: "teacher"
 identity: "xxx"
 display_order: 3
