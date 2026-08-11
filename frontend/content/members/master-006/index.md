@@ -1,9 +1,0 @@
----
-title: "xxx"
-url: "/members/master-006/"
-member_id: "master-006"
-member_type: "master"
-identity: "xxx级硕士研究生"
-display_order: 5
-generated_from: "frontend/data-source/members.xlsx#硕士研究生"
----

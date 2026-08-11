@@ -6,7 +6,7 @@ member_type: "teacher"
 identity: "副教授"
 display_order: 2
 homepage: "https://www.iselab.cn/html/people/faculty/ChunrongFang.html"
-avatar_url: "/images/data-source/members/teacher-004/avatar.jpeg"
+avatar_url: "/images/data-source/members/teacher-002/avatar.jpeg"
 generated_from: "frontend/data-source/members.xlsx#教师"
 ---
 
