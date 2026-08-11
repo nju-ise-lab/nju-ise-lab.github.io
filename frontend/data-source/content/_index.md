@@ -4,7 +4,7 @@ url: "/"
 news_title: "新闻资讯"
 publications_title: "学术论文"
 projects_title: "项目"
-news_image: "/images/data-source/home/news.jpg"
+news_image: "/images/data-source/home/news.png"
 slides:
   - image: "/images/data-source/home/slide-14.png"
     fit: "contain"

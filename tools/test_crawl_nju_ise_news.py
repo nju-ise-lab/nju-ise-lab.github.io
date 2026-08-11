@@ -27,11 +27,12 @@ class CrawlNjuIseNewsTest(unittest.TestCase):
                 item(11, "iSE实验室新闻", "2025-01-02", "/xyxw/11.html"),
                 item(12, "iSE 实验室旧新闻", "2024-12-31", "/xyxw/12.html"),
                 item(13, "其他实验室新闻", "2025-01-03", "/xyxw/13.html"),
+                item(402149, "指定补充新闻", "2025-01-04", "/xyxw/402149.html"),
             ],
             date(2025, 1, 1),
         )
 
-        self.assertEqual([record["iid"] for record in records], [11, 10])
+        self.assertEqual([record["iid"] for record in records], [402149, 11, 10])
 
     def test_collect_list_items_fetches_pages_missing_from_index(self):
         index = (

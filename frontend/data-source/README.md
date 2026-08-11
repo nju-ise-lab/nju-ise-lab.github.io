@@ -62,7 +62,7 @@ news_id,title,date,source_url,summary,content_html,cover_image,category,pinned
 - `date` 使用 `YYYY-MM-DD`；`source_url` 必须为原新闻详情页的完整 `http(s)` 链接。
 - `content_html` 保存新闻正文；`cover_image` 填写相对 `fig/` 的封面路径，例如 `news/nju-401525/image-001.png`，没有图片时可留空。
 - `category` 是新闻分类；`pinned` 填写 `TRUE` 或 `FALSE` 控制新闻列表和首页置顶。
-- 本站维护的 iSE 新闻可用以下命令从南京大学软件学院“学院新闻”重新采集。它只采集 2025 年至今标题包含 `iSE 实验室` 或 `iSE实验室` 的新闻，并下载正文图片到 `fig/news/`：
+- 本站维护的 iSE 新闻可用以下命令从南京大学软件学院“学院新闻”重新采集。它采集 2025 年至今标题包含 `iSE 实验室` 或 `iSE实验室` 的新闻，以及代码中明确列出的补充新闻 IID（当前为 `402149`），并下载正文图片到 `fig/news/`：
 
 ```bash
 python3 tools/crawl_nju_ise_news.py

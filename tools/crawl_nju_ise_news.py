@@ -23,6 +23,7 @@ API_URL = "https://software.nju.edu.cn/njdx/openapi/t/info/list.do"
 SITE_URL = "https://software.nju.edu.cn/"
 CHANNEL_ID = "6437"
 PAGE_SIZE = 15
+ADDITIONAL_NEWS_IIDS = frozenset({"402149"})
 REQUIRED_COLUMNS = (
     "news_id",
     "title",
@@ -144,7 +145,8 @@ def select_ise_news(items: list[dict[str, Any]], since: date) -> list[dict[str, 
             published = date.fromisoformat(raw_date)
         except ValueError:
             continue
-        if published < since or "ise实验室" not in normalize_title(raw_title):
+        title_matches = "ise实验室" in normalize_title(raw_title)
+        if published < since or (not title_matches and iid not in ADDITIONAL_NEWS_IIDS):
             continue
         if not iid or not source_url:
             raise NewsCrawlError(f"新闻《{raw_title}》缺少 IID 或详情页链接。")
