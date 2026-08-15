@@ -1,13 +1,11 @@
 ---
-title: "房春荣"
+title: "刘嘉"
 url: "/members/teacher-002/"
 member_id: "teacher-002"
 member_type: "teacher"
-identity: "副教授"
+identity: "教授"
 display_order: 2
-homepage: "https://www.iselab.cn/html/people/faculty/ChunrongFang.html"
-avatar_url: "/images/data-source/members/teacher-002/avatar.jpeg"
+homepage: "https://software.nju.edu.cn//liujia/index.html"
+avatar_url: "/images/data-source/members/teacher-002/avatar.png"
 generated_from: "frontend/data-source/members.xlsx#教师"
 ---
-
-南京大学软件学院教师，南京大学—数兑联合研究中心主任，CCF 高级会员，主要从事智能软件工程研究，包括大模型代码智能与人工智能系统测试。主持多项国家自然科学基金、重点研发及产学合作项目，成果发表于 ICSE、FSE、ASE、ISSTA、TSE、TOSEM 等会议和期刊。
