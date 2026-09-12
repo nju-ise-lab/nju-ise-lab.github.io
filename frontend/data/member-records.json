@@ -37,24 +37,13 @@
       "bio": "南京大学软件学院教师，南京大学—数兑联合研究中心主任，CCF 高级会员，主要从事智能软件工程研究，包括大模型代码智能与人工智能系统测试。主持多项国家自然科学基金、重点研发及产学合作项目，成果发表于 ICSE、FSE、ASE、ISSTA、TSE、TOSEM 等会议和期刊。"
     },
     {
-      "id": "teacher-004",
-      "name": "刘佳玮",
-      "member_type": "teacher",
-      "identity": "教师",
-      "homepage": "https://software.nju.edu.cn//jwliu/index.html",
-      "url": "/members/teacher-004/",
-      "source_order": 4,
-      "avatar": "members/teacher-004/9e34b58ec11e4506097f39f5d9469b81.png",
-      "avatar_url": "/images/data-source/members/teacher-004/9e34b58ec11e4506097f39f5d9469b81.png"
-    },
-    {
       "id": "teacher-005",
       "name": "赵源",
       "member_type": "teacher",
       "identity": "兼职导师",
       "homepage": "https://im.nju.edu.cn/info/1131/32561.htm",
       "url": "/members/teacher-005/",
-      "source_order": 5,
+      "source_order": 4,
       "avatar": "members/teacher-005/avatar.png",
       "avatar_url": "/images/data-source/members/teacher-005/avatar.png",
       "bio": "南京大学信息管理学院"
@@ -66,7 +55,7 @@
       "identity": "兼职导师",
       "homepage": "https://teacher.njust.edu.cn/jsj/zqj/list.htm",
       "url": "/members/teacher-006/",
-      "source_order": 6,
+      "source_order": 5,
       "avatar": "members/teacher-006/9b1881fe4209062eebd0ce473bd39149.jpg",
       "avatar_url": "/images/data-source/members/teacher-006/9b1881fe4209062eebd0ce473bd39149.jpg",
       "bio": "南京理工大学"
@@ -78,7 +67,7 @@
       "identity": "兼职导师",
       "homepage": "https://www.seysc.com/",
       "url": "/members/teacher-007/",
-      "source_order": 7,
+      "source_order": 6,
       "avatar": "members/teacher-007/avatar.jpg",
       "avatar_url": "/images/data-source/members/teacher-007/avatar.jpg",
       "bio": "慕尼黑工业大学"
@@ -253,6 +242,15 @@
       "homepage": "",
       "url": "/members/phd-019/",
       "source_order": 19
+    },
+    {
+      "id": "phd-020",
+      "name": "刘佳玮",
+      "member_type": "phd",
+      "identity": "博士研究生",
+      "homepage": "https://software.nju.edu.cn//jwliu/index.html",
+      "url": "/members/phd-020/",
+      "source_order": 20
     },
     {
       "id": "master-002",
