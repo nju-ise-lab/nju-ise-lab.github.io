@@ -52,6 +52,55 @@ year, id, title, link, status, author, cofauthor, corauthor, level, venue, note
 - `link` 优先填写 DOI 链接（`https://doi.org/...`）或期刊、会议出版社的论文详情页；预印本可填写 arXiv 或 OpenReview。暂未找到正式页面时可临时使用 Google Scholar，留空则前端不显示题目链接。
 - `note` 用于奖项、研究主题等补充标签，可留空。
 
+### 自动发现和审核新论文
+
+自动同步与手工维护使用同一张 `publications.xlsx`，不会增加第二份论文维护源，也不会只写派生 JSON。
+
+- 数据来源：DBLP 官方 SPARQL API（按稳定 PID 查询）和 Crossref DOI 元数据。不自动访问 Google Scholar，配置中的 Scholar ID 仅供人工核对。
+- 作者：陈振宇 `86/541-1`（`teacher-001`）、房春荣 `124/0310`（`teacher-003`）。姓名映射必须与成员别名一致，不按同名搜索猜测身份。
+- 周期：每周一北京时间 10:17；GitHub 定时任务可能延迟，并非精确定时服务。
+- 默认范围：当年和前一年。任务每次重新检查这个范围，已有记录不会重复加入。更早的遗漏需要手动指定年份。
+- 每批最多提出 25 条新记录；超过数量的记录列入报告，合并该批后在后续运行继续处理。
+- 只追加新行，不覆盖、删除或重新排序已有人工记录。预印本、相似标题、同标题不同 DOI、作者顺序不一致、缺少元数据或未来发表日期进入待确认清单。
+- `cofauthor`、`corauthor` 和奖项不推测，新增行留空。`level` 复用现有保守推断规则，无法确定则留空；审核时须核实 CCF 类别、发表年份和作者标注。
+- API 拒绝访问、限流、超时或响应不完整时任务失败，不写入本次新增论文、不部署网站，也不绕过访问限制。Crossref 单条 DOI 不存在时只将该条列入待确认清单。
+
+#### GitHub 首次启用
+
+1. 将新增脚本和工作流提交到 `main` 后，定时任务才会生效。本地新增 YAML 本身不会启用云端任务。
+2. 在仓库 `Settings → Actions → General → Workflow permissions` 勾选 **Allow GitHub Actions to create and approve pull requests**。这允许机器人创建 PR，本工作流不自动批准或合并 PR。组织策略可能限制这个选项。
+3. 可选：在仓库 Actions Variables 设置 `CROSSREF_MAILTO` 为维护联系邮箱，供 Crossref 的礼貌访问使用；不需要购买 API 或填写 Scholar 密钥。
+4. 在 `Actions → Sync publications → Run workflow` 首次选择 `dry_run = true`，先查看运行 Summary 和 `publication-sync-report` 附件。`since_year` 留空使用默认范围。
+5. 报告确认后运行 `dry_run = false`。有可加入的新论文时会创建/更新一个 PR，仅提交论文 Excel 和派生论文 JSON。没有新增时不创建空 PR，待确认记录仍可从报告中查看。
+6. 审核 PR 的论文和运行报告，补充需要的作者/CCF 标注。人工改动建议先在 `main` 维护源提交，然后重新运行同步；机器人分支会按最新 `main` 重建，不适合长期保留手工改动。
+7. 合并 PR 后，`Build and deploy Hugo site` 自动发布。机器人推送使用 `GITHUB_TOKEN` 不触发普通 push 工作流，所以同步任务不依赖机器人 push 来发布。机器人 PR 的校验可能显示需要批准工作流，点击批准即可；同步任务本身已经执行导入、测试和构建。
+
+当前若权限选项尚未开启，报告仍可生成，但创建 PR 会失败并在 Actions 中显示错误。不要为此使用有过大权限的个人令牌。
+
+#### 本地运行
+
+普通预览和构建仍只需要 Python 与 Hugo。仅同步脚本在实际追加 Excel 时需要 `openpyxl`（固定版本，仅安装到项目虚拟环境，保留表格、样式和数据校验）：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r tools/requirements-sync.txt
+
+# 只输出发现报告，不修改 Excel
+.venv/bin/python tools/sync_publications.py --dry-run
+
+# 追加核实过的新论文到维护源，然后重新生成 JSON
+.venv/bin/python tools/sync_publications.py
+bash scripts/import_data.sh
+.venv/bin/python -m unittest discover -s tools -p 'test_*.py'
+bash scripts/build.sh
+```
+
+报告位于 `outputs/publication-sync/report.md` 和 `report.json`，不提交到 Git。脚本执行后的 Excel/JSON 变化仍需审核。
+
+`tools/publication-sync.json` 可修改 `lookback_years`、`max_new_records` 和作者配置。永久排除某条论文时，把报告中的完整 DBLP 记录 URL 加入 `ignored_dblp_records` 并提交；只关闭 PR 或删除新增行不会阻止它下次再次被发现。
+
+DBLP/Crossref 的收录可能滞后，不能保证与 Scholar 同步或覆盖所有论文。本工具不会自动升级已有论文的 accepted/preprint 状态，也不会自动合并预印本与正式版；这些仍需人工核实。待确认清单中的条目可按上方字段规则手工补入 Excel。
+
 ## news.csv
 
 ```text

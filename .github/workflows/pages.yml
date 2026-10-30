@@ -33,7 +33,9 @@ jobs:
           extended: true
 
       - name: Build site
-        run: bash scripts/build.sh
+        run: |
+          bash scripts/build.sh
+          python3 -m unittest discover -s tools -p 'test_*.py'
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
 

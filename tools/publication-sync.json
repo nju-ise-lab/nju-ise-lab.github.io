@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lookback_years": 2,
+  "max_new_records": 25,
+  "request_interval_seconds": 1,
+  "ignored_dblp_records": [],
+  "authors": [
+    {
+      "name": "Zhenyu Chen",
+      "member_id": "teacher-001",
+      "dblp_pid": "86/541-1",
+      "scholar_user": "HQWxCnkAAAAJ"
+    },
+    {
+      "name": "Chunrong Fang",
+      "member_id": "teacher-003",
+      "dblp_pid": "124/0310",
+      "scholar_user": "S3Rd5TgAAAAJ"
+    }
+  ]
+}

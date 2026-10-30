@@ -1,0 +1,103 @@
+name: Sync publications
+
+on:
+  schedule:
+    # Monday 10:17 Asia/Shanghai (UTC+8). GitHub may delay scheduled runs.
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only produce a report; do not create a publication update PR"
+        type: boolean
+        default: false
+      since_year:
+        description: "Earliest publication year (blank = current and previous year)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-publications
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install synchronization dependency
+        run: python -m pip install -r tools/requirements-sync.txt
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.163.1"
+          extended: true
+
+      - name: Refresh local member data
+        run: python tools/import_members.py
+
+      - name: Discover and normalize publications
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+          SINCE_YEAR: ${{ inputs.since_year }}
+          CROSSREF_MAILTO: ${{ vars.CROSSREF_MAILTO }}
+        shell: bash
+        run: |
+          args=(--report-dir outputs/publication-sync)
+          if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          if [[ -n "$SINCE_YEAR" ]]; then args+=(--since-year "$SINCE_YEAR"); fi
+          python tools/sync_publications.py "${args[@]}"
+
+      - name: Validate and build
+        run: |
+          bash scripts/import_data.sh
+          python -m unittest discover -s tools -p 'test_*.py'
+          bash scripts/build.sh
+          git diff --check
+
+      - name: Publish run summary
+        if: always()
+        shell: bash
+        run: |
+          if [[ -f outputs/publication-sync/report.md ]]; then
+            cat outputs/publication-sync/report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Publication sync failed. Existing website data was not published; inspect the failed step." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload discovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-sync-report
+          path: outputs/publication-sync/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Create or update review PR
+        if: ${{ inputs.dry_run != true }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/publication-sync
+          base: main
+          commit-message: "Update publications from DBLP and Crossref"
+          title: "Review newly discovered lab publications"
+          body-path: outputs/publication-sync/report.md
+          add-paths: |
+            frontend/data-source/publications.xlsx
+            frontend/data/publication-records.json
+          delete-branch: true

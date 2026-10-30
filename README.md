@@ -43,6 +43,12 @@ python3 -m unittest discover -s tools -p 'test_*.py'
 
 推送 `main` 分支后，`.github/workflows/pages.yml` 会自动构建并发布到 GitHub Pages。
 
+## 自动发现论文
+
+`tools/sync_publications.py` 使用 DBLP 官方 SPARQL API 按陈振宇、房春荣的稳定作者 PID 发现论文，再用 Crossref 核对 DOI、完整作者顺序、发表日期和出处。不会直接爬取 Google Scholar 或绕过验证码。
+
+`.github/workflows/sync-publications.yml` 每周一北京时间 10:17 检查当年和前一年的论文，默认只创建或更新 `automation/publication-sync` 分支上的审核 PR。合并后才由现有 Pages 工作流发布。首次使用、忽略记录、本地命令及限制见 [自动论文维护说明](frontend/data-source/README.md#自动发现和审核新论文)。
+
 ## 数据规则
 
 - 不要直接编辑 `frontend/data/*.json` 或带有 `generated_from` 的成员 Markdown。
