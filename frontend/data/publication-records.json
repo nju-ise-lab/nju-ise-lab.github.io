@@ -332,6 +332,1016 @@
       "source_order": 5
     },
     {
+      "id": "dblp-609cc53b542efb24",
+      "year": 2026,
+      "title": "A survey on large language models for software engineering",
+      "url": "https://doi.org/10.1007/s11432-025-4670-0",
+      "source_url": "https://doi.org/10.1007/s11432-025-4670-0",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-006/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Yang Xie",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yaxin Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-007/"
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yun Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Science China Information Sciences",
+      "venue_short": "SCIS",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 133
+    },
+    {
+      "id": "dblp-3ced9e005877985f",
+      "year": 2026,
+      "title": "Bugs in Modern LLM Agent Frameworks: An Empirical Study",
+      "url": "https://doi.org/10.1145/3803437.3805536",
+      "source_url": "https://doi.org/10.1145/3803437.3805536",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xinxue Zhu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiacong Wu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaoyu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Tianlin Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yanzhou Mu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chao Shen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering",
+      "venue_short": "FSE",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 134
+    },
+    {
+      "id": "dblp-593046246eb175e0",
+      "year": 2026,
+      "title": "ComPass: Contrastive Learning for Automated Patch Correctness Assessment in Program Repair",
+      "url": "https://doi.org/10.1007/s10664-026-10871-x",
+      "source_url": "https://doi.org/10.1007/s10664-026-10871-x",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-006/"
+        },
+        {
+          "name": "Ye Shang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-011/"
+        },
+        {
+          "name": "Haichuan Hu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Liang Xiao",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-B",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Empirical Software Engineering",
+      "venue_short": "EMSE",
+      "topics": [
+        "Program Repair"
+      ],
+      "note": "",
+      "source_order": 135
+    },
+    {
+      "id": "dblp-3c17eb3239bb2212",
+      "year": 2026,
+      "title": "Debiasing LLMs by Masking Unfairness-Driving Attention Heads",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.1893",
+      "source_url": "https://doi.org/10.18653/v1/2026.findings-acl.1893",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Tingxu Han",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-005/"
+        },
+        {
+          "name": "Wei Song",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ziqi Ding",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ziming Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Yuekang Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Dongfang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Zhenting Wang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "venue_short": "PAPER",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 136
+    },
+    {
+      "id": "dblp-612b1278ea02b5c9",
+      "year": 2026,
+      "title": "DuCodeMark: Dual-Purpose Code Dataset Watermarking via Style-Aware Watermark-Poison Design",
+      "url": "https://doi.org/10.1145/3797076",
+      "source_url": "https://doi.org/10.1145/3797076",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-010/"
+        },
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-001/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Baowen Xu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "venue_short": "PAPER",
+      "topics": [],
+      "note": "",
+      "source_order": 137
+    },
+    {
+      "id": "dblp-c74d90be115cf384",
+      "year": 2026,
+      "title": "Enabling Black-box RPC-API Testing with Multi-Agent Reinforcement Learning and LLMs: An Industry Case Study",
+      "url": "https://doi.org/10.1145/3786583.3786855",
+      "source_url": "https://doi.org/10.1145/3786583.3786855",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xiaoqing Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhou Shao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaonan Shi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shiliang Xiao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chao Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaobo Xue",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jianyuan Lu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shize Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Enge Song",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Song Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xing Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chongrong Fang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Biao Lyu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shunmin Zhu",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice",
+      "venue_short": "ICSE",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 138
+    },
+    {
+      "id": "dblp-5d6476897fc180da",
+      "year": 2026,
+      "title": "GUI test migration via LLM with scenario-granularity understanding",
+      "url": "https://doi.org/10.1007/s11704-025-50270-x",
+      "source_url": "https://doi.org/10.1007/s11704-025-50270-x",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Quan Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-007/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Junyang Xing",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Hongyi Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jia Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-002/"
+        },
+        {
+          "name": "Wenbin Guo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Frontiers of Computer Science",
+      "venue_short": "FCS",
+      "topics": [
+        "GUI Testing",
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 139
+    },
+    {
+      "id": "dblp-4f2f360db7b8e662",
+      "year": 2026,
+      "title": "Large Language Models for Software Testing Education: an Experience Report",
+      "url": "https://doi.org/10.1145/3803437.3805782",
+      "source_url": "https://doi.org/10.1145/3803437.3805782",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Peng Yang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yunfeng Zhu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-007/"
+        },
+        {
+          "name": "Chao Chang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-007/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Yong Tang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering",
+      "venue_short": "FSE",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 140
+    },
+    {
+      "id": "dblp-c3a40a338049ec62",
+      "year": 2026,
+      "title": "LLM-based Crowdsourced Test Report Clustering",
+      "url": "https://doi.org/10.1145/3765756",
+      "source_url": "https://doi.org/10.1145/3765756",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuchen Ling",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-007/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Quan Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "venue_short": "TOSEM",
+      "topics": [
+        "Crowdsourced Testing",
+        "Test Report Analysis",
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 141
+    },
+    {
+      "id": "dblp-0bfc49f0d5a4b7e6",
+      "year": 2026,
+      "title": "Peeling Off the Cocoon: Unveiling Suppressed Golden Seeds for Mutational Greybox Fuzzing",
+      "url": "https://doi.org/10.1145/3798205",
+      "source_url": "https://doi.org/10.1145/3798205",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ruixiang Qian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zengxu Chen",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Youxin Fu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the ACM on Programming Languages",
+      "venue_short": "PAPER",
+      "topics": [
+        "Fuzz Testing"
+      ],
+      "note": "",
+      "source_order": 142
+    },
+    {
+      "id": "dblp-0f7894ffe4a6b5c9",
+      "year": 2026,
+      "title": "PuzzleMark: Implicit Jigsaw Learning for Robust Code Dataset Watermarking in Neural Code Completion Models",
+      "url": "https://doi.org/10.1145/3797122",
+      "source_url": "https://doi.org/10.1145/3797122",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Haocheng Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-010/"
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Peizhuo Lv",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-001/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xiaofang Zhang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "venue_short": "PAPER",
+      "topics": [
+        "Robustness Testing"
+      ],
+      "note": "",
+      "source_order": 143
+    },
+    {
+      "id": "dblp-194fb00405b930a8",
+      "year": 2026,
+      "title": "Rethinking Reverse-Engineering-Based Backdoor Removal in Self-Supervised Learning",
+      "url": "https://doi.org/10.1109/tifs.2026.3723195",
+      "source_url": "https://doi.org/10.1109/tifs.2026.3723195",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Tingxu Han",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-005/"
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yifei Ge",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-009/"
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zhenting Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shiqing Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Xiangyu Zhang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "venue_short": "TIFS",
+      "topics": [],
+      "note": "",
+      "source_order": 144
+    },
+    {
+      "id": "dblp-1cc9b5806e04370f",
+      "year": 2026,
+      "title": "TestAgent: A Multi-Agent LLM Framework for Repository-Level Unit Test Generation",
+      "url": "https://doi.org/10.1145/3803437.3806428",
+      "source_url": "https://doi.org/10.1145/3803437.3806428",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Ye Shang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-011/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-006/"
+        },
+        {
+          "name": "Zhengyu Zhan",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ke Huang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "CCF-A",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering",
+      "venue_short": "FSE",
+      "topics": [
+        "Unit Testing",
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 145
+    },
+    {
+      "id": "dblp-dd0e215fcbf710db",
+      "year": 2026,
+      "title": "Towards Automated Crowdsourced Testing via Personified-LLM",
+      "url": "https://doi.org/10.1145/3808173",
+      "source_url": "https://doi.org/10.1145/3808173",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Shengcheng Yu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-007/"
+        },
+        {
+          "name": "Yuchen Ling",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Chunyang Chen",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "venue_short": "PAPER",
+      "topics": [
+        "Crowdsourced Testing",
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 146
+    },
+    {
+      "id": "dblp-4bd138b091d5e010",
+      "year": 2026,
+      "title": "Train in Vain: Functionality-Preserving Poisoning to Prevent Unauthorized Use of Code Datasets",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.1564",
+      "source_url": "https://doi.org/10.18653/v1/2026.findings-acl.1564",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Yuan Xiao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-001/"
+        },
+        {
+          "name": "Jiaming Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuchen Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-010/"
+        },
+        {
+          "name": "Wei Song",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jun Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shiqing Ma",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yanzhou Mu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Jin Song Dong",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "venue_short": "PAPER",
+      "topics": [],
+      "note": "",
+      "source_order": 147
+    },
+    {
+      "id": "dblp-73f95fce5f9840c6",
+      "year": 2026,
+      "title": "UBA: A Unified Black-Box Adversarial Testing for Object Detection via Visualization-Based Contextual Reconstruction",
+      "url": "https://doi.org/10.1007/s11263-026-02890-4",
+      "source_url": "https://doi.org/10.1007/s11263-026-02890-4",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Jiawei Liu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-020/"
+        },
+        {
+          "name": "Weisi Luo",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-006/"
+        },
+        {
+          "name": "Junyi Xie",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Dezhi Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Jiang Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "International Journal of Computer Vision",
+      "venue_short": "IJCV",
+      "topics": [],
+      "note": "",
+      "source_order": 148
+    },
+    {
       "id": "curated-7e9012a045de",
       "year": 2025,
       "title": "A Large-Scale Empirical Study on Fine-Tuning Large Language Models for Unit Testing",
@@ -2024,6 +3034,459 @@
       ],
       "note": "",
       "source_order": 31
+    },
+    {
+      "id": "dblp-f4a73741e8d6ce6a",
+      "year": 2025,
+      "title": "An Empirical Study on Machine Learning-Based Risk Prediction for Petroleum Pipelines",
+      "url": "https://doi.org/10.1109/qrs65678.2025.00032",
+      "source_url": "https://doi.org/10.1109/qrs65678.2025.00032",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Haikang Gao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-003/"
+        },
+        {
+          "name": "Ye Shang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-011/"
+        },
+        {
+          "name": "Gaolei Yi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-005/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "2025 25th International Conference on Software Quality, Reliability and Security (QRS)",
+      "venue_short": "QRS",
+      "topics": [],
+      "note": "",
+      "source_order": 149
+    },
+    {
+      "id": "dblp-e073834f315370a0",
+      "year": 2025,
+      "title": "An Improved Greylag Goose Optimization Algorithm for Heterogeneous Cloud Computing Task Scheduling",
+      "url": "https://doi.org/10.1109/dsa66321.2025.00061",
+      "source_url": "https://doi.org/10.1109/dsa66321.2025.00061",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Kecheng Li",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-016/"
+        },
+        {
+          "name": "Siqi Gu",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/phd-002/"
+        },
+        {
+          "name": "Zhaojun Zhu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shan Zhou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "2025 12th International Conference on Dependable Systems and Their Applications (DSA)",
+      "venue_short": "DSA",
+      "topics": [],
+      "note": "",
+      "source_order": 150
+    },
+    {
+      "id": "dblp-18a5772726b9134a",
+      "year": 2025,
+      "title": "Chattss: Improving Test Suite Simplification Via Large Language Models",
+      "url": "https://doi.org/10.1109/qrs65678.2025.00021",
+      "source_url": "https://doi.org/10.1109/qrs65678.2025.00021",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Gaolei Yi",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yuan Zhao",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-005/"
+        },
+        {
+          "name": "Runkang Feng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Quanjun Zhang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-006/"
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "2025 25th International Conference on Software Quality, Reliability and Security (QRS)",
+      "venue_short": "QRS",
+      "topics": [
+        "Large Language Models"
+      ],
+      "note": "",
+      "source_order": 151
+    },
+    {
+      "id": "dblp-e8de4a2d66ea38a4",
+      "year": 2025,
+      "title": "Machine Learning for Actionable Warning Identification: A Comprehensive Survey",
+      "url": "https://doi.org/10.1145/3696352",
+      "source_url": "https://doi.org/10.1145/3696352",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Xiuting Ge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Xuanye Li",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Daoyuan Wu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Juan Zhai",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shang-Wei Lin",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhihong Zhao",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yang Liu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "ACM Computing Surveys",
+      "venue_short": "CSUR",
+      "topics": [],
+      "note": "",
+      "source_order": 152
+    },
+    {
+      "id": "dblp-b5006cb19e94f730",
+      "year": 2025,
+      "title": "MaskTrack: Auto-Labeling and Stable Tracking for Video Object Segmentation",
+      "url": "https://doi.org/10.1109/tnnls.2024.3469959",
+      "source_url": "https://doi.org/10.1109/tnnls.2024.3469959",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Lu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ping Hu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Huchuan Lu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "You He",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "venue_short": "PAPER",
+      "topics": [],
+      "note": "",
+      "source_order": 153
+    },
+    {
+      "id": "dblp-da1f91d74853cca3",
+      "year": 2025,
+      "title": "POSVIA: Inconsistency analyzer for open-source Proof-of-Concept reports",
+      "url": "https://doi.org/10.1016/j.infsof.2025.107868",
+      "source_url": "https://doi.org/10.1016/j.infsof.2025.107868",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Lingyan Ding",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xingya Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Song Huang",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "journal",
+      "publication_type_label": "期刊论文",
+      "venue": "Information and Software Technology",
+      "venue_short": "IST",
+      "topics": [],
+      "note": "",
+      "source_order": 154
+    },
+    {
+      "id": "dblp-fb6872090b87d2d5",
+      "year": 2025,
+      "title": "Prompt Learning for Source Code Summarization",
+      "url": "https://doi.org/10.1109/qrs65678.2025.00028",
+      "source_url": "https://doi.org/10.1109/qrs65678.2025.00028",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Tingting Xu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Chunrong Fang",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-003/"
+        },
+        {
+          "name": "Hanwei Qian",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xia Feng",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Weisong Sun",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "conference",
+      "publication_type_label": "会议论文",
+      "venue": "2025 25th International Conference on Software Quality, Reliability and Security (QRS)",
+      "venue_short": "QRS",
+      "topics": [
+        "Code Intelligence"
+      ],
+      "note": "",
+      "source_order": 155
+    },
+    {
+      "id": "dblp-9fa342dea193ee4e",
+      "year": 2025,
+      "title": "RVMamba: Selective Text-Vision Mamba for Referring Video Object Segmentation",
+      "url": "https://doi.org/10.1109/lsp.2025.3628789",
+      "source_url": "https://doi.org/10.1109/lsp.2025.3628789",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        },
+        {
+          "name": "Jiawen Zhu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Lu Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Ping Hu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Yunzhi Zhuge",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Huchuan Lu",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "You He",
+          "co_first": false,
+          "corresponding": false
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "",
+      "publication_type_label": "",
+      "venue": "IEEE Signal Processing Letters",
+      "venue_short": "PAPER",
+      "topics": [],
+      "note": "",
+      "source_order": 156
+    },
+    {
+      "id": "dblp-25d7abf82d4595a5",
+      "year": 2025,
+      "title": "SegTest: Metamorphic Testing of Image Segmentation via Guided Instance‐Level Test Data Augmentation",
+      "url": "https://doi.org/10.1002/stvr.1910",
+      "source_url": "https://doi.org/10.1002/stvr.1910",
+      "status": "published",
+      "status_label": "",
+      "category": "publication",
+      "authors": [
+        {
+          "name": "Zhonghao Hou",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Xingya Wang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Shijie Zhang",
+          "co_first": false,
+          "corresponding": false
+        },
+        {
+          "name": "Zhenyu Chen",
+          "co_first": false,
+          "corresponding": false,
+          "member_url": "/members/teacher-001/"
+        }
+      ],
+      "ccf_level": "",
+      "publication_type": "",
+      "publication_type_label": "",
+      "venue": "Software Testing, Verification and Reliability",
+      "venue_short": "PAPER",
+      "topics": [
+        "GUI Testing"
+      ],
+      "note": "",
+      "source_order": 157
     },
     {
       "id": "refresh-1b670ad1144e",
